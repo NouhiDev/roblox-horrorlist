@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1d2329;
+  background-color: #121317;
   padding-bottom: 50px;
 }
 
@@ -116,4 +116,5 @@ h2:hover {
 
 a {
   text-decoration: none;
+  color: white;
 }
