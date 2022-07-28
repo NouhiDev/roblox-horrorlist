@@ -50,3 +50,5 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
         sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
     });
 });
+
+sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
