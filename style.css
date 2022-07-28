@@ -68,6 +68,10 @@ body .tit-tit {
   border-bottom: 5px solid rgb(113, 30, 30);
   font-family: 'Oswald', sans-serif;
   font-weight: 1;
+  overflow: auto;
+  table-layout: fixed;
+  position: sticky;   
+  top: 0; 
 }
 
 .table-sortable tr { /* catergory content */
