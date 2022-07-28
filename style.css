@@ -65,6 +65,7 @@ body .tit-tit {
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
   border: 1px #1d2329 solid;
+  border-bottom: 5px solid rgb(113, 30, 30);
   font-family: 'Oswald', sans-serif;
   font-weight: 1;
 }
