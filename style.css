@@ -27,6 +27,10 @@ td a:hover {
   text-decoration: none;
 }
 
+.top {
+  margin-top: 25px;
+}
+
 body .tit {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -89,4 +93,27 @@ body .tit {
 .table-sortable .th-sort-asc,
 .table-sortable .th-sort-desc {
   background: #486582;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Robot", sans-serif;
+  color: white;
+  font-weight: 1;
+  font-style: italic;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid white;
+  width: 200px;
+  text-decoration: none;
+}
+
+h2:hover {
+  background-color: #486582;
+}
+
+a {
+  text-decoration: none;
 }
