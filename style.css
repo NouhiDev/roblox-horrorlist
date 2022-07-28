@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  background-color: #1d2329;
+  padding-bottom: 50px;
+}
+
+body .tit {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+
+.table-sortable th { /* catergory titles */
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #517394;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px #1d2329 solid;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 1;
+}
+
+.table-sortable tr { /* catergory content */
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  align-items: center;
+  background-color: #3c4754;
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: inherit;
+  color: #c8d3de;
+}
+
+.rating {
+  font-size: 50px;
+  color: #8597de;
+  text-shadow: 1px 1px 5px rgb(29, 29, 29)
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 10px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: #486582;
+}
