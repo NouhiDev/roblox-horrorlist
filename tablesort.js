@@ -12,10 +12,24 @@ function sortTableByColumn(table, column, asc = true) {
 
     // Sort each row
     const sortedRows = rows.sort((a, b) => {
-        const aColText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
-        const bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+        
+        x = new Boolean(false);
 
-        return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+        const aColumnText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+        const bColumnText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+        const cColumnText = parseFloat(a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim());
+        const dColumnText = parseFloat(b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim());
+
+        if (aColumnText?.match(/^[0-9]/g) && bColumnText?.match(/^[0-9]/g)) {
+            x = new Boolean(true);
+        }
+        
+        if(x) {
+            return cColumnText > dColumnText ? (1 * dirModifier) : (-1 * dirModifier);
+        }
+        else {
+            return aColumnText > bColumnText ? (1 * dirModifier) : (-1 * dirModifier);
+        }
     });
 
     // Remove all existing TRs from the table

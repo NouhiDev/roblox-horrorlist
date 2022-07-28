@@ -17,6 +17,11 @@ td a:link, a:visited, a:active
     text-decoration: none;
 }
 
+td img {
+  align-content: center;
+  margin: auto;
+}
+
 td a:hover {
   color: #a7b1bc;
   text-decoration: none;
