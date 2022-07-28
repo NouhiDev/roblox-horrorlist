@@ -11,6 +11,17 @@ body {
   padding-bottom: 50px;
 }
 
+td a:link, a:visited, a:active
+{
+    color: #c8d3de;
+    text-decoration: none;
+}
+
+td a:hover {
+  color: #a7b1bc;
+  text-decoration: none;
+}
+
 body .tit {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
