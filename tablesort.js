@@ -51,4 +51,34 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
     });
 });
 
-sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+let counter = 0;
+
+document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+    
+    if (counter < 1) {
+
+        const tableElement = headerCell.parentElement.parentElement.parentElement;
+        const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+        const currentIsAscending = headerCell.classList.contains("th-sort-asc");
+    
+        sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+    }
+
+    counter += 1;
+});
+
+counter = 0;
+
+document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+    
+    if (counter < 1) {
+
+        const tableElement = headerCell.parentElement.parentElement.parentElement;
+        const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+        const currentIsAscending = headerCell.classList.contains("th-sort-asc");
+    
+        sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+    }
+
+    counter += 1;
+});
