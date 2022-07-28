@@ -1,5 +1,7 @@
 /**
  * Sorts a HTML table.
+ * Yoinked from dcode
+ * Optimized and modified by nouhi
  * 
  * @param {HTMLTableElement} table The table to sort
  * @param {number} column The index of the column to sort
@@ -12,23 +14,16 @@ function sortTableByColumn(table, column, asc = true) {
 
     // Sort each row
     const sortedRows = rows.sort((a, b) => {
-        
-        x = new Boolean(false);
-
         const aColumnText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
         const bColumnText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
         const cColumnText = parseFloat(a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim());
         const dColumnText = parseFloat(b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim());
 
-        if (aColumnText?.match(/^[0-9]/g) && bColumnText?.match(/^[0-9]/g)) {
-            x = new Boolean(true);
-        }
-        
-        if(x) {
-            return cColumnText > dColumnText ? (1 * dirModifier) : (-1 * dirModifier);
+        if(isNaN(aColumnText) && isNaN(bColumnText)) {
+            return aColumnText > bColumnText ? (1 * dirModifier) : (-1 * dirModifier);
         }
         else {
-            return aColumnText > bColumnText ? (1 * dirModifier) : (-1 * dirModifier);
+            return cColumnText > dColumnText ? (1 * dirModifier) : (-1 * dirModifier);
         }
     });
 
