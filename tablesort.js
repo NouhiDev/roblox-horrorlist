@@ -89,4 +89,18 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
 
 // Determines how many games are listed
 let count = document.querySelector(".amount");
+// Updates text to amount of games rated
 count.textContent = "Games rated: " + (document.querySelectorAll(".table-sortable tr").length - 1);
+
+// Determine average rating
+// Stores all ratings
+let avg = document.querySelectorAll(".rating");
+// Sum of all ratings
+let sum = 0;
+// Add stored ratings to sum
+avg.forEach(function(item) {sum += parseFloat(item.textContent);});
+
+// Stores average text container
+let avg_2 = document.querySelector(".average");
+// Updates text to average rating
+avg_2.textContent = "Average Rating: " + Math.round((sum/(document.querySelectorAll(".table-sortable tr").length - 1))* 10) / 10;
