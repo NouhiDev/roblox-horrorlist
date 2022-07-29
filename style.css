@@ -147,3 +147,17 @@ h3 {
   padding: 10px;
   text-decoration: none;
 }
+
+.amount {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Robot", sans-serif;
+  color: white;
+  font-weight: 1;
+  font-style: italic;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #424855;
+  width: 200px;
+  text-decoration: none;
+}

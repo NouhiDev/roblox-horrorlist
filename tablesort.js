@@ -82,3 +82,6 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
 
     counter += 1;
 });
+
+let count = document.querySelector(".amount");
+count.textContent = "Games rated: " + (document.querySelectorAll(".table-sortable tr").length - 1);
