@@ -1,7 +1,7 @@
 /**
  * Sorts a HTML table.
  * Yoinked from dcode
- * Optimized and modified by nouhi
+ * "Optimized" and modified by nouhi
  * 
  * @param {HTMLTableElement} table The table to sort
  * @param {number} column The index of the column to sort
@@ -51,6 +51,10 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
     });
 });
 
+// TODO: FIX THIS UP ASAP
+
+// Automatically sorts by rating
+
 let counter = 0;
 
 document.querySelectorAll(".table-sortable th").forEach(headerCell => {
@@ -83,5 +87,6 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
     counter += 1;
 });
 
+// Determines how many games are listed
 let count = document.querySelector(".amount");
 count.textContent = "Games rated: " + (document.querySelectorAll(".table-sortable tr").length - 1);
