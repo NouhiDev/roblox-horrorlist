@@ -151,3 +151,37 @@ h3 {
 .average {
   color: rgb(255, 66, 66);
 }
+
+/* Colors */
+.blue {
+  color: rgb(66, 201, 255);
+}
+
+.orange {
+  color: rgb(255, 189, 66);
+}
+
+.orange-bg {
+  background-color: rgb(255, 189, 66);
+}
+
+.blue-bg {
+  background-color: rgb(66, 201, 255);
+}
+
+.red-bg {
+  background-color: rgb(255, 66, 66);
+}
+
+/* Style for game tags */
+.tag {
+  border-radius: 0.7em;
+  padding: 2px;
+  font-size: 12px;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  text-shadow: 1px 1px 5px rgb(29, 29, 29);
+  box-shadow: 1px 1px 5px rgb(29, 29, 29);
+}
+
