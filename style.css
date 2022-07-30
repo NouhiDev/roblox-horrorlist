@@ -209,7 +209,7 @@ h3 {
 .loader>div {
   height: 100px;
   width: 100px;
-  border: 15px solid #424855;
+  border: 5px solid #424855;
   border-top-color: rgb(255, 66, 66);
   position: absolute;
   margin: auto;
