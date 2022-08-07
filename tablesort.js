@@ -1,6 +1,6 @@
 $(window).on("load",function(){
     $(".loader").fadeOut(1000);
-    $(".content").fadeIn(1000);
+    delay(1000).then(() => $(".content").fadeIn(1000));
 })
 
 /**
@@ -109,3 +109,8 @@ avg.forEach(function(item) {sum += parseFloat(item.textContent);});
 let avg_2 = document.querySelector(".average");
 // Updates text to average rating
 avg_2.textContent = "Average Rating: " + Math.round((sum/(document.querySelectorAll(".table-sortable tr").length - 1))* 10) / 10;
+
+// Adds delay
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
