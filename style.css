@@ -45,7 +45,7 @@ body .tit {
 }
 
 body .tit-tit {
-  color: rgb(255, 66, 66);
+  color: rgb(147, 147, 147);
   font-family: 'Oswald', sans-serif;
 }
 
@@ -59,13 +59,13 @@ body .tit-tit {
   cursor: pointer;
   padding: 15px;
   font-size: 20px;
-  background-color: rgb(255, 66, 66);
+  background-color: rgb(147, 147, 147);
   margin: auto;
   color: white;
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
   border: 1px #1d2329 solid;
-  border-bottom: 5px solid rgb(113, 30, 30);
+  border-bottom: 5px solid rgb(55, 55, 55);
   font-family: 'Oswald', sans-serif;
   font-weight: 1;
   overflow: auto;
@@ -89,7 +89,7 @@ body .tit-tit {
 
 .rating {
   font-size: 50px;
-  color: rgb(255, 66, 66);
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px 5px rgb(29, 29, 29)
 }
 
@@ -108,7 +108,7 @@ body .tit-tit {
 
 .table-sortable .th-sort-asc,
 .table-sortable .th-sort-desc {
-  background: rgb(186, 48, 48);
+  background: rgb(88, 88, 88);
 }
 
 
@@ -127,7 +127,7 @@ h2 {
 }
 
 h2:hover {
-  background-color: rgb(255, 66, 66);
+  background-color: rgb(147, 147, 147);
 }
 
 a {
@@ -149,7 +149,7 @@ h3 {
 }
 
 .average {
-  color: rgb(255, 66, 66);
+  color: white;
 }
 
 /* Colors */
