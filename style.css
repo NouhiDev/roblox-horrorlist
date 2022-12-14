@@ -44,7 +44,7 @@ body .tit {
   font-size: 45px;
 }
 
-body .tit2 {
+body .tit-credits {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -54,6 +54,19 @@ body .tit2 {
   padding-bottom: 10px;
   text-shadow: 1px 1px 5px rgb(0, 0, 0);
   font-size: 35px;
+}
+
+body .tit-date {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  color: rgb(182, 182, 182);
+  font-weight: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  font-size: 25px;
 }
 
 body .tit-tit {
