@@ -44,6 +44,18 @@ body .tit {
   font-size: 45px;
 }
 
+body .tit2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  font-size: 35px;
+}
+
 body .tit-tit {
   color: rgb(147, 147, 147);
   font-family: 'Oswald', sans-serif;
