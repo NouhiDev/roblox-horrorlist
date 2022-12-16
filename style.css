@@ -203,7 +203,7 @@ h3 {
 }
 
 .green-bg { /* Story */
-  background-color: rgb(66, 255, 132);
+  background-color: rgb(47, 196, 99);
 }
 
 .dark-blue-bg { /* Misc */
@@ -216,6 +216,14 @@ h3 {
 
 .grey-bg {
   background-color: rgb(149, 149, 149);
+}
+
+.yellow-bg { /* Minigame */
+  background-color: rgb(211, 196, 27);
+}
+
+.dark-green-bg { /* Story */
+  background-color: rgb(29, 108, 57);
 }
 
 /* Style for game tags */
