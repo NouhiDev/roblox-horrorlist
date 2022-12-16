@@ -80,7 +80,6 @@ body .tit-tit {
   font-family: 'Oswald', sans-serif;
 }
 
-
 .table-sortable th { /* catergory titles */
   cursor: pointer;
   padding: 15px;
@@ -199,19 +198,19 @@ h3 {
   background-color: rgb(255, 66, 66);
 }
 
-.purple-bg {
+.purple-bg { /* Chapters */
   background-color: rgb(129, 66, 255);
 }
 
-.green-bg {
+.green-bg { /* Story */
   background-color: rgb(66, 255, 132);
 }
 
-.dark-blue-bg {
+.dark-blue-bg { /* Misc */
   background-color: rgb(69, 66, 255);
 }
 
-.pink-bg {
+.pink-bg { /* Myth */
   background-color: rgb(255, 66, 201);
 }
 
