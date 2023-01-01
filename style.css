@@ -177,6 +177,31 @@ h3 {
   color: white;
 }
 
+.rating-ref {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.rating-ref:hover {
+  text-decoration: underline;
+}
+
+.avatars {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Robot", sans-serif;
+  color: white;
+  font-weight: 1;
+  font-style: italic;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #424855;
+  width: 200px;
+  text-decoration: none;
+  width: 100px;
+  display: inline-flex;
+}
+
 /* Colors */
 .blue {
   color: rgb(66, 201, 255);
@@ -186,15 +211,15 @@ h3 {
   color: rgb(255, 189, 66);
 }
 
-.orange-bg {
+.orange-bg { /* Singleplayer */
   background-color: rgb(255, 189, 66);
 }
 
-.blue-bg {
+.blue-bg { /* Multiplayer */
   background-color: rgb(66, 201, 255);
 }
 
-.red-bg {
+.red-bg { /* X */
   background-color: rgb(255, 66, 66);
 }
 
@@ -214,7 +239,7 @@ h3 {
   background-color: rgb(255, 66, 201);
 }
 
-.grey-bg {
+.grey-bg { /* Unfinished */
   background-color: rgb(149, 149, 149);
 }
 
