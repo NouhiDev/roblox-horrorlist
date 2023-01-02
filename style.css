@@ -186,6 +186,8 @@ h3 {
   text-decoration: underline;
 }
 
+/* Avatars */
+
 .avatars {
   text-align: center;
   font-size: 15px;
@@ -195,12 +197,72 @@ h3 {
   font-style: italic;
   margin: auto;
   padding: 10px;
-  border: 1px solid #424855;
+  border: 1px solid rgb(255, 255, 255);
   width: 200px;
   text-decoration: none;
   width: 100px;
   display: inline-flex;
 }
+
+.yellow-border {
+  border: 1px solid rgb(246, 255, 0)
+}
+
+.red-border {
+  border: 1px solid rgb(255, 92, 92)
+}
+
+.green-border {
+  border: 1px solid rgb(99, 255, 141)
+}
+
+
+/* Creator's Choice */
+
+/* Namlit */
+.creators-choice-namlit td {
+  border-top:rgb(99, 255, 141) thin solid;
+  border-bottom:rgb(99, 255, 141) thin solid;
+}
+
+.creators-choice-namlit td:first-child {
+  border-left:rgb(99, 255, 141) thin solid;
+}
+
+.creators-choice-namlit td:last-child {
+  border-right:rgb(99, 255, 141) thin solid;
+}
+
+/* Nouhi */
+.creators-choice-nouhi td {
+  border-top:rgb(246, 255, 0) thin solid;
+  border-bottom:rgb(246, 255, 0) thin solid;
+}
+
+.creators-choice-nouhi td:first-child {
+  border-left:rgb(246, 255, 0) thin solid;
+}
+
+.creators-choice-nouhi td:last-child {
+  border-right:rgb(246, 255, 0) thin solid;
+}
+
+/* Torch */
+.creators-choice-torch td {
+  border-top:rgb(255, 92, 92) thin solid;
+  border-bottom:rgb(255, 92, 92) thin solid;
+}
+
+.creators-choice-torch td:first-child {
+  border-left:rgb(255, 92, 92) thin solid;
+}
+
+.creators-choice-torch td:last-child {
+  border-right:rgb(255, 92, 92) thin solid;
+}
+
+
+
 
 /* Colors */
 .blue {
@@ -296,4 +358,27 @@ h3 {
   100%{
     transform: rotate(360deg);
   }
+}
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0b0c0e;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c8d3de;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
