@@ -202,6 +202,7 @@ h3 {
   text-decoration: none;
   width: 100px;
   display: inline-flex;
+  font-style: normal;
 }
 
 .yellow-border {
@@ -214,6 +215,31 @@ h3 {
 
 .green-border {
   border: 1px solid rgb(99, 255, 141)
+}
+
+.avatars-contributor {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Robot", sans-serif;
+  color: white;
+  font-weight: 1;
+  font-style: italic;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid rgb(73, 73, 73);
+  text-decoration: none;
+  width: 60px;
+  display: inline-flex;
+  font-size: 10px;
+  font-style: normal;
+}
+
+.avatars figcaption {
+  padding-top: 5px;
+}
+
+.avatars-contributor figcaption {
+  padding-top: 5px;
 }
 
 
@@ -430,4 +456,12 @@ h3 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Horizontal Rulers */
+hr {
+  background-color: #121317;
+  border: 1px dashed rgb(55, 64, 64);
+  margin-left: 100px;
+  margin-right: 100px;
 }
