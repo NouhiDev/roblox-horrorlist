@@ -462,6 +462,5 @@ h3 {
 hr {
   background-color: #121317;
   border: 1px dashed rgb(55, 64, 64);
-  margin-left: 100px;
-  margin-right: 100px;
+  max-width: 500px;
 }
