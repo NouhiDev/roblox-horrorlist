@@ -12,6 +12,7 @@ body {
   padding-bottom: 50px;
 }
 
+/* Table Styling */
 td a:link, a:visited, a:active
 {
     color: #c8d3de;
