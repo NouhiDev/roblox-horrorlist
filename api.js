@@ -17,6 +17,7 @@ $.getJSON('https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo
 function buildTable(data){
     var table = document.getElementById("table-to-populate")
     var playerClass = ""
+    var genreClass = ""
     table.innerHTML = '';
 
     for(var i = 0; i < data.length; i++) {
@@ -28,9 +29,37 @@ function buildTable(data){
             playerClass = "tag orange-bg"
         }
 
+        // Determine Genre Color
+        switch(data[i].Genre) {
+            case "Chapters":
+                genreClass = "tag purple-bg"
+                break;
+            case "Story":
+                genreClass = "tag green-bg"
+                break;
+            case "Minigame":
+                genreClass = "tag yellow-bg"
+                break;
+            case "Misc":
+                genreClass = "tag dark-blue-bg"
+                break;
+            case "Myth":
+                genreClass = "tag pink-bg"
+                break;
+            case "Exploration":
+                genreClass = "tag dark-green-bg"
+                break;
+            case "X":
+                genreClass = "tag red-bg"
+                break;
+            case "UF":
+                genreClass = "tag grey-bg"
+                break;
+        }
+
         var row = `<tr class="${data[i].CreatorsChoice}">
                     <td class="rating">${data[i].Rating}</td>
-                    <td>${data[i].Name} <span class="${playerClass}">${data[i].Players}</span></td>
+                    <td>${data[i].Name} <span class="${playerClass}">${data[i].Players}</span> <span class="${genreClass}">${data[i].Genre}</span></td>
                     <td>${data[i].Creator}</td>
                     <td>${data[i].Scariness}</td>
                     <td>${data[i].SoundDesign}</td>
