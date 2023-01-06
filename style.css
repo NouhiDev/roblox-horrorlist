@@ -100,12 +100,12 @@ body .tit-tit {
 
 .table-sortable tr { /* catergory content */
   cursor: pointer;
-  padding: 4px;
-  font-size: 14px;
+  padding: 5px;
+  font-size: 12px;
   align-items: center;
   background-color: #212328;
-  margin: auto;
   text-align: center;
+  margin:auto;
   font-family: 'Roboto', sans-serif;
   text-transform: inherit;
   color: #c8d3de;
@@ -391,7 +391,7 @@ h3 {
 .tag {
   border-radius: 0.7em;
   padding: 2px;
-  font-size: 12px;
+  font-size: 10px;
   justify-content: space-around;
   text-align: center;
   margin: auto;
