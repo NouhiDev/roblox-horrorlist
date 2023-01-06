@@ -80,7 +80,7 @@ function buildTable(data){
 }
 
 // -------------- SORTING --------------
-// Credits: Dennis Ivy
+// Not working for some reason
 
 $("th").on("click", function(){
     var column = $(this).data("column")
