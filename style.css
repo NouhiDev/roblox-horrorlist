@@ -100,7 +100,6 @@ body .tit-tit {
 }
 
 .table-sortable tr { /* catergory content */
-  cursor: pointer;
   padding: 5px;
   font-size: 12px;
   align-items: center;
@@ -111,6 +110,7 @@ body .tit-tit {
   text-transform: inherit;
   color: #c8d3de;
 }
+
 
 .rating {
   font-size: 40px;
