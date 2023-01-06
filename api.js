@@ -82,8 +82,7 @@ function buildTable(data){
 // -------------- SORTING --------------
 // Credits: Dennis Ivy
 
-$(".table-sortable th").on("click", function(){
-    console.log("c")
+$("th").on("click", function(){
     var column = $(this).data("column")
     var order = $(this).data("order")
 
@@ -102,7 +101,6 @@ $(".table-sortable th").on("click", function(){
         buildTable(data)
     });
 })
-
 // -------------- STATS --------------
 
 
