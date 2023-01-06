@@ -55,6 +55,9 @@ function buildTable(data){
             case "UF":
                 genreClass = "tag grey-bg"
                 break;
+            case "TBA":
+                genreClass = "tag grey-bg"
+                break;
         }
 
         var row = `<tr class="${data[i].CreatorsChoice}">
