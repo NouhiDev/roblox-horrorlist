@@ -10,6 +10,7 @@
 body {
   background-color: #121317;
   padding-bottom: 50px;
+  overflow-y: scroll;
 }
 
 /* Table Styling */
