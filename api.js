@@ -60,6 +60,9 @@ function buildTable(data) {
       case "TBA":
         genreClass = "tag grey-bg";
         break;
+      case "Port":
+          genreClass = "tag dark-orange-bg";
+          break;
     }
 
     var row = `<tr class="${data[i].CreatorsChoice}">
