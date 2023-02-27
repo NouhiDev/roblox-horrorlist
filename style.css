@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #121317;
+  background-color: var(--bg-color);
   padding-bottom: 50px;
   overflow-y: scroll;
 }
@@ -461,7 +461,7 @@ h4 {
   margin-top: auto;
 }
 :root {
-  background-color: #121317;
+  background-color: var(--bg-color);
 }
 :root {
   --primary-color: #a5a5a5;
@@ -587,7 +587,7 @@ h4 {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #0b0c0e;
+  background-color: var(--bg-color);
 }
 
 /* Track */
@@ -607,7 +607,7 @@ h4 {
 
 /* Horizontal Rulers */
 hr {
-  background-color: #121317;
+  background-color: var(--bg-color);
   border: 1px dashed rgb(55, 64, 64);
   max-width: 500px;
 }
