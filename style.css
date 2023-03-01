@@ -923,3 +923,7 @@ nav ul li a:hover {
       display: block;
   }
 }
+
+a {
+  color: white;
+}
