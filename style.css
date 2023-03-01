@@ -917,6 +917,7 @@ nav ul li a:hover {
       padding: 15px;
       border-radius: 5px;
       font-size: 20px;
+      color: white;
   }
   .hamburger {
       display: block;
