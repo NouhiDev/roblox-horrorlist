@@ -66,6 +66,7 @@ function buildTable(data) {
     }
 
     var row = `<tr class="${data[i].CreatorsChoice}">
+                    <td>#${i+1}</td>
                     <td class="rating">${data[i].Rating}</td>
                     <td>${data[i].Name} <span class="${playerClass}">${data[i].Players}</span> <span class="${genreClass}">${data[i].Genre}</span></td>
                     <td>${data[i].Creator}</td>
