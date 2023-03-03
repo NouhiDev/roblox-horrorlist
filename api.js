@@ -77,7 +77,7 @@ function buildTable(data) {
   }
 
   $("#game-table").DataTable({
-    columnDefs: [{ orderable: false, targets: 1 }],
+    columnDefs: [{ orderable: false, targets: [1,4] }],
   });
 }
 
