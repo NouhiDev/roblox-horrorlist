@@ -58,7 +58,7 @@ function buildTable(data) {
         break;
     }
 
-    var row = `<tr">
+    var row = `<tr>
                         <td data-th="Placement">${i + 1}.</td>
                         <td data="Icon"><img class="game-icon" src="${
                           data[i].IconURL
