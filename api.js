@@ -1,10 +1,12 @@
-$.getJSON(
-  "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
-  function (data) {
-    // Build Table with data
-    buildTable(data);
-  }
-);
+$(window).on("load", async function () {
+  $.getJSON(
+    "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
+    function (data) {
+      // Build Table with data
+      buildTable(data);
+    }
+  );
+});
 
 function buildTable(data) {
   var table = document.getElementById("table-to-populate");

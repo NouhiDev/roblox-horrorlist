@@ -437,3 +437,7 @@ body .tit-tit {
   background-color: var(--bg-clr);
 }
 
+.dataTables_paginate .paginate_button.disabled{
+  color: #424855 !important;
+}
+
