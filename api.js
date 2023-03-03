@@ -156,3 +156,7 @@ let setUpTooltip = function () {
     });
   });
 };
+
+window.addEventListener("click", () => {
+  setUpTooltip();
+});
