@@ -69,7 +69,7 @@ function buildTable(data) {
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
     ${data[i].Note}_
-    ${data[i].Name} by ${data[i].Creator} <span class="${playerClass}">${data[i].Players}</span> <span class="${genreClass}">${data[i].Genre}</span>`;
+    ${data[i].Name}`;
 
     var row = `<tr class="hover-reveal" data-tooltip="${tooltipcontent}">
                         <td data-th="Placement">${i + 1}.</td>
