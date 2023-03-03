@@ -379,7 +379,7 @@ h4 {
 }
 
 .align-left {
-  text-align: left;
+  text-align: right;
 }
 
 .game-icon {
@@ -588,4 +588,14 @@ body .tit-tit {
   100% {
     transform: translateZ(0.5em);
   }
+}
+
+#game-table th:first-child,
+#game-table th:nth-child(3){
+  text-align: left;
+}
+
+#game-table th:last-child,
+#game-table th:nth-child(4){
+  text-align: right;
 }
