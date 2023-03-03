@@ -138,7 +138,7 @@ h4 {
 
 .rating-ref {
   text-decoration: none;
-  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .rating-ref:hover {
@@ -442,6 +442,8 @@ body .tit-tit {
 .dataTables_length {
   padding-bottom: 10px;
 }
+
+/* Loader */
 
 .content {
   display: none;
