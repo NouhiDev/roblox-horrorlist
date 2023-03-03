@@ -124,8 +124,9 @@ let setUpTooltip = function () {
 
   let displayTooltip = function (e, obj) {
     tooltip = obj.dataset.tooltip;
-    toolTipDiv.style.top = e.pageY + "px";
+    toolTipDiv.style.top = e.pageY+($(window).scrollTop()*-1) + "px";
     toolTipDiv.style.left = e.pageX + "px";
+    console.log(e.pageY);
     toolTipDiv.style.opacity = .95;
     note.innerHTML = "Notes: " + obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(".")+1,obj.dataset.tooltip.indexOf("_"));
 
