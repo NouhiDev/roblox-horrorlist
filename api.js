@@ -69,7 +69,9 @@ function buildTable(data) {
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
     ${data[i].Note}_
-    ${data[i].Name} by ${data[i].Creator}`;
+    ${data[i].Name} by ${data[i].Creator}°
+    ${data[i].Genre}(${genreClass}^
+    ${data[i].Players})${playerClass}`;
 
     var row = `<tr class="hover-reveal" data-tooltip="${tooltipcontent}">
                         <td data-th="Placement">${i + 1}.</td>
@@ -117,6 +119,8 @@ let setUpTooltip = function () {
   let enj = document.getElementById("enj");
   let pq = document.getElementById("pq");
   let technical = document.getElementById("technical");
+  let players = document.getElementById("players");
+  let genre = document.getElementById("genre");
 
   let displayTooltip = function (e, obj) {
     tooltip = obj.dataset.tooltip;
@@ -135,7 +139,11 @@ let setUpTooltip = function () {
     /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("-")+1,obj.dataset.tooltip.indexOf("*"));
     /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("*")+1,obj.dataset.tooltip.indexOf(":"));
     /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(":")+1,obj.dataset.tooltip.indexOf("."));
-    /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("_")+1,obj.dataset.tooltip.length);
+    /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("_")+1,obj.dataset.tooltip.indexOf("°"));
+    /*Players*/ players.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("^")+1,obj.dataset.tooltip.indexOf(")"));
+    players.className = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(")")+1,obj.dataset.tooltip.length);
+    /*Genre*/ genre.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("°")+1,obj.dataset.tooltip.indexOf("("));
+    genre.className = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("(")+1,obj.dataset.tooltip.indexOf("^"));
   };
 
   toolTipElements.forEach(function (elem) {
