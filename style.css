@@ -605,9 +605,10 @@ body .tit-tit {
   position: fixed;
   top: 0;
   left: 0;
-  background: #444;
+  background: #2b2c2e;
   color: white;
   padding: 10px 20px;
   margin: 20px;
   z-index: 99999;
+  border-radius: .2em;
 }

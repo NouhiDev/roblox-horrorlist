@@ -68,7 +68,8 @@ function buildTable(data) {
     ${data[i].Enjoyment}*
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
-    ${data[i].Note}`;
+    ${data[i].Note}_
+    ${data[i].Name} by ${data[i].Creator}`;
 
     var row = `<tr class="hover-reveal" data-tooltip="${tooltipcontent}">
                         <td data-th="Placement">${i + 1}.</td>
@@ -104,6 +105,7 @@ let setUpTooltip = function () {
   let tooltip = "",
     toolTipDiv = document.querySelector(".tooltip-class"),
     toolTipElements = Array.from(document.querySelectorAll(".hover-reveal"));
+  let gametitle = document.getElementById("game-tooltip-title");
   let note = document.getElementById("note");
   let scary = document.getElementById("scariness");
   let sd = document.getElementById("sd");
@@ -120,8 +122,8 @@ let setUpTooltip = function () {
     tooltip = obj.dataset.tooltip;
     toolTipDiv.style.top = e.pageY + "px";
     toolTipDiv.style.left = "20px"
-    toolTipDiv.style.opacity = 1;
-    note.innerHTML = "Note: " + obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(".")+1,obj.dataset.tooltip.length);
+    toolTipDiv.style.opacity = .95;
+    note.innerHTML = "Notes: " + obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(".")+1,obj.dataset.tooltip.indexOf("_"));
 
     /*Scariness*/ scary.innerHTML = obj.dataset.tooltip.substring(0,obj.dataset.tooltip.indexOf("!"));
     /*Sound Design*/ sd.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("!")+1,obj.dataset.tooltip.indexOf("§"));
@@ -133,6 +135,7 @@ let setUpTooltip = function () {
     /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("-")+1,obj.dataset.tooltip.indexOf("*"));
     /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("*")+1,obj.dataset.tooltip.indexOf(":"));
     /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(":")+1,obj.dataset.tooltip.indexOf("."));
+    /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("_")+1,obj.dataset.tooltip.length);
   };
 
   toolTipElements.forEach(function (elem) {
