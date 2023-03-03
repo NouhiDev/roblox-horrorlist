@@ -58,7 +58,19 @@ function buildTable(data) {
         break;
     }
 
-    var row = `<tr>
+    var tooltipcontent = `${data[i].Scariness}!
+    ${data[i].SoundDesign}§
+    ${data[i].Story}$
+    ${data[i].Visuals}%
+    ${data[i].Ambience}&
+    ${data[i].Gameplay}#
+    ${data[i].Creativity}-
+    ${data[i].Enjoyment}*
+    ${data[i].ProductionQuality}:
+    ${data[i].Technical}.
+    ${data[i].Note}`;
+
+    var row = `<tr class="hover-reveal" data-tooltip="${tooltipcontent}">
                         <td data-th="Placement">${i + 1}.</td>
                         <td data="Icon"><img class="game-icon" src="${
                           data[i].IconURL
@@ -77,10 +89,58 @@ function buildTable(data) {
   }
 
   $("#game-table").DataTable({
-    columnDefs: [{ orderable: false, targets: [1,4] }],
+    columnDefs: [{ orderable: false, targets: [1, 4] }],
   });
+
+  setUpTooltip();
 }
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
+
+/* Tooltip */
+let setUpTooltip = function () {
+  let tooltip = "",
+    toolTipDiv = document.querySelector(".tooltip-class"),
+    toolTipElements = Array.from(document.querySelectorAll(".hover-reveal"));
+  let note = document.getElementById("note");
+  let scary = document.getElementById("scariness");
+  let sd = document.getElementById("sd");
+  let st = document.getElementById("st");
+  let vis = document.getElementById("vis");
+  let amb = document.getElementById("amb");
+  let gp = document.getElementById("gp");
+  let crea = document.getElementById("crea");
+  let enj = document.getElementById("enj");
+  let pq = document.getElementById("pq");
+  let technical = document.getElementById("technical");
+
+  let displayTooltip = function (e, obj) {
+    tooltip = obj.dataset.tooltip;
+    toolTipDiv.style.top = e.pageY + "px";
+    toolTipDiv.style.left = "20px"
+    toolTipDiv.style.opacity = 1;
+    note.innerHTML = "Note: " + obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(".")+1,obj.dataset.tooltip.length);
+
+    /*Scariness*/ scary.innerHTML = obj.dataset.tooltip.substring(0,obj.dataset.tooltip.indexOf("!"));
+    /*Sound Design*/ sd.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("!")+1,obj.dataset.tooltip.indexOf("§"));
+    /*Story*/ st.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("§")+1,obj.dataset.tooltip.indexOf("$"));
+    /*Visuals*/ vis.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("$")+1,obj.dataset.tooltip.indexOf("%"));
+    /*Ambience*/ amb.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("%")+1,obj.dataset.tooltip.indexOf("&"));
+    /*Gameplay*/ gp.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("&")+1,obj.dataset.tooltip.indexOf("#"));
+    /*Creativity*/ crea.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("#")+1,obj.dataset.tooltip.indexOf("-"));
+    /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("-")+1,obj.dataset.tooltip.indexOf("*"));
+    /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("*")+1,obj.dataset.tooltip.indexOf(":"));
+    /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(":")+1,obj.dataset.tooltip.indexOf("."));
+  };
+
+  toolTipElements.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function (e) {
+      displayTooltip(e, this);
+    });
+    elem.addEventListener("mouseleave", function (e) {
+      toolTipDiv.style.opacity = 0;
+    });
+  });
+};

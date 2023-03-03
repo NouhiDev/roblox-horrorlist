@@ -49,8 +49,14 @@
         <span class="tit-tit-sub">As decided by</span> Nouhi; Namlit; Torch i.a.
       </h1>
 
-      <center><a class="rating-ref" href="https://docs.google.com/spreadsheets/d/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/edit?usp=sharing">How do we conclude our ratings? Take a look here.</a></center>
-      <br>
+      <center>
+        <a
+          class="rating-ref"
+          href="https://docs.google.com/spreadsheets/d/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/edit?usp=sharing"
+          >How do we conclude our ratings? Take a look here.</a
+        >
+      </center>
+      <br />
       <div class="table-container">
         <table
           id="game-table"
@@ -63,19 +69,61 @@
               <th data-column="Placement" data-order="desc">#</th>
               <th data-column="Icon" data-order="desc"></th>
               <th data-column="Name" data-order="desc">Name</th>
-              <th data-column="Creator" data-order="desc">
-                Creator
-              </th>
-              <th data-column="Rating" data-order="desc">
-                Rating
-              </th>
+              <th data-column="Creator" data-order="desc">Creator</th>
+              <th data-column="Rating" data-order="desc">Rating</th>
             </tr>
           </thead>
           <tbody id="table-to-populate"></tbody>
           <tfoot></tfoot>
         </table>
+
+        <!-- Tooltip -->
+        <div class="tooltip-class">
+          <p>Rating</p>
+          <table>
+            <thead>
+              <tr>
+                <th data-column="Scariness" data-order="desc">Scariness</th>
+                <th data-column="SoundDesign" data-order="desc">Sound Design</th>
+                <th data-column="Story" data-order="desc">Story</th>
+                <th data-column="Visuals" data-order="desc">Visuals</th>
+                <th data-column="Ambience" data-order="desc">Ambience</th>
+                <th data-column="Gameplay" data-order="desc">Gameplay</th>
+                <th data-column="Creativity" data-order="desc">Creativity</th>
+                <th data-column="Enjoyment" data-order="desc">Enjoyment</th>
+                <th data-column="ProductionQuality" data-order="desc">Production Quality</th>
+                <th data-column="Technical" data-order="desc">Technical</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th id="scariness">1</th>
+                <th id="sd">2</th>
+                <th id="st">3</th>
+                <th id="vis">4</th>
+                <th id="amb">5</th>
+                <th id="gp">6</th>
+                <th id="crea">7</th>
+                <th id="enj">8</th>
+                <th id="pq">9</th>
+                <th id="technical">10</th>
+              </tr>
+            </tbody>
+          </table>
+          <p id="note">Note from raters.</p>
+        </div>
       </div>
-      <center><p style="color: white; padding-top: 150px;">Copyright © 2023 NDev-Group</p></center>
+      <center>
+        <a
+          style="padding-top: 150px"
+          class="rating-ref"
+          href="https://docs.google.com/spreadsheets/d/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/edit?usp=sharing"
+          >Ratings don't load? Our server may be overloaded. Alternatively, check out the ratings here.</a
+        >
+        <p style="color: white;">
+          Copyright © 2023 NDev-Group
+        </p>
+      </center>
     </div>
   </body>
 </html>
