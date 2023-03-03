@@ -69,7 +69,7 @@ function buildTable(data) {
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
     ${data[i].Note}_
-    ${data[i].Name} by ${data[i].Creator}°
+    ${data[i].Name} by ${data[i].Creator} | ${data[i].Date}°
     ${data[i].Genre}(${genreClass}^
     ${data[i].Players})${playerClass}`;
 
