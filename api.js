@@ -64,7 +64,7 @@ function buildTable(data) {
     ${data[i].Visuals}%
     ${data[i].Ambience}&
     ${data[i].Gameplay}#
-    ${data[i].Creativity}-
+    ${data[i].Creativity}x
     ${data[i].Enjoyment}*
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
@@ -136,8 +136,8 @@ let setUpTooltip = function () {
     /*Visuals*/ vis.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("$")+1,obj.dataset.tooltip.indexOf("%"));
     /*Ambience*/ amb.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("%")+1,obj.dataset.tooltip.indexOf("&"));
     /*Gameplay*/ gp.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("&")+1,obj.dataset.tooltip.indexOf("#"));
-    /*Creativity*/ crea.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("#")+1,obj.dataset.tooltip.indexOf("-"));
-    /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("-")+1,obj.dataset.tooltip.indexOf("*"));
+    /*Creativity*/ crea.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("#")+1,obj.dataset.tooltip.indexOf("x"));
+    /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x")+1,obj.dataset.tooltip.indexOf("*"));
     /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("*")+1,obj.dataset.tooltip.indexOf(":"));
     /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(":")+1,obj.dataset.tooltip.indexOf("."));
     /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("_")+1,obj.dataset.tooltip.indexOf("°"));
