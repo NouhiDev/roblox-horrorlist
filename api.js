@@ -153,10 +153,14 @@ let setUpTooltip = function () {
     });
     elem.addEventListener("mouseleave", function (e) {
       toolTipDiv.style.opacity = 0;
+      toolTipDiv.style.top = "0px";
+      toolTipDiv.style.left = "0px";
     });
   });
 };
 
-window.addEventListener("click", () => {
+
+$(document).click(function(event) {
   setUpTooltip();
+  console.log($(event.target).text());
 });
