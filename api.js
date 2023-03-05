@@ -69,7 +69,7 @@ function buildTable(data) {
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
     ${data[i].Note}_
-    ${data[i].Name} by ${data[i].Creator} | Updated: ${data[i].Date}°
+    #${i + 1} ${data[i].Name} by ${data[i].Creator} | Updated: ${data[i].Date}°
     ${data[i].Genre}(${genreClass}^
     ${data[i].Players})${playerClass}`;
 
@@ -125,7 +125,7 @@ let setUpTooltip = function () {
   let displayTooltip = function (e, obj) {
     tooltip = obj.dataset.tooltip;
     toolTipDiv.style.top = e.pageY+($(window).scrollTop()*-1) + "px";
-    toolTipDiv.style.left = e.pageX + "px";
+    toolTipDiv.style.left = "20px";
     console.log(e.pageY);
     toolTipDiv.style.opacity = .95;
     note.innerHTML = "Notes: " + obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(".")+1,obj.dataset.tooltip.indexOf("_"));
