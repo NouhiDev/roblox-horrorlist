@@ -44,10 +44,10 @@ function buildTable(data) {
       case "Exploration":
         genreClass = "tag dark-green-bg";
         break;
-      case "X":
+      case "Removed/Privated":
         genreClass = "tag red-bg";
         break;
-      case "UF":
+      case "Unfinished/Abandonend":
         genreClass = "tag grey-bg";
         break;
       case "TBA":
