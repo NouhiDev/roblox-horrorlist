@@ -153,8 +153,8 @@ let setUpTooltip = function () {
     });
     elem.addEventListener("mouseleave", function (e) {
       toolTipDiv.style.opacity = 0;
-      toolTipDiv.style.top = "0px";
-      toolTipDiv.style.left = "0px";
+      toolTipDiv.style.top = "9999999px";
+      toolTipDiv.style.left = "9999999px";
     });
   });
 };
