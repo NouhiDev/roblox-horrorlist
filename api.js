@@ -18,7 +18,7 @@ function buildTable(data) {
 
   for (var i = 0; i < data.length; i++) {
     // Determine Player Color
-    if (data[i].Players == "MP") {
+    if (data[i].Players == "Multiplayer") {
       playerClass = "tag blue-bg";
     } else {
       playerClass = "tag orange-bg";
