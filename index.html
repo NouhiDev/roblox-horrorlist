@@ -7,7 +7,13 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"
@@ -27,6 +33,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
     <script src="api.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P5W6B8L5L9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-P5W6B8L5L9");
+    </script>
   </head>
   <body>
     <!-- Loader -->
@@ -79,62 +100,82 @@
           <tfoot></tfoot>
         </table>
       </div>
-        <!-- Tooltip -->
-        <div class="tooltip-class">
-          <p id="game-tooltip-title" style="font-weight: bold;">Game Title by Creator></p>
-          Tags: <span class="tag blue-bg" id="players">MP</span> <span class="tag purple-bg" id="genre">Chapters</span>
-          <p>Individual Ratings:</p>
-          <table>
-            <thead>
-              <tr>
-                <th data-column="Scariness" data-order="desc">Scariness</th>
-                <th data-column="SoundDesign" data-order="desc">Sound Design</th>
-                <th data-column="Story" data-order="desc">Story</th>
-                <th data-column="Visuals" data-order="desc">Visuals</th>
-                <th data-column="Ambience" data-order="desc">Ambience</th>
-                <th data-column="Gameplay" data-order="desc">Gameplay</th>
-                <th data-column="Creativity" data-order="desc">Creativity</th>
-                <th data-column="Enjoyment" data-order="desc">Enjoyment</th>
-                <th data-column="ProductionQuality" data-order="desc">Production Quality</th>
-                <th data-column="Technical" data-order="desc">Technical</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th id="scariness">1</th>
-                <th id="sd">2</th>
-                <th id="st">3</th>
-                <th id="vis">4</th>
-                <th id="amb">5</th>
-                <th id="gp">6</th>
-                <th id="crea">7</th>
-                <th id="enj">8</th>
-                <th id="pq">9</th>
-                <th id="technical">10</th>
-              </tr>
-            </tbody>
-          </table>
-          <p id="note">Note from raters.</p>
-        </div>
-      <br>
-      <hr style="width:50%;height:2px;border-width:0;color:#20242e;background-color:#20242e">
-      <br>
+      <!-- Tooltip -->
+      <div class="tooltip-class">
+        <p id="game-tooltip-title" style="font-weight: bold">
+          Game Title by Creator>
+        </p>
+        Tags: <span class="tag blue-bg" id="players">MP</span>
+        <span class="tag purple-bg" id="genre">Chapters</span>
+        <p>Individual Ratings:</p>
+        <table>
+          <thead>
+            <tr>
+              <th data-column="Scariness" data-order="desc">Scariness</th>
+              <th data-column="SoundDesign" data-order="desc">Sound Design</th>
+              <th data-column="Story" data-order="desc">Story</th>
+              <th data-column="Visuals" data-order="desc">Visuals</th>
+              <th data-column="Ambience" data-order="desc">Ambience</th>
+              <th data-column="Gameplay" data-order="desc">Gameplay</th>
+              <th data-column="Creativity" data-order="desc">Creativity</th>
+              <th data-column="Enjoyment" data-order="desc">Enjoyment</th>
+              <th data-column="ProductionQuality" data-order="desc">
+                Production Quality
+              </th>
+              <th data-column="Technical" data-order="desc">Technical</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th id="scariness">1</th>
+              <th id="sd">2</th>
+              <th id="st">3</th>
+              <th id="vis">4</th>
+              <th id="amb">5</th>
+              <th id="gp">6</th>
+              <th id="crea">7</th>
+              <th id="enj">8</th>
+              <th id="pq">9</th>
+              <th id="technical">10</th>
+            </tr>
+          </tbody>
+        </table>
+        <p id="note">Note from raters.</p>
+      </div>
+      <br />
+      <hr
+        style="
+          width: 50%;
+          height: 2px;
+          border-width: 0;
+          color: #20242e;
+          background-color: #20242e;
+        "
+      />
+      <br />
       <center>
         <div class="flex-center">
           <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="gh()"></i>
-          <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="yt()"></i>
-          <i id="tt" class="tt fa-brands fa-tiktok fa-2x icon-3d" onclick="tt()"></i>
+          <i
+            id="yt"
+            class="yt fa-brands fa-youtube fa-2x icon-3d"
+            onclick="yt()"
+          ></i>
+          <i
+            id="tt"
+            class="tt fa-brands fa-tiktok fa-2x icon-3d"
+            onclick="tt()"
+          ></i>
         </div>
-        
-        <br>
+
+        <br />
         <a
           class="rating-ref"
           href="https://docs.google.com/spreadsheets/d/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/edit?usp=sharing"
-          >Ratings not loading? Our server may be overloaded. Alternatively, you can check out the ratings here.</a
+          >Ratings not loading? Our server may be overloaded. Alternatively, you
+          can check out the ratings here.</a
         >
-        <p style="color: white;">
-          Copyright © 2023 NDev-Group
-        </p>
+        <p style="color: white">Copyright © 2023 NDev-Group</p>
       </center>
     </div>
   </body>
