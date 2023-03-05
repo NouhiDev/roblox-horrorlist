@@ -162,5 +162,17 @@ let setUpTooltip = function () {
 
 $(document).click(function(event) {
   setUpTooltip();
-  console.log($(event.target).text());
 });
+
+
+function gh() {
+  window.location.href = "https://github.com/NouhiDev/roblox-horrorlist";
+}
+
+function yt() {
+  window.location.href = "https://www.youtube.com/@robloxhorrorlist";
+}
+
+function tt() {
+  window.location.href = "https://www.tiktok.com/@robloxhorrorlist?lang=en";
+}

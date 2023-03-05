@@ -7,6 +7,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"
@@ -115,10 +116,16 @@
           <p id="note">Note from raters.</p>
         </div>
       </div>
-      <br><br><br><br><br><br><br>
+      <br><br><br><br><br><br>
       <center>
+        <div class="flex-center">
+          <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="gh()"></i>
+          <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="yt()"></i>
+          <i id="tt" class="tt fa-brands fa-tiktok fa-2x icon-3d" onclick="tt()"></i>
+        </div>
+        
+        <br>
         <a
-          style="padding-top: 150px"
           class="rating-ref"
           href="https://docs.google.com/spreadsheets/d/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/edit?usp=sharing"
           >Ratings not loading? Our server may be overloaded. Alternatively, you can check out the ratings here.</a
