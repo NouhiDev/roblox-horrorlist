@@ -1,6 +1,6 @@
 $(window).on("load", async function () {
-  $(".loader").fadeOut(1000);
-  delay(1000).then(() => $(".content").fadeIn(1000));
+  //$(".loader").fadeOut(1000);
+  //delay(1000).then(() => $(".content").style.opacity = 0);
   $.getJSON(
     "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
     function (data) {
