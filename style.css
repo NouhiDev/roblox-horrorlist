@@ -463,6 +463,7 @@ body .tit-tit {
   padding: 10px 20px;
   margin: 20px;
   border-radius: .2em;
+  max-width: 800px;
 }
 
 .flex-center {
