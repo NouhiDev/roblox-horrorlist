@@ -56,6 +56,18 @@ function buildTable(data) {
       case "Port":
         genreClass = "tag dark-orange-bg";
         break;
+      case "Survival Horror":
+        genreClass = "tag survival-horror";
+        break;
+      case "Abstract":
+        genreClass = "tag abstract";
+        break;
+      case "Fan Game":
+        genreClass = "tag fan-game";
+        break;
+      case "Classic Horror":
+        genreClass = "tag classic-horror";
+        break;
     }
 
     var tooltipcontent = `${data[i].Scariness}!
@@ -69,7 +81,9 @@ function buildTable(data) {
     ${data[i].ProductionQuality}:
     ${data[i].Technical}.
     ${data[i].Note}_
-    #${i + 1} | ${data[i].Name} by ${data[i].Creator} | Updated: ${data[i].Date}°
+    #${i + 1} | ${data[i].Name} by ${data[i].Creator} | Updated: ${
+      data[i].Date
+    }°
     ${data[i].Genre}(${genreClass}^
     ${data[i].Players})${playerClass}`;
 
@@ -124,26 +138,76 @@ let setUpTooltip = function () {
 
   let displayTooltip = function (e, obj) {
     tooltip = obj.dataset.tooltip;
-    toolTipDiv.style.top = e.pageY+($(window).scrollTop()*-1) + "px";
-    toolTipDiv.style.left = screen.width/3 + "px";
-    toolTipDiv.style.opacity = .95;
-    note.innerHTML = "Notes: " + obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(".")+1,obj.dataset.tooltip.indexOf("_"));
+    toolTipDiv.style.top = e.pageY + $(window).scrollTop() * -1 + "px";
+    toolTipDiv.style.left = screen.width / 3 + "px";
+    toolTipDiv.style.opacity = 0.95;
+    note.innerHTML =
+      "Notes: " +
+      obj.dataset.tooltip.substring(
+        obj.dataset.tooltip.indexOf(".") + 1,
+        obj.dataset.tooltip.indexOf("_")
+      );
 
-    /*Scariness*/ scary.innerHTML = obj.dataset.tooltip.substring(0,obj.dataset.tooltip.indexOf("!"));
-    /*Sound Design*/ sd.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("!")+1,obj.dataset.tooltip.indexOf("§"));
-    /*Story*/ st.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("§")+1,obj.dataset.tooltip.indexOf("$"));
-    /*Visuals*/ vis.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("$")+1,obj.dataset.tooltip.indexOf("%"));
-    /*Ambience*/ amb.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("%")+1,obj.dataset.tooltip.indexOf("&"));
-    /*Gameplay*/ gp.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("&")+1,obj.dataset.tooltip.indexOf("#"));
-    /*Creativity*/ crea.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("#")+1,obj.dataset.tooltip.indexOf("x"));
-    /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x")+1,obj.dataset.tooltip.indexOf("*"));
-    /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("*")+1,obj.dataset.tooltip.indexOf(":"));
-    /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(":")+1,obj.dataset.tooltip.indexOf("."));
-    /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("_")+1,obj.dataset.tooltip.indexOf("°"));
-    /*Players*/ players.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("^")+1,obj.dataset.tooltip.indexOf(")"));
-    players.className = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf(")")+1,obj.dataset.tooltip.length);
-    /*Genre*/ genre.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("°")+1,obj.dataset.tooltip.indexOf("("));
-    genre.className = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("(")+1,obj.dataset.tooltip.indexOf("^"));
+    /*Scariness*/ scary.innerHTML = obj.dataset.tooltip.substring(
+      0,
+      obj.dataset.tooltip.indexOf("!")
+    );
+    /*Sound Design*/ sd.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("!") + 1,
+      obj.dataset.tooltip.indexOf("§")
+    );
+    /*Story*/ st.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("§") + 1,
+      obj.dataset.tooltip.indexOf("$")
+    );
+    /*Visuals*/ vis.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("$") + 1,
+      obj.dataset.tooltip.indexOf("%")
+    );
+    /*Ambience*/ amb.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("%") + 1,
+      obj.dataset.tooltip.indexOf("&")
+    );
+    /*Gameplay*/ gp.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("&") + 1,
+      obj.dataset.tooltip.indexOf("#")
+    );
+    /*Creativity*/ crea.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("#") + 1,
+      obj.dataset.tooltip.indexOf("x")
+    );
+    /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("x") + 1,
+      obj.dataset.tooltip.indexOf("*")
+    );
+    /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("*") + 1,
+      obj.dataset.tooltip.indexOf(":")
+    );
+    /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf(":") + 1,
+      obj.dataset.tooltip.indexOf(".")
+    );
+    /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("_") + 1,
+      obj.dataset.tooltip.indexOf("°")
+    );
+    /*Players*/ players.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("^") + 1,
+      obj.dataset.tooltip.indexOf(")")
+    );
+    players.className = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf(")") + 1,
+      obj.dataset.tooltip.length
+    );
+    /*Genre*/ genre.innerHTML = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("°") + 1,
+      obj.dataset.tooltip.indexOf("(")
+    );
+    genre.className = obj.dataset.tooltip.substring(
+      obj.dataset.tooltip.indexOf("(") + 1,
+      obj.dataset.tooltip.indexOf("^")
+    );
   };
 
   toolTipElements.forEach(function (elem) {
@@ -158,11 +222,9 @@ let setUpTooltip = function () {
   });
 };
 
-
-$(document).click(function(event) {
+$(document).click(function (event) {
   setUpTooltip();
 });
-
 
 function gh() {
   window.location.href = "https://github.com/NouhiDev/roblox-horrorlist";

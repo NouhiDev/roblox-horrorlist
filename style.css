@@ -366,6 +366,22 @@ h4 {
   background-color: #ff8a00;
 }
 
+.survival-horror {
+  background-color: #215a6c;
+}
+
+.classic-horror {
+  background-color: #ffc8aa;
+}
+
+.abstract {
+  background-color: #753800;
+}
+
+.fan-game {
+  background-color: #a54c4c;
+}
+
 /* Style for game tags */
 .tag {
   border-radius: 0.7em;
