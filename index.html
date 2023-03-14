@@ -75,7 +75,7 @@
         <br />
       </center>
 
-      <div class="table-container">
+      <div class="table-container" id="table-container">
         <table
           id="game-table"
           class="display"
@@ -95,6 +95,27 @@
           <tfoot></tfoot>
         </table>
       </div>
+
+      <div class="mobile-table-container" id="mobile-table-container">
+        <table
+          id="mobile-game-table"
+          class="display"
+          style="width: 100%"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Rating" data-order="desc">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="mobile-table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+
       <!-- Tooltip -->
       <div class="tooltip-class">
         <p id="game-tooltip-title" style="font-weight: bold">

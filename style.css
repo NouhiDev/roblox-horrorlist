@@ -20,7 +20,8 @@ body {
   overflow-x: hidden;
 }
 
-.table-container {
+.table-container,
+.mobile-table-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +33,8 @@ body {
   border-radius: 0.4em;
 }
 
-#game-table {
+#game-table,
+#mobile-game-table {
   border-collapse: collapse;
   margin: 1em 0;
   min-width: 300px;
@@ -44,7 +46,8 @@ body {
 
 /* Table Styling */
 
-#game-table th {
+#game-table th,
+#mobile-game-table th {
   cursor: pointer;
   background-color: var(--table-bg-clr);
   margin: auto;
@@ -56,7 +59,8 @@ body {
   top: 0;
 }
 
-#game-table tr {
+#game-table tr,
+#mobile-game-table tr {
   padding: 5px;
   align-items: left;
   text-align: left;
@@ -523,4 +527,10 @@ body .tit-tit {
   100% {
     text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
   }
+}
+
+.mobile-table-container {
+  display: none;
+  text-align: center;
+  margin-right: 15px;
 }
