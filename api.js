@@ -41,22 +41,18 @@ function buildTable(data) {
   table.innerHTML = "";
 
   for (var i = 0; i < data.length; i++) {
-    console.log(`Setting up game: ${data[i].Name}.`)
 
     // Determine Player Color
     if (data[i].Players == "Multiplayer") {
       playerClass = "tag blue-bg";
-      console.log(`Determined game to be: multiplayer.`)
     } else {
       playerClass = "tag orange-bg";
-      console.log(`Determined game to be: singleplayer.`)
     }
 
     genreClasses = [];
     genres = [];
     genres = data[i].Genre.split(", ");
     var genreAmount = genres.length;
-    console.log(`Determined game to have the genres: ${genres} (${genreAmount}).`)
 
     for (var j = 0; j < genreAmount; j++) {
       switch (genres[j]) {
@@ -341,12 +337,6 @@ let setUpTooltip = function () {
         obj.dataset.tooltip.indexOf("^")
       ).split(",")
       var genreTemplate = `<span class="${genreClasses[index]}" id="genre">${genres[index]}</span>`;
-      console.log(parseInt(
-        obj.dataset.tooltip.substring(
-          obj.dataset.tooltip.indexOf(">") + 1,
-          obj.dataset.tooltip.length
-        )
-      ))
       genre.innerHTML += genreTemplate;
     }
   };
