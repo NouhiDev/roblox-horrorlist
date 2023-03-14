@@ -2,91 +2,107 @@ $(window).on("load", async function () {
   //$(".loader").fadeOut(1000);
   //delay(1000).then(() => $(".content").style.opacity = 0);
   // Check if desktop or mobile
-  if (navigator.userAgent.match(/Android/i)
-         || navigator.userAgent.match(/webOS/i)
-         || navigator.userAgent.match(/iPhone/i)
-         || navigator.userAgent.match(/iPad/i)
-         || navigator.userAgent.match(/iPod/i)
-         || navigator.userAgent.match(/BlackBerry/i)
-         || navigator.userAgent.match(/Windows Phone/i)) {
-          // Mobile
-          $.getJSON(
-            "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
-            function (data) {
-              // Build Table with data
-              buildMobileTable(data);
-            }
-          );
-         } else {
-          // Desktop
-          $.getJSON(
-            "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
-            function (data) {
-              // Build Table with data
-              buildTable(data);
-            }
-          );
-         }
+  if (
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/BlackBerry/i) ||
+    navigator.userAgent.match(/Windows Phone/i)
+  ) {
+    // Mobile
+    $.getJSON(
+      "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
+      function (data) {
+        // Build Table with data
+        buildMobileTable(data);
+      }
+    );
+  } else {
+    // Desktop
+    $.getJSON(
+      "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2",
+      function (data) {
+        // Build Table with data
+        buildTable(data);
+      }
+    );
+  }
 });
+
+
+var genres = [];
+var genreClasses = [];
 
 function buildTable(data) {
   var table = document.getElementById("table-to-populate");
   var playerClass = "";
-  var genreClass = "";
   table.innerHTML = "";
 
   for (var i = 0; i < data.length; i++) {
+    console.log(`Setting up game: ${data[i].Name}.`)
+
     // Determine Player Color
     if (data[i].Players == "Multiplayer") {
       playerClass = "tag blue-bg";
+      console.log(`Determined game to be: multiplayer.`)
     } else {
       playerClass = "tag orange-bg";
+      console.log(`Determined game to be: singleplayer.`)
     }
 
-    // Determine Genre Color
-    switch (data[i].Genre) {
-      case "Chapters":
-        genreClass = "tag purple-bg";
-        break;
-      case "Story":
-        genreClass = "tag green-bg";
-        break;
-      case "Minigame":
-        genreClass = "tag yellow-bg";
-        break;
-      case "Misc":
-        genreClass = "tag dark-blue-bg";
-        break;
-      case "Myth":
-        genreClass = "tag pink-bg";
-        break;
-      case "Exploration":
-        genreClass = "tag dark-green-bg";
-        break;
-      case "Removed/Privated":
-        genreClass = "tag red-bg";
-        break;
-      case "Unfinished/Abandonend":
-        genreClass = "tag grey-bg";
-        break;
-      case "TBA":
-        genreClass = "tag grey-bg";
-        break;
-      case "Port":
-        genreClass = "tag dark-orange-bg";
-        break;
-      case "Survival Horror":
-        genreClass = "tag survival-horror";
-        break;
-      case "Abstract":
-        genreClass = "tag abstract";
-        break;
-      case "Fan Game":
-        genreClass = "tag fan-game";
-        break;
-      case "Classic Horror":
-        genreClass = "tag classic-horror";
-        break;
+    genreClasses = [];
+    genres = [];
+    genres = data[i].Genre.split(", ");
+    var genreAmount = genres.length;
+    console.log(`Determined game to have the genres: ${genres} (${genreAmount}).`)
+
+    for (var j = 0; j < genreAmount; j++) {
+      switch (genres[j]) {
+        case "Chapters":
+          genreClasses.push("tag purple-bg");
+          break;
+        case "Story":
+          genreClasses.push("tag green-bg");
+          break;
+        case "Minigame":
+          genreClasses.push("tag yellow-bg");
+          break;
+        case "Misc":
+          genreClasses.push("tag dark-blue-bg");
+          break;
+        case "Myth":
+          genreClasses.push("tag pink-bg");
+          break;
+        case "Exploration":
+          genreClasses.push("tag dark-green-bg");
+          break;
+        case "Removed/Privated":
+          genreClasses.push("tag red-bg");
+          break;
+        case "Unfinished/Abandonend":
+          genreClasses.push("tag grey-bg");
+          break;
+        case "TBA":
+          genreClasses.push("tag grey-bg");
+          break;
+        case "Port":
+          genreClasses.push("tag dark-orange-bg");
+          break;
+        case "Survival Horror":
+          genreClasses.push("tag survival-horror");
+          break;
+        case "Abstract":
+          genreClasses.push("tag abstract");
+          break;
+        case "Fan Game":
+          genreClasses.push("tag fan-game");
+          break;
+        case "Classic Horror":
+          genreClasses.push("tag classic-horror");
+          break;
+      }
     }
 
     var tooltipcontent = `${data[i].Scariness}!
@@ -95,16 +111,16 @@ function buildTable(data) {
     ${data[i].Visuals}%
     ${data[i].Ambience}&
     ${data[i].Gameplay}#
-    ${data[i].Creativity}x
+    ${data[i].Creativity}{
     ${data[i].Enjoyment}*
     ${data[i].ProductionQuality}:
-    ${data[i].Technical}.
+    ${data[i].Technical}<
     ${data[i].Note}_
     #${i + 1} | ${data[i].Name} by ${data[i].Creator} | Updated: ${
       data[i].Date
     }°
-    ${data[i].Genre}(${genreClass}^
-    ${data[i].Players})${playerClass}`;
+    ${genres}(${genreClasses}^
+    ${data[i].Players})${playerClass}>${genres.length}`;
 
     var row = `<tr class="hover-reveal" data-tooltip="${tooltipcontent}">
                         <td data-th="Placement">${i + 1}.</td>
@@ -247,7 +263,7 @@ let setUpTooltip = function () {
     note.innerHTML =
       "Notes: " +
       obj.dataset.tooltip.substring(
-        obj.dataset.tooltip.indexOf(".") + 1,
+        obj.dataset.tooltip.indexOf("<") + 1,
         obj.dataset.tooltip.indexOf("_")
       );
 
@@ -277,10 +293,10 @@ let setUpTooltip = function () {
     );
     /*Creativity*/ crea.innerHTML = obj.dataset.tooltip.substring(
       obj.dataset.tooltip.indexOf("#") + 1,
-      obj.dataset.tooltip.indexOf("x")
+      obj.dataset.tooltip.indexOf("{")
     );
     /*Enjoyment*/ enj.innerHTML = obj.dataset.tooltip.substring(
-      obj.dataset.tooltip.indexOf("x") + 1,
+      obj.dataset.tooltip.indexOf("{") + 1,
       obj.dataset.tooltip.indexOf("*")
     );
     /*Production Quality*/ pq.innerHTML = obj.dataset.tooltip.substring(
@@ -289,7 +305,7 @@ let setUpTooltip = function () {
     );
     /*Technical*/ technical.innerHTML = obj.dataset.tooltip.substring(
       obj.dataset.tooltip.indexOf(":") + 1,
-      obj.dataset.tooltip.indexOf(".")
+      obj.dataset.tooltip.indexOf("<")
     );
     /*Title*/ gametitle.innerHTML = obj.dataset.tooltip.substring(
       obj.dataset.tooltip.indexOf("_") + 1,
@@ -301,16 +317,38 @@ let setUpTooltip = function () {
     );
     players.className = obj.dataset.tooltip.substring(
       obj.dataset.tooltip.indexOf(")") + 1,
-      obj.dataset.tooltip.length
+      obj.dataset.tooltip.indexOf(">")
     );
-    /*Genre*/ genre.innerHTML = obj.dataset.tooltip.substring(
-      obj.dataset.tooltip.indexOf("°") + 1,
-      obj.dataset.tooltip.indexOf("(")
-    );
-    genre.className = obj.dataset.tooltip.substring(
-      obj.dataset.tooltip.indexOf("(") + 1,
-      obj.dataset.tooltip.indexOf("^")
-    );
+    /*Genre*/
+    genre.innerHTML = "";
+    for (
+      let index = 0;
+      index <
+      parseInt(
+        obj.dataset.tooltip.substring(
+          obj.dataset.tooltip.indexOf(">") + 1,
+          obj.dataset.tooltip.length
+        )
+      );
+      index++
+    ) {
+      genres = obj.dataset.tooltip.substring(
+        obj.dataset.tooltip.indexOf("°") + 1,
+        obj.dataset.tooltip.indexOf("(")
+      ).split(",")
+      genreClasses = obj.dataset.tooltip.substring(
+        obj.dataset.tooltip.indexOf("(") + 1,
+        obj.dataset.tooltip.indexOf("^")
+      ).split(",")
+      var genreTemplate = `<span class="${genreClasses[index]}" id="genre">${genres[index]}</span>`;
+      console.log(parseInt(
+        obj.dataset.tooltip.substring(
+          obj.dataset.tooltip.indexOf(">") + 1,
+          obj.dataset.tooltip.length
+        )
+      ))
+      genre.innerHTML += genreTemplate;
+    }
   };
 
   toolTipElements.forEach(function (elem) {

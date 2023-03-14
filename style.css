@@ -534,3 +534,8 @@ body .tit-tit {
   text-align: center;
   margin-right: 15px;
 }
+
+#genre {
+  display: inline-block;
+  margin-right: 5px;
+}
