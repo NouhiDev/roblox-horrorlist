@@ -14,14 +14,18 @@
 
 // Created by nouhidev
 
+var contentDoc = document.getElementById("content");
+
 window.onload = function () {
     fetchGames2();
+    $('header').hide();
 };
 
 var tablePopulated = false;
 
 async function fetchGames2() {
   var table = document.getElementById("table-to-populate");
+  var elem = document.getElementById("myBar");
   
     var spreadSheetDataResponse = await fetch(
       "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3"
@@ -31,6 +35,9 @@ async function fetchGames2() {
     for (let i = 0; i < spreadSheetData.length; i++) {
 
       if (spreadSheetData[i].UID === "") break;
+
+      var progress = (i - 0)/(spreadSheetData.length) * 100;
+      elem.style.width = progress + "%";
 
       const apiGameDataResponse = await fetch(
         `https://ndevapi.com/game-info/${spreadSheetData[i].UID}`
@@ -59,6 +66,9 @@ async function fetchGames2() {
 
       table.innerHTML += row;
     }
+
+    $('header').show();
+    document.getElementById("myProgress").style.display = "none";
 
     // Generate Table after populating it
     $("#game-table").DataTable({

@@ -539,3 +539,20 @@ body .tit-tit {
   display: inline-block;
   margin-right: 5px;
 }
+
+#myProgress {
+  background-color: rgb(34, 34, 43);
+  margin: auto;
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: rgb(249, 255, 249);
+}
