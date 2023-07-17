@@ -16,7 +16,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"
+      href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css"
     />
     <title>Roblox Horrorlist: Best Roblox Horror Games</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,7 @@
     <meta name="robots" content="index, follow" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script src="api.js"></script>
 
     <!-- Google tag (gtag.js) -->
@@ -119,13 +119,25 @@
 
       <!-- Tooltip -->
       <div class="tooltip-class">
-        <p id="game-tooltip-title" style="font-weight: bold">
-          Game Title by Creator>
-        </p>
-        Tags: <span class="tag blue-bg" id="players">MP</span>
+
+        <!-- Game General Information Container -->
+        <span id="game_tooltip_title" style="font-weight: bold;">waewaewe</span>
+        <br><span id="game_tooltip_creator"></span>
+        <br><br><span id="game_tooltip_description"></span><br>
         <div id="genre"></div>
-        <p>Individual Ratings:</p>
-        <table>
+        <hr
+        style="
+          width: 100%;
+          height: 2px;
+          border-width: 0;
+          background-color: #404653;
+        "
+      />
+      <span">Last Ranking Update: </span><span id="game_tooltip_lastUpdate"></span>
+        <hr>
+
+        <!-- Game Rating Container -->
+        <table style="width: 100%; margin-bottom: 10px;">
           <thead>
             <tr>
               <th data-column="Scariness" data-order="desc">Scariness</th>
@@ -144,20 +156,52 @@
           </thead>
           <tbody>
             <tr>
-              <th id="scariness">1</th>
-              <th id="sd">2</th>
-              <th id="st">3</th>
-              <th id="vis">4</th>
-              <th id="amb">5</th>
-              <th id="gp">6</th>
-              <th id="crea">7</th>
-              <th id="enj">8</th>
-              <th id="pq">9</th>
-              <th id="technical">10</th>
+              <th id="game_rating_scariness" style="font-weight: normal;">1</th>
+              <th id="game_rating_soundDesign" style="font-weight: normal;">2</th>
+              <th id="game_rating_story" style="font-weight: normal;">3</th>
+              <th id="game_rating_visuals" style="font-weight: normal;">4</th>
+              <th id="game_rating_ambience" style="font-weight: normal;">5</th>
+              <th id="game_rating_gameplay" style="font-weight: normal;">6</th>
+              <th id="game_rating_creativity" style="font-weight: normal;">7</th>
+              <th id="game_rating_enjoyment" style="font-weight: normal;">8</th>
+              <th id="game_rating_productionQuality" style="font-weight: normal;">9</th>
+              <th id="game_rating_technical" style="font-weight: normal;">10</th>
             </tr>
           </tbody>
         </table>
-        <p id="note">Note from raters.</p>
+        <hr>
+
+        <!-- Game Stats Container -->
+        <table style="width: 100%;">
+            <thead>
+              <tr>
+                <th data-column="Active" data-order="desc">Active:</th>
+                <th data-column="Favorites" data-order="desc">Favorites:</th>
+                <th data-column="Visits" data-order="desc">Visits:</th>
+                <th data-column="MaxPlayers" data-order="desc">Max Players:</th>
+                <th data-column="Created" data-order="desc">Created</th>
+                <th data-column="Updated" data-order="desc">Updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th id="game_stats_container_active" style="font-weight: normal;">0</th>
+                <th id="game_stats_container_favorites" style="font-weight: normal;">0</th>
+                <th id="game_stats_container_visits">0</th>
+                <th id="game_stats_container_maxPlayers" style="font-weight: normal;">0</th>
+                <th id="game_stats_container_created" style="font-weight: normal;">0</th>
+                <th id="game_stats_container_updated" style="font-weight: normal;">0</th>
+              </tr>
+            </tbody>
+          </table>
+          <hr
+        style="
+          width: 100%;
+          height: 2px;
+          border-width: 0;
+          background-color: #404653;
+        "
+      />
       </div>
       <br />
       <hr
