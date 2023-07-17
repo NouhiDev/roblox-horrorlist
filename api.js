@@ -76,7 +76,6 @@ var tablePopulated = false;
     setUpTooltip();
   }
 
-
 function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
     const formatter = Intl.NumberFormat('en', { notation: 'compact' });
     var desc = "";
