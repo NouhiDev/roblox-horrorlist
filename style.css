@@ -547,8 +547,8 @@ body .tit-tit {
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 25%;
   transform: translateY(-50%);
+  transform: translateX(50%);
   border-radius: 20px;
 }
 
