@@ -72,11 +72,14 @@ async function fetchGames2() {
 
 function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
     const formatter = Intl.NumberFormat('en', { notation: 'compact' });
+    var desc = "";
+    if (apiGameData["data"][0].description === null) desc = "This game does not have a description.";
+    else desc = apiGameData["data"][0].description.replaceAll('"', "")
 
     return `
     x01${apiGameData["data"][0].name}
     x02${JSON.parse(JSON.stringify(apiGameData["data"][0].creator))["name"]}
-    x03${apiGameData["data"][0].description.replaceAll('"', "")}
+    x03${desc}
     x04${spreadSheetData[i].Date}
     xEND
 
