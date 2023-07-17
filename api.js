@@ -17,59 +17,57 @@
 var contentDoc = document.getElementById("content");
 
 window.onload = function () {
-    fetchGames2();
+    fetchGames();
     $('header').hide();
 };
 
 var tablePopulated = false;
 
-async function fetchGames2() {
-  var table = document.getElementById("table-to-populate");
-  var elem = document.getElementById("myBar");
+  async function fetchGames() {
+    var table = document.getElementById("table-to-populate");
+    var elem = document.getElementById("myBar");
   
     var spreadSheetDataResponse = await fetch(
       "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3"
     );
     var spreadSheetData = await spreadSheetDataResponse.json();
-      
+  
+    const requests = [];
     for (let i = 0; i < spreadSheetData.length; i++) {
-
       if (spreadSheetData[i].UID === "") break;
-
-      var progress = (i - 0)/(spreadSheetData.length) * 100;
+  
+      var progress = (i - 0) / spreadSheetData.length * 100;
       elem.style.width = progress + "%";
-
-      const apiGameDataResponse = await fetch(
-        `https://ndevapi.com/game-info/${spreadSheetData[i].UID}`
-      );
-      const apiGameData = await apiGameDataResponse.json();
   
-      const apiGameIconDataResponse = await fetch(
-        `https://ndevapi.com/game-icon/${spreadSheetData[i].UID}`
-      );
-      const apiGameIconData = await apiGameIconDataResponse.json();
+      const apiGameDataPromise = fetch(`https://ndevapi.com/game-info/${spreadSheetData[i].UID}`).then(response => response.json());
+      const apiGameIconDataPromise = fetch(`https://ndevapi.com/game-icon/${spreadSheetData[i].UID}`).then(response => response.json());
   
-      var row = ` <tr class="hover-reveal" data-tooltip="${toolTipContent(
-        spreadSheetData,
-        apiGameData,
-        apiGameIconData,
-        i
-      )}">
-                  <td data-th="Placement">${i + 1}.</td>
-                  <td data="Icon"><img class="game-icon" src="${apiGameIconData.data[0].imageUrl}"></td>
-                  <td data-th="Title" class="game-title">${apiGameData["data"][0].name}</td>
-                  <td data-th="Creator" class="align-left">${JSON.parse(
-                    JSON.stringify(apiGameData["data"][0].creator)
-                  ).name}</td>
-                  <td data-th="Rating" class="align-left">${spreadSheetData[i].Rating}</td>
-                  </tr>`;
-
-      table.innerHTML += row;
+      requests.push(Promise.all([apiGameDataPromise, apiGameIconDataPromise]).then(([apiGameData, apiGameIconData]) => {
+        var row = ` <tr class="hover-reveal" data-tooltip="${toolTipContent(
+          spreadSheetData,
+          apiGameData,
+          apiGameIconData,
+          i
+        )}">
+          <td data-th="Placement">${i + 1}.</td>
+          <td data="Icon"><img class="game-icon" src="${apiGameIconData.data[0].imageUrl}"></td>
+          <td data-th="Title" class="game-title">${apiGameData["data"][0].name}</td>
+          <td data-th="Creator" class="align-left">${JSON.parse(
+            JSON.stringify(apiGameData["data"][0].creator)
+          ).name}</td>
+          <td data-th="Rating" class="align-left">${spreadSheetData[i].Rating}</td>
+          </tr>`;
+  
+        return row;
+      }));
     }
-
+  
+    const rows = await Promise.all(requests);
+    table.innerHTML = rows.join('');
+  
     $('header').show();
     document.getElementById("myProgress").style.display = "none";
-
+  
     // Generate Table after populating it
     $("#game-table").DataTable({
       columnDefs: [{ orderable: false, targets: [1, 4] }],
@@ -77,7 +75,6 @@ async function fetchGames2() {
   
     setUpTooltip();
   }
-  
 
 
 function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
