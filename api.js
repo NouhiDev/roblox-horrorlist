@@ -13,12 +13,15 @@
 // ╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝╚═════╝░░░░╚═╝░░░  ╚═╝░░╚═╝╚═╝░░░░░╚═╝
 
 // Created by nouhidev
+
+window.onload = function () {
+  fetchGames2();
+};
+
 var tablePopulated = false;
 
-fetchGames2();
-
 async function fetchGames2() {
-    var table = document.getElementById("table-to-populate");
+  var table = document.getElementById("table-to-populate");
   
     var spreadSheetDataResponse = await fetch(
       "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3"
@@ -27,12 +30,12 @@ async function fetchGames2() {
   
     for (let i = 0; i < spreadSheetData.length; i++) {
       const apiGameDataResponse = await fetch(
-        `https://ndevapi.com:8080/game-info/${spreadSheetData[i].UID}`
+        `https://ndevapi.com/game-info/${spreadSheetData[i].UID}`
       );
       const apiGameData = await apiGameDataResponse.json();
   
       const apiGameIconDataResponse = await fetch(
-        `https://ndevapi.com:8080/game-icon/${spreadSheetData[i].UID}`
+        `https://ndevapi.com/game-icon/${spreadSheetData[i].UID}`
       );
       const apiGameIconData = await apiGameIconDataResponse.json();
   
@@ -44,13 +47,13 @@ async function fetchGames2() {
       )}">
                   <td data-th="Placement">${i + 1}.</td>
                   <td data="Icon"><img class="game-icon" src="${apiGameIconData.data[0].imageUrl}"></td>
-                  <td data-th="Title" class="game-title">${apiGameData[0].name}</td>
+                  <td data-th="Title" class="game-title">${apiGameData["data"][0].name}</td>
                   <td data-th="Creator" class="align-left">${JSON.parse(
-                    JSON.stringify(apiGameData[0].creator)
+                    JSON.stringify(apiGameData["data"][0].creator)
                   ).name}</td>
                   <td data-th="Rating" class="align-left">${spreadSheetData[i].Rating}</td>
                   </tr>`;
-  
+
       table.innerHTML += row;
     }
   
@@ -63,14 +66,14 @@ async function fetchGames2() {
   }
   
 
+
 function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
     const formatter = Intl.NumberFormat('en', { notation: 'compact' });
 
-    
     return `
-    x01${apiGameData[0].name}
-    x02${JSON.parse(JSON.stringify(apiGameData[0].creator))["name"]}
-    x03${apiGameData[0].description.replaceAll('"', "")}
+    x01${apiGameData["data"][0].name}
+    x02${JSON.parse(JSON.stringify(apiGameData["data"][0].creator))["name"]}
+    x03${apiGameData["data"][0].description.replaceAll('"', "")}
     x04${spreadSheetData[i].Date}
     xEND
 
@@ -86,12 +89,12 @@ function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
     xR10${spreadSheetData[i].Technical}
     xREND
 
-    xSD01${formatter.format(apiGameData[0].playing)}
-    xSD02${formatter.format(apiGameData[0].favoritedCount)}
-    xSD03${formatter.format(apiGameData[0].visits)}
-    xSD04${formatter.format(apiGameData[0].maxPlayers)}
-    xSD05${(apiGameData[0].created.substring(0, 10))}
-    xSD06${(apiGameData[0].updated.substring(0, 10))}
+    xSD01${formatter.format(apiGameData["data"][0].playing)}
+    xSD02${formatter.format(apiGameData["data"][0].favoritedCount)}
+    xSD03${formatter.format(apiGameData["data"][0].visits)}
+    xSD04${formatter.format(apiGameData["data"][0].maxPlayers)}
+    xSD05${(apiGameData["data"][0].created.substring(0, 10))}
+    xSD06${(apiGameData["data"][0].updated.substring(0, 10))}
     xSDEND
     `;
 }
