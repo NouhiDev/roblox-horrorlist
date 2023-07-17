@@ -36,7 +36,7 @@ async function performChecks() {
 
     try {
         const apiResponse = await new Promise((resolve, reject) => {
-            $.getJSON("http://3.121.199.0:8080/game-info/140239261")
+            $.getJSON("ndevapi.com:8080/game-info/140239261")
                 .done(resolve)
                 .fail(reject);
         });
@@ -68,8 +68,8 @@ async function fetchGames() {
 
     for (let i = 0; i < spreadSheetData.length; i++) {
 
-        $.getJSON(`http://3.121.199.0:8080/game-info/${spreadSheetData[i].UID}`, function (apiGameData) {
-            $.getJSON(`http://3.121.199.0:8080/game-icon/${spreadSheetData[i].UID}`, function (apiGameIconData) {
+        $.getJSON(`ndevapi.com:8080/game-info/${spreadSheetData[i].UID}`, function (apiGameData) {
+            $.getJSON(`ndevapi.com:8080/game-icon/${spreadSheetData[i].UID}`, function (apiGameIconData) {
 
                 var row = ` <tr class="hover-reveal" data-tooltip="">
                             <td data-th="Placement">${i + 1}.</td>
