@@ -13,109 +13,41 @@
 // ╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝╚═════╝░░░░╚═╝░░░  ╚═╝░░╚═╝╚═╝░░░░░╚═╝
 
 // Created by nouhidev
-async function performChecks() {
-    let spreadsheet_check = false;
-    let api_check = false;
-
-    try {
-        const spreadsheetResponse = await new Promise((resolve, reject) => {
-            $.getJSON("https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/2")
-                .done(resolve)
-                .fail(reject);
-        });
-
-        if (spreadsheetResponse.length > 0) {
-            console.log("Google Spreadsheets: OK!");
-            spreadsheet_check = true;
-        } else {
-            console.log("Google Spreadsheets: ERROR!");
-        }
-    } catch (error) {
-        console.error("Google Spreadsheets: ERROR!", error);
-    }
-
-    try {
-        const apiResponse = await new Promise((resolve, reject) => {
-            $.getJSON("ndevapi.com:8080/game-info/140239261")
-                .done(resolve)
-                .fail(reject);
-        });
-
-        if (apiResponse.length > 0) {
-            console.log("API Response: OK!");
-            api_check = true;
-        } else {
-            console.log("API Response: ERROR!");
-        }
-    } catch (error) {
-        console.error("API Response: ERROR!", error);
-    }
-
-    if (api_check && spreadsheet_check) {
-        console.log("Status: OK!");
-        fetchGames2();
-    } else {
-        console.log("Status: ERROR!");
-        console.log("Try reloading the webpage. If this error persists contact a developer!");
-    }
-}
-
 var tablePopulated = false;
 
-async function fetchGames() {
-    var table = document.getElementById("table-to-populate");
-    await $.getJSON("https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3", function (spreadSheetData) {
-
-    for (let i = 0; i < spreadSheetData.length; i++) {
-
-        $.getJSON(`ndevapi.com:8080/game-info/${spreadSheetData[i].UID}`, function (apiGameData) {
-            $.getJSON(`ndevapi.com:8080/game-icon/${spreadSheetData[i].UID}`, function (apiGameIconData) {
-
-                var row = ` <tr class="hover-reveal" data-tooltip="">
-                            <td data-th="Placement">${i + 1}.</td>
-                            <td data="Icon"><img class="game-icon" src="${apiGameIconData["data"][0].imageUrl}"></td>
-                            <td data-th="Title" class="game-title">${apiGameData[0].name}</td>
-                            <td data-th="Creator" class="align-left">${JSON.parse(JSON.stringify(apiGameData[0].creator))["name"]}</td>
-                            <td data-th="Rating" class="align-left">${spreadSheetData[i].Rating}</td>
-                            </tr>`;
-
-                table.innerHTML += row;
-            });
-        });   
-    }
-
-    // Generate Table after populating it
-    $("#game-table").DataTable({
-        columnDefs: [{ orderable: false, targets: [1, 4] }],
-    });
-    });
-    
-}
-
-performChecks();
+fetchGames2();
 
 async function fetchGames2() {
     var table = document.getElementById("table-to-populate");
-
-    var spreadSheetData = await $.getJSON(
+  
+    var spreadSheetDataResponse = await fetch(
       "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3"
     );
-
-    for (let i = 0; i < spreadSheetData.length; i++) {
-      const apiGameData = await $.getJSON(
-        `http://3.121.199.0:8080/game-info/${spreadSheetData[i].UID}`
-      );
-      const apiGameIconData = await $.getJSON(
-        `http://3.121.199.0:8080/game-icon/${spreadSheetData[i].UID}`
-      );
+    var spreadSheetData = await spreadSheetDataResponse.json();
   
-      var row = ` <tr class="hover-reveal" data-tooltip="${toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i)}">
+    for (let i = 0; i < spreadSheetData.length; i++) {
+      const apiGameDataResponse = await fetch(
+        `https://ndevapi.com:8080/game-info/${spreadSheetData[i].UID}`
+      );
+      const apiGameData = await apiGameDataResponse.json();
+  
+      const apiGameIconDataResponse = await fetch(
+        `https://ndevapi.com:8080/game-icon/${spreadSheetData[i].UID}`
+      );
+      const apiGameIconData = await apiGameIconDataResponse.json();
+  
+      var row = ` <tr class="hover-reveal" data-tooltip="${toolTipContent(
+        spreadSheetData,
+        apiGameData,
+        apiGameIconData,
+        i
+      )}">
                   <td data-th="Placement">${i + 1}.</td>
-                  <td data="Icon"><img class="game-icon" src="${apiGameIconData["data"][0].imageUrl}"></td>
+                  <td data="Icon"><img class="game-icon" src="${apiGameIconData.data[0].imageUrl}"></td>
                   <td data-th="Title" class="game-title">${apiGameData[0].name}</td>
                   <td data-th="Creator" class="align-left">${JSON.parse(
                     JSON.stringify(apiGameData[0].creator)
-                  )["name"]}</td>
+                  ).name}</td>
                   <td data-th="Rating" class="align-left">${spreadSheetData[i].Rating}</td>
                   </tr>`;
   
@@ -124,11 +56,12 @@ async function fetchGames2() {
   
     // Generate Table after populating it
     $("#game-table").DataTable({
-        columnDefs: [{ orderable: false, targets: [1, 4] }],
+      columnDefs: [{ orderable: false, targets: [1, 4] }],
     });
-
+  
     setUpTooltip();
-}
+  }
+  
 
 function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
     const formatter = Intl.NumberFormat('en', { notation: 'compact' });
