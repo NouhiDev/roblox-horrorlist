@@ -15,7 +15,7 @@
 // Created by nouhidev
 
 window.onload = function () {
-  fetchGames2();
+    fetchGames2();
 };
 
 var tablePopulated = false;
@@ -27,8 +27,11 @@ async function fetchGames2() {
       "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3"
     );
     var spreadSheetData = await spreadSheetDataResponse.json();
-  
+      
     for (let i = 0; i < spreadSheetData.length; i++) {
+
+      if (spreadSheetData[i].UID === "") break;
+
       const apiGameDataResponse = await fetch(
         `https://ndevapi.com/game-info/${spreadSheetData[i].UID}`
       );
@@ -56,7 +59,7 @@ async function fetchGames2() {
 
       table.innerHTML += row;
     }
-  
+
     // Generate Table after populating it
     $("#game-table").DataTable({
       columnDefs: [{ orderable: false, targets: [1, 4] }],
