@@ -176,6 +176,8 @@ let setUpTooltip = function () {
             displayTooltip(e, this);
         });
         elem.addEventListener("mouseleave", function (e) {
+            toolTipDiv.style.top = "9999px";
+            toolTipDiv.style.left = "9999px";
             toolTipDiv.style.opacity = 0;
         });
     });
