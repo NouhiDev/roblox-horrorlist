@@ -35,7 +35,7 @@ var tablePopulated = false;
     const requests = [];
     for (let i = 0; i < spreadSheetData.length; i++) {
       if (spreadSheetData[i].UID === "") break;
-  
+
       var progress = (i - 0) / spreadSheetData.length * 100;
       elem.style.width = progress + "%";
   
@@ -43,11 +43,20 @@ var tablePopulated = false;
       const apiGameIconDataPromise = fetch(`https://ndevapi.com/game-icon/${spreadSheetData[i].UID}`).then(response => response.json());
   
       requests.push(Promise.all([apiGameDataPromise, apiGameIconDataPromise]).then(([apiGameData, apiGameIconData]) => {
+
+        var genreArray = spreadSheetData[i].Genre.split(", ");
+        var genreHTMLText = genreHTML(genreArray);
+
+        for (let genre = 0; genre < genreArray.length; genre++) {
+          console.log(genreArray[genre]);
+        }
+
         var row = ` <tr class="hover-reveal" data-tooltip="${toolTipContent(
           spreadSheetData,
           apiGameData,
           apiGameIconData,
-          i
+          i,
+          genreHTMLText
         )}">
           <td data-th="Placement">${i + 1}.</td>
           <td data="Icon"><img class="game-icon" src="${apiGameIconData.data[0].imageUrl}"></td>
@@ -76,7 +85,7 @@ var tablePopulated = false;
     setUpTooltip();
   }
 
-function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
+function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i, genreHTMLText) {
     const formatter = Intl.NumberFormat('en', { notation: 'compact' });
     var desc = "";
     if (apiGameData["data"][0].description === null) desc = "This game does not have a description.";
@@ -86,7 +95,8 @@ function toolTipContent(spreadSheetData, apiGameData, apiGameIconData, i) {
     x01${apiGameData["data"][0].name}
     x02${JSON.parse(JSON.stringify(apiGameData["data"][0].creator))["name"]}
     x03${desc}
-    x04${spreadSheetData[i].Date}
+    x04${genreHTMLText}
+    x05${spreadSheetData[i].Date}
     xEND
 
     xR01${spreadSheetData[i].Scariness}
@@ -157,7 +167,8 @@ let setUpTooltip = function () {
         gameTitle.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x01") + 3, obj.dataset.tooltip.indexOf("x02"));
         gameCreator.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x02") + 3, obj.dataset.tooltip.indexOf("x03"));
         gameDescription.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x03") + 3, obj.dataset.tooltip.indexOf("x04"));
-        lastUpdate.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x04") + 3, obj.dataset.tooltip.indexOf("xEND"));
+        genre.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x04") + 3, obj.dataset.tooltip.indexOf("x05"));
+        lastUpdate.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("x05") + 3, obj.dataset.tooltip.indexOf("xEND"));
 
         // Game Rating Details
         scary.innerHTML = obj.dataset.tooltip.substring(obj.dataset.tooltip.indexOf("xR01") + 4, obj.dataset.tooltip.indexOf("xR02"));
@@ -195,3 +206,48 @@ let setUpTooltip = function () {
 window.addEventListener("click", () => {
     setUpTooltip();
 });
+
+function genreHTML(genreArray) {
+  var genreHTMLString = "";
+
+  genreArray = genreArray.sort();
+
+  for (let i = 0; i < genreArray.length; i++) {
+    switch(genreArray[i]) {
+      case "Story":
+        genreHTMLString += "<span class='tag green-bg'>Story</span>"
+        break;
+      case "Chapters":
+        genreHTMLString += "<span class='tag purple-bg'>Chapters</span>"
+        break;
+      case "Minigame":
+        genreHTMLString += "<span class='tag yellow-bg'>Minigame</span>"
+        break;
+      case "Misc":
+        genreHTMLString += "<span class='tag dark-blue-bg'>Misc</span>"
+        break;
+      case "Myth":
+        genreHTMLString += "<span class='tag pink-bg'>Myth</span>"
+        break;
+      case "Exploration":
+        genreHTMLString += "<span class='tag dark-green-bg'>Exploration</span>"
+        break;
+      case "Port":
+        genreHTMLString += "<span class='tag orange-bg'>Port</span>"
+        break;
+      case "Abstract":
+          genreHTMLString += "<span class='tag abstract'>Abstract</span>"
+          break;
+      case "Survival Horror":
+        genreHTMLString += "<span class='tag survival-horror'>Survival Horror</span>"
+        break;
+      case "Classic Horror":
+        genreHTMLString += "<span class='tag classic-horror'>Classic Horror</span>"
+        break;
+    }
+
+    if (genreArray.length > 1 && i != genreArray.length - 1) genreHTMLString += " ";
+  }
+
+  return genreHTMLString;
+}
