@@ -558,3 +558,7 @@ body .tit-tit {
   background-color: rgb(249, 255, 249);
   border-radius: 20px;
 }
+
+.api-issue {
+  color:rgb(255, 73, 73);
+}
