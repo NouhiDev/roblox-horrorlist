@@ -562,3 +562,7 @@ body .tit-tit {
 .api-issue {
   color:rgb(255, 73, 73);
 }
+
+.game-href:hover {
+  text-decoration: underline;
+}
