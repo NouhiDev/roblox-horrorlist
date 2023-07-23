@@ -1,0 +1,222 @@
+1
+<!DOCTYPE html>
+
+<!--
+  _____   ____  ____  _      ______   __  _    _  ____  _____  _____   ____  _____  _      _____  _____ _______ 
+ |  __ \ / __ \|  _ \| |    / __ \ \ / / | |  | |/ __ \|  __ \|  __ \ / __ \|  __ \| |    |_   _|/ ____|__   __|
+ | |__) | |  | | |_) | |   | |  | \ V /  | |__| | |  | | |__) | |__) | |  | | |__) | |      | | | (___    | |   
+ |  _  /| |  | |  _ <| |   | |  | |> <   |  __  | |  | |  _  /|  _  /| |  | |  _  /| |      | |  \___ \   | |   
+ | | \ \| |__| | |_) | |___| |__| / . \  | |  | | |__| | | \ \| | \ \| |__| | | \ \| |____ _| |_ ____) |  | |   
+ |_|  \_\\____/|____/|______\____/_/ \_\ |_|  |_|\____/|_|  \_\_|  \_\\____/|_|  \_\______|_____|_____/   |_|   
+                                                                                                                
+  Learn more at
+
+  https://nouhi.dev/ndev-assets-docs/.
+-->
+
+<html>
+
+<head>
+    <title>Roblox Horrorlist: Best Roblox Horror Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="Roblox Horrorlist: Best Roblox Horror Games" />
+    <meta name="description"
+        content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are." />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-609YDJ81ER');
+    </script>
+
+    <style>
+        #criteria {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        #criteria td,
+        #criteria th {
+            padding: 8px;
+        }
+
+        #criteria tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        #criteria tr:nth-child(odd) {
+            background-color: #ededed;
+        }
+
+        #criteria tr:hover {
+            background-color: #ddd;
+        }
+
+        #criteria th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #ff6161;
+            color: white;
+        }
+
+        .backbtn {
+            background-color: #161920;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border-color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .backbtn:hover {
+            background-color: #fff;
+            color: #161920;
+            padding: 10px 30px 10px 30px;
+            border-color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // Generate Table after populating it
+            $("#game-table").DataTable({ searching: false, paging: false, info: false, sorting: false });
+        });
+    </script>
+
+    <h1 class="tit">Roblox Horrorlist - Rating Overview</h1>
+
+    <h1 class="tit-credits">
+        <span class="tit-tit-sub">How do we rate the games?</span>
+    </h1>
+
+    <hr style="
+          width: 50%;
+          height: 2px;
+          border-width: 0;
+          color: #20242e;
+          background-color: #20242e;
+        " />
+    <br />
+
+    <div class="table-container" id="table-container">
+        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Definition</th>
+                </tr>
+            </thead>
+            <tbody id="table-to-populate">
+                <tr>
+                    <td>Scariness</td>
+                    <td>The game's ability to invoke fear and terror in players through its atmosphere, encounters, and
+                        horror elements.</td>
+                </tr>
+                <tr>
+                    <td>Sound Design</td>
+                    <td>The quality and effectiveness of the game's audio elements, including music, sound effects, and
+                        voice acting, in creating an immersive and chilling experience.</td>
+                </tr>
+                <tr>
+                    <td>Story</td>
+                    <td>The narrative and plot of the game, including its depth, coherence, and ability to engage.</td>
+                </tr>
+                <tr>
+                    <td>Visuals</td>
+                    <td>The graphical presentation and quality of the game, including models, environments, and visual
+                        effects.</td>
+                </tr>
+                <tr>
+                    <td>Ambience</td>
+                    <td>The overall mood and environment created by the game, including lighting, level design, and
+                        other atmospheric factors.</td>
+                </tr>
+                <tr>
+                    <td>Gameplay</td>
+                    <td>The mechanics, controls, and overall gameplay experience offered by the game.</td>
+                </tr>
+                <tr>
+                    <td>Creativity</td>
+                    <td>The originality and innovation of the game's concepts, mechanics, and design within the horror
+                        genre.</td>
+                </tr>
+                <tr>
+                    <td>Enjoyment</td>
+                    <td>The level of entertainment experienced while playing the game.</td>
+                </tr>
+                <tr>
+                    <td>Production Quality</td>
+                    <td>The overall craftsmanship and polish of the game.</td>
+                </tr>
+                <tr>
+                    <td>Technical</td>
+                    <td>The technical aspects of the game, such as loading times, stability, and performance.</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+
+    <br>
+    <center><a href="index.html" class="backbtn">Back</a></center>
+
+    <center style="position: absolute;
+        bottom: 10px; width: 100%;">
+        <hr style="
+        width: 50%;
+        height: 2px;
+        border-width: 0;
+        color: #20242e;
+        background-color: #20242e;
+      " />
+        <br />
+
+        <div class="flex-center">
+            <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+            <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+            <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+        </div>
+
+        <br />
+        <p style="color: white">Copyright © 2023 NDev-Group</p>
+    </center>
+    </div>
+
+</body>
+
+<!--
+
+Copyright © 2023 NDev-Group
+
+-->
+
+</html>
