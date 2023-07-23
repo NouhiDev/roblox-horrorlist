@@ -8,7 +8,7 @@ Welcome to the Roblox Horrorlist! This project is dedicated to showcasing almost
 
  ## How to Use:
  1. **Explore the List:** Browse the list to discover games that are worth your time, or maybe find comically bad ones.
- 2. **Detailed Information: **By hovering over a game with your cursor, information on the game and it's rating will be displayed.
+ 2. **Detailed Information:** By hovering over a game with your cursor, information on the game and it's rating will be displayed.
 
  ## Contribution:
  Currently, we do not support contributing. However, we are working on increasing our team of raters.
