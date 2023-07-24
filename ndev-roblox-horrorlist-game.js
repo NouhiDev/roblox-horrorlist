@@ -1,8 +1,6 @@
 function getInformationFromIndex() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
-    console.log(UID);
-    console.log(number);
 
     updateInformation(number, UID);
 }
@@ -14,13 +12,11 @@ async function updateInformation(number, UID) {
     );
     gameDataByUID = await gameData.json();
 
-    console.log(gameDataByUID);
-
     const gameTitle = document.getElementById("game-title");
 
-    if (gameDataByUID[number] === undefined) gameTitle.innerText = "Roblox Horrorlist: Error";
+    if (gameDataByUID["data"][0] === undefined) gameTitle.innerText = "Roblox Horrorlist: Error";
     else {
-        gameTitle.innerText = "Roblox Horrorlist: " + spreadSheetData[number].Name;
+        gameTitle.innerText = "Roblox Horrorlist: " + gameDataByUID["data"][0].name;
     }
 }
 
