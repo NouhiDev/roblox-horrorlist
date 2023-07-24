@@ -10,13 +10,13 @@ async function updateInformation(number, UID) {
     const gameData = await fetch(
         "https://ndevapi.com/game-info/" + UID
     );
-    gameDataByUID = await gameData.json();
+    gameDataByUID = await gameData.json()["data"][0];
 
     const gameTitle = document.getElementById("game-title");
 
-    if (gameDataByUID["data"][0] === undefined) gameTitle.innerText = "Roblox Horrorlist: Error";
+    if (gameDataByUID === undefined) gameTitle.innerText = "Roblox Horrorlist: Error";
     else {
-        gameTitle.innerText = "Roblox Horrorlist: " + gameDataByUID["data"][0].name;
+        gameTitle.innerText = "Roblox Horrorlist: " + gameDataByUID.name;
     }
 }
 
