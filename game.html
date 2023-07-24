@@ -106,18 +106,7 @@
 </head>
 
 <body>
-    <script>
-        $(document).ready(function () {
-            // Generate Table after populating it
-            $("#game-table").DataTable({ searching: false, paging: false, info: false, sorting: false });
-        });
-    </script>
-
-    <h1 class="tit">Roblox Horrorlist - Rating Overview</h1>
-
-    <h1 class="tit-credits">
-        <span class="tit-tit-sub">How do we rate the games?</span>
-    </h1>
+    <h1 class="tit" id="game-title">Roblox Horrorlist: Game Title</h1>
 
     <hr style="
           width: 50%;
@@ -127,65 +116,6 @@
           background-color: #20242e;
         " />
     <br />
-
-    <div class="table-container" id="table-container">
-        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Criteria</th>
-                    <th>Definition</th>
-                </tr>
-            </thead>
-            <tbody id="table-to-populate">
-                <tr>
-                    <td>Scariness</td>
-                    <td>The game's ability to invoke fear and terror in players through its atmosphere, encounters, and
-                        horror elements.</td>
-                </tr>
-                <tr>
-                    <td>Sound Design</td>
-                    <td>The quality and effectiveness of the game's audio elements, including music, sound effects, and
-                        voice acting, in creating an immersive and chilling experience.</td>
-                </tr>
-                <tr>
-                    <td>Story</td>
-                    <td>The narrative and plot of the game, including its depth, coherence, and ability to engage.</td>
-                </tr>
-                <tr>
-                    <td>Visuals</td>
-                    <td>The graphical presentation and quality of the game, including models, environments, and visual
-                        effects.</td>
-                </tr>
-                <tr>
-                    <td>Ambience</td>
-                    <td>The overall mood and environment created by the game, including lighting, level design, and
-                        other atmospheric factors.</td>
-                </tr>
-                <tr>
-                    <td>Gameplay</td>
-                    <td>The mechanics, controls, and overall gameplay experience offered by the game.</td>
-                </tr>
-                <tr>
-                    <td>Creativity</td>
-                    <td>The originality and innovation of the game's concepts, mechanics, and design within the horror
-                        genre.</td>
-                </tr>
-                <tr>
-                    <td>Enjoyment</td>
-                    <td>The level of entertainment experienced while playing the game.</td>
-                </tr>
-                <tr>
-                    <td>Production Quality</td>
-                    <td>The overall craftsmanship and polish of the game.</td>
-                </tr>
-                <tr>
-                    <td>Technical</td>
-                    <td>The technical aspects of the game, such as loading times, stability, and performance.</td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
-    </div>
 
     <br>
     <center><a href="index.html" class="backbtn">Back</a></center>

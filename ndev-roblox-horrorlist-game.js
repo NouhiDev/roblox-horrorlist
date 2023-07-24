@@ -1,6 +1,25 @@
 function getInformationFromIndex() {
     const number = localStorage.getItem("number");
-    const spreadSheetData = localStorage.getItem("spreadSheetData");
-    const gameData = localStorage.getItem("gameData");
-    const gameIconData = localStorage.getItem("gameIconData");
+    const UID = localStorage.getItem("UID");
+    console.log(UID);
+    console.log(number);
+
+    updateInformation(number, UID);
 }
+
+async function updateInformation(number, UID) {
+    var gameDataByUID = [];
+    const gameData = await fetch(
+        "https://ndevapi.com/game-info/" + UID
+    );
+    gameDataByUID = await gameData.json();
+
+    const gameTitle = document.getElementById("game-title");
+
+    if (gameDataByUID[number] === undefined) gameTitle.innerText = "Roblox Horrorlist: Error";
+    else {
+        gameTitle.innerText = "Roblox Horrorlist: " + spreadSheetData[number].Name;
+    }
+}
+
+getInformationFromIndex();
