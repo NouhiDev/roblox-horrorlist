@@ -10,7 +10,8 @@ async function updateInformation(number, UID) {
     const gameData = await fetch(
         "https://ndevapi.com/game-info/" + UID
     );
-    gameDataByUID = await gameData.json()["data"][0];
+    gameDataByUID = await gameData.json();
+    gameDataByUID = gameDataByUID["data"][0];
 
     const gameTitle = document.getElementById("game-title");
 
