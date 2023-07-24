@@ -14,6 +14,8 @@ async function updateInformation(number, UID) {
     );
     gameDataByUID = await gameData.json();
 
+    console.log(gameDataByUID);
+
     const gameTitle = document.getElementById("game-title");
 
     if (gameDataByUID[number] === undefined) gameTitle.innerText = "Roblox Horrorlist: Error";
