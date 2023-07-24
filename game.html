@@ -1,4 +1,3 @@
-1
 <!DOCTYPE html>
 
 <!--
@@ -28,7 +27,7 @@
 
     <link rel="icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="game-style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,100 +47,138 @@
 
         gtag('config', 'G-609YDJ81ER');
     </script>
-
-    <style>
-        #criteria {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 60%;
-        }
-
-        #criteria td,
-        #criteria th {
-            padding: 8px;
-        }
-
-        #criteria tr:nth-child(even) {
-            background-color: #fff;
-        }
-
-        #criteria tr:nth-child(odd) {
-            background-color: #ededed;
-        }
-
-        #criteria tr:hover {
-            background-color: #ddd;
-        }
-
-        #criteria th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #ff6161;
-            color: white;
-        }
-
-        .backbtn {
-            background-color: #161920;
-            color: white;
-            padding: 10px 30px 10px 30px;
-            border-color: #fff;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 20px;
-            text-decoration: none;
-        }
-
-        .backbtn:hover {
-            background-color: #fff;
-            color: #161920;
-            padding: 10px 30px 10px 30px;
-            border-color: #fff;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 20px;
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
-    <h1 class="tit" id="game-title">Roblox Horrorlist: Game Title</h1>
-
+    <h1 id="game-title">Loading title...</h1>
+    <h1 id="game-creator">Loading creator...</h1>
     <hr style="
           width: 50%;
           height: 2px;
           border-width: 0;
           color: #20242e;
           background-color: #20242e;
-        " />
-    <br />
+        " /><br>
 
-    <br>
-    <center><a href="index.html" class="backbtn">Back</a></center>
-
-    <center style="position: absolute;
-        bottom: 10px; width: 100%;">
-        <hr style="
-        width: 50%;
-        height: 2px;
-        border-width: 0;
-        color: #20242e;
-        background-color: #20242e;
-      " />
-        <br />
-
-        <div class="flex-center">
-            <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-            <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-            <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+    <div id="container">
+        <div class="ratings-container">
+            <h1>Ratings:</h1>
+            <div class="rating-box">
+                <span class="title">Scariness</span>
+                <div class="rating-bar">
+                    <span class="rating-per scariness" id="sc">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Sound Design</span>
+                <div class="rating-bar">
+                    <span class="rating-per sound-design">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Story</span>
+                <div class="rating-bar">
+                    <span class="rating-per story">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Visuals</span>
+                <div class="rating-bar">
+                    <span class="rating-per visuals">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Ambience</span>
+                <div class="rating-bar">
+                    <span class="rating-per ambience">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Gameplay</span>
+                <div class="rating-bar">
+                    <span class="rating-per gameplay">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Creativity</span>
+                <div class="rating-bar">
+                    <span class="rating-per creativity">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Enjoyment</span>
+                <div class="rating-bar">
+                    <span class="rating-per enjoyment">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Production Quality</span>
+                <div class="rating-bar">
+                    <span class="rating-per production-quality">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rating-box">
+                <span class="title">Technical</span>
+                <div class="rating-bar">
+                    <span class="rating-per technical">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
         </div>
 
-        <br />
-        <p style="color: white">Copyright © 2023 NDev-Group</p>
-    </center>
-    </div>
+        <div class="information-container">
+            <h1>Information: </h1>
+            <iframe id="game-yt" width="420" height="240" src=""
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
 
+            <h1 class="sml-text" id="release">Loading release date...</h1>
+            <h1 class="sml-text" id="update">Loading update date...</h1>
+            <hr>
+            <h1 class="sml-text" id="active">Active: </h1>
+            <h1 class="sml-text" id="favs">Favorites: </h1>
+            <h1 class="sml-text" id="visits">Visits: </h1>
+            <h1 class="sml-text" id="maxplayers">Max Players: </h1>
+            <hr>
+
+            <h1 class="sml-text" id="game-genres">Loading genre...</h1>
+        </div>
+
+        <div class="note-container">
+            <h1>Rater Note: </h1>
+
+            <h1 id="rater-note-txt">Pros: </h1>
+            <h1 class="sml-text" id="pros"></h1>
+
+            <h1 id="rater-note-txt">Cons: </h1>
+            <h1 class="sml-text" id="cons"></h1>
+
+            <h1 id="rater-note-txt">Conclusion: </h1>
+            <h1 class="sml-text" id="conclusion"></h1>
+        </div>
+    </div>
+    <br><br>
+    <center><a href="index.html" class="backbtn">BACK</a></center>
 </body>
 
 <!--
