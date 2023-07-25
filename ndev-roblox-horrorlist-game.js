@@ -51,6 +51,7 @@ async function init() {
         { bar: document.getElementsByClassName("enjoyment")[0], tooltip: "Enjoyment" },
         { bar: document.getElementsByClassName("production-quality")[0], tooltip: "ProductionQuality" },
         { bar: document.getElementsByClassName("technical")[0], tooltip: "Technical" },
+        { bar: document.getElementsByClassName("overall")[0], tooltip: "Rating" },
     ];
 
     var spreadSheetData = [];
@@ -99,6 +100,7 @@ async function init() {
     const pros = document.getElementById("pros");
     const cons = document.getElementById("cons");
     const conclusion = document.getElementById("conclusion");
+    const originalBtn = document.getElementsByClassName("originalBtn")[0];
 
     var gameRank = number;
     if (number == 1) gameRank = "🥇";
@@ -135,14 +137,21 @@ async function init() {
     cons.innerText += "\n";
     conclusion.innerText += "\n";
 
-    if (spreadSheetData[number - 1].Pros == undefined) pros.innerText = "No pros provided.";
+    if (spreadSheetData[number - 1].Pros == undefined || spreadSheetData[number - 1].Conclusion == "") pros.innerText = "No pros provided.";
     else pros.innerText += spreadSheetData[number - 1].Pros;
 
-    if (spreadSheetData[number - 1].Cons == undefined) cons.innerText = "No cons provided.";
+    if (spreadSheetData[number - 1].Cons == undefined || spreadSheetData[number - 1].Conclusion == "") cons.innerText = "No cons provided.";
     else cons.innerText += spreadSheetData[number - 1].Cons;
 
-    if (spreadSheetData[number - 1].Conclusion == undefined) conclusion.innerText = "No conclusion provided.";
+    if (spreadSheetData[number - 1].Conclusion == undefined || spreadSheetData[number - 1].Conclusion == "") conclusion.innerText = "No conclusion provided.";
     else conclusion.innerText += spreadSheetData[number - 1].Conclusion;
+
+    if (spreadSheetData[number - 1].PortURL != undefined) 
+    {
+        originalBtn.style.opacity = 1;
+        originalBtn.innerText ="Play Original";
+        originalBtn.href = spreadSheetData[number - 1].PortURL;
+    }
 }
 
 // function getInformationFromIndex() {

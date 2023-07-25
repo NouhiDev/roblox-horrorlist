@@ -179,3 +179,22 @@ body {
 .rater-note-txt {
     font-size: 20px;
 }
+
+.overall .tooltip::before {
+   background:  rgb(255, 132, 0);
+}
+
+.originalBtn {
+    border-color: #4070f4;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.originalBtn:hover {
+    background: #4070f4;
+}
