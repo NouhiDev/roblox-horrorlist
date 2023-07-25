@@ -58,35 +58,6 @@
       },
       "youtube_url": "",
       "port_url": ""
-    },
-    {
-      "uid": "123456789",
-      "name": "New Game",
-      "genres": [
-        "Genre1",
-        "Genre2"
-      ],
-      "date": "2023-07-28",
-      "ratings": {
-        "rating": 9.5,
-        "scariness": 8,
-        "soundDesign": 9,
-        "story": 9,
-        "visuals": 9,
-        "ambience": 9,
-        "gameplay": 10,
-        "creativity": 9,
-        "enjoyment": 9,
-        "productionQuality": 9,
-        "technical": 8
-      },
-      "rater_note": {
-        "pros": "Great game!",
-        "cons": "None",
-        "conclusion": "Highly recommended."
-      },
-      "youtube_url": "https://www.youtube.com/watch?v=example",
-      "port_url": "https://example.com"
     }
   ],
   "awards": [
