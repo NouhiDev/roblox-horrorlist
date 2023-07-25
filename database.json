@@ -1,0 +1,66 @@
+{
+    "games": [
+        {
+            "uid": "3058140084",
+            "name": "The Mystery of Duvall Drive",
+            "genres": [
+                "Story",
+                "Exploration"
+            ],
+            "date": "25.07.2023",
+            "award": "",
+            "ratings": {
+                "rating": 8.8,
+                "scariness": 1,
+                "soundDesign": 10,
+                "story": 10,
+                "visuals": 10,
+                "ambience": 10,
+                "gameplay": 9,
+                "creativity": 10,
+                "enjoyment": 10,
+                "productionQuality": 10,
+                "technical": 8
+            },
+            "rater_note": {
+                "pros": "",
+                "cons": "",
+                "conclusion": ""
+            },
+            "youtube_url": "https://www.youtube.com/watch?v=_k1NlGZxPEM",
+            "port_url": ""
+        },
+        {
+            "uid": "2440500124",
+            "name": "DOORS",
+            "genres": [
+                "Minigame"
+            ],
+            "date": "25.07.2023",
+            "award": "",
+            "ratings": {
+                "rating": 8.7,
+                "scariness": 5,
+                "soundDesign": 10,
+                "story": 6,
+                "visuals": 9,
+                "ambience": 9,
+                "gameplay": 10,
+                "creativity": 9,
+                "enjoyment": 9,
+                "productionQuality": 10,
+                "technical": 10
+            },
+            "rater_note": {
+                "pros": "",
+                "cons": "",
+                "conclusion": ""
+            },
+            "youtube_url": "",
+            "port_url": ""
+        }
+    ],
+    "awards": [
+        "Funny Award"
+    ]
+}
