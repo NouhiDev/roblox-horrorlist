@@ -138,13 +138,13 @@ async function init() {
     conclusion.innerText += "\n";
 
     if (databaseData.games[number - 1].rater_note.pros == undefined || databaseData.games[number - 1].rater_note.pros == "") pros.innerText = "No pros provided.";
-    else pros.innerText += databaseData.games[number - 1].rater_note.pros;
+    else pros.innerText = databaseData.games[number - 1].rater_note.pros;
 
     if (databaseData.games[number - 1].rater_note.cons == undefined || databaseData.games[number - 1].rater_note.cons == "") cons.innerText = "No cons provided.";
-    else cons.innerText += databaseData.games[number - 1].rater_note.cons;
+    else cons.innerText = databaseData.games[number - 1].rater_note.cons;
 
     if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "No conclusion provided.";
-    else conclusion.innerText += databaseData.games[number - 1].rater_note.conclusion;
+    else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
 
     if (databaseData.games[number - 1].port_url != undefined || databaseData.games[number - 1].portUrl == "") 
     {
