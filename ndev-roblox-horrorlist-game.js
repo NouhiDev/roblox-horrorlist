@@ -33,7 +33,7 @@ if (typeof jQuery === "undefined") {
     });
 }
 
-const DATA_URL = "https://opensheet.elk.sh/16vH1l9tcKMEs8MATdjrp_Op-sMIL9-0jRQnBqFEthGo/3";
+const DATA_URL = "https://nouhi.dev/roblox-horrorlist/database.json";
 const MAX_SCORE = 10;
 
 async function init() {
@@ -41,24 +41,24 @@ async function init() {
     const UID = localStorage.getItem("UID");
 
     const bars = [
-        { bar: document.getElementsByClassName("scariness")[0], tooltip: "Scariness" },
-        { bar: document.getElementsByClassName("sound-design")[0], tooltip: "SoundDesign" },
-        { bar: document.getElementsByClassName("story")[0], tooltip: "Story" },
-        { bar: document.getElementsByClassName("visuals")[0], tooltip: "Visuals" },
-        { bar: document.getElementsByClassName("ambience")[0], tooltip: "Ambience" },
-        { bar: document.getElementsByClassName("gameplay")[0], tooltip: "Gameplay" },
-        { bar: document.getElementsByClassName("creativity")[0], tooltip: "Creativity" },
-        { bar: document.getElementsByClassName("enjoyment")[0], tooltip: "Enjoyment" },
-        { bar: document.getElementsByClassName("production-quality")[0], tooltip: "ProductionQuality" },
-        { bar: document.getElementsByClassName("technical")[0], tooltip: "Technical" },
-        { bar: document.getElementsByClassName("overall")[0], tooltip: "Rating" },
+        { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
+        { bar: document.getElementsByClassName("sound-design")[0], tooltip: "soundDesign" },
+        { bar: document.getElementsByClassName("story")[0], tooltip: "story" },
+        { bar: document.getElementsByClassName("visuals")[0], tooltip: "visuals" },
+        { bar: document.getElementsByClassName("ambience")[0], tooltip: "ambience" },
+        { bar: document.getElementsByClassName("gameplay")[0], tooltip: "gameplay" },
+        { bar: document.getElementsByClassName("creativity")[0], tooltip: "creativity" },
+        { bar: document.getElementsByClassName("enjoyment")[0], tooltip: "enjoyment" },
+        { bar: document.getElementsByClassName("production-quality")[0], tooltip: "productionQuality" },
+        { bar: document.getElementsByClassName("technical")[0], tooltip: "technical" },
+        { bar: document.getElementsByClassName("overall")[0], tooltip: "rating" },
     ];
 
-    var spreadSheetData = [];
+    var databaseData = [];
 
     try {
-        const spreadSheetDataResponse = await fetch(DATA_URL);
-        spreadSheetData = await spreadSheetDataResponse.json();
+        const databaseDataResponse = await fetch(DATA_URL);
+        databaseData = await databaseDataResponse.json();
     } catch (error) {
         console.error("Error fetching data:", error);
         return;
@@ -78,7 +78,7 @@ async function init() {
 
     for (let i = 0; i < bars.length; i++) {
         const dataField = bars[i].tooltip;
-        updateProgressBar(bars[i].bar, spreadSheetData[number - 1][dataField], dataField);
+        updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
     }
 
     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
@@ -110,13 +110,13 @@ async function init() {
 
     gameCreator.innerText = "by " + gameDataByUID["creator"].name;
 
-    var genreArray = spreadSheetData[number - 1].Genre.split(", ");
+    var genreArray = String(databaseData.games[number - 1].genres).split(", ");
     var genreHTMLText = genreArray.join(", ");
     var genrePrefix = `Genre${genreArray.length > 1 ? "s" : ""}: `;
     gameGenres.innerHTML = `${genrePrefix} ${genreHTMLText}`;
 
-    if (spreadSheetData[number - 1].YouTubeURL != undefined) {
-        var gameYTURL = spreadSheetData[number - 1].YouTubeURL.slice(32, spreadSheetData[number - 1].YouTubeURL.length);
+    if (databaseData.games[number - 1].youtube_url != undefined) {
+        var gameYTURL = databaseData.games[number - 1].youtube_url.slice(32, databaseData.games[number - 1].youtube_url.length);
         gameYT.src = `https://www.youtube.com/embed/${gameYTURL}`;;
     }
     else {
@@ -137,20 +137,20 @@ async function init() {
     cons.innerText += "\n";
     conclusion.innerText += "\n";
 
-    if (spreadSheetData[number - 1].Pros == undefined || spreadSheetData[number - 1].Conclusion == "") pros.innerText = "No pros provided.";
-    else pros.innerText += spreadSheetData[number - 1].Pros;
+    if (databaseData.games[number - 1].rater_note.pros == undefined || databaseData.games[number - 1].rater_note.pros == "") pros.innerText = "No pros provided.";
+    else pros.innerText += databaseData.games[number - 1].rater_note.pros;
 
-    if (spreadSheetData[number - 1].Cons == undefined || spreadSheetData[number - 1].Conclusion == "") cons.innerText = "No cons provided.";
-    else cons.innerText += spreadSheetData[number - 1].Cons;
+    if (databaseData.games[number - 1].rater_note.cons == undefined || databaseData.games[number - 1].rater_note.cons == "") cons.innerText = "No cons provided.";
+    else cons.innerText += databaseData.games[number - 1].rater_note.cons;
 
-    if (spreadSheetData[number - 1].Conclusion == undefined || spreadSheetData[number - 1].Conclusion == "") conclusion.innerText = "No conclusion provided.";
-    else conclusion.innerText += spreadSheetData[number - 1].Conclusion;
+    if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "No conclusion provided.";
+    else conclusion.innerText += databaseData.games[number - 1].rater_note.conclusion;
 
-    if (spreadSheetData[number - 1].PortURL != undefined) 
+    if (databaseData.games[number - 1].port_url != undefined || databaseData.games[number - 1].portUrl == "") 
     {
         originalBtn.style.opacity = 1;
         originalBtn.innerText ="Play Original";
-        originalBtn.href = spreadSheetData[number - 1].PortURL;
+        originalBtn.href = databaseData.games[number - 1].port_url;
     }
 }
 
