@@ -4928,6 +4928,35 @@
       "port_url": ""
     },
     {
+      "uid": "2477103742",
+      "name": "A Farmer and His Scarecrow: Reborn",
+      "genres": [
+        "Remake"
+      ],
+      "date": "26.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 4.1,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 5,
+        "visuals": 5,
+        "ambience": 6,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 5,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "Better visuals and production than the original.",
+        "cons": "Because of the lackluster original, the remake  lacks appeal, dampening its overall impact.",
+        "conclusion": "It brings better production but still lacks appeal, making the remake fall short."
+      },
+      "youtube_url": "",
+      "port_url": "https://www.roblox.com/games/7472380/A-Farmer-and-his-Scarecrow"
+    },
+    {
       "uid": "2263385355",
       "name": "The Survey",
       "genres": [
@@ -8001,35 +8030,6 @@
       },
       "youtube_url": "",
       "port_url": ""
-    },
-    {
-      "uid": "2477103742",
-      "name": "A Farmer and His Scarecrow: Reborn",
-      "genres": [
-        "Remake"
-      ],
-      "date": "26.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": 4.1,
-        "scariness": 1,
-        "soundDesign": 3,
-        "story": 5,
-        "visuals": 5,
-        "ambience": 6,
-        "gameplay": 1,
-        "creativity": 1,
-        "enjoyment": 5,
-        "productionQuality": 4,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "Better visuals and production than the original.",
-        "cons": "Because of the lackluster original, the remake  lacks appeal, dampening its overall impact.",
-        "conclusion": "It brings better production but still lacks appeal, making the remake fall short."
-      },
-      "youtube_url": "",
-      "port_url": "https://www.roblox.com/games/7472380/A-Farmer-and-his-Scarecrow"
     }
   ]
 }
