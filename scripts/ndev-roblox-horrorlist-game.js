@@ -149,7 +149,7 @@ async function init() {
     if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "No conclusion provided.";
     else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
 
-    if (databaseData.games[number - 1].port_url != undefined || databaseData.games[number - 1].portUrl == "") 
+    if (databaseData.games[number - 1].port_url != undefined || databaseData.games[number - 1].portUrl != "") 
     {
         originalBtn.style.opacity = 1;
         originalBtn.innerText ="Play Original";
