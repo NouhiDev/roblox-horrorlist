@@ -88,7 +88,88 @@
       },
       "youtube_url": "",
       "port_url": ""
-    }
+    },
+    {
+      "uid": "3838749428",
+      "name": "Jim's Computer",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.9,
+        "scariness": 5,
+        "soundDesign": 7,
+        "story": 10,
+        "visuals": 5,
+        "ambience": 8,
+        "gameplay": 5,
+        "creativity": 10,
+        "enjoyment": 10,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=fABjMu_TYI4",
+      "port_url": ""
+    },
+    {
+      "uid": "2714152255",
+      "name": "PINSTRIPE MURDERS",
+      "genres": ["Abstract", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.8,
+        "scariness": 4,
+        "soundDesign": 9,
+        "story": 8,
+        "visuals": 10,
+        "ambience": 9,
+        "gameplay": 5,
+        "creativity": 10,
+        "enjoyment": 9,
+        "productionQuality": 8,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2187661381",
+      "name": "VHS",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.8,
+        "scariness": 8,
+        "soundDesign": 8,
+        "story": 7,
+        "visuals": 6,
+        "ambience": 7,
+        "gameplay": 8,
+        "creativity": 8,
+        "enjoyment": 9,
+        "productionQuality": 10,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=iKKt5s3azc8",
+      "port_url": ""
+    }        
   ],
   "awards": [
     "Funny Award"
