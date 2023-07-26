@@ -5991,6 +5991,600 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": "3171190217",
+      "name": "Specter 2",
+      "genres": ["Minigame"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.2,
+        "scariness": 0,
+        "soundDesign": 5,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 4,
+        "gameplay": 3,
+        "creativity": 0,
+        "enjoyment": 2,
+        "productionQuality": 5,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "108851211",
+      "name": "The Closet 3: Under The Bed",
+      "genres": ["Classic Horror"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.2,
+        "scariness": 5,
+        "soundDesign": 3,
+        "story": 0,
+        "visuals": 1,
+        "ambience": 1,
+        "gameplay": 2,
+        "creativity": 3,
+        "enjoyment": 5,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3003543902",
+      "name": "The Crimson",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.2,
+        "scariness": 1,
+        "soundDesign": 5,
+        "story": 2,
+        "visuals": 2,
+        "ambience": 4,
+        "gameplay": 1,
+        "creativity": 4,
+        "enjoyment": 4,
+        "productionQuality": 8,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4714607973",
+      "name": "The Sleepover",
+      "genres": ["Story"],
+      "date": "19.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.2,
+        "scariness": 0,
+        "soundDesign": 3,
+        "story": 3,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 5,
+        "creativity": 10,
+        "enjoyment": 2,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2287740151",
+      "name": "Anak ni Lagim",
+      "genres": ["Misc", "Pinoy"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.2,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 3,
+        "creativity": 5,
+        "enjoyment": 10,
+        "productionQuality": 2,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "- Anak Ni Lagim",
+        "cons": "- The game is unbeatable",
+        "conclusion": "There is just something about Anak Ni Lagim, that makes it some of the most fun we've had while doing this list, let's just call it \"so bad it's good\""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "74798617",
+      "name": "Davendrag",
+      "genres": ["Myth"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.1,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 4,
+        "visuals": 1,
+        "ambience": 6,
+        "gameplay": 0,
+        "creativity": 5,
+        "enjoyment": 2,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2785835162",
+      "name": "Horror Experience",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.1,
+        "scariness": 2,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 3,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4797461542",
+      "name": "Hanover Royalty: The Return",
+      "genres": ["Chapters", "Story"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.1,
+        "scariness": 2,
+        "soundDesign": 4,
+        "story": 1,
+        "visuals": 6,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 6,
+        "enjoyment": 0,
+        "productionQuality": 6,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2505883402",
+      "name": "Simulacrum",
+      "genres": ["Exploration"],
+      "date": "19.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.1,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 0,
+        "visuals": 4,
+        "ambience": 1,
+        "gameplay": 1,
+        "creativity": 5,
+        "enjoyment": 3,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2983269956",
+      "name": "Hide And Peek",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 3,
+        "visuals": 4,
+        "ambience": 5,
+        "gameplay": 2,
+        "creativity": 3,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 3
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3509984144",
+      "name": "ILLUSION",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 1,
+        "soundDesign": 4,
+        "story": 3,
+        "visuals": 7,
+        "ambience": 5,
+        "gameplay": 1,
+        "creativity": 0,
+        "enjoyment": 3,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3417807086",
+      "name": "Thanatophobia",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 2,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 5,
+        "ambience": 4,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 4,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2553256878",
+      "name": "Paralysis",
+      "genres": ["Minigame"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 4,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 6,
+        "gameplay": 0,
+        "creativity": 1,
+        "enjoyment": 1,
+        "productionQuality": 5,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1514730512",
+      "name": "Horror Portals",
+      "genres": ["Story"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 3,
+        "visuals": 4,
+        "ambience": 2,
+        "gameplay": 4,
+        "creativity": 1,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": "https://store.steampowered.com/app/1571440/Lunch_Lady/"
+    },
+    {
+      "uid": "2781845539",
+      "name": "Exam Week (Lunch Lady)",
+      "genres": ["Port"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 5,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 3,
+        "enjoyment": 4,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4653405447",
+      "name": "Intruder",
+      "genres": ["Story"],
+      "date": "22.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.0,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 5,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 3,
+        "enjoyment": 4,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": "",
+        "youtube_url": "https://www.youtube.com/watch?v=qZIJpaHEcrw",
+        "port_url": ""
+      }
+    },
+    {
+      "uid": "4006693411",
+      "name": "Saving Shriek",
+      "genres": ["Story"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 4,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 7,
+        "gameplay": 0,
+        "creativity": 2,
+        "enjoyment": 4,
+        "productionQuality": 4,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3807834054",
+      "name": "Jack",
+      "genres": ["Story"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 4,
+        "visuals": 6,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2181055308",
+      "name": "The Monox",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 3,
+        "soundDesign": 1,
+        "story": 3,
+        "visuals": 2,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4064192755",
+      "name": "Vigor",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 2,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 4,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 4,
+        "enjoyment": 4,
+        "productionQuality": 6,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1988359265",
+      "name": "Casual Board Game",
+      "genres": ["Story"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 0,
+        "soundDesign": 4,
+        "story": 0,
+        "visuals": 4,
+        "ambience": 4,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 1,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "23403173",
+      "name": "A Farmer and his Scarecrow",
+      "genres": ["Story"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 5,
+        "visuals": 1,
+        "ambience": 4,
+        "gameplay": 1,
+        "creativity": 3,
+        "enjoyment": 2,
+        "productionQuality": 2,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ],
   "awards": [
