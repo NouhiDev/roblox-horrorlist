@@ -2703,36 +2703,6 @@
       "port_url": ""
     },
     {
-      "uid": "3424718719",
-      "name": "The Tall Man",
-      "genres": [
-        "Chapters",
-        "Story"
-      ],
-      "date": "17.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": 5.6,
-        "scariness": 3,
-        "soundDesign": 6,
-        "story": 3,
-        "visuals": 8,
-        "ambience": 5,
-        "gameplay": 4,
-        "creativity": 5,
-        "enjoyment": 5,
-        "productionQuality": 7,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
       "uid": "4221956550",
       "name": "The Butchery",
       "genres": [
@@ -7769,7 +7739,7 @@
     },
     {
       "uid": "1652623578",
-      "name": "LABERINTO DEL TERROR | EXTREMO ⚠",
+      "name": "LABERINTO DEL TERROR | EXTREMO \u26a0",
       "genres": [
         "Exploration",
         "Abstract"
