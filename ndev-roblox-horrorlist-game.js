@@ -101,6 +101,7 @@ async function init() {
     const cons = document.getElementById("cons");
     const conclusion = document.getElementById("conclusion");
     const originalBtn = document.getElementsByClassName("originalBtn")[0];
+    const playBtn = document.getElementsByClassName("playbtn")[0];
 
     var gameRank = number;
     if (number == 1) gameRank = "🥇";
@@ -132,6 +133,8 @@ async function init() {
     active.innerText += " " + formatter.format(gameDataByUID.playing);
     visits.innerText += " " + formatter.format(gameDataByUID.visits);
     maxplayers.innerText += " " + gameDataByUID.maxPlayers;
+
+    playBtn.href = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
 
     pros.innerText += "\n";
     cons.innerText += "\n";

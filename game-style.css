@@ -198,3 +198,26 @@ body {
 .originalBtn:hover {
     background: #4070f4;
 }
+
+.playbtn {
+    margin-left: 10px;
+    background-color: #161920;
+    color: rgb(255, 132, 0);
+    padding: 10px 30px 10px 30px;
+    border-color: rgb(255, 132, 0);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.playbtn:hover {
+    background-color: rgb(255, 132, 0);
+    color: #161920;
+    padding: 10px 30px 10px 30px;
+    border-color: rgb(255, 132, 0);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    text-decoration: none;
+}
