@@ -4376,7 +4376,11 @@
     {
       "uid": "3264284497",
       "name": "LAGIM",
-      "genres": ["Story", "Exploration", "Pinoy"],
+      "genres": [
+        "Story",
+        "Exploration",
+        "Pinoy"
+      ],
       "date": "22.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4403,7 +4407,9 @@
     {
       "uid": "2629996120",
       "name": "Geisha",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4430,7 +4436,9 @@
     {
       "uid": "2759100442",
       "name": "Declined Environment",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4457,7 +4465,9 @@
     {
       "uid": "2567185686",
       "name": "Start Survey?",
-      "genres": ["Port"],
+      "genres": [
+        "Port"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4484,7 +4494,9 @@
     {
       "uid": "3870834201",
       "name": "Start Survey?",
-      "genres": ["Port"],
+      "genres": [
+        "Port"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4511,7 +4523,9 @@
     {
       "uid": "2776996638",
       "name": "The Black Shadow",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4538,7 +4552,9 @@
     {
       "uid": "2404541152",
       "name": "The Darkness Beyond",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4565,7 +4581,9 @@
     {
       "uid": "3185165600",
       "name": "Drippler",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4592,7 +4610,9 @@
     {
       "uid": "2921237723",
       "name": "ELMIRA",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4619,7 +4639,9 @@
     {
       "uid": "3833900281",
       "name": "Start Survey?",
-      "genres": ["Port"],
+      "genres": [
+        "Port"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4646,7 +4668,9 @@
     {
       "uid": "2049551477",
       "name": "Cheese Escape",
-      "genres": ["Cheese-Like"],
+      "genres": [
+        "Cheese-Like"
+      ],
       "date": "24.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4673,7 +4697,10 @@
     {
       "uid": "3795659472",
       "name": "FALSE REALITY",
-      "genres": ["Chapters", "Story"],
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "TRUE",
       "ratings": {
@@ -4696,7 +4723,681 @@
       },
       "youtube_url": "",
       "port_url": ""
-    }    
+    },
+    {
+      "uid": "847828172",
+      "name": "Trench Maze",
+      "genres": [
+        "Exploration",
+        "Survival Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.1,
+        "scariness": 2,
+        "soundDesign": 6,
+        "story": 7,
+        "visuals": 1,
+        "ambience": 5,
+        "gameplay": 2,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3727174996",
+      "name": "The Apartment 727",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.1,
+        "scariness": 0,
+        "soundDesign": 5,
+        "story": 4,
+        "visuals": 6,
+        "ambience": 8,
+        "gameplay": 0,
+        "creativity": 7,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": "Read more about The Apartment 727 here: https://www.pcgamer.com/a-brief-history-of-moirai-one-of-pcs-most-disturbing-games/"
+      },
+      "youtube_url": "",
+      "port_url": "https://www.pcgamer.com/a-brief-history-of-moirai-one-of-pcs-most-disturbing-games/"
+    },
+    {
+      "uid": "2320390534",
+      "name": "NORNS",
+      "genres": [
+        "Port"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.1,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 6,
+        "visuals": 2,
+        "ambience": 5,
+        "gameplay": 4,
+        "creativity": 5,
+        "enjoyment": 5,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1776914212",
+      "name": "Spider",
+      "genres": [
+        "Minigame"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.1,
+        "scariness": 4,
+        "soundDesign": 1,
+        "story": 6,
+        "visuals": 2,
+        "ambience": 6,
+        "gameplay": 2,
+        "creativity": 6,
+        "enjoyment": 4,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2263385355",
+      "name": "The Survey",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.0,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 2,
+        "visuals": 3,
+        "ambience": 5,
+        "gameplay": 7,
+        "creativity": 2,
+        "enjoyment": 5,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "543175420",
+      "name": "Happy Oofday! (Original)",
+      "genres": [
+        "Classic Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.0,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 4,
+        "visuals": 3,
+        "ambience": 4,
+        "gameplay": 8,
+        "creativity": 3,
+        "enjoyment": 8,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2771623602",
+      "name": "The phantasmagoria",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.0,
+        "scariness": 3,
+        "soundDesign": 1,
+        "story": 5,
+        "visuals": 2,
+        "ambience": 6,
+        "gameplay": 3,
+        "creativity": 4,
+        "enjoyment": 5,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2990366813",
+      "name": "Akumu [Horror]",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.0,
+        "scariness": 1,
+        "soundDesign": 5,
+        "story": 3,
+        "visuals": 1,
+        "ambience": 5,
+        "gameplay": 4,
+        "creativity": 4,
+        "enjoyment": 7,
+        "productionQuality": 6,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3146965813",
+      "name": "Anathema: The Curse",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 4.0,
+        "scariness": 3,
+        "soundDesign": 1,
+        "story": 5,
+        "visuals": 4,
+        "ambience": 6,
+        "gameplay": 2,
+        "creativity": 5,
+        "enjoyment": 6,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4587522298",
+      "name": "Grandma",
+      "genres": [
+        "Chapters",
+        "Story",
+        "Backrooms"
+      ],
+      "date": "17.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 2,
+        "soundDesign": 3,
+        "story": 4,
+        "visuals": 3,
+        "ambience": 3,
+        "gameplay": 3,
+        "creativity": 8,
+        "enjoyment": 3,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": "Watch the gameplay here: https://www.youtube.com/watch?v=0S-7q1CnBFU"
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=0S-7q1CnBFU",
+      "port_url": ""
+    },
+    {
+      "uid": "2787202019",
+      "name": "Maria?",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 3,
+        "soundDesign": 2,
+        "story": 4,
+        "visuals": 4,
+        "ambience": 1,
+        "gameplay": 4,
+        "creativity": 4,
+        "enjoyment": 7,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2760165940",
+      "name": "The Truth Untold",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 6,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 3,
+        "creativity": 6,
+        "enjoyment": 5,
+        "productionQuality": 4,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "815912372",
+      "name": "Horror Tower",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 0,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 5,
+        "ambience": 4,
+        "gameplay": 4,
+        "creativity": 10,
+        "enjoyment": 3,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1311773387",
+      "name": "Open the Door",
+      "genres": [
+        "Exploration"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 0,
+        "soundDesign": 5,
+        "story": 1,
+        "visuals": 8,
+        "ambience": 6,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 4,
+        "productionQuality": 7,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3635216349",
+      "name": "BLAZE'S BACKROOMS",
+      "genres": [
+        "Exploration",
+        "Backrooms"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 4,
+        "soundDesign": 3,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 3,
+        "gameplay": 3,
+        "creativity": 1,
+        "enjoyment": 4,
+        "productionQuality": 6,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2584080394",
+      "name": "The Corridor",
+      "genres": [
+        "Exploration"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 0,
+        "soundDesign": 5,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 4,
+        "gameplay": 1,
+        "creativity": 3,
+        "enjoyment": 2,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4616862587",
+      "name": "The Gnome Caverns",
+      "genres": [
+        "Chapters",
+        "Story",
+        "Exploration"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 5,
+        "visuals": 5,
+        "ambience": 3,
+        "gameplay": 2,
+        "creativity": 5,
+        "enjoyment": 8,
+        "productionQuality": 3,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "686297872",
+      "name": "The Missing",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.9,
+        "scariness": 1,
+        "soundDesign": 6,
+        "story": 1,
+        "visuals": 6,
+        "ambience": 4,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3085257211",
+      "name": "Rainbow Friends",
+      "genres": [
+        "Minigame",
+        "Mascot Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.8,
+        "scariness": 0,
+        "soundDesign": 3,
+        "story": 2,
+        "visuals": 6,
+        "ambience": 4,
+        "gameplay": 3,
+        "creativity": 8,
+        "enjoyment": 3,
+        "productionQuality": 5,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "32013817",
+      "name": "The Haunted Imperial hotel",
+      "genres": [
+        "Exploration"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.8,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 3,
+        "visuals": 8,
+        "ambience": 7,
+        "gameplay": 6,
+        "creativity": 4,
+        "enjoyment": 4,
+        "productionQuality": 8,
+        "technical": 3
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1881830245",
+      "name": "Button Eyes",
+      "genres": [
+        "Minigame"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.8,
+        "scariness": 0,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 5,
+        "ambience": 3,
+        "gameplay": 6,
+        "creativity": 1,
+        "enjoyment": 4,
+        "productionQuality": 4,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "999549988",
+      "name": "ENTOMBED [HORROR]",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.8,
+        "scariness": 2,
+        "soundDesign": 4,
+        "story": 3,
+        "visuals": 4,
+        "ambience": 3,
+        "gameplay": 2,
+        "creativity": 5,
+        "enjoyment": 2,
+        "productionQuality": 7,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3672375717",
+      "name": "Missing Elvira",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.8,
+        "scariness": 2,
+        "soundDesign": 5,
+        "story": 2,
+        "visuals": 7,
+        "ambience": 5,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 5,
+        "productionQuality": 8,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    }
   ],
   "awards": [
     "Funny Award"
