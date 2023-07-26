@@ -304,6 +304,600 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": "4411354017",
+      "name": "DISCOMBOBULATION [DEMO]",
+      "genres": ["Port"],
+      "date": "21.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.7,
+        "scariness": 7,
+        "soundDesign": 10,
+        "story": 10,
+        "visuals": 6,
+        "ambience": 10,
+        "gameplay": 7,
+        "creativity": 0,
+        "enjoyment": 10,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=aFxBU9CQqtY",
+      "port_url": "https://kittyhorrorshow.itch.io/anatomy"
+    },
+    {
+      "uid": "2136411675",
+      "name": "It Lurks",
+      "genres": ["Exploration"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.6,
+        "scariness": 5,
+        "soundDesign": 8,
+        "story": 7,
+        "visuals": 8,
+        "ambience": 7,
+        "gameplay": 7,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3215864160",
+      "name": "Short Creepy stories",
+      "genres": ["Chapters", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.5,
+        "scariness": 7,
+        "soundDesign": 8,
+        "story": 6,
+        "visuals": 8,
+        "ambience": 7,
+        "gameplay": 6,
+        "creativity": 7,
+        "enjoyment": 9,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=Y-QcfvbdI_A",
+      "port_url": ""
+    },
+    {
+      "uid": "2665374975",
+      "name": "Three Nightmares",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.5,
+        "scariness": 7,
+        "soundDesign": 6,
+        "story": 7,
+        "visuals": 9,
+        "ambience": 6,
+        "gameplay": 7,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1174455814",
+      "name": "Light Bulb: Reillumination",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.4,
+        "scariness": 2,
+        "soundDesign": 8,
+        "story": 7,
+        "visuals": 6,
+        "ambience": 8,
+        "gameplay": 8,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4861126364",
+      "name": "Night Watch",
+      "genres": ["Story", "Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.4,
+        "scariness": 6,
+        "soundDesign": 8,
+        "story": 6,
+        "visuals": 6,
+        "ambience": 7,
+        "gameplay": 8,
+        "creativity": 6,
+        "enjoyment": 8,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=i8FQoiHgZQ8",
+      "port_url": ""
+    },
+    {
+      "uid": "33012",
+      "name": "SIGIL",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.3,
+        "scariness": 6,
+        "soundDesign": 6,
+        "story": 4,
+        "visuals": 9,
+        "ambience": 9,
+        "gameplay": 6,
+        "creativity": 8,
+        "enjoyment": 8,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=MteWN-nj9LY",
+      "port_url": ""
+    },
+    {
+      "uid": "2643072291",
+      "name": "Frigid Dusk",
+      "genres": ["Story", "Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.3,
+        "scariness": 7,
+        "soundDesign": 7,
+        "story": 6,
+        "visuals": 9,
+        "ambience": 5,
+        "gameplay": 7,
+        "creativity": 7,
+        "enjoyment": 6,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1335746998",
+      "name": "DREAM WORLD",
+      "genres": ["Exploration"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.3,
+        "scariness": 2,
+        "soundDesign": 7,
+        "story": 5,
+        "visuals": 9,
+        "ambience": 10,
+        "gameplay": 6,
+        "creativity": 8,
+        "enjoyment": 8,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1000233041",
+      "name": "3008",
+      "genres": ["Misc"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.3,
+        "scariness": 2,
+        "soundDesign": 7,
+        "story": 4,
+        "visuals": 9,
+        "ambience": 9,
+        "gameplay": 7,
+        "creativity": 8,
+        "enjoyment": 10,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2985161144",
+      "name": "Explore Dreamcore/Weirdcore",
+      "genres": ["Exploration", "Abstract"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.3,
+        "scariness": 0,
+        "soundDesign": 7,
+        "story": 0,
+        "visuals": 10,
+        "ambience": 10,
+        "gameplay": 7,
+        "creativity": 9,
+        "enjoyment": 10,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2862690855",
+      "name": "Rat House",
+      "genres": ["Chapters", "Abstract", "Parody"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.3,
+        "scariness": 2,
+        "soundDesign": 7,
+        "story": 7,
+        "visuals": 8,
+        "ambience": 6,
+        "gameplay": 7,
+        "creativity": 8,
+        "enjoyment": 8,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3528834270",
+      "name": "A Landscape of Thorns - The Spike Field",
+      "genres": ["Exploration", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.2,
+        "scariness": 1,
+        "soundDesign": 8,
+        "story": 6,
+        "visuals": 7,
+        "ambience": 9,
+        "gameplay": 6,
+        "creativity": 8,
+        "enjoyment": 9,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2698095207",
+      "name": "Midnight at the Office",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.2,
+        "scariness": 7,
+        "soundDesign": 7,
+        "story": 6,
+        "visuals": 8,
+        "ambience": 6,
+        "gameplay": 6,
+        "creativity": 7,
+        "enjoyment": 7,
+        "productionQuality": 9,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2543783628",
+      "name": "The Severance",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.2,
+        "scariness": 7,
+        "soundDesign": 8,
+        "story": 5,
+        "visuals": 7,
+        "ambience": 8,
+        "gameplay": 5,
+        "creativity": 6,
+        "enjoyment": 8,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=e9TvSet3BjU",
+      "port_url": ""
+    },
+    {
+      "uid": "1170627976",
+      "name": "Level 0",
+      "genres": ["Exploration", "Backrooms"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.2,
+        "scariness": 7,
+        "soundDesign": 5,
+        "story": 2,
+        "visuals": 9,
+        "ambience": 9,
+        "gameplay": 6,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=Z6ZKfs51Vxg",
+      "port_url": ""
+    },
+    {
+      "uid": "1760377900",
+      "name": "CULT OF THE CRYPTIDS",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.0,
+        "scariness": 5,
+        "soundDesign": 4,
+        "story": 8,
+        "visuals": 10,
+        "ambience": 7,
+        "gameplay": 5,
+        "creativity": 7,
+        "enjoyment": 7,
+        "productionQuality": 8,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2460092186",
+      "name": "Silent Dark: Remade",
+      "genres": ["Chapters", "Story", "Remake"],
+      "date": "21.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.0,
+        "scariness": 5,
+        "soundDesign": 7,
+        "story": 8,
+        "visuals": 5,
+        "ambience": 9,
+        "gameplay": 8,
+        "creativity": 2,
+        "enjoyment": 10,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=ikD4sSZphyM",
+      "port_url": ""
+    },
+    {
+      "uid": "3939028128",
+      "name": "Dark Secret",
+      "genres": ["Chapters", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.9,
+        "scariness": 3,
+        "soundDesign": 5,
+        "story": 7,
+        "visuals": 6,
+        "ambience": 8,
+        "gameplay": 9,
+        "creativity": 8,
+        "enjoyment": 7,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2053225602",
+      "name": "Automatonophobia",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.9,
+        "scariness": 5,
+        "soundDesign": 6,
+        "story": 6,
+        "visuals": 8,
+        "ambience": 7,
+        "gameplay": 6,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2182485283",
+      "name": "PM 6:06",
+      "genres": ["Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.9,
+        "scariness": 5,
+        "soundDesign": 8,
+        "story": 5,
+        "visuals": 4,
+        "ambience": 7,
+        "gameplay": 8,
+        "creativity": 7,
+        "enjoyment": 9,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2113881654",
+      "name": "No Players Online",
+      "genres": ["Port"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.9,
+        "scariness": 5,
+        "soundDesign": 7,
+        "story": 8,
+        "visuals": 9,
+        "ambience": 8,
+        "gameplay": 6,
+        "creativity": 0,
+        "enjoyment": 6,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": "https://papercookies.itch.io/no-players-online"
     }        
   ],
   "awards": [
