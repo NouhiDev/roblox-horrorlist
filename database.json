@@ -92,7 +92,9 @@
     {
       "uid": "2687636602",
       "name": "Silent Blox: Teaser",
-      "genres": ["Port"],
+      "genres": [
+        "Port"
+      ],
       "date": "20.07.2023",
       "award": "",
       "ratings": {
@@ -119,7 +121,9 @@
     {
       "uid": "3470979009",
       "name": "LIMBO (Demo)",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "17.07.2023",
       "award": "",
       "ratings": {
@@ -5455,7 +5459,9 @@
     {
       "uid": "1750299927",
       "name": "Batty's Rooms",
-      "genres": ["Point and Click"],
+      "genres": [
+        "Point and Click"
+      ],
       "date": "24.07.2023",
       "award": "",
       "ratings": {
@@ -5482,7 +5488,9 @@
     {
       "uid": "4008155272",
       "name": "Devralma",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5509,7 +5517,9 @@
     {
       "uid": "3317514344",
       "name": "MYTHOLOGY",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5536,7 +5546,9 @@
     {
       "uid": "2664642137",
       "name": "The Forgotten Ahuic",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5563,7 +5575,9 @@
     {
       "uid": "4385899138",
       "name": "hide and seek with billy",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5590,7 +5604,9 @@
     {
       "uid": "3093893787",
       "name": "IT Lures",
-      "genres": ["Chapters, Story"],
+      "genres": [
+        "Chapters, Story"
+      ],
       "date": "25.07.2023",
       "award": "",
       "ratings": {
@@ -5617,7 +5633,9 @@
     {
       "uid": "2580759645",
       "name": "Kalampokiphobia",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5644,7 +5662,10 @@
     {
       "uid": "1516533665",
       "name": "Piggy",
-      "genres": ["Minigame", "Mascot Horror"],
+      "genres": [
+        "Minigame",
+        "Mascot Horror"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5671,7 +5692,9 @@
     {
       "uid": "1888174103",
       "name": "Centipede",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5698,7 +5721,9 @@
     {
       "uid": "1180345790",
       "name": "The Library",
-      "genres": ["Exploration"],
+      "genres": [
+        "Exploration"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5725,7 +5750,9 @@
     {
       "uid": "2429264254",
       "name": "Bewildered",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5752,7 +5779,10 @@
     {
       "uid": "4523856444",
       "name": "Color or Die",
-      "genres": ["Chapters", "Cheese-Like"],
+      "genres": [
+        "Chapters",
+        "Cheese-Like"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5779,7 +5809,9 @@
     {
       "uid": "2351393414",
       "name": "MAN OF 7 SHINGLES",
-      "genres": ["Misc"],
+      "genres": [
+        "Misc"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5806,7 +5838,10 @@
     {
       "uid": "3091538486",
       "name": "Floppy's Playtime",
-      "genres": ["Chapters", "Mascot Horror"],
+      "genres": [
+        "Chapters",
+        "Mascot Horror"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5833,7 +5868,9 @@
     {
       "uid": "3777411657",
       "name": "The Paranormal",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5860,7 +5897,9 @@
     {
       "uid": "3249123901",
       "name": "Mocker",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5887,7 +5926,9 @@
     {
       "uid": "669377846",
       "name": "Visiosubrideophobia",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "20.07.2023",
       "award": "",
       "ratings": {
@@ -5914,7 +5955,9 @@
     {
       "uid": "2065023260",
       "name": "Noctis",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5941,7 +5984,9 @@
     {
       "uid": "2116901351",
       "name": "Those Beneath Us",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5968,7 +6013,9 @@
     {
       "uid": "95416010",
       "name": "FNAKK",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -5995,7 +6042,9 @@
     {
       "uid": "3171190217",
       "name": "Specter 2",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6022,7 +6071,9 @@
     {
       "uid": "108851211",
       "name": "The Closet 3: Under The Bed",
-      "genres": ["Classic Horror"],
+      "genres": [
+        "Classic Horror"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6049,7 +6100,9 @@
     {
       "uid": "3003543902",
       "name": "The Crimson",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6076,7 +6129,9 @@
     {
       "uid": "4714607973",
       "name": "The Sleepover",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "19.07.2023",
       "award": "",
       "ratings": {
@@ -6103,7 +6158,10 @@
     {
       "uid": "2287740151",
       "name": "Anak ni Lagim",
-      "genres": ["Misc", "Pinoy"],
+      "genres": [
+        "Misc",
+        "Pinoy"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6130,7 +6188,9 @@
     {
       "uid": "74798617",
       "name": "Davendrag",
-      "genres": ["Myth"],
+      "genres": [
+        "Myth"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6157,7 +6217,9 @@
     {
       "uid": "2785835162",
       "name": "Horror Experience",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6184,7 +6246,10 @@
     {
       "uid": "4797461542",
       "name": "Hanover Royalty: The Return",
-      "genres": ["Chapters", "Story"],
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6211,7 +6276,9 @@
     {
       "uid": "2505883402",
       "name": "Simulacrum",
-      "genres": ["Exploration"],
+      "genres": [
+        "Exploration"
+      ],
       "date": "19.07.2023",
       "award": "",
       "ratings": {
@@ -6238,7 +6305,9 @@
     {
       "uid": "2983269956",
       "name": "Hide And Peek",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6265,7 +6334,9 @@
     {
       "uid": "3509984144",
       "name": "ILLUSION",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6292,7 +6363,9 @@
     {
       "uid": "3417807086",
       "name": "Thanatophobia",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6319,7 +6392,9 @@
     {
       "uid": "2553256878",
       "name": "Paralysis",
-      "genres": ["Minigame"],
+      "genres": [
+        "Minigame"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6346,7 +6421,9 @@
     {
       "uid": "1514730512",
       "name": "Horror Portals",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6373,7 +6450,9 @@
     {
       "uid": "2781845539",
       "name": "Exam Week (Lunch Lady)",
-      "genres": ["Port"],
+      "genres": [
+        "Port"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6400,7 +6479,9 @@
     {
       "uid": "4653405447",
       "name": "Intruder",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "22.07.2023",
       "award": "",
       "ratings": {
@@ -6427,7 +6508,9 @@
     {
       "uid": "4006693411",
       "name": "Saving Shriek",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6454,7 +6537,9 @@
     {
       "uid": "3807834054",
       "name": "Jack",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6481,7 +6566,9 @@
     {
       "uid": "2181055308",
       "name": "The Monox",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6508,7 +6595,9 @@
     {
       "uid": "4064192755",
       "name": "Vigor",
-      "genres": ["Chapters"],
+      "genres": [
+        "Chapters"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6535,7 +6624,9 @@
     {
       "uid": "1988359265",
       "name": "Casual Board Game",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6562,7 +6653,9 @@
     {
       "uid": "23403173",
       "name": "A Farmer and his Scarecrow",
-      "genres": ["Story"],
+      "genres": [
+        "Story"
+      ],
       "date": "18.07.2023",
       "award": "",
       "ratings": {
@@ -6576,6 +6669,1301 @@
         "creativity": 3,
         "enjoyment": 2,
         "productionQuality": 2,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3320362210",
+      "name": "Horroremon",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.9,
+        "scariness": 2,
+        "soundDesign": 2,
+        "story": 3,
+        "visuals": 1,
+        "ambience": 2,
+        "gameplay": 0,
+        "creativity": 7,
+        "enjoyment": 1,
+        "productionQuality": 6,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3196893595",
+      "name": "Less Broken",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.8,
+        "scariness": 0,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 4,
+        "gameplay": 0,
+        "creativity": 1,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "15676730",
+      "name": "Escape before It Arrives",
+      "genres": [
+        "Minigame",
+        "Classic Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.8,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 3,
+        "gameplay": 2,
+        "creativity": 7,
+        "enjoyment": 0,
+        "productionQuality": 3,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "6928633",
+      "name": "Seven Days Prologue",
+      "genres": [
+        "Misc"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.8,
+        "scariness": 1,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 5,
+        "ambience": 2,
+        "gameplay": 3,
+        "creativity": 3,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "53706574",
+      "name": "The Closet 2: Out The Window...",
+      "genres": [
+        "Classic Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.7,
+        "scariness": 3,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 0,
+        "ambience": 1,
+        "gameplay": 2,
+        "creativity": 1,
+        "enjoyment": 9,
+        "productionQuality": 3,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "11424708",
+      "name": "The Tempest.",
+      "genres": [
+        "Myth"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.7,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 5,
+        "visuals": 1,
+        "ambience": 4,
+        "gameplay": 0,
+        "creativity": 3,
+        "enjoyment": 1,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1386273119",
+      "name": "Night Shift",
+      "genres": [
+        "Unfinished/Abandonend"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.6,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 3,
+        "visuals": 6,
+        "ambience": 2,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1687735318",
+      "name": "The Kanker Man",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.5,
+        "scariness": 1,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 1,
+        "ambience": 2,
+        "gameplay": 1,
+        "creativity": 8,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "57044459",
+      "name": "The Closet...",
+      "genres": [
+        "Classic Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.5,
+        "scariness": 0,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 0,
+        "ambience": 2,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 8,
+        "productionQuality": 2,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4142690130",
+      "name": "Hungry Tubbies",
+      "genres": [
+        "Minigame"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.5,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 2,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 3,
+        "enjoyment": 0,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2603897673",
+      "name": "The Exit",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.5,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 3,
+        "visuals": 3,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4158872361",
+      "name": "PonPon",
+      "genres": [
+        "Chapters",
+        "Story",
+        "Mascot Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.5,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 2,
+        "visuals": 3,
+        "ambience": 1,
+        "gameplay": 4,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4076953262",
+      "name": "The Underworld",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.5,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 6,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 1,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2630369790",
+      "name": "Ouija",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.4,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 3,
+        "visuals": 4,
+        "ambience": 1,
+        "gameplay": 2,
+        "creativity": 0,
+        "enjoyment": 1,
+        "productionQuality": 2,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2976440140",
+      "name": "Dark Rooms",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.4,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 3,
+        "ambience": 4,
+        "gameplay": 0,
+        "creativity": 1,
+        "enjoyment": 2,
+        "productionQuality": 0,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2808483420",
+      "name": "The Missing Part 1",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.4,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 0,
+        "gameplay": 1,
+        "creativity": 6,
+        "enjoyment": 4,
+        "productionQuality": 9,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "19717575",
+      "name": "Insanity: Beyond the Experience",
+      "genres": [
+        "Classic Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.3,
+        "scariness": 2,
+        "soundDesign": 0,
+        "story": 6,
+        "visuals": 1,
+        "ambience": 0,
+        "gameplay": 2,
+        "creativity": 6,
+        "enjoyment": 0,
+        "productionQuality": 2,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2986376743",
+      "name": "The Fiend",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.3,
+        "scariness": 1,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 6,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 1,
+        "productionQuality": 6,
+        "technical": 2
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1675444984",
+      "name": "Siren Head Legacy",
+      "genres": [
+        "Minigame",
+        "Mascot Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.3,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 6,
+        "ambience": 4,
+        "gameplay": 2,
+        "creativity": 0,
+        "enjoyment": 3,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2813148661",
+      "name": "Dark Abyss",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.3,
+        "scariness": 0,
+        "soundDesign": 6,
+        "story": 0,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 1,
+        "productionQuality": 3,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4129943140",
+      "name": "Miyix",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.2,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 3,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 2,
+        "creativity": 3,
+        "enjoyment": 4,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4661856998",
+      "name": "DON'T GET SNIFFED",
+      "genres": [
+        "Minigame",
+        "Cheese-Like"
+      ],
+      "date": "24.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.2,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 5,
+        "productionQuality": 2,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=FYR8-nid8AY",
+      "port_url": ""
+    },
+    {
+      "uid": "3335408800",
+      "name": "Jenna",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "25.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.1,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 0,
+        "ambience": 0,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 6,
+        "productionQuality": 2,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "- Funny game, the giggle was very good",
+        "cons": "- It wasn't scary\n- Very long walking, with no sprinting option",
+        "conclusion": "There is nothing fun or scary about this game, there are a few moments of accidental comedy, but it's mostly an unplayable slog."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=EdaHxdk7MPQ",
+      "port_url": ""
+    },
+    {
+      "uid": "515899373",
+      "name": "The Smile Room",
+      "genres": [
+        "Exploration",
+        "Body Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.1,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 2,
+        "visuals": 1,
+        "ambience": 0,
+        "gameplay": 2,
+        "creativity": 4,
+        "enjoyment": 2,
+        "productionQuality": 1,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3013989438",
+      "name": "Malefic",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.1,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 5,
+        "ambience": 3,
+        "gameplay": 0,
+        "creativity": 2,
+        "enjoyment": 1,
+        "productionQuality": 6,
+        "technical": 3
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3212641355",
+      "name": "Black Mannequins (Abandoned!)",
+      "genres": [
+        "Unfinished/Abandoned"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.1,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 2,
+        "visuals": 5,
+        "ambience": 5,
+        "gameplay": 0,
+        "creativity": 1,
+        "enjoyment": 4,
+        "productionQuality": 2,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4269931499",
+      "name": "Banban",
+      "genres": [
+        "Port",
+        "Mascot Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.1,
+        "scariness": 0,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 0,
+        "ambience": 2,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 4,
+        "productionQuality": 4,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3569254948",
+      "name": "WRAITH",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.0,
+        "scariness": 2,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 4,
+        "ambience": 2,
+        "gameplay": 1,
+        "creativity": 0,
+        "enjoyment": 1,
+        "productionQuality": 2,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3149638410",
+      "name": "The Four Kingdoms",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.0,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 4,
+        "ambience": 1,
+        "gameplay": 0,
+        "creativity": 0,
+        "enjoyment": 3,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4543003512",
+      "name": "Sussy Wussy",
+      "genres": [
+        "Chapters",
+        "Port",
+        "Cheese-Like",
+        "Mascot Horror"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 2.0,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 0,
+        "ambience": 1,
+        "gameplay": 3,
+        "creativity": 2,
+        "enjoyment": 4,
+        "productionQuality": 6,
+        "technical": 3
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": "https://polymars.itch.io/sussy-schoolgrounds"
+    },
+    {
+      "uid": "3732483931",
+      "name": "Coma Creatures",
+      "genres": [
+        "Unfinished/Abandoned"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.9,
+        "scariness": 0,
+        "soundDesign": 5,
+        "story": 0,
+        "visuals": 4,
+        "ambience": 7,
+        "gameplay": 0,
+        "creativity": 1,
+        "enjoyment": 0,
+        "productionQuality": 1,
+        "technical": 1
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3625253018",
+      "name": "The Dead",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.9,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 0,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3762507617",
+      "name": "Disturbance",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.9,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 2,
+        "visuals": 1,
+        "ambience": 0,
+        "gameplay": 1,
+        "creativity": 0,
+        "enjoyment": 2,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4840371759",
+      "name": "Thirsty Grimace",
+      "genres": [
+        "Cheese-Like",
+        "Mascot Horror"
+      ],
+      "date": "24.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.9,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 0,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 2,
+        "creativity": 3,
+        "enjoyment": 3,
+        "productionQuality": 6,
+        "technical": 3
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1668867603",
+      "name": "HERE, where the world is quiet",
+      "genres": [
+        "Myth"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.8,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 3,
+        "visuals": 1,
+        "ambience": 3,
+        "gameplay": 0,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 2,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4122391400",
+      "name": "Unalive",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.7,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 1,
+        "ambience": 0,
+        "gameplay": 1,
+        "creativity": 0,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2780345224",
+      "name": "hORROR HISPITAL",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "25.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.6,
+        "scariness": 1,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 3,
+        "ambience": 1,
+        "gameplay": 0,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "- Graphics were okay",
+        "cons": "- Boring\n- Chapter 2 is frustrating",
+        "conclusion": "This game has absolutely nothing going for it, except for a boring walking sim, there is nothing to be enjoyed in the slightest."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=GeJKCaPQZwc",
+      "port_url": ""
+    },
+    {
+      "uid": "1652623578",
+      "name": "LABERINTO DEL TERROR | EXTREMO ⚠",
+      "genres": [
+        "Exploration",
+        "Abstract"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.6,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 1,
+        "ambience": 1,
+        "gameplay": 3,
+        "creativity": 0,
+        "enjoyment": 1,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1129719952",
+      "name": "SCHOOL HISTORY",
+      "genres": [
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.4,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 1,
+        "visuals": 1,
+        "ambience": 0,
+        "gameplay": 2,
+        "creativity": 0,
+        "enjoyment": 1,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "84717001",
+      "name": "Cliff Fear",
+      "genres": [
+        "Misc"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.3,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 0,
+        "visuals": 1,
+        "ambience": 6,
+        "gameplay": 0,
+        "creativity": 0,
+        "enjoyment": 1,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2113508211",
+      "name": "The Virus",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 1.1,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 1,
+        "ambience": 1,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 1,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "42110818",
+      "name": "Bloody Mary I .:Awake and Trapped:.",
+      "genres": [
+        "Classic Horror",
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 0.9,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 1,
+        "visuals": 0,
+        "ambience": 0,
+        "gameplay": 4,
+        "creativity": 1,
+        "enjoyment": 1,
+        "productionQuality": 2,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3852629455",
+      "name": "The Anticipated",
+      "genres": [
+        "Chapters"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 0.5,
+        "scariness": 0,
+        "soundDesign": 0,
+        "story": 0,
+        "visuals": 1,
+        "ambience": 3,
+        "gameplay": 0,
+        "creativity": 0,
+        "enjoyment": 0,
+        "productionQuality": 1,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2252036402",
+      "name": "The Dark",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 0.3,
+        "scariness": 0,
+        "soundDesign": -2,
+        "story": 1,
+        "visuals": 0,
+        "ambience": 0,
+        "gameplay": 0,
+        "creativity": -2,
+        "enjoyment": 2,
+        "productionQuality": 4,
         "technical": 10
       },
       "rater_note": {
