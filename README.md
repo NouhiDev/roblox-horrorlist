@@ -12,3 +12,7 @@ Welcome to the Roblox Horrorlist! This project is dedicated to showcasing almost
 
  ## Contribution:
  Currently, we do not support contributing. However, we are working on increasing our team of raters.
+
+ ## Note:
+While rating the games is done by some friends and me, it is important to note that developing the API and website
+are done just by myself, which explains the slow and unoptimized code.
