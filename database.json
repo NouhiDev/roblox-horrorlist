@@ -5586,8 +5586,34 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": "1750299927",
+      "name": "Batty's Rooms",
+      "genres": ["Point and Click"],
+      "date": "24.07.2023",
+      "award": "TRUE",
+      "ratings": {
+        "rating": 3.8,
+        "scariness": 4,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 3,
+        "ambience": 4,
+        "gameplay": 8,
+        "creativity": 4,
+        "enjoyment": 4,
+        "productionQuality": 4,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "- One of the only Point and Click games I've seen on Roblox\n- Different levels for different difficulty settings\n- Effective jumpscare timing",
+        "cons": "- Technically underdeveloped\n- Unforgiving clickboxes and timer\n- 3rd Level doesn't work\n- Graphics are lacking\n- It isn't clear on what you can click and models overlap in the inventory",
+        "conclusion": "Fun ideas that need a lot of polish and reworking. I suggest working on the existing chapters (updating textures and models + removing glitches) before adding any new content."
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
-    
   ],
   "awards": [
     "Funny Award"
