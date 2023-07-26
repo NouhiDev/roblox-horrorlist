@@ -5457,7 +5457,7 @@
       "name": "Batty's Rooms",
       "genres": ["Point and Click"],
       "date": "24.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 3.8,
         "scariness": 4,
@@ -5475,6 +5475,519 @@
         "pros": "- One of the only Point and Click games I've seen on Roblox\n- Different levels for different difficulty settings\n- Effective jumpscare timing",
         "cons": "- Technically underdeveloped\n- Unforgiving clickboxes and timer\n- 3rd Level doesn't work\n- Graphics are lacking\n- It isn't clear on what you can click and models overlap in the inventory",
         "conclusion": "Fun ideas that need a lot of polish and reworking. I suggest working on the existing chapters (updating textures and models + removing glitches) before adding any new content."
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4008155272",
+      "name": "Devralma",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.7,
+        "scariness": 2,
+        "soundDesign": 3,
+        "story": 4,
+        "visuals": 5,
+        "ambience": 7,
+        "gameplay": 2,
+        "creativity": 1,
+        "enjoyment": 4,
+        "productionQuality": 2,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3317514344",
+      "name": "MYTHOLOGY",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.7,
+        "scariness": 1,
+        "soundDesign": 6,
+        "story": 2,
+        "visuals": 3,
+        "ambience": 6,
+        "gameplay": 2,
+        "creativity": 1,
+        "enjoyment": 6,
+        "productionQuality": 4,
+        "technical": 6
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2664642137",
+      "name": "The Forgotten Ahuic",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.7,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 2,
+        "visuals": 7,
+        "ambience": 4,
+        "gameplay": 2,
+        "creativity": 3,
+        "enjoyment": 1,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4385899138",
+      "name": "hide and seek with billy",
+      "genres": ["Minigame"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.7,
+        "scariness": 4,
+        "soundDesign": 2,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 1,
+        "gameplay": 4,
+        "creativity": 7,
+        "enjoyment": 1,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3093893787",
+      "name": "IT Lures",
+      "genres": ["Chapters, Story"],
+      "date": "25.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 2,
+        "soundDesign": 4,
+        "story": 3,
+        "visuals": 7,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 3,
+        "enjoyment": 1,
+        "productionQuality": 7,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "- Rather unique scares\n- Epic lobby music",
+        "cons": "- Walking simulator\n- Find the key\n- Frustrating enemy constantly chasing you\n- Too big of a maze",
+        "conclusion": "IT Lures follows the basic horror concept of entering an abandoned building that is being haunted, and therefore having to escape again. Other than finding the key, there are no gameplay mechanics, and except for some unconventional scares, this game does not deliver in any category."
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2580759645",
+      "name": "Kalampokiphobia",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 2,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 5,
+        "ambience": 6,
+        "gameplay": 1,
+        "creativity": 1,
+        "enjoyment": 3,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1516533665",
+      "name": "Piggy",
+      "genres": ["Minigame", "Mascot Horror"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 3,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 4,
+        "ambience": 1,
+        "gameplay": 6,
+        "creativity": 3,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1888174103",
+      "name": "Centipede",
+      "genres": ["Minigame"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 5,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 3,
+        "ambience": 1,
+        "gameplay": 6,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 4,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1180345790",
+      "name": "The Library",
+      "genres": ["Exploration"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 0,
+        "soundDesign": 1,
+        "story": 4,
+        "visuals": 3,
+        "ambience": 5,
+        "gameplay": 2,
+        "creativity": 6,
+        "enjoyment": 1,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2429264254",
+      "name": "Bewildered",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 2,
+        "soundDesign": 4,
+        "story": 4,
+        "visuals": 5,
+        "ambience": 2,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 5,
+        "productionQuality": 9,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4523856444",
+      "name": "Color or Die",
+      "genres": ["Chapters", "Cheese-Like"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.6,
+        "scariness": 0,
+        "soundDesign": 4,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 3,
+        "gameplay": 0,
+        "creativity": 5,
+        "enjoyment": 1,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2351393414",
+      "name": "MAN OF 7 SHINGLES",
+      "genres": ["Misc"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.5,
+        "scariness": 1,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 2,
+        "ambience": 5,
+        "gameplay": 3,
+        "creativity": 6,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3091538486",
+      "name": "Floppy's Playtime",
+      "genres": ["Chapters", "Mascot Horror"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.5,
+        "scariness": 3,
+        "soundDesign": 1,
+        "story": 0,
+        "visuals": 4,
+        "ambience": 2,
+        "gameplay": 5,
+        "creativity": 0,
+        "enjoyment": 5,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3777411657",
+      "name": "The Paranormal",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.4,
+        "scariness": 1,
+        "soundDesign": 5,
+        "story": 2,
+        "visuals": 3,
+        "ambience": 3,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 7,
+        "productionQuality": 2,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3249123901",
+      "name": "Mocker",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.4,
+        "scariness": 2,
+        "soundDesign": 0,
+        "story": 1,
+        "visuals": 5,
+        "ambience": 3,
+        "gameplay": 1,
+        "creativity": 5,
+        "enjoyment": 4,
+        "productionQuality": 8,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "669377846",
+      "name": "Visiosubrideophobia",
+      "genres": ["Minigame"],
+      "date": "20.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.4,
+        "scariness": 3,
+        "soundDesign": 2,
+        "story": 0,
+        "visuals": 3,
+        "ambience": 5,
+        "gameplay": 2,
+        "creativity": 4,
+        "enjoyment": 3,
+        "productionQuality": 10,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2065023260",
+      "name": "Noctis",
+      "genres": ["Minigame"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.3,
+        "scariness": 0,
+        "soundDesign": 3,
+        "story": 0,
+        "visuals": 6,
+        "ambience": 2,
+        "gameplay": 3,
+        "creativity": 1,
+        "enjoyment": 6,
+        "productionQuality": 2,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2116901351",
+      "name": "Those Beneath Us",
+      "genres": ["Chapters"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.3,
+        "scariness": 2,
+        "soundDesign": 3,
+        "story": 4,
+        "visuals": 3,
+        "ambience": 4,
+        "gameplay": 0,
+        "creativity": 6,
+        "enjoyment": 0,
+        "productionQuality": 6,
+        "technical": 5
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "95416010",
+      "name": "FNAKK",
+      "genres": ["Minigame"],
+      "date": "18.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.2,
+        "scariness": 0,
+        "soundDesign": 2,
+        "story": 2,
+        "visuals": 1,
+        "ambience": 1,
+        "gameplay": 4,
+        "creativity": 3,
+        "enjoyment": 5,
+        "productionQuality": 6,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
       },
       "youtube_url": "",
       "port_url": ""
