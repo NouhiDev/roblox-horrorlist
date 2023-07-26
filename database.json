@@ -8035,7 +8035,7 @@
       "uid": "706002330",
       "name": "Eyes The Horror Game",
       "genres": [
-        "Minigame"
+        "Minigame, Remake"
       ],
       "date": "26.07.2023",
       "award": "",
@@ -8058,7 +8058,7 @@
         "conclusion": ""
       },
       "youtube_url": "",
-      "port_url": ""
+      "port_url": "https://play.google.com/store/apps/details?id=com.eyesthegame.eyes&hl=en_US&pli=1"
     }
   ]
 }
