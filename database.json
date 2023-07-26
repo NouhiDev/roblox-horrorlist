@@ -8059,6 +8059,36 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": "4768465902",
+      "name": "Wally",
+      "genres": [
+        "Cheese-Like",
+        "Mascot Horror"
+      ],
+      "date": "26.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.4,
+        "scariness": 1,
+        "soundDesign": 3,
+        "story": 0,
+        "visuals": 5,
+        "ambience": 1,
+        "gameplay": 1,
+        "creativity": 4,
+        "enjoyment": 6,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "The maze has a manageable size and the monster has a unique design.",
+        "cons": "Unoriginal boring gameplay as with all the other games like this one.",
+        "conclusion": "Despite a unique monster design, this game's disappointing choice of gameplay prevents it from being a standout."
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ]
 }
