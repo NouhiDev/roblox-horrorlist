@@ -105,7 +105,7 @@
         "visuals": 8,
         "ambience": 10,
         "gameplay": 10,
-        "creativity": 50,
+        "creativity": 0,
         "enjoyment": 10,
         "productionQuality": 10,
         "technical": 10
@@ -116,8 +116,7 @@
         "conclusion": ""
       },
       "youtube_url": "https://www.youtube.com/watch?v=_k1NlGZxPEM",
-      "port_url": "https://gamejolt.com/games/ptforpc/350281",
-      "creativity": 0.0
+      "port_url": "https://gamejolt.com/games/ptforpc/350281"
     },
     {
       "uid": "3470979009",
