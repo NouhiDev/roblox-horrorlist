@@ -1633,7 +1633,7 @@
       "name": "Dead Silence",
       "genres": ["Story"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.2,
         "scariness": 6,
@@ -1660,7 +1660,7 @@
       "name": "CHAIN",
       "genres": ["Chapters"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.2,
         "scariness": 3,
@@ -1687,7 +1687,7 @@
       "name": "Amelia's Cafe",
       "genres": ["Story"],
       "date": "25.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.2,
         "scariness": 3,
@@ -1714,7 +1714,7 @@
       "name": "The Intruder",
       "genres": ["Minigame"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.1,
         "scariness": 4,
@@ -1741,7 +1741,7 @@
       "name": "Smile",
       "genres": ["Abstract"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.1,
         "scariness": 5,
@@ -1768,7 +1768,7 @@
       "name": "Apple pie",
       "genres": ["Abstract", "Exploration"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.1,
         "scariness": 2,
@@ -1795,7 +1795,7 @@
       "name": "BUNKER",
       "genres": ["Chapters"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.1,
         "scariness": 2,
@@ -1822,7 +1822,7 @@
       "name": "Scan_Test.DEMO",
       "genres": ["Misc"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.0,
         "scariness": 1,
@@ -1849,7 +1849,7 @@
       "name": "The Cursed",
       "genres": ["Chapters"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.0,
         "scariness": 3,
@@ -1876,7 +1876,7 @@
       "name": "Dark Wood",
       "genres": ["Minigame"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.0,
         "scariness": 6,
@@ -1903,7 +1903,7 @@
       "name": "Us Are Toys",
       "genres": ["Chapters", "Mascot Horror"],
       "date": "17.07.2023",
-      "award": "TRUE",
+      "award": "",
       "ratings": {
         "rating": 6.0,
         "scariness": 3,
@@ -1915,6 +1915,735 @@
         "creativity": 7,
         "enjoyment": 4,
         "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3162716377",
+      "name": "Teraphobia",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.0,
+        "scariness": 6,
+        "soundDesign": 5,
+        "story": 3,
+        "visuals": 6,
+        "ambience": 7,
+        "gameplay": 6,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "1489026993",
+      "name": "Survive the Killer",
+      "genres": ["Minigame"],
+      "date": "24.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.0,
+        "scariness": 4,
+        "soundDesign": 6,
+        "story": 0,
+        "visuals": 7,
+        "ambience": 4,
+        "gameplay": 8,
+        "creativity": 4,
+        "enjoyment": 8,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3994696185",
+      "name": "JESTER",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.9,
+        "scariness": 2,
+        "soundDesign": 6,
+        "story": 4,
+        "visuals": 7,
+        "ambience": 6,
+        "gameplay": 4,
+        "creativity": 7,
+        "enjoyment": 4,
+        "productionQuality": 10,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4134113741",
+      "name": "Scotomaphobia",
+      "genres": ["Misc", "Exploration"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.9,
+        "scariness": 3,
+        "soundDesign": 7,
+        "story": 9,
+        "visuals": 5,
+        "ambience": 8,
+        "gameplay": 3,
+        "creativity": 7,
+        "enjoyment": 4,
+        "productionQuality": 6,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3409772110",
+      "name": "BunnyTale",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.8,
+        "scariness": 2,
+        "soundDesign": 4,
+        "story": 5,
+        "visuals": 4,
+        "ambience": 8,
+        "gameplay": 7,
+        "creativity": 8,
+        "enjoyment": 6,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4334201521",
+      "name": "PIZZA DELIVERY",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.8,
+        "scariness": 4,
+        "soundDesign": 5,
+        "story": 3,
+        "visuals": 8,
+        "ambience": 7,
+        "gameplay": 2,
+        "creativity": 5,
+        "enjoyment": 6,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3607371879",
+      "name": "Agony",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.8,
+        "scariness": 2,
+        "soundDesign": 5,
+        "story": 6,
+        "visuals": 8,
+        "ambience": 8,
+        "gameplay": 2,
+        "creativity": 7,
+        "enjoyment": 2,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2286995341",
+      "name": "The cool obby! :D Winner gets a badge",
+      "genres": ["Parody"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.8,
+        "scariness": 5,
+        "soundDesign": 6,
+        "story": 3,
+        "visuals": 1,
+        "ambience": 6,
+        "gameplay": 5,
+        "creativity": 8,
+        "enjoyment": 9,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4336568917",
+      "name": "Maligno",
+      "genres": ["Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.8,
+        "scariness": 6,
+        "soundDesign": 6,
+        "story": 2,
+        "visuals": 8,
+        "ambience": 6,
+        "gameplay": 6,
+        "creativity": 2,
+        "enjoyment": 5,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4511312373",
+      "name": "Trollge Incidents: Revenge",
+      "genres": ["Story"],
+      "date": "26.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.8,
+        "scariness": 1,
+        "soundDesign": 8,
+        "story": 6,
+        "visuals": 6,
+        "ambience": 3,
+        "gameplay": 5,
+        "creativity": 8,
+        "enjoyment": 7,
+        "productionQuality": 7,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "https://youtu.be/cIyzt3qSO_0",
+      "port_url": ""
+    },
+    {
+      "uid": "4009755884",
+      "name": "FNaF: SB Multiplayer",
+      "genres": ["Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.7,
+        "scariness": 4,
+        "soundDesign": 5,
+        "story": 1,
+        "visuals": 9,
+        "ambience": 5,
+        "gameplay": 5,
+        "creativity": 2,
+        "enjoyment": 6,
+        "productionQuality": 10,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2193436202",
+      "name": "THE RAKE: Noob Edition",
+      "genres": ["Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.7,
+        "scariness": 3,
+        "soundDesign": 7,
+        "story": 2,
+        "visuals": 6,
+        "ambience": 5,
+        "gameplay": 7,
+        "creativity": 3,
+        "enjoyment": 7,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "110141547",
+      "name": "The Closet 4: The Friend...",
+      "genres": ["Story", "Classic Horror"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.7,
+        "scariness": 6,
+        "soundDesign": 3,
+        "story": 7,
+        "visuals": 0,
+        "ambience": 3,
+        "gameplay": 6,
+        "creativity": 7,
+        "enjoyment": 7,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3729961614",
+      "name": "ETERNITY",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.7,
+        "scariness": 1,
+        "soundDesign": 5,
+        "story": 4,
+        "visuals": 10,
+        "ambience": 9,
+        "gameplay": 3,
+        "creativity": 4,
+        "enjoyment": 5,
+        "productionQuality": 8,
+        "technical": 8
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3509913608",
+      "name": "The Night of God.",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.7,
+        "scariness": 1,
+        "soundDesign": 7,
+        "story": 3,
+        "visuals": 6,
+        "ambience": 7,
+        "gameplay": 5,
+        "creativity": 4,
+        "enjoyment": 7,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4507204989",
+      "name": "The Night Shift Experience",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.7,
+        "scariness": 3,
+        "soundDesign": 6,
+        "story": 5,
+        "visuals": 4,
+        "ambience": 2,
+        "gameplay": 7,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 6,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4490657706",
+      "name": "GODS WILL",
+      "genres": ["Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.6,
+        "scariness": 0,
+        "soundDesign": 6,
+        "story": 6,
+        "visuals": 6,
+        "ambience": 4,
+        "gameplay": 8,
+        "creativity": 6,
+        "enjoyment": 3,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4378390837",
+      "name": "World's Edge",
+      "genres": ["Chapters", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.6,
+        "scariness": 2,
+        "soundDesign": 5,
+        "story": 1,
+        "visuals": 9,
+        "ambience": 8,
+        "gameplay": 7,
+        "creativity": 2,
+        "enjoyment": 5,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2966441642",
+      "name": "The Homestead",
+      "genres": ["Exploration"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.6,
+        "scariness": 0,
+        "soundDesign": 7,
+        "story": 5,
+        "visuals": 7,
+        "ambience": 7,
+        "gameplay": 3,
+        "creativity": 6,
+        "enjoyment": 3,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3424718719",
+      "name": "The Tall Man",
+      "genres": ["Chapters", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.6,
+        "scariness": 3,
+        "soundDesign": 6,
+        "story": 3,
+        "visuals": 8,
+        "ambience": 5,
+        "gameplay": 4,
+        "creativity": 5,
+        "enjoyment": 5,
+        "productionQuality": 7,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4221956550",
+      "name": "The Butchery",
+      "genres": ["Chapters", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.6,
+        "scariness": 4,
+        "soundDesign": 6,
+        "story": 5,
+        "visuals": 7,
+        "ambience": 5,
+        "gameplay": 2,
+        "creativity": 5,
+        "enjoyment": 3,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2707090642",
+      "name": "Void",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.5,
+        "scariness": 4,
+        "soundDesign": 4,
+        "story": 6,
+        "visuals": 6,
+        "ambience": 4,
+        "gameplay": 5,
+        "creativity": 5,
+        "enjoyment": 7,
+        "productionQuality": 9,
+        "technical": 4
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2840306196",
+      "name": "Transcendence",
+      "genres": ["Exploration", "Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.5,
+        "scariness": 0,
+        "soundDesign": 3,
+        "story": 8,
+        "visuals": 4,
+        "ambience": 3,
+        "gameplay": 6,
+        "creativity": 8,
+        "enjoyment": 9,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "749584020",
+      "name": "Finders Keepers",
+      "genres": ["Story"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.5,
+        "scariness": 7,
+        "soundDesign": 7,
+        "story": 5,
+        "visuals": 7,
+        "ambience": 8,
+        "gameplay": 1,
+        "creativity": 2,
+        "enjoyment": 2,
+        "productionQuality": 7,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "2741195663",
+      "name": "beach day",
+      "genres": ["Abstract", "Exploration"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.5,
+        "scariness": 3,
+        "soundDesign": 7,
+        "story": 0,
+        "visuals": 2,
+        "ambience": 5,
+        "gameplay": 8,
+        "creativity": 7,
+        "enjoyment": 7,
+        "productionQuality": 5,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "372226183",
+      "name": "Flee the Facility",
+      "genres": ["Minigame"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.5,
+        "scariness": 1,
+        "soundDesign": 7,
+        "story": 0,
+        "visuals": 2,
+        "ambience": 5,
+        "gameplay": 10,
+        "creativity": 4,
+        "enjoyment": 10,
+        "productionQuality": 7,
+        "technical": 9
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "3480116337",
+      "name": "Faith",
+      "genres": ["Chapters"],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.4,
+        "scariness": 2,
+        "soundDesign": 5,
+        "story": 6,
+        "visuals": 7,
+        "ambience": 8,
+        "gameplay": 1,
+        "creativity": 5,
+        "enjoyment": 2,
+        "productionQuality": 8,
         "technical": 10
       },
       "rater_note": {
