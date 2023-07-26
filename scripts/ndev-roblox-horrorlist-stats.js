@@ -52,7 +52,7 @@ function calculateAverageRatings(data) {
     let i = 0;
     categories.forEach(category => {
         averageRatings[category] /= numGames;
-        bars[i].bar.style.width = `${averageRatings[category]  * 10}%`;
+        bars[i].bar.style.width = `${averageRatings[category] * 10}%`;
         bars[i].bar.getElementsByClassName("tooltip")[0].innerHTML = `${averageRatings[category].toFixed(1)}/10`;
         i++;
     });
@@ -79,8 +79,6 @@ function calculateAverageRatings(data) {
 }
 
 async function init() {
-
-
     var databaseData = [];
 
     try {
