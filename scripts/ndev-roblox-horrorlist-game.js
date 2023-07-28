@@ -198,6 +198,11 @@ async function init() {
                 }
                 break;
         }
+
+        for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
+            const element = document.getElementsByClassName("rating-per")[i];
+            element.style.animation = "progress 0.4s ease-in-out forwards";
+        }
     }
 
     dropdown.addEventListener("change", updateContent);
