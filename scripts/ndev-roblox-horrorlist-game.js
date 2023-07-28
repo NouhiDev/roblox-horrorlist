@@ -161,6 +161,7 @@ async function init() {
         const dropdownContainer = document.getElementsByClassName("ratings-container")[0];
     const dropdown = document.createElement("select");
     dropdown.id = "dropdown";
+    dropdown.classList.add("select-dropdown");
 
     var optionTexts = ["Overall"];
 
@@ -182,37 +183,74 @@ async function init() {
 
     dropdownContainer.insertBefore(dropdown, dropdownContainer.childNodes[2]);
 
-    function updateContent() {
-        const selectedOption = dropdown.value;
-        console.log(selectedOption);
-        switch(selectedOption) {
-            case "option0":
-                for (let i = 0; i < bars.length; i++) {
-                    const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
-                }
-                break;
-            case "option1":
-                for (let i = 0; i < bars.length; i++) {
-                    const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][0]["ratings"][dataField], dataField);
-                }
-                break;
-        }
+    const optionHandlers = {
+        option0: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
+            }
+        },
+        option1: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][0]["ratings"][dataField], dataField);
+            }
+        },
+        option2: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][1]["ratings"][dataField], dataField);
+            }
+        },
+        option3: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][2]["ratings"][dataField], dataField);
+            }
+        },
+        option4: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][3]["ratings"][dataField], dataField);
+            }
+        },
+        option5: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][4]["ratings"][dataField], dataField);
+            }
+        },
+        option6: function() {
+            for (let i = 0; i < bars.length; i++) {
+                const dataField = bars[i].tooltip;
+                updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][5]["ratings"][dataField], dataField);
+            }
+        },
+    };
 
-        for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
-            const element = document.getElementsByClassName("rating-per")[i];
-            element.style.animation = "none";
-        }
-
-        setTimeout(() => {
+    function handleOptionSelection(selectedOption) {
+        const selectedHandler = optionHandlers[selectedOption];
+        if (selectedHandler) {
+            selectedHandler();
             for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
                 const element = document.getElementsByClassName("rating-per")[i];
-                element.style.animation = "progress 0.4s ease-in-out forwards";
+                element.style.animation = "none";
             }
-        }, 10);
+    
+            setTimeout(() => {
+                for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
+                    const element = document.getElementsByClassName("rating-per")[i];
+                    element.style.animation = "progress 0.4s ease-in-out forwards";
+                }
+            }, 10);
+        } else {
+            console.error("No handler found for the selected option:", selectedOption);
+        }
     }
 
-    dropdown.addEventListener("change", updateContent);
+    dropdown.addEventListener("change", function () {
+        const selectedOption = dropdown.value;
+        handleOptionSelection(selectedOption);
+    });
     }
 }
