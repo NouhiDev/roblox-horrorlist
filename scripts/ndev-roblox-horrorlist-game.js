@@ -157,7 +157,8 @@ async function init() {
         originalBtn.href = databaseData.games[number - 1].port_url;
     }
 
+    // Multiple chapters / parts / etc. functionality
     if (databaseData.games[number - 1]["has_multiple_chapters"]) {
-        console.log("Multiple chapters found!");
+        
     }
 }

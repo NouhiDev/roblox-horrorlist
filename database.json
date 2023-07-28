@@ -264,7 +264,21 @@
       },
       "youtube_url": "",
       "port_url": "",
-      "has_multiple_chapters": true
+      "has_multiple_chapters": true,
+      "chapters": [
+        {
+          "name": "Chapter 1"
+        },
+        {
+          "name": "Chapter 2"
+        },
+        {
+          "name": "Chapter 3"
+        },
+        {
+          "name": "Chapter 4"
+        }
+      ]
     },
     {
       "uid": "3520390617",
