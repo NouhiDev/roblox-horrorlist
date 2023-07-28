@@ -8155,36 +8155,6 @@
       },
       "youtube_url": "",
       "port_url": ""
-    },
-    {
-      "uid": "1",
-      "name": "Testing Game",
-      "genres": [
-        "Chapters",
-        "Story"
-      ],
-      "date": "18.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": 0.3,
-        "scariness": 0,
-        "soundDesign": -2,
-        "story": 1,
-        "visuals": 0,
-        "ambience": 0,
-        "gameplay": 0,
-        "creativity": -2,
-        "enjoyment": 2,
-        "productionQuality": 4,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
     }
   ]
 }
