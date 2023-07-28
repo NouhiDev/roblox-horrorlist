@@ -111,7 +111,7 @@ async function init() {
 
     gameCreator.innerText = "by " + gameDataByUID["creator"].name;
 
-    var genreArray = String(databaseData.games[number - 1].genres).split(", ");
+    var genreArray = String(databaseData.games[number - 1].genres).split(",");
     var genreHTMLText = genreArray.join(", ");
     var genrePrefix = `Genre${genreArray.length > 1 ? "s" : ""}: `;
     gameGenres.innerHTML = `${genrePrefix} ${genreHTMLText}`;
@@ -148,9 +148,10 @@ async function init() {
 
     if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "No conclusion provided.";
     else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
-
-    if (databaseData.games[number - 1].port_url != undefined || databaseData.games[number - 1].portUrl != "") 
+    
+    if (databaseData.games[number - 1]["port_url"] !== "") 
     {
+        console.log(databaseData.games[number - 1]["port_url"]);
         originalBtn.style.opacity = 1;
         originalBtn.innerText ="Play Original";
         originalBtn.href = databaseData.games[number - 1].port_url;
