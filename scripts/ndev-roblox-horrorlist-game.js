@@ -125,7 +125,7 @@ async function init() {
     }
 
     const formatter = Intl.NumberFormat('en', { notation: 'compact' });
-    
+
     release.innerText = "Released: " + gameDataByUID.created.slice(0, 10);
     update.innerText = "Last Update: " + gameDataByUID.updated.slice(0, 10);
 
@@ -148,17 +148,58 @@ async function init() {
 
     if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "No conclusion provided.";
     else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
-    
-    if (databaseData.games[number - 1]["port_url"] !== "") 
-    {
+
+    if (databaseData.games[number - 1]["port_url"] !== "") {
         console.log(databaseData.games[number - 1]["port_url"]);
         originalBtn.style.opacity = 1;
-        originalBtn.innerText ="Play Original";
+        originalBtn.innerText = "Play Original";
         originalBtn.href = databaseData.games[number - 1].port_url;
     }
 
     // Multiple chapters / parts / etc. functionality
     if (databaseData.games[number - 1]["has_multiple_chapters"]) {
-        
+        const dropdownContainer = document.getElementsByClassName("ratings-container")[0];
+    const dropdown = document.createElement("select");
+    dropdown.id = "dropdown";
+
+    var optionTexts = ["Overall"];
+
+    for (let i = 0; i < databaseData.games[number - 1]["chapters"].length; i++) {
+        optionTexts.push(databaseData.games[number - 1]["chapters"][i].name); 
+    }
+
+    var optionValues = ["option0"];
+    for (let i = 0; i < optionTexts.length - 1; i++) {
+        optionValues.push(`option${i+1}`); 
+    }
+
+    for (let i = 0; i < optionValues.length; i++) {
+        const option = document.createElement("option");
+        option.value = optionValues[i];
+        option.textContent = optionTexts[i];
+        dropdown.appendChild(option);
+    }
+
+    dropdownContainer.insertBefore(dropdown, dropdownContainer.childNodes[2]);
+
+    function updateContent() {
+        const selectedOption = dropdown.value;
+        switch(selectedOption) {
+            case "option0":
+                for (let i = 0; i < bars.length; i++) {
+                    const dataField = bars[i].tooltip;
+                    updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
+                }
+                break;
+            case "option1":
+                for (let i = 0; i < bars.length; i++) {
+                    const dataField = bars[i].tooltip;
+                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][0]["ratings"][dataField], dataField);
+                }
+                break;
+        }
+    }
+
+    dropdown.addEventListener("change", updateContent);
     }
 }

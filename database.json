@@ -267,16 +267,68 @@
       "has_multiple_chapters": true,
       "chapters": [
         {
-          "name": "Chapter 1"
+          "name": "Chapter 1",
+          "ratings": {
+            "rating": 7.8,
+            "scariness": 5,
+            "soundDesign": 5,
+            "story": 4,
+            "visuals": 10,
+            "ambience": 8,
+            "gameplay": 6,
+            "creativity": 10,
+            "enjoyment": 10,
+            "productionQuality": 10,
+            "technical": 10
+          }
         },
         {
-          "name": "Chapter 2"
+          "name": "Chapter 2",
+          "ratings": {
+            "rating": 7.8,
+            "scariness": 5,
+            "soundDesign": 5,
+            "story": 4,
+            "visuals": 10,
+            "ambience": 8,
+            "gameplay": 6,
+            "creativity": 10,
+            "enjoyment": 10,
+            "productionQuality": 10,
+            "technical": 10
+          }
         },
         {
-          "name": "Chapter 3"
+          "name": "Chapter 3",
+          "ratings": {
+            "rating": 7.8,
+            "scariness": 5,
+            "soundDesign": 5,
+            "story": 4,
+            "visuals": 10,
+            "ambience": 8,
+            "gameplay": 6,
+            "creativity": 10,
+            "enjoyment": 10,
+            "productionQuality": 10,
+            "technical": 10
+          }
         },
         {
-          "name": "Chapter 4"
+          "name": "Chapter 4",
+          "ratings": {
+            "rating": 7.8,
+            "scariness": 5,
+            "soundDesign": 5,
+            "story": 4,
+            "visuals": 10,
+            "ambience": 8,
+            "gameplay": 6,
+            "creativity": 10,
+            "enjoyment": 10,
+            "productionQuality": 10,
+            "technical": 10
+          }
         }
       ]
     },
