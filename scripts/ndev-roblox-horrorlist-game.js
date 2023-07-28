@@ -184,6 +184,7 @@ async function init() {
 
     function updateContent() {
         const selectedOption = dropdown.value;
+        console.log(selectedOption);
         switch(selectedOption) {
             case "option0":
                 for (let i = 0; i < bars.length; i++) {
