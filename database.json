@@ -8215,6 +8215,131 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 2294168059,
+      "name": "The Mimic",
+      "genres": "Story, Chapters",
+      "date": "28.07.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Book 1 Chapter 1",
+          "ratings": {
+            "rating": 6.1,
+            "scariness": 4,
+            "soundDesign": 6,
+            "story": 6,
+            "visuals": 8,
+            "ambience": 4,
+            "gameplay": 3,
+            "creativity": 6,
+            "enjoyment": 6,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Book 1 Chapter 2",
+          "ratings": {
+            "rating": 5.8,
+            "scariness": 4,
+            "soundDesign": 6,
+            "story": 6,
+            "visuals": 8,
+            "ambience": 2,
+            "gameplay": 5,
+            "creativity": 5,
+            "enjoyment": 4,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Book 1 Chapter 3",
+          "ratings": {
+            "rating": 5.9,
+            "scariness": 6,
+            "soundDesign": 6,
+            "story": 6,
+            "visuals": 8,
+            "ambience": 4,
+            "gameplay": 3,
+            "creativity": 4,
+            "enjoyment": 4,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Book 1 Chapter 4",
+          "ratings": {
+            "rating": 6.1,
+            "scariness": 3,
+            "soundDesign": 6,
+            "story": 6,
+            "visuals": 9,
+            "ambience": 3,
+            "gameplay": 4,
+            "creativity": 5,
+            "enjoyment": 6,
+            "productionQuality": 9,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Book 2 Chapter 1",
+          "ratings": {
+            "rating": 5.8,
+            "scariness": 3,
+            "soundDesign": 7,
+            "story": 6,
+            "visuals": 9,
+            "ambience": 4,
+            "gameplay": 2,
+            "creativity": 5,
+            "enjoyment": 3,
+            "productionQuality": 9,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Book 2 Chapter 2",
+          "ratings": {
+            "rating": 7.0,
+            "scariness": 3,
+            "soundDesign": 7,
+            "story": 7,
+            "visuals": 10,
+            "ambience": 6,
+            "gameplay": 8,
+            "creativity": 3,
+            "enjoyment": 6,
+            "productionQuality": 10,
+            "technical": 10
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 6.116666666666666,
+        "scariness": 3.8333333333333335,
+        "soundDesign": 6.333333333333333,
+        "story": 6.166666666666667,
+        "visuals": 8.666666666666666,
+        "ambience": 3.8333333333333335,
+        "gameplay": 4.166666666666667,
+        "creativity": 4.666666666666667,
+        "enjoyment": 4.833333333333333,
+        "productionQuality": 8.666666666666666,
+        "technical": 10.0
+      },
+      "rater_note": {
+        "pros": "High quality textures, level design, and models contribute to impressive visual appeal.",
+        "cons": "Repetitive and frustrating gameplay experience. The game's concept has led to the creation of poorly designed mimic clones with subpar gameplay.",
+        "conclusion": "The game boasts astonishing visuals and overall production value, its gameplay leaves much to be desired."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=5X20LoiQSsM",
+      "port_url": ""
     }
   ]
 }
