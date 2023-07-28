@@ -8156,67 +8156,6 @@
       "port_url": ""
     },
     {
-      "uid": 666,
-      "name": "Sebastians Mutter",
-      "genres": "Exploration",
-      "date": "28.07.2023",
-      "award": "",
-      "chapters": [
-        {
-          "name": "Sebastians Arsch",
-          "ratings": {
-            "rating": 5.0,
-            "scariness": 1,
-            "soundDesign": 2,
-            "story": 3,
-            "visuals": 4,
-            "ambience": 5,
-            "gameplay": 5,
-            "creativity": 6,
-            "enjoyment": 7,
-            "productionQuality": 8,
-            "technical": 9
-          }
-        },
-        {
-          "name": "Sebastians Arsch 2",
-          "ratings": {
-            "rating": 3.6,
-            "scariness": 2,
-            "soundDesign": 3,
-            "story": 4,
-            "visuals": 5,
-            "ambience": 6,
-            "gameplay": 1,
-            "creativity": 3,
-            "enjoyment": 4,
-            "productionQuality": 6,
-            "technical": 2
-          }
-        }
-      ],
-      "ratings": {
-        "rating": 4.3,
-        "scariness": 1.5,
-        "soundDesign": 2.5,
-        "story": 3.5,
-        "visuals": 4.5,
-        "ambience": 5.5,
-        "gameplay": 3.0,
-        "creativity": 4.5,
-        "enjoyment": 5.5,
-        "productionQuality": 7.0,
-        "technical": 5.5
-      },
-      "rater_note": {
-        "pros": "yes",
-        "cons": "no",
-        "conclusion": "conclusion"
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
       "uid": 2294168059,
       "name": "The Mimic",
       "genres": "Story, Chapters",
