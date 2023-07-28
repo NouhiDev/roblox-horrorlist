@@ -202,9 +202,15 @@ async function init() {
 
         for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
             const element = document.getElementsByClassName("rating-per")[i];
-            element.style.width = "0px";
-            element.style.animation = "progress 0.4s ease-in-out forwards";
+            element.style.animation = "none";
         }
+
+        setTimeout(() => {
+            for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
+                const element = document.getElementsByClassName("rating-per")[i];
+                element.style.animation = "progress 0.4s ease-in-out forwards";
+            }
+        }, 10);
     }
 
     dropdown.addEventListener("change", updateContent);
