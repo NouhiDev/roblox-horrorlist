@@ -8153,6 +8153,67 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 3085257211,
+      "name": "ewfswfe",
+      "genres": "Minigame, Mascot Horror",
+      "date": "29.07.2023",
+      "award": "#",
+      "chapters": [
+        {
+          "name": "Chapter 1",
+          "ratings": {
+            "rating": 4.4,
+            "scariness": 1,
+            "soundDesign": 3,
+            "story": 2,
+            "visuals": 6,
+            "ambience": 4,
+            "gameplay": 3,
+            "creativity": 6,
+            "enjoyment": 3,
+            "productionQuality": 6,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Chapter 2",
+          "ratings": {
+            "rating": 4.8,
+            "scariness": 1,
+            "soundDesign": 3,
+            "story": 2,
+            "visuals": 7,
+            "ambience": 4,
+            "gameplay": 4,
+            "creativity": 6,
+            "enjoyment": 3,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 4.6,
+        "scariness": 1.0,
+        "soundDesign": 3.0,
+        "story": 2.0,
+        "visuals": 6.5,
+        "ambience": 4.0,
+        "gameplay": 3.5,
+        "creativity": 6.0,
+        "enjoyment": 3.0,
+        "productionQuality": 7.0,
+        "technical": 10.0
+      },
+      "rater_note": {
+        "pros": "Creating a horror IP in Roblox, Good animations for Roblox standards",
+        "cons": "Not very fun gameplay",
+        "conclusion": "Rainbow Friends is notable for creating a horror francise in Roblox. Sadly the game itself isn't all that fun to play, despite being well made."
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ]
 }
