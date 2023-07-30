@@ -1298,6 +1298,36 @@
       "port_url": ""
     },
     {
+      "uid": "3274669156",
+      "name": "Before Truth",
+      "genres": [
+        "Chapters",
+        "Story"
+      ],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.7,
+        "scariness": 5,
+        "soundDesign": 7,
+        "story": 1,
+        "visuals": 8,
+        "ambience": 7,
+        "gameplay": 8,
+        "creativity": 6,
+        "enjoyment": 7,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
       "uid": "1213236499",
       "name": "The Mirror",
       "genres": [
@@ -1316,36 +1346,6 @@
         "creativity": 10,
         "enjoyment": 7,
         "productionQuality": 9,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
-      "uid": "3274669156",
-      "name": "Before Truth",
-      "genres": [
-        "Chapters",
-        "Story"
-      ],
-      "date": "17.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": 6.6,
-        "scariness": 5,
-        "soundDesign": 6,
-        "story": 1,
-        "visuals": 8,
-        "ambience": 7,
-        "gameplay": 8,
-        "creativity": 6,
-        "enjoyment": 7,
-        "productionQuality": 8,
         "technical": 10
       },
       "rater_note": {
@@ -1382,9 +1382,9 @@
         {
           "name": "Level 6-10 (The End?)",
           "ratings": {
-            "rating": 6.4,
+            "rating": 6.6,
             "scariness": 5,
-            "soundDesign": 7,
+            "soundDesign": 9,
             "story": 3,
             "visuals": 8,
             "ambience": 9,
@@ -1429,9 +1429,9 @@
         }
       ],
       "ratings": {
-        "rating": 6.6,
+        "rating": 6.7,
         "scariness": 4.0,
-        "soundDesign": 6.0,
+        "soundDesign": 6.5,
         "story": 3.0,
         "visuals": 8.5,
         "ambience": 8.8,
