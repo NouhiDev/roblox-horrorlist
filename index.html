@@ -65,15 +65,24 @@
     <span class="tit-tit-sub">As decided by</span> <a href="pages/raters.html">Nouhi; Namlit; Torch i.a.</a>
     <span class="tit-tit-sub">since 2022</span>
   </h1>
+  <div class="button-container">
+    <button class="statistics-button" onclick="statistics()">
+      <i class="fas fa-chart-line"></i> Statistics
+    </button>
+    <button class="statistics-button" onclick="rating_scale()">
+      <i class="fas fa-file-signature"></i> Rating Scale
+    </button>
+  </div>
 
-  <center>
-    <a class="rating-ref" href="pages/rating-overview.html">How do
-      we conclude our ratings? Take a look here.</a>
-    <br><br><a class="rating-ref" href="pages/statistics.html">View the statistics.</a>
+  <script>
+    function statistics() {
+      window.open("pages/statistics.html", "_blank");
+    }
+    function rating_scale() {
+      window.open("pages/rating-overview.html", "_blank");
+    }
+  </script>
 
-    <br />
-    <br />
-  </center>
   <header>
     <div class="content" id="content">
 
@@ -110,24 +119,26 @@
       </div>
       <br />
   </header>
-  <hr style="
+  <footer>
+    <hr style="
           width: 50%;
           height: 2px;
           border-width: 0;
           color: #20242e;
           background-color: #20242e;
         " />
-  <br />
-  <center>
-    <div class="flex-center">
-      <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-      <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-      <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
-    </div>
-
     <br />
-    <p style="color: white">Copyright © 2023 NDev-Group</p>
-  </center>
+    <center>
+      <div class="flex-center">
+        <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+        <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+        <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+      </div>
+
+      <br />
+      <p style="color: white">Copyright © 2023 NDev-Group</p>
+    </center>
+  </footer>
   </div>
 
 </body>

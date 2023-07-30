@@ -251,58 +251,52 @@ h4 {
 .creators-choice-all td {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-    to bottom right,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 154, 0, 1) 10%,
-    rgba(208, 222, 33, 1) 20%,
-    rgba(79, 220, 74, 1) 30%,
-    rgba(63, 218, 216, 1) 40%,
-    rgba(47, 201, 226, 1) 50%,
-    rgba(28, 127, 238, 1) 60%,
-    rgba(95, 21, 242, 1) 70%,
-    rgba(186, 12, 248, 1) 80%,
-    rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
+  border-image: linear-gradient(to bottom right,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 154, 0, 1) 10%,
+      rgba(208, 222, 33, 1) 20%,
+      rgba(79, 220, 74, 1) 30%,
+      rgba(63, 218, 216, 1) 40%,
+      rgba(47, 201, 226, 1) 50%,
+      rgba(28, 127, 238, 1) 60%,
+      rgba(95, 21, 242, 1) 70%,
+      rgba(186, 12, 248, 1) 80%,
+      rgba(251, 7, 217, 1) 90%,
+      rgba(255, 0, 0, 1) 100%);
   border-image-slice: 1;
 }
 
 .creators-choice-all td:first-child {
   border-left: 1px solid transparent;
-  border-image: linear-gradient(
-    to bottom right,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 154, 0, 1) 10%,
-    rgba(208, 222, 33, 1) 20%,
-    rgba(79, 220, 74, 1) 30%,
-    rgba(63, 218, 216, 1) 40%,
-    rgba(47, 201, 226, 1) 50%,
-    rgba(28, 127, 238, 1) 60%,
-    rgba(95, 21, 242, 1) 70%,
-    rgba(186, 12, 248, 1) 80%,
-    rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
+  border-image: linear-gradient(to bottom right,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 154, 0, 1) 10%,
+      rgba(208, 222, 33, 1) 20%,
+      rgba(79, 220, 74, 1) 30%,
+      rgba(63, 218, 216, 1) 40%,
+      rgba(47, 201, 226, 1) 50%,
+      rgba(28, 127, 238, 1) 60%,
+      rgba(95, 21, 242, 1) 70%,
+      rgba(186, 12, 248, 1) 80%,
+      rgba(251, 7, 217, 1) 90%,
+      rgba(255, 0, 0, 1) 100%);
   border-image-slice: 1;
 }
 
 .creators-choice-all td:last-child {
   border-right: 1px solid transparent;
-  border-image: linear-gradient(
-    to bottom right,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 154, 0, 1) 10%,
-    rgba(208, 222, 33, 1) 20%,
-    rgba(79, 220, 74, 1) 30%,
-    rgba(63, 218, 216, 1) 40%,
-    rgba(47, 201, 226, 1) 50%,
-    rgba(28, 127, 238, 1) 60%,
-    rgba(95, 21, 242, 1) 70%,
-    rgba(186, 12, 248, 1) 80%,
-    rgba(251, 7, 217, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
+  border-image: linear-gradient(to bottom right,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 154, 0, 1) 10%,
+      rgba(208, 222, 33, 1) 20%,
+      rgba(79, 220, 74, 1) 30%,
+      rgba(63, 218, 216, 1) 40%,
+      rgba(47, 201, 226, 1) 50%,
+      rgba(28, 127, 238, 1) 60%,
+      rgba(95, 21, 242, 1) 70%,
+      rgba(186, 12, 248, 1) 80%,
+      rgba(251, 7, 217, 1) 90%,
+      rgba(255, 0, 0, 1) 100%);
   border-image-slice: 1;
 }
 
@@ -464,12 +458,12 @@ body .tit-tit {
 }
 
 #game-table th:first-child,
-#game-table th:nth-child(3){
+#game-table th:nth-child(3) {
   text-align: left;
 }
 
 #game-table th:last-child,
-#game-table th:nth-child(4){
+#game-table th:nth-child(4) {
   text-align: right;
 }
 
@@ -506,6 +500,7 @@ body .tit-tit {
   padding: 10px;
   color: #fff;
 }
+
 .icon-3d:hover {
   -webkit-animation: icon3d 200ms infinite;
   animation: icon3d 200ms infinite;
@@ -515,15 +510,19 @@ body .tit-tit {
   0% {
     text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
   }
+
   25% {
     text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
   }
+
   50% {
     text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
   }
+
   75% {
     text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
   }
+
   100% {
     text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
   }
@@ -560,9 +559,49 @@ body .tit-tit {
 }
 
 .api-issue {
-  color:rgb(255, 73, 73);
+  color: rgb(255, 73, 73);
 }
 
 .game-href:hover {
   text-decoration: underline;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* Add some styling to make the buttons more visually appealing */
+.button-container {
+  display: flex;
+  /* Use flexbox to position buttons next to each other */
+  justify-content: center;
+  /* Center the buttons horizontally */
+}
+
+button {
+  margin-right: 10px;
+  /* Add some space between buttons (you can adjust this value as needed) */
+  padding: 10px 20px;
+  /* Add padding to make buttons more clickable */
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+  /* Change the background color on hover */
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
