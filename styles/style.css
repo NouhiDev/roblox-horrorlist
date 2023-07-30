@@ -573,19 +573,14 @@ button {
   background: none;
 }
 
-/* Add some styling to make the buttons more visually appealing */
 .button-container {
   display: flex;
-  /* Use flexbox to position buttons next to each other */
   justify-content: center;
-  /* Center the buttons horizontally */
 }
 
 button {
   margin-right: 10px;
-  /* Add some space between buttons (you can adjust this value as needed) */
   padding: 10px 20px;
-  /* Add padding to make buttons more clickable */
   background-color: #3498db;
   color: #fff;
   border-radius: 5px;
@@ -594,7 +589,6 @@ button {
 
 button:hover {
   background-color: #2980b9;
-  /* Change the background color on hover */
 }
 
 footer {
@@ -604,4 +598,8 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.status-button {
+  background-color: #db3434;
 }
