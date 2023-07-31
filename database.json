@@ -796,6 +796,33 @@
       "port_url": ""
     },
     {
+      "uid": 3491821129,
+      "name": "Submarine Simulator",
+      "genres": "FNAF, Story",
+      "date": "31.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.1,
+        "scariness": 6,
+        "soundDesign": 7,
+        "story": 6,
+        "visuals": 7,
+        "ambience": 9,
+        "gameplay": 6,
+        "creativity": 5,
+        "enjoyment": 7,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "Eerie atmosphere, unique and engaging gameplay, original despite being inspired by Five Nights at Freddy's.",
+        "cons": "Nothing specifically.",
+        "conclusion": "Submarine Simulator is a well-crafted, FNaF-inspired experience with unique gameplay and an unsettling atmosphere."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=l5QOcqhRxT8",
+      "port_url": ""
+    },
+    {
       "uid": "1760377900",
       "name": "CULT OF THE CRYPTIDS",
       "genres": [
@@ -1328,35 +1355,6 @@
       "port_url": ""
     },
     {
-      "uid": "1213236499",
-      "name": "The Mirror",
-      "genres": [
-        "Story"
-      ],
-      "date": "17.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": 6.6,
-        "scariness": 6,
-        "soundDesign": 8,
-        "story": 4,
-        "visuals": 3,
-        "ambience": 6,
-        "gameplay": 3,
-        "creativity": 10,
-        "enjoyment": 7,
-        "productionQuality": 9,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
       "uid": 3761186887,
       "name": "Apeirophobia",
       "genres": "Chapters, Story, Backrooms, Exploration",
@@ -1447,6 +1445,35 @@
         "conclusion": "As of now, it stands as the best implementation of the Backrooms in Roblox."
       },
       "youtube_url": "https://www.youtube.com/watch?v=DVRwcmOeWCE",
+      "port_url": ""
+    },
+    {
+      "uid": "1213236499",
+      "name": "The Mirror",
+      "genres": [
+        "Story"
+      ],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": 6.6,
+        "scariness": 6,
+        "soundDesign": 8,
+        "story": 4,
+        "visuals": 3,
+        "ambience": 6,
+        "gameplay": 3,
+        "creativity": 10,
+        "enjoyment": 7,
+        "productionQuality": 9,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
       "port_url": ""
     },
     {
@@ -1800,6 +1827,83 @@
         "conclusion": ""
       },
       "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": 3295084723,
+      "name": "ROHANGAN",
+      "genres": "Puzzle, Story",
+      "date": "31.07.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Unknown Room (Chapter 1)",
+          "ratings": {
+            "rating": 5.7,
+            "scariness": 2,
+            "soundDesign": 5,
+            "story": 4,
+            "visuals": 7,
+            "ambience": 6,
+            "gameplay": 5,
+            "creativity": 6,
+            "enjoyment": 5,
+            "productionQuality": 7,
+            "technical": 10
+          }
+        },
+        {
+          "name": "The Truth (Chapter 2)",
+          "ratings": {
+            "rating": 6.6,
+            "scariness": 4,
+            "soundDesign": 6,
+            "story": 5,
+            "visuals": 7,
+            "ambience": 6,
+            "gameplay": 6,
+            "creativity": 7,
+            "enjoyment": 7,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        },
+        {
+          "name": "End? (Chapter 3)",
+          "ratings": {
+            "rating": 6.5,
+            "scariness": 2,
+            "soundDesign": 7,
+            "story": 5,
+            "visuals": 7,
+            "ambience": 6,
+            "gameplay": 6,
+            "creativity": 7,
+            "enjoyment": 8,
+            "productionQuality": 7,
+            "technical": 10
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 6.3,
+        "scariness": 2.7,
+        "soundDesign": 6.0,
+        "story": 4.7,
+        "visuals": 7.0,
+        "ambience": 6.0,
+        "gameplay": 5.7,
+        "creativity": 6.7,
+        "enjoyment": 6.7,
+        "productionQuality": 7.3,
+        "technical": 10.0
+      },
+      "rater_note": {
+        "pros": "Good and rewarding puzzles, mysterious atmoshpere, and something a little different from others.",
+        "cons": "Sometimes the game is way too dark and the monster models seem sort of cheap.",
+        "conclusion": "The game offers rewarding puzzles and a captivating atmosphere, setting itself apart from others. However, excessive darkness and cheap monster models are notable drawbacks."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=hnZhOIw1wrs",
       "port_url": ""
     },
     {
