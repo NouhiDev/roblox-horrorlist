@@ -8304,6 +8304,83 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 3295084723,
+      "name": "ROHANGAN",
+      "genres": "Puzzle, Story",
+      "date": "31.07.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Unknown Room (Chapter 1)",
+          "ratings": {
+            "rating": 5.7,
+            "scariness": 2,
+            "soundDesign": 5,
+            "story": 4,
+            "visuals": 7,
+            "ambience": 6,
+            "gameplay": 5,
+            "creativity": 6,
+            "enjoyment": 5,
+            "productionQuality": 7,
+            "technical": 10
+          }
+        },
+        {
+          "name": "The Truth (Chapter 2)",
+          "ratings": {
+            "rating": 6.6,
+            "scariness": 4,
+            "soundDesign": 6,
+            "story": 5,
+            "visuals": 7,
+            "ambience": 6,
+            "gameplay": 6,
+            "creativity": 7,
+            "enjoyment": 7,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        },
+        {
+          "name": "End? (Chapter 3)",
+          "ratings": {
+            "rating": 6.5,
+            "scariness": 2,
+            "soundDesign": 7,
+            "story": 5,
+            "visuals": 7,
+            "ambience": 6,
+            "gameplay": 6,
+            "creativity": 7,
+            "enjoyment": 8,
+            "productionQuality": 7,
+            "technical": 10
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 6.3,
+        "scariness": 2.7,
+        "soundDesign": 6.0,
+        "story": 4.7,
+        "visuals": 7.0,
+        "ambience": 6.0,
+        "gameplay": 5.7,
+        "creativity": 6.7,
+        "enjoyment": 6.7,
+        "productionQuality": 7.3,
+        "technical": 10.0
+      },
+      "rater_note": {
+        "pros": "Good and rewarding puzzles, mysterious atmoshpere, and something a little different from others.",
+        "cons": "Sometimes the game is way too dark and the monster models seem sort of cheap.",
+        "conclusion": "The game offers rewarding puzzles and a captivating atmosphere, setting itself apart from others. However, excessive darkness and cheap monster models are notable drawbacks."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=hnZhOIw1wrs",
+      "port_url": ""
     }
   ]
 }
