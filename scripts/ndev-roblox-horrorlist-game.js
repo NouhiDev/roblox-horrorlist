@@ -33,7 +33,7 @@ if (typeof jQuery === "undefined") {
     });
 }
 
-const DATA_URL = "https://nouhi.dev/roblox-horrorlist/database.json";
+const DATA_URL = "https://robloxhorrorlist.com/database.json";
 const MAX_SCORE = 10;
 
 async function init() {

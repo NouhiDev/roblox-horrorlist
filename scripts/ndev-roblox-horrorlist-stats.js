@@ -1,4 +1,4 @@
-const DATA_URL = "https://nouhi.dev/roblox-horrorlist/database.json";
+const DATA_URL = "https://robloxhorrorlist.com/database.json";
 
 if (typeof jQuery === "undefined") {
     var script = document.createElement("script");
