@@ -603,3 +603,13 @@ footer {
 .status-button {
   background-color: #db3434;
 }
+
+#myProgressText {
+  margin: auto;
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  transform: translateX(50.5%);
+}
