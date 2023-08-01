@@ -50,26 +50,15 @@ async function fetchData() {
         chunks.push(gameUIDS.slice(i, i + maxUIDChunkSize));
     }
 
-    fetch('https://robloxhorrorlist.com/emergency-data/emergency-data.json')
-        .then(response => response.json())
-        .then(data => {
-            // Use the JSON data here
-            console.log(data);
-        })
-        .catch(error => {
-            // Handle errors if the JSON file fails to load
-            console.error('Error loading JSON:', error);
-        });
-
-    const fetchIconDataPromises = chunks.map((chunk) =>
-        fetch(`${API_BASE_URL}/game-icon/${chunk.join(",")}`).then((response) => response.json())
+    const emergency_game_data = await fetch(
+        "https://robloxhorrorlist.com/emergency-data/emergency-data.json"
     );
+    data.gameData = await emergency_game_data.json();
 
-    elem.style.width = "50%";
-
-    console.time("Fetch Game Info & Icon");
-    const iconDataResponses = await Promise.all(fetchIconDataPromises);
-    console.timeEnd("Fetch Game Info & Icon");
+    const emergency_game_icon_data = await fetch(
+        "https://robloxhorrorlist.com/emergency-data/emergency-data-icons.json"
+    );
+    data.gameIconData = await emergency_game_icon_data.json();
 
     data.gameIconData = iconDataResponses.reduce((acc, response) => acc.concat(response), []);
 
