@@ -74,7 +74,7 @@ async function fetchData() {
             <td data-th="Creator" class="align-left">${JSON.parse(
                 JSON.stringify(gameDataFromAPI["data"][i].creator)
             ).name}</td>
-            <td data-th="Rating" class="align-left">${data.databaseData["data"][i].ratings.rating}</td>
+            <td data-th="Rating" class="align-left">${data.databaseData.games[i].ratings.rating}</td>
             </tr>`;
 
             table.innerHTML += row;
