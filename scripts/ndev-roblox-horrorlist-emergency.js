@@ -60,15 +60,8 @@ async function fetchData() {
     );
     data.gameIconData = await emergency_game_icon_data.json();
 
-    data.gameIconData = iconDataResponses.reduce((acc, response) => acc.concat(response), []);
-
-    let gameDataFromAPI = [];
-    let gameIconDataFromAPI = [];
-
-    data.gameData.forEach((item, index) => {
-        gameDataFromAPI.push(...item.data);
-        gameIconDataFromAPI.push(...data.gameIconData[index]?.data || []);
-    });
+    let gameDataFromAPI = data.gameData;
+    let gameIconDataFromAPI = data.gameIconData;
 
     for (let i = 0; i < gameUIDS.length; i++) {
         try {
