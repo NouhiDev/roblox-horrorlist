@@ -18,7 +18,21 @@
 }
 
 .styled-input input:focus {
-    border-color: #3498db;
     outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+
+button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: #3498db;
+}
+
+button:hover {
+    background-color: #2980b9;
 }

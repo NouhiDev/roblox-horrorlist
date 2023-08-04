@@ -40,19 +40,7 @@ async function init() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
 
-    const bars = [
-        { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
-        { bar: document.getElementsByClassName("sound-design")[0], tooltip: "soundDesign" },
-        { bar: document.getElementsByClassName("story")[0], tooltip: "story" },
-        { bar: document.getElementsByClassName("visuals")[0], tooltip: "visuals" },
-        { bar: document.getElementsByClassName("ambience")[0], tooltip: "ambience" },
-        { bar: document.getElementsByClassName("gameplay")[0], tooltip: "gameplay" },
-        { bar: document.getElementsByClassName("creativity")[0], tooltip: "creativity" },
-        { bar: document.getElementsByClassName("enjoyment")[0], tooltip: "enjoyment" },
-        { bar: document.getElementsByClassName("production-quality")[0], tooltip: "productionQuality" },
-        { bar: document.getElementsByClassName("technical")[0], tooltip: "technical" },
-        { bar: document.getElementsByClassName("overall")[0], tooltip: "rating" },
-    ];
+    const bar = document.getElementsByClassName("overall")[0]
 
     var databaseData = [];
 
@@ -76,10 +64,7 @@ async function init() {
         barElement.getElementsByClassName("tooltip")[0].innerHTML = `${dataValue}/${MAX_SCORE}`;
     }
 
-    for (let i = 0; i < bars.length; i++) {
-        const dataField = bars[i].tooltip;
-        updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
-    }
+    updateProgressBar(bar, databaseData.games[number - 1].ratings["rating"], dataField);
 
     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
         const element = document.getElementsByClassName("rating-per")[i];

@@ -65,9 +65,12 @@
                     </span>
                 </div>
             </div>
-            <div class="styled-input">
-                <input type="text" placeholder="Enter rating from 0 to 10">
-            </div>
+            <form action="/submit-input" method="post">
+                <div class="styled-input">
+                    <input type="text" name="userInput" placeholder="Enter your text">
+                </div>
+                <br> <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
     <br><br>
