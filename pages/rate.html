@@ -65,16 +65,14 @@
                     </span>
                 </div>
             </div>
-            <form action="/submit-input" method="post">
-                <div class="styled-input">
-                    <input type="text" name="userInput" placeholder="Enter your text">
-                </div>
-                <br> <button type="submit">Submit</button>
-            </form>
+            <div class="styled-input">
+                <input type="number" id="rating" min="1" max="10" placeholder="Enter your rating">
+            </div>
+            <br> <button type="submit" onclick=rate_game()>Submit</button>
         </div>
     </div>
     <br><br>
-    <center><a href="../index.html" class="backbtn">BACK</a></center>
+    <center><a href="community-ratings.html" class="backbtn">BACK</a></center>
 </body>
 
 <!--
