@@ -57,11 +57,9 @@ function saveToCache(cacheKey, data) {
 
 async function fetchDataWithCaching(endpoint, cacheKey) {
     if (dataCache.has(cacheKey)) {
-        console.log('Fetching from cache:', cacheKey);
         return dataCache.get(cacheKey);
     }
 
-    console.log('Fetching from API:', endpoint);
     const response = await fetch(endpoint);
     const freshData = await response.json();
     saveToCache(cacheKey, freshData);
@@ -124,7 +122,7 @@ async function fetchData() {
             var row = ` <tr class="hover-reveal">
                   <td data-th="Placement">${i + 1}.</td>
                   <td data="Icon"><img class="game-icon" src="${gameIconDataFromAPI[i].imageUrl}"></td>
-                  <td data-th="Title" class="game-title">${gameDataFromAPI[i].name} <button id="rate-btn">Rate</button></td>
+                  <td data-th="Title" class="game-title">${gameDataFromAPI[i].name} <button id="rate-btn" onclick=loadGame()>Rate</button></td>
                   <td data-th="Creator" class="align-left">${JSON.parse(
                 JSON.stringify(gameDataFromAPI[i].creator)
             ).name}</td>
@@ -225,5 +223,5 @@ function twitterButton() {
 function loadGame(number, UID) {
     localStorage.setItem('number', number);
     localStorage.setItem('UID', UID);
-    window.open('./pages/game.html', '_blank');
+    window.open('rate.html', '_blank');
 }
