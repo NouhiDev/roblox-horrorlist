@@ -40,6 +40,8 @@ async function init() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
 
+    console.log(UID);
+
     const bar = document.getElementsByClassName("overall")[0]
 
     var databaseData = [];
