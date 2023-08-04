@@ -86,6 +86,9 @@
     <button class="statistics-button" onclick="api_status()">
       <i class="fas fa-spinner"></i> Check API Status
     </button>
+    <button class="statistics-button" onclick="community_ratings()">
+      <i class="fas fas fa-users"></i> Community Ratings
+    </button>
   </div>
   <br>
 
@@ -100,6 +103,10 @@
 
     function api_status() {
       window.open("https://nouhi.dev/status", "_blank");
+    }
+
+    function community_ratings() {
+      window.open("pages/community-ratings.html", "_blank");
     }
   </script>
 
