@@ -97,7 +97,10 @@ function rate_game() {
             rating: rating
         })
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Response:', response);
+        return response.json();
+    })
     .then(data => {
         console.log(data.message);
         // Update UI or take other actions as needed
