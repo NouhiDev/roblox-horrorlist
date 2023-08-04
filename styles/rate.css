@@ -1,0 +1,24 @@
+.ratings-container h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.styled-input {
+    display: inline-block;
+    position: relative;
+}
+
+.styled-input input {
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 250px;
+}
+
+.styled-input input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
