@@ -87,8 +87,7 @@ async function init() {
 
 function rate_game() {
     const gameId = localStorage.getItem("UID");
-    const rating = document.getElementById('rating').value;
-    console.log('Rating:', rating);
+    const rating = parseFloat(document.getElementById('rating').value);
     fetch(`https://ndevapi.com/rate-game/${gameId}`, {
         method: 'POST',
         headers: {
