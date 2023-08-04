@@ -241,3 +241,23 @@ async function init() {
         });
         }
 }
+
+function submitRating(gameId, rating) {
+    fetch(`/rate-game/${gameId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            rating: rating
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message);
+        // Update UI or take other actions as needed
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}

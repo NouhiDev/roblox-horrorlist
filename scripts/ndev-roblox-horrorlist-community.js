@@ -122,7 +122,9 @@ async function fetchData() {
             var row = ` <tr class="hover-reveal">
                   <td data-th="Placement">${i + 1}.</td>
                   <td data="Icon"><img class="game-icon" src="${gameIconDataFromAPI[i].imageUrl}"></td>
-                  <td data-th="Title" class="game-title">${gameDataFromAPI[i].name} <button id="rate-btn" onclick=loadGame(${i + 1}, ${gameUIDS[i]})>Rate</button></td>
+                  <td data-th="Title" class="game-title">${gameDataFromAPI[i].name} <button id="rate-btn" onclick=loadGame(
+                    ${i + 1}, 
+                    ${gameUIDS[i]})>Rate</button></td>
                   <td data-th="Creator" class="align-left">${JSON.parse(
                 JSON.stringify(gameDataFromAPI[i].creator)
             ).name}</td>
