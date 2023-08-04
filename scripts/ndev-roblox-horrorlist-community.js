@@ -80,7 +80,6 @@ async function fetchData() {
         "https://ndevapi.com/community-data"
     );
     let communityRatings = await databaseDataResponseTest.json();
-    console.log(communityRatings);
 
 
     gameUIDS = [];
