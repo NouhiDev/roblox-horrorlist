@@ -133,6 +133,20 @@
                 text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
             }
         }
+
+        button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 
@@ -182,9 +196,15 @@
             </div>
         </div>
     </section>
-    <center><a href="../index.html" class="backbtn">Back</a>
+    <center><button onclick="backBtn()">Back</button></center>
 
-        <p style="color: white; position: absolute;
+    <script>
+        function backBtn() {
+            window.open("https://robloxhorrorlist.com");
+        }
+    </script>
+
+    <p style="color: white; position: absolute;
     bottom: 10px; width: 100%;">Copyright © 2023 NDev-Group</p>
     </center>
     <center style="position: absolute;
@@ -197,13 +217,13 @@
         background-color: #20242e;
       " />
         <br />
-    
+
         <div class="flex-center">
             <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
             <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
             <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
         </div>
-    
+
         <br />
         <p style="color: white">Copyright © 2023 NDev-Group</p>
     </center>
