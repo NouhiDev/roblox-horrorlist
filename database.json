@@ -1598,11 +1598,11 @@
         {
           "name": "Chapter 1",
           "ratings": {
-            "rating": 6.4,
+            "rating": 6.5,
             "scariness": 6,
             "soundDesign": 6,
             "story": 7,
-            "visuals": 6,
+            "visuals": 7,
             "ambience": 6,
             "gameplay": 5,
             "creativity": 6,
@@ -1614,11 +1614,11 @@
         {
           "name": "Chapter 2",
           "ratings": {
-            "rating": 6.9,
+            "rating": 7.0,
             "scariness": 6,
             "soundDesign": 6,
             "story": 7,
-            "visuals": 7,
+            "visuals": 8,
             "ambience": 7,
             "gameplay": 7,
             "creativity": 6,
@@ -1661,7 +1661,7 @@
         }
       ],
       "ratings": {
-        "rating": 6.5,
+        "rating": 6.7,
         "scariness": 4.8,
         "soundDesign": 6.5,
         "story": 7.0,
