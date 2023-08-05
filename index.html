@@ -77,14 +77,14 @@
     <span class="tit-tit-sub">since 2022</span>
   </h1>
   <div class="button-container">
+    <button class="statistics-button" onclick="contributors()">
+      <i class="fas fa-users"></i> Contributors
+    </button>
     <button class="statistics-button" onclick="statistics()">
       <i class="fas fa-chart-line"></i> Statistics
     </button>
     <button class="statistics-button" onclick="rating_scale()">
       <i class="fas fa-file-signature"></i> Rating Scale
-    </button>
-    <button class="statistics-button" onclick="api_status()">
-      <i class="fas fa-spinner"></i> Check API Status
     </button>
   </div>
   <br>
@@ -98,8 +98,8 @@
       window.open("pages/rating-overview.html", "_blank");
     }
 
-    function api_status() {
-      window.open("https://nouhi.dev/status", "_blank");
+    function contributors() {
+      window.open("pages/contributors.html", "_blank");
     }
   </script>
 
