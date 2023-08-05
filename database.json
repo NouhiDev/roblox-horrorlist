@@ -8466,6 +8466,33 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 3231969942,
+      "name": "CONDITION 1 - DEMO",
+      "genres": "Story, Puzzle",
+      "date": "05.08.2023",
+      "award": "",
+      "ratings": {
+        "rating": 7.7,
+        "scariness": 1,
+        "soundDesign": 10,
+        "story": 8,
+        "visuals": 10,
+        "ambience": 8,
+        "gameplay": 8,
+        "creativity": 9,
+        "enjoyment": 6,
+        "productionQuality": 10,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ]
 }
