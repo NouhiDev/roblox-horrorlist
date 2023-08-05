@@ -1589,6 +1589,99 @@
       "port_url": ""
     },
     {
+      "uid": 2823064037,
+      "name": "JUDY",
+      "genres": "Chapters, Story",
+      "date": "05.08.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Chapter 1",
+          "ratings": {
+            "rating": 6.4,
+            "scariness": 6,
+            "soundDesign": 6,
+            "story": 7,
+            "visuals": 6,
+            "ambience": 6,
+            "gameplay": 5,
+            "creativity": 6,
+            "enjoyment": 6,
+            "productionQuality": 6,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Chapter 2",
+          "ratings": {
+            "rating": 6.9,
+            "scariness": 6,
+            "soundDesign": 6,
+            "story": 7,
+            "visuals": 7,
+            "ambience": 7,
+            "gameplay": 7,
+            "creativity": 6,
+            "enjoyment": 6,
+            "productionQuality": 7,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Chapter 3 Part 1",
+          "ratings": {
+            "rating": 6.2,
+            "scariness": 4,
+            "soundDesign": 7,
+            "story": 7,
+            "visuals": 9,
+            "ambience": 5,
+            "gameplay": 4,
+            "creativity": 5,
+            "enjoyment": 5,
+            "productionQuality": 8,
+            "technical": 8
+          }
+        },
+        {
+          "name": "Chapter 3 Part 2",
+          "ratings": {
+            "rating": 6.3,
+            "scariness": 3,
+            "soundDesign": 7,
+            "story": 7,
+            "visuals": 9,
+            "ambience": 4,
+            "gameplay": 7,
+            "creativity": 7,
+            "enjoyment": 2,
+            "productionQuality": 8,
+            "technical": 9
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 6.5,
+        "scariness": 4.8,
+        "soundDesign": 6.5,
+        "story": 7.0,
+        "visuals": 7.8,
+        "ambience": 5.5,
+        "gameplay": 5.8,
+        "creativity": 6.0,
+        "enjoyment": 4.8,
+        "productionQuality": 7.2,
+        "technical": 9.2
+      },
+      "rater_note": {
+        "pros": "Everything concerning the visuals, bossfights.",
+        "cons": "Frustrating and inconsistent enemy AI, unnecessarily stretched out gameplay with small items that you have to find in a much too large area.",
+        "conclusion": "Although the game has astounding visual elements - especially models - it falls short in terms of gameplay and user experience."
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=HIEf7DJ_qD4",
+      "port_url": ""
+    },
+    {
       "uid": "78533558",
       "name": "ALONE IN A DARK HOUSE",
       "genres": [
@@ -8463,99 +8556,6 @@
         "conclusion": ""
       },
       "youtube_url": "",
-      "port_url": ""
-    },
-    {
-      "uid": 2823064037,
-      "name": "JUDY",
-      "genres": "Chapters, Story",
-      "date": "05.08.2023",
-      "award": "",
-      "chapters": [
-        {
-          "name": "Chapter 1",
-          "ratings": {
-            "rating": 6.4,
-            "scariness": 6,
-            "soundDesign": 6,
-            "story": 7,
-            "visuals": 6,
-            "ambience": 6,
-            "gameplay": 5,
-            "creativity": 6,
-            "enjoyment": 6,
-            "productionQuality": 6,
-            "technical": 10
-          }
-        },
-        {
-          "name": "Chapter 2",
-          "ratings": {
-            "rating": 6.9,
-            "scariness": 6,
-            "soundDesign": 6,
-            "story": 7,
-            "visuals": 7,
-            "ambience": 7,
-            "gameplay": 7,
-            "creativity": 6,
-            "enjoyment": 6,
-            "productionQuality": 7,
-            "technical": 10
-          }
-        },
-        {
-          "name": "Chapter 3 Part 1",
-          "ratings": {
-            "rating": 6.2,
-            "scariness": 4,
-            "soundDesign": 7,
-            "story": 7,
-            "visuals": 9,
-            "ambience": 5,
-            "gameplay": 4,
-            "creativity": 5,
-            "enjoyment": 5,
-            "productionQuality": 8,
-            "technical": 8
-          }
-        },
-        {
-          "name": "Chapter 3 Part 2",
-          "ratings": {
-            "rating": 6.3,
-            "scariness": 3,
-            "soundDesign": 7,
-            "story": 7,
-            "visuals": 9,
-            "ambience": 4,
-            "gameplay": 7,
-            "creativity": 7,
-            "enjoyment": 2,
-            "productionQuality": 8,
-            "technical": 9
-          }
-        }
-      ],
-      "ratings": {
-        "rating": 6.5,
-        "scariness": 4.8,
-        "soundDesign": 6.5,
-        "story": 7.0,
-        "visuals": 7.8,
-        "ambience": 5.5,
-        "gameplay": 5.8,
-        "creativity": 6.0,
-        "enjoyment": 4.8,
-        "productionQuality": 7.2,
-        "technical": 9.2
-      },
-      "rater_note": {
-        "pros": "Everything concerning the visuals, bossfights.",
-        "cons": "Frustrating and inconsistent enemy AI, unnecessarily stretched out gameplay with small items that you have to find in a much too large area.",
-        "conclusion": "Although the game has astounding visual elements - especially models - it falls short in terms of gameplay and user experience."
-      },
-      "youtube_url": "https://www.youtube.com/watch?v=HIEf7DJ_qD4",
       "port_url": ""
     }
   ]
