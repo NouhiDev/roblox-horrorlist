@@ -8557,6 +8557,33 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 4785706494,
+      "name": "The Vents",
+      "genres": "Story",
+      "date": "06.08.2023",
+      "award": "",
+      "ratings": {
+        "rating": 5.4,
+        "scariness": 6,
+        "soundDesign": 3,
+        "story": 3,
+        "visuals": 6,
+        "ambience": 6,
+        "gameplay": 4,
+        "creativity": 6,
+        "enjoyment": 6,
+        "productionQuality": 7,
+        "technical": 7
+      },
+      "rater_note": {
+        "pros": "Interesting flashlight mechanic and unique monster model.",
+        "cons": "Boring and unoriginal gameplay.",
+        "conclusion": ""
+      },
+      "youtube_url": "https://www.youtube.com/watch?v=WIGbsGtkbfI",
+      "port_url": ""
     }
   ]
 }
