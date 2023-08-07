@@ -8611,6 +8611,33 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 4787947978,
+      "name": "The Nightmare Experience",
+      "genres": "Story",
+      "date": "07.08.2023",
+      "award": "",
+      "ratings": {
+        "rating": 4.3,
+        "scariness": 2,
+        "soundDesign": 2,
+        "story": 3,
+        "visuals": 3,
+        "ambience": 6,
+        "gameplay": 3,
+        "creativity": 4,
+        "enjoyment": 6,
+        "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ]
 }
