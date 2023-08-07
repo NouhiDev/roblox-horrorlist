@@ -613,3 +613,18 @@ footer {
   transform: translateY(-50%);
   transform: translateX(50.5%);
 }
+
+.donate-button {
+  background-color: #38c62b;
+}
+
+.donate-button:hover {
+  background-color: #25851c;
+}
+
+.about {
+  margin: auto;
+  max-width: 500px;
+  /*text-align: center;*/
+  padding: 10px;
+}
