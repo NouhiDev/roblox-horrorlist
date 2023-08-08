@@ -6004,6 +6004,33 @@
       "port_url": ""
     },
     {
+      "uid": 4759813126,
+      "name": "Stay in the Light",
+      "genres": "Minigame, Collectathon",
+      "date": "08.08.2023",
+      "award": "",
+      "ratings": {
+        "rating": 3.3,
+        "scariness": 7,
+        "soundDesign": 3,
+        "story": 1,
+        "visuals": 2,
+        "ambience": 2,
+        "gameplay": 2,
+        "creativity": 2,
+        "enjoyment": 3,
+        "productionQuality": 3,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "The way the monster spawns right in front of you randomly is actually pretty scary.",
+        "cons": "Just another collectathon game with no special gameplay or ideas.",
+        "conclusion": "Average collectathon game with a kind of interesting monster mechanic."
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
       "uid": "2477103742",
       "name": "A Farmer and His Scarecrow: Reborn",
       "genres": [
@@ -8650,33 +8677,6 @@
         "pros": "",
         "cons": "",
         "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
-      "uid": 4759813126,
-      "name": "Stay in the Light",
-      "genres": "Minigame, Collectathon",
-      "date": "08.08.2023",
-      "award": "",
-      "ratings": {
-        "rating": 3.3,
-        "scariness": 7,
-        "soundDesign": 3,
-        "story": 1,
-        "visuals": 2,
-        "ambience": 2,
-        "gameplay": 2,
-        "creativity": 2,
-        "enjoyment": 3,
-        "productionQuality": 3,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "The way the monster spawns right in front of you randomly is actually pretty scary.",
-        "cons": "Just another collectathon game with no special gameplay or ideas.",
-        "conclusion": "Average collectathon game with a kind of interesting monster mechanic."
       },
       "youtube_url": "",
       "port_url": ""
