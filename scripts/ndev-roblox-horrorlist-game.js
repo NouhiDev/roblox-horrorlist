@@ -134,6 +134,13 @@ async function init() {
     visits.innerText += " " + formatter.format(gameDataByUID.visits);
     maxplayers.innerText += " " + gameDataByUID.maxPlayers;
 
+    playBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+      
+        var linkUrl = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
+      
+        window.open(linkUrl, "_blank");
+      });
     playBtn.href = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
 
     pros.innerText += "\n";
