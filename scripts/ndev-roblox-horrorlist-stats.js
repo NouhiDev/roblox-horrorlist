@@ -1,4 +1,4 @@
-const DATA_URL = "https://robloxhorrorlist.com/database.json";
+const DATA_URL = "https://robloxhorrorlist.com/weights-database.json";
 
 if (typeof jQuery === "undefined") {
     var script = document.createElement("script");
