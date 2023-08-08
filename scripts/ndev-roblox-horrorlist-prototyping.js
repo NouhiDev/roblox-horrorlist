@@ -224,5 +224,5 @@ function twitterButton() {
 function loadGame(number, UID) {
     localStorage.setItem('number', number);
     localStorage.setItem('UID', UID);
-    window.open('./pages/game.html', '_blank');
+    window.open('../pages/game.html', '_blank');
 }
