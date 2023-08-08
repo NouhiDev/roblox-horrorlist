@@ -1358,7 +1358,7 @@
                 {
                     "name": "Chapter 1",
                     "ratings": {
-                        "rating": 6.5,
+                        "rating": "6.1",
                         "scariness": 6,
                         "soundDesign": 6,
                         "story": 7,
@@ -1374,7 +1374,7 @@
                 {
                     "name": "Chapter 2",
                     "ratings": {
-                        "rating": 7,
+                        "rating": "6.7",
                         "scariness": 6,
                         "soundDesign": 6,
                         "story": 7,
@@ -1390,7 +1390,7 @@
                 {
                     "name": "Chapter 3 Part 1",
                     "ratings": {
-                        "rating": 6.2,
+                        "rating": "5.8",
                         "scariness": 4,
                         "soundDesign": 7,
                         "story": 7,
@@ -1406,7 +1406,7 @@
                 {
                     "name": "Chapter 3 Part 2",
                     "ratings": {
-                        "rating": 6.3,
+                        "rating": "5.8",
                         "scariness": 3,
                         "soundDesign": 7,
                         "story": 7,
@@ -1569,7 +1569,7 @@
                 {
                     "name": "Level 0-5 (The First 6)",
                     "ratings": {
-                        "rating": 6.9,
+                        "rating": "6.3",
                         "scariness": 5,
                         "soundDesign": 6,
                         "story": 3,
@@ -1585,7 +1585,7 @@
                 {
                     "name": "Level 6-10 (The End?)",
                     "ratings": {
-                        "rating": 6.6,
+                        "rating": "6.3",
                         "scariness": 5,
                         "soundDesign": 9,
                         "story": 3,
@@ -1601,7 +1601,7 @@
                 {
                     "name": "Level 11-12 (The Warehouse)",
                     "ratings": {
-                        "rating": 5.7,
+                        "rating": "5.8",
                         "scariness": 0,
                         "soundDesign": 6,
                         "story": 3,
@@ -1617,7 +1617,7 @@
                 {
                     "name": "Level 13-16 (The Funrooms)",
                     "ratings": {
-                        "rating": 7.4,
+                        "rating": "6.9",
                         "scariness": 6,
                         "soundDesign": 5,
                         "story": 3,
@@ -2246,7 +2246,7 @@
                 {
                     "name": "Unknown Room (Chapter 1)",
                     "ratings": {
-                        "rating": 5.7,
+                        "rating": "4.9",
                         "scariness": 2,
                         "soundDesign": 5,
                         "story": 4,
@@ -2262,7 +2262,7 @@
                 {
                     "name": "The Truth (Chapter 2)",
                     "ratings": {
-                        "rating": 6.6,
+                        "rating": "6.0",
                         "scariness": 4,
                         "soundDesign": 6,
                         "story": 5,
@@ -2278,7 +2278,7 @@
                 {
                     "name": "End? (Chapter 3)",
                     "ratings": {
-                        "rating": 6.5,
+                        "rating": "5.7",
                         "scariness": 2,
                         "soundDesign": 7,
                         "story": 5,
@@ -2352,7 +2352,7 @@
                 {
                     "name": "Book 1 Chapter 1",
                     "ratings": {
-                        "rating": 6.1,
+                        "rating": "5.4",
                         "scariness": 4,
                         "soundDesign": 6,
                         "story": 6,
@@ -2368,7 +2368,7 @@
                 {
                     "name": "Book 1 Chapter 2",
                     "ratings": {
-                        "rating": 5.8,
+                        "rating": "5.2",
                         "scariness": 4,
                         "soundDesign": 6,
                         "story": 6,
@@ -2384,7 +2384,7 @@
                 {
                     "name": "Book 1 Chapter 3",
                     "ratings": {
-                        "rating": 5.9,
+                        "rating": "5.5",
                         "scariness": 6,
                         "soundDesign": 6,
                         "story": 6,
@@ -2400,7 +2400,7 @@
                 {
                     "name": "Book 1 Chapter 4",
                     "ratings": {
-                        "rating": 6.1,
+                        "rating": "5.3",
                         "scariness": 3,
                         "soundDesign": 6,
                         "story": 6,
@@ -2416,7 +2416,7 @@
                 {
                     "name": "Book 2 Chapter 1",
                     "ratings": {
-                        "rating": 5.8,
+                        "rating": "5.0",
                         "scariness": 3,
                         "soundDesign": 7,
                         "story": 6,
@@ -2432,7 +2432,7 @@
                 {
                     "name": "Book 2 Chapter 2",
                     "ratings": {
-                        "rating": 7,
+                        "rating": "6.4",
                         "scariness": 3,
                         "soundDesign": 7,
                         "story": 7,
@@ -3473,7 +3473,7 @@
                 {
                     "name": "Night 1",
                     "ratings": {
-                        "rating": 6.9,
+                        "rating": "6.8",
                         "scariness": 6,
                         "soundDesign": 6,
                         "story": 2,
@@ -3489,7 +3489,7 @@
                 {
                     "name": "Night 2",
                     "ratings": {
-                        "rating": 3.6,
+                        "rating": "3.1",
                         "scariness": 2,
                         "soundDesign": 3,
                         "story": 2,
@@ -5544,7 +5544,7 @@
                 {
                     "name": "Chapter 1",
                     "ratings": {
-                        "rating": 4.4,
+                        "rating": "3.5",
                         "scariness": 1,
                         "soundDesign": 3,
                         "story": 2,
@@ -5560,7 +5560,7 @@
                 {
                     "name": "Chapter 2",
                     "ratings": {
-                        "rating": 4.8,
+                        "rating": "3.8",
                         "scariness": 1,
                         "soundDesign": 3,
                         "story": 2,
