@@ -44,9 +44,10 @@ function calculateAverageRatings(data) {
 
     data.games.forEach(game => {
         categories.forEach(category => {
-            averageRatings[category] += game.ratings[category];
+            averageRatings[category] += parseFloat(game.ratings[category]);
         });
     });
+
 
     // Calculate the average for each category
     let i = 0;
