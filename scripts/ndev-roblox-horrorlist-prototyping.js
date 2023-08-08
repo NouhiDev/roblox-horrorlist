@@ -129,7 +129,7 @@ async function fetchData() {
                   <td data-th="Creator" class="align-left">${JSON.parse(
                 JSON.stringify(gameDataFromAPI[i].creator)
             ).name}</td>
-                  <td data-th="Rating" class="align-left">${data.databaseData.games[i].ratings.rating}</td>
+                  <td data-th="Rating" class="align-left">${data.databaseData.games[i].ratings.rating*10}%</td>
                   </tr>`;
 
             const rowElement = document.createElement('tr');
