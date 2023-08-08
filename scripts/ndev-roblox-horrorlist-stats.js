@@ -58,7 +58,6 @@ function calculateAverageRatings(data) {
         i++;
     });
 
-    console.log(averageRatings);
 
     // function updateProgressBar(barElement, dataValue) {
     //     const percentage = dataValue * (100 / MAX_SCORE);
