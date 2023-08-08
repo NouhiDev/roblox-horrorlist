@@ -8680,6 +8680,51 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 4034395612,
+      "name": "SANITY",
+      "genres": "Story, Chapters",
+      "date": "08.08.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Chapter 1",
+          "ratings": {
+            "rating": 6.3,
+            "scariness": 6,
+            "soundDesign": 7,
+            "story": 5,
+            "visuals": 7,
+            "ambience": 7,
+            "gameplay": 5,
+            "creativity": 6,
+            "enjoyment": 6,
+            "productionQuality": 8,
+            "technical": 10
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 6.3,
+        "scariness": 6.0,
+        "soundDesign": 7.0,
+        "story": 5.0,
+        "visuals": 7.0,
+        "ambience": 7.0,
+        "gameplay": 5.0,
+        "creativity": 6.0,
+        "enjoyment": 6.0,
+        "productionQuality": 8.0,
+        "technical": 10.0
+      },
+      "rater_note": {
+        "pros": "Unique atmosphere/ambience that feels like Outlast, voice acting, pretty well-made.",
+        "cons": "Epilepsy jumpscare without warning, unoriginal gameplay, jumpscare in the sewers way too loud.",
+        "conclusion": "The first part of SANITY has great potential and was actually pretty good in regards of all categories, the sewers however dragged the whole game down a bit."
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ]
 }
