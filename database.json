@@ -8608,6 +8608,51 @@
       },
       "youtube_url": "",
       "port_url": ""
+    },
+    {
+      "uid": 2252036402,
+      "name": "The Dark",
+      "genres": "Story",
+      "date": "08.08.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Chapter 1",
+          "ratings": {
+            "rating": 3.5,
+            "scariness": 3,
+            "soundDesign": 3,
+            "story": 2,
+            "visuals": 5,
+            "ambience": 2,
+            "gameplay": 3,
+            "creativity": 3,
+            "enjoyment": 4,
+            "productionQuality": 3,
+            "technical": 7
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 0.3,
+        "scariness": 3.0,
+        "soundDesign": 3.0,
+        "story": 2.0,
+        "visuals": 5.0,
+        "ambience": 2.0,
+        "gameplay": 3.0,
+        "creativity": 3.0,
+        "enjoyment": 4.0,
+        "productionQuality": 3.0,
+        "technical": 7.0
+      },
+      "rater_note": {
+        "pros": "Active updates that aim to improve the game.",
+        "cons": "Unnecessarily cumbersome backpack system, too dark even for its own name, basic uncreative gameplay.",
+        "conclusion": "We've been looking at this game for quite a while now. It went from having 6 Chapters to now having only a single one. It shows the developers care to actively update the game, however, it's just still not a rememberable experience."
+      },
+      "youtube_url": "",
+      "port_url": ""
     }
   ]
 }
