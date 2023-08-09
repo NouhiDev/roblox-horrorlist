@@ -3325,35 +3325,6 @@
       "port_url": ""
     },
     {
-      "uid": "4490657706",
-      "name": "GODS WILL",
-      "genres": [
-        "Minigame"
-      ],
-      "date": "17.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": "5.0",
-        "scariness": 0,
-        "soundDesign": 6,
-        "story": 6,
-        "visuals": 6,
-        "ambience": 4,
-        "gameplay": 8,
-        "creativity": 6,
-        "enjoyment": 3,
-        "productionQuality": 7,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
       "uid": "4334201521",
       "name": "PIZZA DELIVERY",
       "genres": [
@@ -3780,6 +3751,35 @@
         "creativity": 9,
         "enjoyment": 7,
         "productionQuality": 4,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
+      "uid": "4490657706",
+      "name": "GODS WILL",
+      "genres": [
+        "Minigame"
+      ],
+      "date": "17.07.2023",
+      "award": "",
+      "ratings": {
+        "rating": "4.8",
+        "scariness": 0,
+        "soundDesign": 6,
+        "story": 6,
+        "visuals": 6,
+        "ambience": 0,
+        "gameplay": 8,
+        "creativity": 6,
+        "enjoyment": 8,
+        "productionQuality": 7,
         "technical": 10
       },
       "rater_note": {
