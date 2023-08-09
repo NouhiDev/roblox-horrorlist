@@ -147,35 +147,6 @@
       "port_url": "https://kittyhorrorshow.itch.io/anatomy"
     },
     {
-      "uid": "911099425",
-      "name": "Realm of the 9 Portals",
-      "genres": [
-        "Chapters"
-      ],
-      "date": "17.07.2023",
-      "award": "",
-      "ratings": {
-        "rating": "7.3",
-        "scariness": 7,
-        "soundDesign": 5,
-        "story": 6,
-        "visuals": 8,
-        "ambience": 9,
-        "gameplay": 7,
-        "creativity": 6,
-        "enjoyment": 10,
-        "productionQuality": 10,
-        "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
       "uid": "3520390617",
       "name": "Lost Rooms",
       "genres": [
