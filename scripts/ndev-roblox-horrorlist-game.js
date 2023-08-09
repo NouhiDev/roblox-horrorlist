@@ -101,7 +101,7 @@ async function init() {
     const cons = document.getElementById("cons");
     const conclusion = document.getElementById("conclusion");
     const originalBtn = document.getElementsByClassName("originalBtn")[0];
-    const playBtn = document.getElementsByClassName("playbtn")[0];
+    const playBtn = document.getElementById("playBtn");
 
     var gameRank = number;
     if (number == 1) gameRank = "🥇";
@@ -157,10 +157,11 @@ async function init() {
     else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
 
     if (databaseData.games[number - 1]["port_url"] !== "") {
-        console.log(databaseData.games[number - 1]["port_url"]);
         originalBtn.style.opacity = 1;
         originalBtn.innerText = "Play Original";
-        originalBtn.href = databaseData.games[number - 1].port_url;
+        originalBtn.addEventListener("click", function() {
+            window.location.href = databaseData.games[number - 1].port_url;
+        });
     }
 
     // Multiple chapters / parts / etc. functionality

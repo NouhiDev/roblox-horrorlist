@@ -67,7 +67,7 @@ body {
     padding: 10px 20px;
     border-radius: 7px;
     margin: auto;
-    width: 50%;
+    width: 100%;
     display: inline-block;
     color: #fff;
 }
@@ -125,6 +125,7 @@ body {
     border-radius: 3px;
     background: #4070f4;
     z-index: 1;
+    opacity: 1;
 }
 
 .tooltip::before {
@@ -145,9 +146,9 @@ body {
     padding: 10px 20px;
     border-radius: 7px;
     margin: auto;
-    width: 50%;
+    width: 100%;
     display: inline-block;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     color: #fff;
 }
 
@@ -171,9 +172,8 @@ body {
     padding: 10px 20px;
     border-radius: 7px;
     margin: auto;
-    width: 50%;
+    width: 100%;
     display: inline-block;
-    margin-left: 25px;
 }
 
 .rater-note-txt {
@@ -182,17 +182,6 @@ body {
 
 .overall .tooltip::before {
     background: rgb(255, 132, 0);
-}
-
-.originalBtn {
-    border-color: #4070f4;
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px 10px 5px 10px;
-    border-radius: 15px;
-    color: white;
-    text-decoration: none;
-    opacity: 0;
 }
 
 .originalBtn:hover {
@@ -283,7 +272,6 @@ body {
 }
 
 button {
-    margin-right: 10px;
     padding: 10px 20px;
     background-color: #3498db;
     color: #fff;
