@@ -1,4 +1,3 @@
-1
 <!DOCTYPE html>
 
 <!--
@@ -17,66 +16,50 @@
 <html>
 
 <head>
-    <title>Roblox Horrorlist: Best Roblox Horror Games</title>
+    <title>Roblox Horrorlist: Contributors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="title" content="Roblox Horrorlist: Best Roblox Horror Games" />
-    <meta name="description"
-        content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are." />
+    <meta name="title" content="Roblox Horrorlist: Contributors" />
+    <meta name="description" content="Display of all the amazing contributors to the Roblox Horrorlist." />
     <meta name="robots" content="index, follow" />
 
-    <link rel="icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
 
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-609YDJ81ER');
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <style>
-        #criteria {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 60%;
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+        body {
+            background: #161920;
+            font-family: "Inter", sans-serif;
         }
 
-        #criteria td,
-        #criteria th {
-            padding: 8px;
+        .main-content {
+            padding: 30px 0;
         }
 
-        #criteria tr:nth-child(even) {
-            background-color: #fff;
+        .shadow {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
         }
 
-        #criteria tr:nth-child(odd) {
-            background-color: #ededed;
+        .profile-card {
+            padding-bottom: 10px !important;
+            background-color: #262d3a;
         }
 
-        #criteria tr:hover {
-            background-color: #ddd;
+        .profile-card .profile-card_image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 4px solid #fff;
         }
 
-        #criteria th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #ff6161;
+        h1 {
             color: white;
         }
 
@@ -102,131 +85,210 @@
             text-decoration: none;
         }
 
-        footer {
+
+        .flex-center {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .icon-3d {
             padding: 10px;
-            text-align: center;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            color: #fff;
+        }
+
+        .icon-3d:hover {
+            -webkit-animation: icon3d 200ms infinite;
+            animation: icon3d 200ms infinite;
+        }
+
+        @keyframes icon3d {
+            0% {
+                text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+            }
+
+            25% {
+                text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+            }
+
+            50% {
+                text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+            }
+
+            75% {
+                text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+            }
+
+            100% {
+                text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+            }
+        }
+
+        button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .smaller {
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
-    <script>
-        $(document).ready(function () {
-            // Generate Table after populating it
-            $("#game-table").DataTable({ searching: false, paging: false, info: false, sorting: false });
-        });
-    </script>
+    <section class="main-content">
+        <div class="container">
+            <h1 class="text-center">Roblox Horrorlist - <b>How We Rate</b></h1>
+            <p class="text-center text-muted">Take a glimpse at how we rate games.</p>
+            <h1 class="text-center smaller">Still have <b>questions?</b> <a
+                    href="https://discord.com/invite/gPH8ybrK9j">Ask in the Discord Server</a></h1>
+            <br>
+            <div class="row">
+                <hr style="
+                    width: 100%;
+                    height: 2px;
+                    border-width: 0;
+                    color: #20242e;
+                    background-color: #20242e;
+                " />
+                <h1 class="text-center smaller" style="width: 100%; font-size: 35px; padding-bottom: 10px;">Categories</h1>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Scariness</h3>
+                            <p class="text-muted">The game's ability to invoke fear and terror in players through its atmosphere, encounters, and horror elements. (19%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Sound Design</h3>
+                            <p class="text-muted">The quality and effectiveness of the game's audio elements, including music, sound effects, and voice acting, in creating an immersive and chilling experience. (12%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Story</h3>
+                            <p class="text-muted">The narrative and plot of the game, including its depth, coherence, and ability to immerse. (10%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
 
-    <h1 class="tit">Roblox Horrorlist - Rating Overview</h1>
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Visuals</h3>
+                            <p class="text-muted">The graphical presentation and quality of the game, including models, environments, and visual effects. (10%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
 
-    <h1 class="tit-credits">
-        <span class="tit-tit-sub">How do we rate the games?</span>
-    </h1>
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Ambience</h3>
+                            <p class="text-muted">The overall mood and environment created by the game, including lighting, level design, and other atmospheric factors. (12%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
 
-    <hr style="
-          width: 50%;
-          height: 2px;
-          border-width: 0;
-          color: #20242e;
-          background-color: #20242e;
-        " />
-    <br />
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Gameplay</h3>
+                            <p class="text-muted">The mechanics, controls, and overall gameplay experience offered by the game. (19%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
 
-    <div class="table-container" id="table-container">
-        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Criteria</th>
-                    <th>Definition</th>
-                </tr>
-            </thead>
-            <tbody id="table-to-populate">
-                <tr>
-                    <td>Scariness (19%)</td>
-                    <td>The game's ability to invoke fear and terror in players through its atmosphere, encounters, and
-                        horror elements.</td>
-                </tr>
-                <tr>
-                    <td>Sound Design (12%)</td>
-                    <td>The quality and effectiveness of the game's audio elements, including music, sound effects, and
-                        voice acting, in creating an immersive and chilling experience.</td>
-                </tr>
-                <tr>
-                    <td>Story (10%)</td>
-                    <td>The narrative and plot of the game, including its depth, coherence, and ability to engage.</td>
-                </tr>
-                <tr>
-                    <td>Visuals (10%)</td>
-                    <td>The graphical presentation and quality of the game, including models, environments, and visual
-                        effects.</td>
-                </tr>
-                <tr>
-                    <td>Ambience (12%)</td>
-                    <td>The overall mood and environment created by the game, including lighting, level design, and
-                        other atmospheric factors.</td>
-                </tr>
-                <tr>
-                    <td>Gameplay (19%)</td>
-                    <td>The mechanics, controls, and overall gameplay experience offered by the game.</td>
-                </tr>
-                <tr>
-                    <td>Creativity (7%)</td>
-                    <td>The originality and innovation of the game's concepts, mechanics, and design within the horror
-                        genre.</td>
-                </tr>
-                <tr>
-                    <td>Enjoyment (4%)</td>
-                    <td>The level of entertainment experienced while playing the game.</td>
-                </tr>
-                <tr>
-                    <td>Production Quality (4%)</td>
-                    <td>The overall craftsmanship and polish of the game.</td>
-                </tr>
-                <tr>
-                    <td>Technical (3%)</td>
-                    <td>The technical aspects of the game, such as loading times, stability, and performance.</td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
-    </div>
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Creativity</h3>
+                            <p class="text-muted">The originality and innovation of the game's concepts, mechanics, and design within the horror genre. (7%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
 
-    <br>
-    <center><button onclick="backBtn()">Back</button></center>
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Enjoyment</h3>
+                            <p class="text-muted">The level of entertainment experienced while playing the game. (4%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
+
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Production Quality</h3>
+                            <p class="text-muted">The overall craftsmanship and polish of the game. (4%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
+
+                        <div class="profile-card_details">
+                            <h3 class="mb-0" style="color: #fff;">Technical</h3>
+                            <p class="text-muted">The technical aspects of the game, such as loading times, stability, and performance. (3%)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <center><button onclick="backBtn()">Back</button></center><br>
+    <footer>
+        <hr style="
+              width: 50%;
+              height: 2px;
+              border-width: 0;
+              color: #20242e;
+              background-color: #20242e;
+            " />
+        <br />
+        <center>
+          <div class="flex-center">
+            <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+            <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+            <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+            <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
+          </div>
+    
+          <br />
+          <p style="color: white">Copyright © 2023 NDev-Group</p>
+        </center>
+      </footer>
 
     <script>
         function backBtn() {
             window.location.href = "https://robloxhorrorlist.com";
         }
     </script>
-
-    <footer>
-        <hr style="
-          width: 50%;
-          height: 2px;
-          border-width: 0;
-          color: #20242e;
-          background-color: #20242e;
-        " />
-        <br />
-        <center>
-            <div class="flex-center">
-                <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-                <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-                <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
-                <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
-            </div>
-
-            <br />
-            <p style="color: white">Copyright © 2023 NDev-Group</p>
-        </center>
-    </footer>
-    </div>
-
 </body>
 
 <!--
