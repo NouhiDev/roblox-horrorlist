@@ -731,6 +731,83 @@
       "port_url": ""
     },
     {
+      "uid": 911099425,
+      "name": "Realm of the 9 Portals",
+      "genres": "Story, Exploration",
+      "date": "09.08.2023",
+      "award": "",
+      "chapters": [
+        {
+          "name": "Portal 1",
+          "ratings": {
+            "rating": 6.8,
+            "scariness": 5,
+            "soundDesign": 8,
+            "story": 7,
+            "visuals": 7,
+            "ambience": 8,
+            "gameplay": 6,
+            "creativity": 7,
+            "enjoyment": 7,
+            "productionQuality": 9,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Portal 2",
+          "ratings": {
+            "rating": 6.1,
+            "scariness": 6,
+            "soundDesign": 7,
+            "story": 7,
+            "visuals": 6,
+            "ambience": 5,
+            "gameplay": 5,
+            "creativity": 6,
+            "enjoyment": 4,
+            "productionQuality": 9,
+            "technical": 10
+          }
+        },
+        {
+          "name": "Portal 3",
+          "ratings": {
+            "rating": 6.9,
+            "scariness": 5,
+            "soundDesign": 8,
+            "story": 7,
+            "visuals": 8,
+            "ambience": 9,
+            "gameplay": 5,
+            "creativity": 8,
+            "enjoyment": 5,
+            "productionQuality": 9,
+            "technical": 10
+          }
+        }
+      ],
+      "ratings": {
+        "rating": 6.7,
+        "scariness": 5.3,
+        "soundDesign": 7.7,
+        "story": 7.0,
+        "visuals": 7.0,
+        "ambience": 7.3,
+        "gameplay": 5.3,
+        "creativity": 7.0,
+        "enjoyment": 5.3,
+        "productionQuality": 9.0,
+        "technical": 10.0
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
       "uid": "1174455814",
       "name": "Light Bulb: Reillumination",
       "genres": [
@@ -8717,83 +8794,6 @@
         "enjoyment": 0,
         "productionQuality": 1,
         "technical": 10
-      },
-      "rater_note": {
-        "pros": "",
-        "cons": "",
-        "conclusion": ""
-      },
-      "youtube_url": "",
-      "port_url": ""
-    },
-    {
-      "uid": 911099425,
-      "name": "Realm of the 9 Portals",
-      "genres": "Story, Exploration",
-      "date": "09.08.2023",
-      "award": "",
-      "chapters": [
-        {
-          "name": "Portal 1",
-          "ratings": {
-            "rating": 6.8,
-            "scariness": 5,
-            "soundDesign": 8,
-            "story": 7,
-            "visuals": 7,
-            "ambience": 8,
-            "gameplay": 6,
-            "creativity": 7,
-            "enjoyment": 7,
-            "productionQuality": 9,
-            "technical": 10
-          }
-        },
-        {
-          "name": "Portal 2",
-          "ratings": {
-            "rating": 6.1,
-            "scariness": 6,
-            "soundDesign": 7,
-            "story": 7,
-            "visuals": 6,
-            "ambience": 5,
-            "gameplay": 5,
-            "creativity": 6,
-            "enjoyment": 4,
-            "productionQuality": 9,
-            "technical": 10
-          }
-        },
-        {
-          "name": "Portal 3",
-          "ratings": {
-            "rating": 6.9,
-            "scariness": 5,
-            "soundDesign": 8,
-            "story": 7,
-            "visuals": 8,
-            "ambience": 9,
-            "gameplay": 5,
-            "creativity": 8,
-            "enjoyment": 5,
-            "productionQuality": 9,
-            "technical": 10
-          }
-        }
-      ],
-      "ratings": {
-        "rating": 6.7,
-        "scariness": 5.3,
-        "soundDesign": 7.7,
-        "story": 7.0,
-        "visuals": 7.0,
-        "ambience": 7.3,
-        "gameplay": 5.3,
-        "creativity": 7.0,
-        "enjoyment": 5.3,
-        "productionQuality": 9.0,
-        "technical": 10.0
       },
       "rater_note": {
         "pros": "",
