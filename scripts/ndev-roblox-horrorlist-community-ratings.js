@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const rating = parseFloat(document.getElementById('rating').value);
         console.log(rating);
         const data = {
-            rating: rating
+            rating: parseFloat(rating)
         };
 
         fetch(`/rate/${gameId}`, {
