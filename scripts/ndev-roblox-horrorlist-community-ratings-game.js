@@ -66,7 +66,7 @@ async function init() {
         
     }
 
-    document.getElementById("ratings-amt").textContent =`Calculated from ${amountOfRatings} user ratings.`;
+    document.getElementById("ratings-amt").textContent =`Calculated from ${amountOfRatings} user rating(s).`;
 
     const percentage = gameRating * (100 / MAX_SCORE);
     bar.style.width = `${percentage}%`;
