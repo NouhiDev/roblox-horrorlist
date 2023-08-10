@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     ratingForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const gameId = document.getElementById('gameId').value;
+        const gameId = parseInt(document.getElementById('gameId').value);
         const rating = parseFloat(document.getElementById('rating').value);
-        console.log(rating);
+        
         const data = {
-            rating: parseFloat(rating)
+            rating: rating
         };
 
         fetch(`/rate/${gameId}`, {
