@@ -1,21 +1,185 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Game Ratings</title>
-  <script src="../scripts/ndev-roblox-horrorlist-community-ratings.js"></script>
-</head>
-<body>
-  <h1>Submit Game Rating</h1>
-  <form id="ratingForm">
-    <label for="gameId">Game ID:</label>
-    <input type="text" id="gameId" name="gameId" required><br><br>
-    
-    <label for="rating">Rating:</label>
-    <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" required><br><br>
-    
-    <button type="submit">Submit Rating</button>
-  </form>
 
-  <button onclick="getRatings()">Get Ratings</button>
+<!--
+  _____   ____  ____  _      ______   __  _    _  ____  _____  _____   ____  _____  _      _____  _____ _______ 
+ |  __ \ / __ \|  _ \| |    / __ \ \ / / | |  | |/ __ \|  __ \|  __ \ / __ \|  __ \| |    |_   _|/ ____|__   __|
+ | |__) | |  | | |_) | |   | |  | \ V /  | |__| | |  | | |__) | |__) | |  | | |__) | |      | | | (___    | |   
+ |  _  /| |  | |  _ <| |   | |  | |> <   |  __  | |  | |  _  /|  _  /| |  | |  _  /| |      | |  \___ \   | |   
+ | | \ \| |__| | |_) | |___| |__| / . \  | |  | | |__| | | \ \| | \ \| |__| | | \ \| |____ _| |_ ____) |  | |   
+ |_|  \_\\____/|____/|______\____/_/ \_\ |_|  |_|\____/|_|  \_\_|  \_\\____/|_|  \_\______|_____|_____/   |_|   
+                                                                                                                
+  Learn more at
+
+  https://nouhi.dev/ndev-assets-docs/.
+-->
+
+<html>
+
+<head>
+  <title>Roblox Horrorlist: Community Ratings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="title" content="Roblox Horrorlist: Best Roblox Horror Games" />
+  <meta name="description"
+    content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
+
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+  <script src="../scripts/ndev-roblox-horrorlist-community-ratings.js"></script> 
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
+    crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-609YDJ81ER');
+  </script>
+</head>
+
+<body>
+  <div class="loading-bar">
+    <div id="myProgressText">
+      <h1 class="tit-credits">
+        <a>Loading...</a>
+      </h1>
+    </div>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+  </div>
+
+  <h1 class="tit">Roblox Horrorlist</h1>
+
+  <!-- Maintenance -->
+  <!-- <h1 style="color: rgb(252, 89, 89); font-size: 20px; text-align: center;">We are aware of and are currently investigating an issue where ratings don't load for new users.</h1> -->
+
+  <h1 class="tit-credits">
+    <span class="tit-tit-sub">As decided by</span> <a href="pages/contributors.html">Nouhi; Namlit; Torch i.a.</a>
+    <span class="tit-tit-sub">since 2022</span>
+  </h1>
+  <div class="button-container">
+    <button class="statistics-button" onclick="about()">
+      <i class="fas fa-info-circle"></i> About Us
+    </button>
+    <button class="statistics-button" onclick="contributors()">
+      <i class="fas fa-users"></i> Contributors
+    </button>
+    <button class="statistics-button" onclick="statistics()">
+      <i class="fas fa-chart-line"></i> Statistics
+    </button>
+    <button class="statistics-button" onclick="rating_scale()">
+      <i class="fas fa-file-signature"></i> How We Rate
+    </button>
+    <button class="donate-button" onclick="donate()">
+      <i class="fas fa-heart"></i> Donate
+    </button>
+  </div>
+  
+  <br>
+
+  <script>
+    function about() {
+      window.open("pages/about.html", "_blank");
+    }
+
+    function statistics() {
+      window.open("pages/statistics.html", "_blank");
+    }
+
+    function rating_scale() {
+      window.open("pages/rating-overview.html", "_blank");
+    }
+
+    function contributors() {
+      window.open("pages/contributors.html", "_blank");
+    }
+
+    function donate() {
+      window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
+    }
+  </script>
+
+  <header>
+    <div class="content" id="content">
+
+
+      <div class="table-container" id="table-container">
+        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Creator" data-order="desc">Creator</th>
+              <th data-column="Rating" data-order="desc">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+
+      <div class="mobile-table-container" id="mobile-table-container">
+        <table id="mobile-game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Rating" data-order="desc">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="mobile-table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+      <br />
+  </header>
+  <footer>
+    <hr style="
+          width: 50%;
+          height: 2px;
+          border-width: 0;
+          color: #20242e;
+          background-color: #20242e;
+        " />
+    <br />
+    <center>
+      <div class="flex-center">
+        <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+        <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+        <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+        <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
+      </div>
+
+      <br />
+      <p style="color: white">Copyright © 2023 NDev-Group</p>
+    </center>
+  </footer>
+  </div>
+
 </body>
+
+<!--
+
+Copyright © 2023 NDev-Group
+
+-->
+
 </html>
