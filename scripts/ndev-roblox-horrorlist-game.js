@@ -147,13 +147,13 @@ async function init() {
     cons.innerText += "\n";
     conclusion.innerText += "\n";
 
-    if (databaseData.games[number - 1].rater_note.pros == undefined || databaseData.games[number - 1].rater_note.pros == "") pros.innerText = "Not yet added.";
+    if (databaseData.games[number - 1].rater_note.pros == undefined || databaseData.games[number - 1].rater_note.pros == "") pros.innerText = "Will be added soon.";
     else pros.innerText = databaseData.games[number - 1].rater_note.pros;
 
-    if (databaseData.games[number - 1].rater_note.cons == undefined || databaseData.games[number - 1].rater_note.cons == "") cons.innerText = "Not yet added.";
+    if (databaseData.games[number - 1].rater_note.cons == undefined || databaseData.games[number - 1].rater_note.cons == "") cons.innerText = "Will be added soon.";
     else cons.innerText = databaseData.games[number - 1].rater_note.cons;
 
-    if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "Not yet added.";
+    if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "Will be added soon.";
     else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
 
     if (databaseData.games[number - 1]["port_url"] !== "") {
