@@ -1,5 +1,5 @@
 // WIP
-fetch('https://your-api-domain.com/ratings')
+fetch('https://ndevapi.com/ratings')
   .then(response => response.json())
   .then(data => {
     console.log(data);
