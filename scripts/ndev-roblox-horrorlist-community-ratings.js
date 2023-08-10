@@ -1,3 +1,4 @@
+// WIP
 fetch('https://your-api-domain.com/ratings')
   .then(response => response.json())
   .then(data => {
