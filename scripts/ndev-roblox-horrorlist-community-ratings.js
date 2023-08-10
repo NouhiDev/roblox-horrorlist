@@ -27,6 +27,8 @@ const DB_NAME = "communityRatingsData";
 const DB_VERSION = 1;
 let db;
 
+const CONFIDENCE_INTERVAL = 10;
+
 async function openDB() {
     return new Promise((resolve, reject) => {
         const request = indexedDB.open(DB_NAME, DB_VERSION);
@@ -102,7 +104,9 @@ async function fetchDataAndUpdateUI() {
         for (let i = 0; i < gameUIDS.length; i++) {
             try {
                 const element = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
-                databaseData.games[i].ratings.rating = element;
+                const amountOfRates = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].total_ratings;
+                const weightedElement = (element * amountOfRates) / (amountOfRates + CONFIDENCE_INTERVAL) * 2;
+                databaseData.games[i].ratings.rating = weightedElement;
             } catch (e) {
                 databaseData.games[i].ratings.rating = "0.0";
             }
@@ -152,6 +156,7 @@ async function fetchDataAndUpdateUI() {
                 try {
                     rating = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
                     amountOfRates = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].total_ratings;
+                    rating = (rating * amountOfRates) / (amountOfRates + CONFIDENCE_INTERVAL) * 2;
                 } catch (e) {
                     rating = "0.0";
                 }
