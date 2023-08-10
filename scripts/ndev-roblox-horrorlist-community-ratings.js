@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const gameId = document.getElementById('gameId').value;
         const rating = parseFloat(document.getElementById('rating').value);
-
+        console.log(rating);
         const data = {
             rating: rating
         };
