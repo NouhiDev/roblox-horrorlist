@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const gameId = parseInt(document.getElementById('gameId').value);
         const rating = parseFloat(document.getElementById('rating').value);
-        
+
         const data = {
             rating: rating
         };
 
-        fetch(`/rate/${gameId}`, {
+        fetch(`https://ndevapi.com/rate/${gameId}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
