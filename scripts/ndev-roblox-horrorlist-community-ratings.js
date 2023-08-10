@@ -148,8 +148,10 @@ async function fetchDataAndUpdateUI() {
         for (let i = 0; i < gameUIDS.length; i++) {
             try {
                 let rating = 0;
+                let amountOfRates = 0;
                 try {
                     rating = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
+                    amountOfRates = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].total_ratings;
                 } catch (e) {
                     rating = "0.0";
                 }
@@ -162,7 +164,7 @@ async function fetchDataAndUpdateUI() {
                   <td data-th="Creator" class="align-left">${JSON.parse(
                     JSON.stringify(gameDataFromAPI[i].creator)
                 ).name}</td>
-                  <td data-th="Rating" class="align-left">${parseFloat(rating).toFixed(1)}</td>
+                  <td data-th="Rating" class="align-left">${parseFloat(rating).toFixed(1)} <span style="color: gray; font-size: 10px;">${amountOfRates} Rating(s)</span></td>
                   </tr>`;
 
                 const rowElement = document.createElement('tr');
