@@ -57,14 +57,20 @@ async function init() {
     );
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
-    const gameRating = databaseData[databaseData.findIndex(item => item.game_id === UID)].avg_rating;
-    const amountOfRatings = databaseData[databaseData.findIndex(item => item.game_id === UID)].total_ratings;
+    let gameRating = "0.0";
+    let amountOfRatings = 0;
+    try {
+        gameRating = databaseData[databaseData.findIndex(item => item.game_id === UID)].avg_rating;
+        amountOfRatings = databaseData[databaseData.findIndex(item => item.game_id === UID)].total_ratings;
+    } catch (e) {
+        
+    }
 
     document.getElementById("ratings-amt").textContent =`Calculated from ${amountOfRatings} user ratings.`;
 
     const percentage = gameRating * (100 / MAX_SCORE);
     bar.style.width = `${percentage}%`;
-    bar.getElementsByClassName("tooltip")[0].innerHTML = `${gameRating}/${MAX_SCORE}`;
+    bar.getElementsByClassName("tooltip")[0].innerHTML = `${(parseFloat(gameRating)).toFixed(1)}/${MAX_SCORE}`;
 
     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
         const element = document.getElementsByClassName("rating-per")[i];

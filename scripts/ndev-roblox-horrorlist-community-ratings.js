@@ -97,10 +97,8 @@ async function fetchDataAndUpdateUI() {
             try {
                 const element = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
                 databaseData.games[i].ratings.rating = element;
-                console.log(databaseData.games[i].ratings.rating);
             } catch (e) {
                 databaseData.games[i].ratings.rating = "0.0";
-                console.log("No user ratings: resetting rating to 0.")
             }
         }
 
@@ -158,7 +156,7 @@ async function fetchDataAndUpdateUI() {
                   <td data-th="Creator" class="align-left">${JSON.parse(
                     JSON.stringify(gameDataFromAPI[i].creator)
                 ).name}</td>
-                  <td data-th="Rating" class="align-left">${rating}</td>
+                  <td data-th="Rating" class="align-left">${parseFloat(rating).toFixed(1)}</td>
                   </tr>`;
 
                 const rowElement = document.createElement('tr');
