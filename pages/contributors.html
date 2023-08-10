@@ -218,7 +218,8 @@
                     color: #20242e;
                     background-color: #20242e;
                 " />
-                <h1 class="text-center smaller" style="width: 100%; font-size: 35px; padding-bottom: 10px;">Supporters</h1>
+                <h1 class="text-center smaller" style="width: 100%; font-size: 35px; padding-bottom: 10px;">Supporters
+                </h1>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
                         <div class="profile-card_image">
@@ -257,21 +258,37 @@
             " />
         <br />
         <center>
-          <div class="flex-center">
-            <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-            <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-            <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
-            <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
-          </div>
-    
-          <br />
-          <p style="color: white">Copyright © 2023 NDev-Group</p>
+            <div class="flex-center">
+                <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+                <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+                <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+                <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
+            </div>
+
+            <br />
+            <p style="color: white">Copyright © 2023 NDev-Group</p>
         </center>
-      </footer>
+    </footer>
 
     <script>
         function backBtn() {
             window.location.href = "https://robloxhorrorlist.com";
+        }
+
+        function githubButton() {
+            window.open("https://github.com/NouhiDev/roblox-horrorlist", "_blank");
+        }
+
+        function youtubeButton() {
+            window.open("https://www.youtube.com/@robloxhorrorlist", "_blank");
+        }
+
+        function discordButton() {
+            window.open("https://discord.gg/Zbxst3g4ts", "_blank");
+        }
+
+        function twitterButton() {
+            window.open("https://twitter.com/RBLXHorrorlist", "_blank");
         }
     </script>
 </body>
