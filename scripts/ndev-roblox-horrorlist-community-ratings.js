@@ -23,7 +23,7 @@ const data = {
 
 const CACHE_PREFIX = "gameDataCache_";
 const CACHE_EXPIRATION = 2592000000;
-const DB_NAME = "gameDataDB";
+const DB_NAME = "communityRatingsData";
 const DB_VERSION = 1;
 let db;
 
