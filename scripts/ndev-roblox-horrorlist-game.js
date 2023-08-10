@@ -162,7 +162,7 @@ async function init() {
         originalBtn.addEventListener("click", function() {
             window.location.href = databaseData.games[number - 1].port_url;
         });
-    }
+    } else originalBtn.style.opacity = 0;
 
     // Multiple chapters / parts / etc. functionality
     if (databaseData.games[number - 1].hasOwnProperty("chapters")) {
