@@ -27,7 +27,7 @@
 
   <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
 
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -83,11 +83,8 @@
     <button class="statistics-button" onclick="contributors()">
       <i class="fas fa-users"></i> Contributors
     </button>
-    <button class="statistics-button" onclick="statistics()">
-      <i class="fas fa-chart-line"></i> Statistics
-    </button>
-    <button class="statistics-button" onclick="rating_scale()">
-      <i class="fas fa-file-signature"></i> How We Rate
+    <button class="main-list-button" onclick="main_list()">
+      <i class="fas fa-file-signature"></i> Main List
     </button>
     <button class="donate-button" onclick="donate()">
       <i class="fas fa-heart"></i> Donate
@@ -105,8 +102,8 @@
       window.open("pages/statistics.html", "_blank");
     }
 
-    function rating_scale() {
-      window.open("pages/rating-overview.html", "_blank");
+    function main_list() {
+      window.open("../index.html", "_blank");
     }
 
     function contributors() {

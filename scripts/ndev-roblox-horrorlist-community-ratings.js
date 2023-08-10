@@ -82,11 +82,8 @@ async function fetchDataAndUpdateUI() {
 
         db = await openDB();
 
-        const databaseDataResponse = await fetch("https://ndevapi.com/ratings");
+        const databaseDataResponse = await fetch("https://robloxhorrorlist.com/weights-database.json");
         const databaseData = await databaseDataResponse.json();
-
-        console.log(databaseData);
-        return;
 
         const gameUIDS = databaseData.games
             .filter(element => element.ambience !== "")
@@ -283,5 +280,5 @@ function twitterButton() {
 function loadGame(number, UID) {
     localStorage.setItem('number', number);
     localStorage.setItem('UID', UID);
-    window.open('./pages/game.html', '_blank');
+    window.open('./community-ratings-game.html', '_blank');
 }

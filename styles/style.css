@@ -628,3 +628,11 @@ footer {
   /*text-align: center;*/
   padding: 10px;
 }
+
+.main-list-button {
+  background-color: #ff4141;
+}
+
+.main-list-button:hover {
+  background-color: #ce2d2d;
+}
