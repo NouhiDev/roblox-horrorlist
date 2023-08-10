@@ -88,7 +88,28 @@ async function fetchDataAndUpdateUI() {
         const ratingsResponse = await fetch("https://ndevapi.com/ratings");
         const ratings = await ratingsResponse.json();
 
-        const gameUIDS = databaseData.games
+        let gameUIDS = databaseData.games
+            .filter(element => element.ambience !== "")
+            .map(element => element.uid);
+
+        // Overwrite ratings of database
+        for (let i = 0; i < gameUIDS.length; i++) {
+            try {
+                const element = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
+                databaseData.games[i].ratings.rating = element;
+                console.log(databaseData.games[i].ratings.rating);
+            } catch (e) {
+                databaseData.games[i].ratings.rating = "0.0";
+                console.log("No user ratings: resetting rating to 0.")
+            }
+        }
+
+        databaseData.games.sort(function (a, b) {
+            return parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating);
+        });
+
+        // Get the UIDS again in correct order
+        gameUIDS = databaseData.games
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
 
@@ -118,113 +139,60 @@ async function fetchDataAndUpdateUI() {
             .map(item => item.data)
             .flat();
 
-        
-    const fragment = document.createDocumentFragment();
+        const fragment = document.createDocumentFragment();
 
-    for (let i = 0; i < gameUIDS.length; i++) {
-        try {
-            let rating = 0;
+        for (let i = 0; i < gameUIDS.length; i++) {
             try {
-                rating = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
-            } catch(e) {
-                rating = "0.0";
-            }
-            var row = ` <tr class="hover-reveal">
+                let rating = 0;
+                try {
+                    rating = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
+                } catch (e) {
+                    rating = "0.0";
+                }
+                var row = ` <tr class="hover-reveal">
                   <td data-th="Placement">${i + 1}.</td>
                   <td data="Icon"><img class="game-icon" src="${gameIconDataFromAPI[i].imageUrl}"></td>
                   <td data-th="Title" class="game-title"><a href="#" class="game-href" onclick="loadGame(
                     ${i + 1}, 
                     ${gameUIDS[i]})">${gameDataFromAPI[i].name}</a></td>
                   <td data-th="Creator" class="align-left">${JSON.parse(
-                JSON.stringify(gameDataFromAPI[i].creator)
-            ).name}</td>
+                    JSON.stringify(gameDataFromAPI[i].creator)
+                ).name}</td>
                   <td data-th="Rating" class="align-left">${rating}</td>
                   </tr>`;
 
-            const rowElement = document.createElement('tr');
-            rowElement.innerHTML = row;
-            fragment.appendChild(rowElement);
-        } catch (e) {
-            console.error(e);
+                const rowElement = document.createElement('tr');
+                rowElement.innerHTML = row;
+                fragment.appendChild(rowElement);
+            } catch (e) {
+                console.error(e);
+            }
         }
-    }
-    table.appendChild(fragment);
+        table.appendChild(fragment);
 
-    elem.style.width = "100%";
+        elem.style.width = "100%";
 
-    await delay(500);
+        await delay(500);
 
-    $('header').show();
-    document.getElementById("myProgress").style.display = "none";
+        $('header').show();
+        document.getElementById("myProgress").style.display = "none";
 
-    // Generate Table after populating it
-    $("#game-table").DataTable({
-        columnDefs: [{ orderable: false, targets: [1, 4] }],
-    });
+        // Generate Table after populating it
+        $("#game-table").DataTable({
+            columnDefs: [{ orderable: false, targets: [1, 4] }],
+        });
 
-    document.getElementsByTagName("footer")[0].style.bottom = "auto";
+        document.getElementsByTagName("footer")[0].style.bottom = "auto";
 
-    const elementToRemove = document.getElementById("myProgressText");
-    if (elementToRemove) {
-        elementToRemove.parentNode.removeChild(elementToRemove);
-    }
+        const elementToRemove = document.getElementById("myProgressText");
+        if (elementToRemove) {
+            elementToRemove.parentNode.removeChild(elementToRemove);
+        }
     } catch (error) {
         console.error("An error occurred:", error);
     }
 
 }
-
-
-// async function fetchData() {
-//     initializeCache();
-//     const table = document.getElementById("table-to-populate");
-//     const elem = document.getElementById("myBar");
-
-//     const databaseDataResponse = await fetch(
-//         "https://robloxhorrorlist.com/weights-database.json"
-//     );
-//     data.databaseData = await databaseDataResponse.json();
-
-//     gameUIDS = [];
-
-//     for (let i = 0; i < data.databaseData.games.length; i++) {
-//         const element = data.databaseData.games[i];
-//         if (element.ambience !== "") gameUIDS.push(element.uid);
-//     }
-
-//     const chunks = [];
-//     for (let i = 0; i < gameUIDS.length; i += maxUIDChunkSize) {
-//         chunks.push(gameUIDS.slice(i, i + maxUIDChunkSize));
-//     }
-
-//     const fetchGameDataPromises = chunks.map((chunk) =>
-//         fetchDataWithCaching(`${API_BASE_URL}/game-info/${chunk.join(",")}`, `gameData_${chunk.join(",")}`, 300000)
-//     );
-
-//     const fetchIconDataPromises = chunks.map((chunk) =>
-//         fetchDataWithCaching(`${API_BASE_URL}/game-icon/${chunk.join(",")}`, `gameIconData_${chunk.join(",")}`, 300000)
-//     );
-
-//     elem.style.width = "50%";
-
-//     console.time("Get all Promises");
-//     const [gameDataResponses, iconDataResponses] = await Promise.all([
-//         Promise.all(fetchGameDataPromises),
-//         Promise.all(fetchIconDataPromises),
-//     ]);
-
-//     data.gameData = gameDataResponses.flat();
-//     data.gameIconData = iconDataResponses.flat();
-
-//     const gameDataFromAPI = data.gameData.reduce((result, item) => {
-//         return [...result, ...item["data"]];
-//     }, []);
-
-//     const gameIconDataFromAPI = data.gameIconData.reduce((result, item) => {
-//         return [...result, ...item["data"]];
-//     }, []);
-
-// }
 
 async function usageDisplay() {
     console.log(`                                                                                         
