@@ -88,6 +88,12 @@ async function fetchDataAndUpdateUI() {
         const ratingsResponse = await fetch("https://ndevapi.com/ratings");
         const ratings = await ratingsResponse.json();
 
+        let totalRatingsAmount = 0;
+        for (let i = 0; i < ratings.length; i++) {
+            totalRatingsAmount += parseInt(ratings[i].total_ratings);
+        }
+        document.getElementById("total-ratings").textContent = `${totalRatingsAmount} ratings`;
+
         let gameUIDS = databaseData.games
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
