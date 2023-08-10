@@ -85,6 +85,9 @@ async function fetchDataAndUpdateUI() {
         const databaseDataResponse = await fetch("https://robloxhorrorlist.com/weights-database.json");
         const databaseData = await databaseDataResponse.json();
 
+        const ratingsResponse = await fetch("https://ndevapi.com/ratings");
+        const ratings = await ratingsResponse.json();
+
         const gameUIDS = databaseData.games
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
@@ -120,6 +123,12 @@ async function fetchDataAndUpdateUI() {
 
     for (let i = 0; i < gameUIDS.length; i++) {
         try {
+            let rating = 0;
+            try {
+                rating = ratings[ratings.findIndex(item => item.game_id === gameUIDS[i])].avg_rating;
+            } catch(e) {
+                rating = "0.0";
+            }
             var row = ` <tr class="hover-reveal">
                   <td data-th="Placement">${i + 1}.</td>
                   <td data="Icon"><img class="game-icon" src="${gameIconDataFromAPI[i].imageUrl}"></td>
@@ -129,7 +138,7 @@ async function fetchDataAndUpdateUI() {
                   <td data-th="Creator" class="align-left">${JSON.parse(
                 JSON.stringify(gameDataFromAPI[i].creator)
             ).name}</td>
-                  <td data-th="Rating" class="align-left">${databaseData.games[i].ratings.rating}</td>
+                  <td data-th="Rating" class="align-left">${rating}</td>
                   </tr>`;
 
             const rowElement = document.createElement('tr');

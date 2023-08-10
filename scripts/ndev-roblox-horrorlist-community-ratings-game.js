@@ -58,6 +58,9 @@ async function init() {
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
     const gameRating = databaseData[databaseData.findIndex(item => item.game_id === UID)].avg_rating;
+    const amountOfRatings = databaseData[databaseData.findIndex(item => item.game_id === UID)].total_ratings;
+
+    document.getElementById("ratings-amt").textContent =`Calculated from ${amountOfRatings} user ratings.`;
 
     const percentage = gameRating * (100 / MAX_SCORE);
     bar.style.width = `${percentage}%`;
@@ -116,13 +119,13 @@ async function init() {
     visits.innerText += " " + formatter.format(gameDataByUID.visits);
     maxplayers.innerText += " " + gameDataByUID.maxPlayers;
 
-    playBtn.addEventListener("click", function(event) {
+    playBtn.addEventListener("click", function (event) {
         event.preventDefault();
-      
+
         var linkUrl = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
-      
+
         window.open(linkUrl, "_blank");
-      });
+    });
     playBtn.href = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
 
     pros.innerText += "\n";
@@ -141,7 +144,7 @@ async function init() {
     if (databaseData.games[number - 1]["port_url"] !== "") {
         originalBtn.style.opacity = 1;
         originalBtn.innerText = "Play Original";
-        originalBtn.addEventListener("click", function() {
+        originalBtn.addEventListener("click", function () {
             window.location.href = databaseData.games[number - 1].port_url;
         });
     } else originalBtn.style.opacity = 0;
@@ -156,12 +159,12 @@ async function init() {
         var optionTexts = ["Overall"];
 
         for (let i = 0; i < databaseData.games[number - 1]["chapters"].length; i++) {
-            optionTexts.push(databaseData.games[number - 1]["chapters"][i].name); 
+            optionTexts.push(databaseData.games[number - 1]["chapters"][i].name);
         }
 
         var optionValues = ["option0"];
         for (let i = 0; i < optionTexts.length - 1; i++) {
-            optionValues.push(`option${i+1}`); 
+            optionValues.push(`option${i + 1}`);
         }
 
         for (let i = 0; i < optionValues.length; i++) {
@@ -174,43 +177,43 @@ async function init() {
         dropdownContainer.insertBefore(dropdown, dropdownContainer.childNodes[2]);
 
         const optionHandlers = {
-            option0: function() {
+            option0: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
                 }
             },
-            option1: function() {
+            option1: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][0]["ratings"][dataField], dataField);
                 }
             },
-            option2: function() {
+            option2: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][1]["ratings"][dataField], dataField);
                 }
             },
-            option3: function() {
+            option3: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][2]["ratings"][dataField], dataField);
                 }
             },
-            option4: function() {
+            option4: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][3]["ratings"][dataField], dataField);
                 }
             },
-            option5: function() {
+            option5: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][4]["ratings"][dataField], dataField);
                 }
             },
-            option6: function() {
+            option6: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][5]["ratings"][dataField], dataField);
@@ -226,7 +229,7 @@ async function init() {
                     const element = document.getElementsByClassName("rating-per")[i];
                     element.style.animation = "none";
                 }
-        
+
                 setTimeout(() => {
                     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
                         const element = document.getElementsByClassName("rating-per")[i];
@@ -242,7 +245,7 @@ async function init() {
             const selectedOption = dropdown.value;
             handleOptionSelection(selectedOption);
         });
-        }
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -269,6 +272,9 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(result => {
                 document.getElementById("submit-info").style.color = "#13FF1C";
                 document.getElementById("submit-info").textContent = "Successfully submitted your rating!";
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
             })
             .catch(error => {
                 console.error('Error:', error);
