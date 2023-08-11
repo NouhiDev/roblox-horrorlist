@@ -35,6 +35,7 @@ if (typeof jQuery === "undefined") {
 
 const DATA_URL = "https://ndevapi.com/ratings";
 const MAX_SCORE = 10;
+const CONFIDENCE_INTERVAL = 10;
 
 async function init() {
     const number = localStorage.getItem("number");
@@ -62,6 +63,7 @@ async function init() {
     try {
         gameRating = databaseData[databaseData.findIndex(item => item.game_id === UID)].avg_rating;
         amountOfRatings = databaseData[databaseData.findIndex(item => item.game_id === UID)].total_ratings;
+        gameRating = (rating * amountOfRates) / (amountOfRates + CONFIDENCE_INTERVAL) * 2;
     } catch (e) {
         
     }
