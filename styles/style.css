@@ -37,7 +37,7 @@ body {
 #mobile-game-table {
   border-collapse: collapse;
   margin: 1em 0;
-  min-width: 300px;
+  min-width: 100px;
   color: white;
   border-radius: 0.4em;
   overflow: hidden;
@@ -86,24 +86,6 @@ body {
 .table-sortable .th-sort-asc,
 .table-sortable .th-sort-desc {
   background: rgb(88, 88, 88);
-}
-
-h2 {
-  text-align: center;
-  font-size: 15px;
-  font-family: "Rubik", sans-serif;
-  color: white;
-  font-weight: 1;
-  font-style: italic;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #424855;
-  width: 200px;
-  text-decoration: none;
-}
-
-h2:hover {
-  background-color: rgb(147, 147, 147);
 }
 
 a {
@@ -574,8 +556,9 @@ button {
 }
 
 .button-container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
+  text-align: center;
 }
 
 button {
@@ -635,4 +618,82 @@ footer {
 
 .main-list-button:hover {
   background-color: #ce2d2d;
+}
+
+.popup-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+}
+
+.popup-content {
+  background-color: #262d3a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.popup-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.popup-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.popup-text {
+  font-size: 16px;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+
+.popup-button {
+  padding: 12px 30px;
+}
+
+.popup-button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .popup-content {
+    max-width: 80%;
+  }
+  .popup-text {
+    font-size: 24px;
+  }
+
+  .popup-title {
+    font-size: 26px;
+  }
+
+  .popup-button {
+    padding: 24px 52px;
+    font-size: 24px;
+  }
 }

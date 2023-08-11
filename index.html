@@ -56,6 +56,19 @@
 </head>
 
 <body>
+  <div class="popup-overlay" id="popupContainer">
+    <div class="popup-content">
+        <div class="popup-header">
+            <div class="popup-icon">
+                <img src="img/icon.png" alt="Icon">
+            </div>
+            <h2 class="popup-title">Welcome to the Roblox Horrorlist</h2>
+        </div>
+        <p class="popup-text" style="text-align: left";>Here, you'll find a bunch of horror games, each rated based on our humble opinion. If you don't agree with or care for the ratings, you can use the site just as a collection of Roblox horror games. You also have the option to contribute by rating games yourself in the community ratings tab.</p>
+        <br><button class="popup-button" onclick="firstEnter()">Enter</button>
+    </div>
+</div>
+
   <div class="loading-bar">
     <div id="myProgressText">
       <h1 class="tit-credits">
@@ -98,6 +111,11 @@
   <br>
 
   <script>
+    if (localStorage.getItem("firstEntry") === "true") {
+      const popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+    }
+
     function about() {
       window.open("pages/about.html", "_blank");
     }
@@ -116,6 +134,12 @@
 
     function donate() {
       window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
+    }
+
+    function firstEnter() {
+      localStorage.setItem("firstEntry", "true");
+      const popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
     }
   </script>
 
