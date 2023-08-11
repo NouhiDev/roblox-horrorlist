@@ -56,6 +56,19 @@
 </head>
 
 <body>
+  <div class="popup-overlay" id="popupContainer">
+    <div class="popup-content">
+      <div class="popup-header">
+        <div class="popup-icon">
+          <img src="../img/icon.png" alt="Icon">
+        </div>
+        <h2 class="popup-title">Community Ratings Open Beta</h2>
+      </div>
+      <p class="popup-text" style="text-align: left" ;>Here, you have the option to rate the games yourself. Simply click on a game to get to the rating page.</p>
+      <br><button class="popup-button" onclick="firstEnter()">Enter</button>
+    </div>
+  </div>
+
   <div class="loading-bar">
     <div id="myProgressText">
       <h1 class="tit-credits">
@@ -91,6 +104,11 @@
   <br>
 
   <script>
+    if (localStorage.getItem("communityBetaFirstEntry") === "true") {
+      const popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+    }
+
     function about() {
       window.open("about.html", "_blank");
     }
@@ -109,6 +127,12 @@
 
     function donate() {
       window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
+    }
+
+    function firstEnter() {
+      localStorage.setItem("communityBetaFirstEntry", "true");
+      const popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
     }
   </script>
 
