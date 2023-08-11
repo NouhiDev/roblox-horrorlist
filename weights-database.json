@@ -497,6 +497,35 @@
       "port_url": ""
     },
     {
+      "uid": "3588438367",
+      "name": "The Hybrid",
+      "genres": [
+        "Story"
+      ],
+      "date": "11.08.2023",
+      "award": "",
+      "ratings": {
+        "rating": "6.9",
+        "scariness": 6,
+        "soundDesign": 9,
+        "story": 8,
+        "visuals": 7,
+        "ambience": 7,
+        "gameplay": 5,
+        "creativity": 7,
+        "enjoyment": 8,
+        "productionQuality": 8,
+        "technical": 10
+      },
+      "rater_note": {
+        "pros": "",
+        "cons": "",
+        "conclusion": ""
+      },
+      "youtube_url": "",
+      "port_url": ""
+    },
+    {
       "uid": "2543783628",
       "name": "The Severance",
       "genres": [
