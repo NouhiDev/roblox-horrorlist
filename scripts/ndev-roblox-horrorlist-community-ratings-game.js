@@ -58,12 +58,13 @@ async function init() {
     );
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
-    let gameRating = "0.0";
+    let rating = "0.0";
+    let gameRating = 0;
     let amountOfRatings = 0;
     try {
-        gameRating = databaseData[databaseData.findIndex(item => item.game_id === UID)].avg_rating;
+        rating = databaseData[databaseData.findIndex(item => item.game_id === UID)].avg_rating;
         amountOfRatings = databaseData[databaseData.findIndex(item => item.game_id === UID)].total_ratings;
-        gameRating = (rating * amountOfRates) / (amountOfRates + CONFIDENCE_INTERVAL) * 2;
+        gameRating = (rating * amountOfRatings) / (amountOfRatings + CONFIDENCE_INTERVAL) * 2;
     } catch (e) {
         
     }
