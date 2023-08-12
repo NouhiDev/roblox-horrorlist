@@ -703,3 +703,13 @@ h2 {
   color: white;
   font-size: 16px;
 }
+
+.filter-button {
+  background-color: #6794a7;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.filter-button:hover {
+  background-color: #537a8a;
+}
