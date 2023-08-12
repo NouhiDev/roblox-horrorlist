@@ -104,6 +104,7 @@ async function fetchAndDisplayGames(sortKey) {
 
         function sortByCategory(sortKey, category, gameUIDS, databaseData) {
             sortKey = category;
+            console.log(`Sorting by ${sortKey}.`);
             databaseData.games.sort(function (a, b) {
                 return parseFloat(b.ratings[sortKey]) - parseFloat(a.ratings[sortKey]);
             });
