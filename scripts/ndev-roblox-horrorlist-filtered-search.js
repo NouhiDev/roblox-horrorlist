@@ -105,10 +105,16 @@ async function fetchAndDisplayGames(sortKey) {
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
 
+            let totalRatings = 0;
+
         function sortByCategory(sortKey, category, gameUIDS, databaseData) {
             databaseData.games.sort(function (a, b) {
                 return parseFloat(b.ratings[category]) - parseFloat(a.ratings[category]);
             });
+
+            for (const game of databaseData.games) {
+                totalRatings += parseFloat(game.ratings[sortKey]);
+            }
 
             // Overwrite ratings of database
             for (let i = 0; i < gameUIDS.length; i++) {
@@ -182,19 +188,11 @@ async function fetchAndDisplayGames(sortKey) {
             .flat();
 
 
-        let totalRatings = 0;
         const numGames = databaseData.games.length;
-
-        for (const game of databaseData.games) {
-            const rating = parseFloat(game.ratings.rating);
-            totalRatings += rating;
-        }
 
         const averageRating = totalRatings / numGames;
 
         const fragment = document.createDocumentFragment();
-
-
 
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (isMobile) {
