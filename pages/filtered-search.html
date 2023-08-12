@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox Horrorlist: Filtered Search Prototype</title>
+  <title>Roblox Horrorlist: Best Roblox Horror Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="title" content="Roblox Horrorlist: Best Roblox Horror Games" />
+  <meta name="description"
+    content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
+
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+  <!-- <script src="https://nouhi.dev/assets/global-scripts/ndev-roblox-horrorlist-api.js"></script> -->
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
+    crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-609YDJ81ER');
+  </script>
 </head>
 <body>
-  <h1>Roblox Horrorlist: Filtered Search Prototype</h1>
-  <label for="ratingDropdown">Select a Rating Category:</label>
-  <select id="ratingDropdown">
+  <h1 class="tit">Roblox Horrorlist: Filtered Search</h1>
+  <h1 class="tit-credits">
+    <span class="tit-tit-sub">Select a</span> <a">Rating Category</a>
+  </h1>
+  <center><select id="ratingDropdown">
     <option value="scariness">Scariness</option>
     <option value="soundDesign">Sound Design</option>
     <option value="story">Story</option>
@@ -20,7 +53,7 @@
     <option value="productionQuality">Production Quality</option>
     <option value="technical">Technical</option>
   </select>
-  <button id="submitButton">Submit</button>
+  <button id="submitButton">Submit</button></center>
 
   <div id="gameList"></div>
 

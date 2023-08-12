@@ -697,3 +697,9 @@ h2 {
     font-size: 24px;
   }
 }
+
+#ratingDropdown {
+  background-color: #262d3a;
+  color: white;
+  font-size: 16px;
+}
