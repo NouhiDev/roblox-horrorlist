@@ -21,7 +21,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
-  <!-- <script src="https://nouhi.dev/assets/global-scripts/ndev-roblox-horrorlist-api.js"></script> -->
+  <script src="../scripts/ndev-roblox-horrorlist-filtered-search.js"></script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
     crossorigin="anonymous"></script>
@@ -37,6 +37,17 @@
   </script>
 </head>
 <body>
+  <div class="loading-bar">
+    <div id="myProgressText">
+      <h1 class="tit-credits">
+        <a>Loading...</a>
+      </h1>
+    </div>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+  </div>
+
   <h1 class="tit">Roblox Horrorlist: Filtered Search</h1>
   <h1 class="tit-credits">
     <span class="tit-tit-sub">Select a</span> <a">Rating Category</a>
@@ -55,87 +66,41 @@
   </select>
   <button id="submitButton">Submit</button></center>
 
-  <div id="gameList"></div>
+  <header>
+    <div class="content" id="content">
 
-  <script>
-    async function fetchAndDisplayGames(sortKey) {
-  try {
-    const response = await fetch("https://robloxhorrorlist.com/weights-database.json");
-    const gameData = await response.json();
 
-    if (!Array.isArray(gameData.games)) {
-      console.log("Invalid data format.");
-      return;
-    }
+      <div class="table-container" id="table-container">
+        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Creator" data-order="desc">Creator</th>
+              <th data-column="Rating" data-order="desc">Category Rating</th>
+            </tr>
+          </thead>
+          <tbody id="table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
 
-    const sortedGames = gameData.games.sort((a, b) => b.ratings[sortKey] - a.ratings[sortKey]);
-    const gameListElement = document.getElementById("gameList");
-
-    // Clear the existing content before displaying the sorted games
-    gameListElement.innerHTML = "";
-
-    sortedGames.forEach((game) => {
-      const gameEntry = document.createElement("div");
-
-      // Display only the relevant information based on the selected category
-      let ratingInfo = "";
-      switch (sortKey) {
-        case "scariness":
-          ratingInfo = `Scariness Rating: ${game.ratings.scariness}`;
-          break;
-        case "soundDesign":
-          ratingInfo = `Sound Design Rating: ${game.ratings.soundDesign}`;
-          break;
-        case "story":
-          ratingInfo = `Story Rating: ${game.ratings.story}`;
-          break;
-        case "visuals":
-          ratingInfo = `Visuals Rating: ${game.ratings.visuals}`;
-          break;
-        case "ambience":
-          ratingInfo = `Ambience Rating: ${game.ratings.ambience}`;
-          break;
-        case "gameplay":
-          ratingInfo = `Gameplay Rating: ${game.ratings.gameplay}`;
-          break;
-        case "creativity":
-          ratingInfo = `Creativity Rating: ${game.ratings.creativity}`;
-          break;
-        case "enjoyment":
-          ratingInfo = `Enjoyment Rating: ${game.ratings.enjoyment}`;
-          break;
-        case "productionQuality":
-          ratingInfo = `Production Quality Rating: ${game.ratings.productionQuality}`;
-          break;
-        case "technical":
-          ratingInfo = `Technical Rating: ${game.ratings.technical}`;
-          break;
-        default:
-          ratingInfo = "Rating Category Not Found";
-      }
-
-      gameEntry.innerHTML = `
-        <p><strong>Name:</strong> ${game.name}</p>
-        <p><strong>${ratingInfo}</strong></p>
-        <hr>
-      `;
-      gameListElement.appendChild(gameEntry);
-    });
-  } catch (error) {
-    console.error("Error fetching or processing data:", error);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const dropdown = document.getElementById("ratingDropdown");
-  const submitButton = document.getElementById("submitButton");
-
-  submitButton.addEventListener("click", () => {
-    const selectedCategory = dropdown.value;
-    fetchAndDisplayGames(selectedCategory);
-  });
-});
-
-  </script>
+      <div class="mobile-table-container" id="mobile-table-container">
+        <table id="mobile-game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Rating" data-order="desc">Category Rating</th>
+            </tr>
+          </thead>
+          <tbody id="mobile-table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+      <br />
+  </header>
 </body>
 </html>
