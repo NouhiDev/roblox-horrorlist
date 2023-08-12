@@ -58,17 +58,24 @@ async function fetchFromCache(cacheKey) {
     });
 }
 
-async function fetchData(endpoint, cacheKey) {
-    // const cachedData = await fetchFromCache(cacheKey);
-    // if (cachedData && Date.now() - cachedData.timestamp < CACHE_EXPIRATION) {
-    //     return cachedData.data;
-    // }
+// Function to create a cache key with the category information
+function getCategoryCacheKey(sortKey, category) {
+    return `${CACHE_PREFIX}${sortKey}_${category}`;
+}
+
+async function fetchDataAndCache(endpoint, sortKey, category) {
+    const cacheKey = getCategoryCacheKey(sortKey, category);
+    const cachedData = await fetchFromCache(cacheKey);
+    if (cachedData && Date.now() - cachedData.timestamp < CACHE_EXPIRATION) {
+        return cachedData.data;
+    }
 
     const response = await fetch(endpoint);
     const freshData = await response.json();
-    // await saveToCache(cacheKey, freshData);
+    await saveToCache(cacheKey, freshData);
     return freshData;
 }
+
 
 window.onload = async function () {
     usageDisplay();
@@ -78,10 +85,6 @@ window.onload = async function () {
 
 async function fetchAndDisplayGames(sortKey) {
     try {
-        var tbody = document.getElementById("table-to-populate");
-
-        tbody.innerHTML = "";
-
         if (dataTable != null) {
             dataTable.destroy();
             $('header').hide();
@@ -158,11 +161,11 @@ async function fetchAndDisplayGames(sortKey) {
         }
 
         const fetchGameDataPromises = chunks.map(chunk =>
-            fetchData(`${API_BASE_URL}/game-info/${chunk.join(",")}`, `gameData_${chunk.join(",")}`)
+            fetchDataAndCache(`${API_BASE_URL}/game-info/${chunk.join(",")}`, sortKey, `gameData_${chunk.join(",")}`)
         );
 
         const fetchIconDataPromises = chunks.map(chunk =>
-            fetchData(`${API_BASE_URL}/game-icon/${chunk.join(",")}`, `gameIconData_${chunk.join(",")}`)
+            fetchDataAndCache(`${API_BASE_URL}/game-icon/${chunk.join(",")}`, sortKey, `gameIconData_${chunk.join(",")}`)
         );
 
         const [gameDataResponses, iconDataResponses] = await Promise.all([
@@ -198,6 +201,7 @@ async function fetchAndDisplayGames(sortKey) {
             document.getElementsByClassName("mobile-table-container")[0].style.display = "block";
             document.getElementsByClassName("table-container")[0].style.display = "none";
             for (let i = 0; i < gameUIDS.length; i++) {
+                mobileTable.innerHTML = "";
                 try {
                     let differenceToAverageRating = Math.abs((parseFloat(databaseData.games[i].ratings.rating) - averageRating)).toFixed(1);
                     let spanHTML = "";
@@ -240,6 +244,7 @@ async function fetchAndDisplayGames(sortKey) {
         else {
 
             for (let i = 0; i < gameUIDS.length; i++) {
+                table.innerHTML = "";
                 try {
                     let differenceToAverageRating = Math.abs((parseFloat(databaseData.games[i].ratings.rating) - averageRating)).toFixed(1);
                     let spanHTML = "";
