@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Horrorlist: Filtered Search Prototype</title>
+</head>
+<body>
+  <h1>Roblox Horrorlist: Filtered Search Prototype</h1>
+  <label for="ratingDropdown">Select a Rating Category:</label>
+  <select id="ratingDropdown">
+    <option value="scariness">Scariness</option>
+    <option value="soundDesign">Sound Design</option>
+    <option value="story">Story</option>
+    <option value="visuals">Visuals</option>
+    <option value="ambience">Ambience</option>
+    <option value="gameplay">Gameplay</option>
+    <option value="creativity">Creativity</option>
+    <option value="enjoyment">Enjoyment</option>
+    <option value="productionQuality">Production Quality</option>
+    <option value="technical">Technical</option>
+  </select>
+  <button id="submitButton">Submit</button>
+
+  <div id="gameList"></div>
+
+  <script>
+    async function fetchAndDisplayGames(sortKey) {
+  try {
+    const response = await fetch("https://robloxhorrorlist.com/weights-database.json");
+    const gameData = await response.json();
+
+    if (!Array.isArray(gameData.games)) {
+      console.log("Invalid data format.");
+      return;
+    }
+
+    const sortedGames = gameData.games.sort((a, b) => b.ratings[sortKey] - a.ratings[sortKey]);
+    const gameListElement = document.getElementById("gameList");
+
+    // Clear the existing content before displaying the sorted games
+    gameListElement.innerHTML = "";
+
+    sortedGames.forEach((game) => {
+      const gameEntry = document.createElement("div");
+
+      // Display only the relevant information based on the selected category
+      let ratingInfo = "";
+      switch (sortKey) {
+        case "scariness":
+          ratingInfo = `Scariness Rating: ${game.ratings.scariness}`;
+          break;
+        case "soundDesign":
+          ratingInfo = `Sound Design Rating: ${game.ratings.soundDesign}`;
+          break;
+        case "story":
+          ratingInfo = `Story Rating: ${game.ratings.story}`;
+          break;
+        case "visuals":
+          ratingInfo = `Visuals Rating: ${game.ratings.visuals}`;
+          break;
+        case "ambience":
+          ratingInfo = `Ambience Rating: ${game.ratings.ambience}`;
+          break;
+        case "gameplay":
+          ratingInfo = `Gameplay Rating: ${game.ratings.gameplay}`;
+          break;
+        case "creativity":
+          ratingInfo = `Creativity Rating: ${game.ratings.creativity}`;
+          break;
+        case "enjoyment":
+          ratingInfo = `Enjoyment Rating: ${game.ratings.enjoyment}`;
+          break;
+        case "productionQuality":
+          ratingInfo = `Production Quality Rating: ${game.ratings.productionQuality}`;
+          break;
+        case "technical":
+          ratingInfo = `Technical Rating: ${game.ratings.technical}`;
+          break;
+        default:
+          ratingInfo = "Rating Category Not Found";
+      }
+
+      gameEntry.innerHTML = `
+        <p><strong>Name:</strong> ${game.name}</p>
+        <p><strong>${ratingInfo}</strong></p>
+        <hr>
+      `;
+      gameListElement.appendChild(gameEntry);
+    });
+  } catch (error) {
+    console.error("Error fetching or processing data:", error);
+  }
+}
+
+// Rest of the code remains the same
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdown = document.getElementById("ratingDropdown");
+  const submitButton = document.getElementById("submitButton");
+
+  submitButton.addEventListener("click", () => {
+    const selectedCategory = dropdown.value;
+    fetchAndDisplayGames(selectedCategory);
+  });
+});
+
+  </script>
+</body>
+</html>
