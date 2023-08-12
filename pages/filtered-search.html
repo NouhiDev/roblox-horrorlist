@@ -52,7 +52,29 @@
   <h1 class="tit-credits">
     <span class="tit-tit-sub">Select a</span> <a">Rating Category</a>
   </h1>
-  <center><select id="ratingDropdown">
+  <div class="button-container">
+    <button class="statistics-button" onclick="about()">
+      <i class="fas fa-info-circle"></i> About Us
+    </button>
+    <button class="statistics-button" onclick="contributors()">
+      <i class="fas fa-users"></i> Contributors
+    </button>
+    <!-- <button class="statistics-button" onclick="community()">
+      <i class="fas fa-users"></i> Community Ratings
+    </button> -->
+    <button class="statistics-button" onclick="statistics()">
+      <i class="fas fa-chart-line"></i> Statistics
+    </button>
+    <button class="statistics-button" onclick="rating_scale()">
+      <i class="fas fa-file-signature"></i> How We Rate
+    </button>
+    <button class="donate-button" onclick="donate()">
+      <i class="fas fa-heart"></i> Donate
+    </button>
+  </div>
+  <br>
+  <center>
+    <div class="filtered-search-container" style="max-width: fit-content; background-color: #101117; padding: 15px; border-radius: 15px;"><select id="ratingDropdown">
     <option value="scariness">Scariness</option>
     <option value="soundDesign">Sound Design</option>
     <option value="story">Story</option>
@@ -64,7 +86,7 @@
     <option value="productionQuality">Production Quality</option>
     <option value="technical">Technical</option>
   </select>
-  <button id="submitButton">Submit</button></center>
+  <button id="submitButton">Submit</button></div></center>
 
   <header>
     <div class="content" id="content">
@@ -102,5 +124,26 @@
       </div>
       <br />
   </header>
+  <script>
+    function about() {
+      window.open("about.html", "_blank");
+    }
+
+    function statistics() {
+      window.open("statistics.html", "_blank");
+    }
+
+    function rating_scale() {
+      window.open("rating-overview.html", "_blank");
+    }
+
+    function contributors() {
+      window.open("contributors.html", "_blank");
+    }
+
+    function donate() {
+      window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
+    }
+  </script>
 </body>
 </html>
