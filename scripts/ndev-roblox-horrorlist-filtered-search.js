@@ -103,10 +103,8 @@ async function fetchAndDisplayGames(sortKey) {
             .map(element => element.uid);
 
         function sortByCategory(sortKey, category, gameUIDS, databaseData) {
-            sortKey = category;
-            console.log(`Sorting by ${sortKey}.`);
             databaseData.games.sort(function (a, b) {
-                return parseFloat(b.ratings[sortKey]) - parseFloat(a.ratings[sortKey]);
+                return parseFloat(b.ratings[category]) - parseFloat(a.ratings[category]);
             });
 
             // Overwrite ratings of database
