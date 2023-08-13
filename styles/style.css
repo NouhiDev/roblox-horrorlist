@@ -702,12 +702,21 @@ h2 {
   background-color: #262d3a;
   color: white;
   font-size: 16px;
+  margin: 5px;
 }
 
 #genreDropdown {
   background-color: #262d3a;
   color: white;
   font-size: 16px;
+  margin: 5px;
+}
+
+#playerDropdown {
+  background-color: #262d3a;
+  color: white;
+  font-size: 16px;
+  margin: 5px;
 }
 
 .filter-button {

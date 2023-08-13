@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Roblox Horrorlist: Best Roblox Horror Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,6 +36,7 @@
     gtag('config', 'G-609YDJ81ER');
   </script>
 </head>
+
 <body>
   <div class="loading-bar">
     <div id="myProgressText">
@@ -49,7 +51,8 @@
 
   <h1 class="tit">Roblox Horrorlist: Filtered Search</h1>
   <h1 class="tit-credits">
-    <span class="tit-tit-sub">Select a</span> <a">Rating Category</a>
+    <span class="tit-tit-sub">Select a</span>
+    <a">Rating Category</a>
   </h1>
   <div class="button-container">
     <button class="statistics-button" onclick="about()">
@@ -73,31 +76,34 @@
   </div>
   <br>
   <center>
-    <div class="filtered-search-container" style="max-width: fit-content; background-color: #101117; padding: 15px; border-radius: 15px;"><select id="ratingDropdown">
-    <option value="scariness">Scariness</option>
-    <option value="soundDesign">Sound Design</option>
-    <option value="story">Story</option>
-    <option value="visuals">Visuals</option>
-    <option value="ambience">Ambience</option>
-    <option value="gameplay">Gameplay</option>
-    <option value="creativity">Creativity</option>
-    <option value="enjoyment">Enjoyment</option>
-    <option value="productionQuality">Production Quality</option>
-    <option value="technical">Technical</option>
-  </select>
-  <!-- <select id="genreDropdown">
-    <option value="scariness">Chapters</option>
-    <option value="soundDesign">Story</option>
-    <option value="story">Story</option>
-    <option value="visuals">Visuals</option>
-    <option value="ambience">Ambience</option>
-    <option value="gameplay">Gameplay</option>
-    <option value="creativity">Creativity</option>
-    <option value="enjoyment">Enjoyment</option>
-    <option value="productionQuality">Production Quality</option>
-    <option value="technical">Technical</option>
-  </select> -->
-  <button id="submitButton">Apply Filter</button></div></center>
+    <div class="filtered-search-container"
+      style="max-width: fit-content; background-color: #101117; padding: 15px; border-radius: 15px;"><select
+        id="ratingDropdown">
+        <option value="none">Select Category</option>
+        <option value="scariness">Scariness</option>
+        <option value="soundDesign">Sound Design</option>
+        <option value="story">Story</option>
+        <option value="visuals">Visuals</option>
+        <option value="ambience">Ambience</option>
+        <option value="gameplay">Gameplay</option>
+        <option value="creativity">Creativity</option>
+        <option value="enjoyment">Enjoyment</option>
+        <option value="productionQuality">Production Quality</option>
+        <option value="technical">Technical</option>
+      </select>
+      <select id="genreDropdown">
+        <option value="none">Select Genre</option>
+        <option value="scariness">Chapters</option>
+        <option value="soundDesign">Story</option>
+      </select>
+      <select id="playerDropdown">
+        <option value="none">Select Player Count</option>
+        <option value="singleplayer">Singleplayer</option>
+        <option value="multiplayer">Multiplayer</option>
+      </select>
+      <button id="submitButton">Apply Filter</button>
+    </div>
+  </center>
 
   <header>
     <div class="content" id="content">
@@ -144,7 +150,7 @@
           background-color: #20242e;
         " />
     <br>
-    
+
     <center>
       <div class="flex-center">
         <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
@@ -162,4 +168,5 @@
   <script src="../scripts/ndev-roblox-horrorlist-filtered-search.js"></script>
   <script src="../scripts/ndev-roblox-horrorlist-buttons.js"></script>
 </body>
+
 </html>
