@@ -1,4 +1,4 @@
-# Roblox Horrorlist: A Ranking of Over 260 Roblox Horror Games.
+# Roblox Horrorlist: A Ranking of Over 280 Roblox Horror Games.
 Welcome to the Roblox Horrorlist! This project is dedicated to showcasing almost all the horror games available on Roblox. If you're tired of only finding Mimic clones, you've come to the right place.
 
 ## Features:
