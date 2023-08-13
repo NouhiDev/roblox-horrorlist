@@ -189,6 +189,11 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
                 sortByGenre("Story", databaseData);
                 break;
         }
+        
+        // Get the UIDS with the genre key applied
+        gameUIDS = databaseData
+            .filter(element => element.ambience !== "")
+            .map(element => element.uid);
 
         const chunks = [];
         for (let i = 0; i < gameUIDS.length; i += maxUIDChunkSize) {
