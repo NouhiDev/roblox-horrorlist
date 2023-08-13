@@ -111,6 +111,33 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
 
         let totalRatings = 0;
 
+        function sortByGenre(category, databaseData) {
+            for (let i = databaseData.length - 1; i >= 0; i--) {
+                if (!databaseData[i].genres.includes(category)) {
+                    databaseData.splice(i, 1);
+                }
+            }
+
+            console.log("Data after sorting by genre:");
+            console.log(databaseData);
+        }
+
+        switch (genreKey) {
+            case "none":
+                break;
+            case "chapters":
+                sortByGenre("Chapters", databaseData);
+                break;
+            case "story":
+                sortByGenre("Story", databaseData);
+                break;
+        }
+
+        // Get the UIDS with the genre key applied
+        gameUIDS = databaseData
+            .filter(element => element.ambience !== "")
+            .map(element => element.uid);
+
         function sortByCategory(categoryKey, category, gameUIDS, databaseData) {
             databaseData.sort(function (a, b) {
                 return parseFloat(b.ratings[category]) - parseFloat(a.ratings[category]);
@@ -164,33 +191,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         }
 
         // Get the UIDS again in correct order
-        gameUIDS = databaseData
-            .filter(element => element.ambience !== "")
-            .map(element => element.uid);
-
-        function sortByGenre(category, databaseData) {
-            for (let i = databaseData.length - 1; i >= 0; i--) {
-                if (!databaseData[i].genres.includes(category)) {
-                    databaseData.splice(i, 1);
-                }
-            }
-
-            console.log("Data after sorting by genre:");
-            console.log(databaseData);
-        }
-
-        switch (genreKey) {
-            case "none":
-                break;
-            case "chapters":
-                sortByGenre("Chapters", databaseData);
-                break;
-            case "story":
-                sortByGenre("Story", databaseData);
-                break;
-        }
-        
-        // Get the UIDS with the genre key applied
         gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
