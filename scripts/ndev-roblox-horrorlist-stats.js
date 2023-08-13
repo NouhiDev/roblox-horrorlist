@@ -10,7 +10,7 @@
 //   For:
 //   robloxhorrorlist.com
 
-const DATA_URL = "https://robloxhorrorlist.com/weights-database.json";
+const DATA_URL = "https://ndevapi.com/main_list_ratings";
 
 function calculateAverageRatings(data) {
     const bars = [
@@ -27,15 +27,15 @@ function calculateAverageRatings(data) {
         { bar: document.getElementsByClassName("technical")[0], tooltip: "technical" },
     ];
 
-    const categories = Object.keys(data.games[0].ratings);
-    const numGames = data.games.length;
+    const categories = Object.keys(data[0].ratings);
+    const numGames = data.length;
     const averageRatings = {};
 
     categories.forEach(category => {
         averageRatings[category] = 0;
     });
 
-    data.games.forEach(game => {
+    data.forEach(game => {
         categories.forEach(category => {
             averageRatings[category] += parseFloat(game.ratings[category]);
         });
