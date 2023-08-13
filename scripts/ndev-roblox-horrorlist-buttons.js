@@ -59,7 +59,7 @@ function donate() {
 }
 
 async function random() {
-    const databaseDataResponse = await fetch(DATA_URL);
+    const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
     databaseData = await databaseDataResponse.json();
     localStorage.setItem("UID", Math.floor(Math.random() * databaseData.length));
     let foundIndex = -1;
