@@ -1,23 +1,5 @@
 const DATA_URL = "https://robloxhorrorlist.com/weights-database.json";
 
-if (typeof jQuery === "undefined") {
-    var script = document.createElement("script");
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js";
-
-    script.onload = function () {
-        $(document).ready(function () {
-            init()
-        });
-    };
-
-    document.head.appendChild(script);
-} else {
-    $(document).ready(function () {
-        init();
-    });
-}
-
-
 function calculateAverageRatings(data) {
     const bars = [
         { bar: document.getElementsByClassName("overall")[0], tooltip: "rating" },
@@ -37,7 +19,6 @@ function calculateAverageRatings(data) {
     const numGames = data.games.length;
     const averageRatings = {};
 
-    // Initialize the averageRatings object with all categories set to 0
     categories.forEach(category => {
         averageRatings[category] = 0;
     });
@@ -48,8 +29,6 @@ function calculateAverageRatings(data) {
         });
     });
 
-
-    // Calculate the average for each category
     let i = 0;
     categories.forEach(category => {
         averageRatings[category] /= numGames;
@@ -58,37 +37,55 @@ function calculateAverageRatings(data) {
         i++;
     });
 
-
-    // function updateProgressBar(barElement, dataValue) {
-    //     const percentage = dataValue * (100 / MAX_SCORE);
-    //     barElement.style.width = `${percentage}%`;
-    //     barElement.getElementsByClassName("tooltip")[0].innerHTML = `${dataValue}/${MAX_SCORE}`;
-    // }
-
-    // for (let i = 0; i < bars.length; i++) {
-    //     const dataField = bars[i].tooltip;
-    //     updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField]);
-    // }
-
-    for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
-        const element = document.getElementsByClassName("rating-per")[i];
+    for (const element of document.getElementsByClassName("rating-per")) {
         element.style.animation = "progress 0.4s ease-in-out forwards";
     }
 
     return averageRatings;
 }
 
-async function init() {
-    var databaseData = [];
-
+async function fetchData(url) {
     try {
-        const databaseDataResponse = await fetch(DATA_URL);
-        databaseData = await databaseDataResponse.json();
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error("Network response was not ok.");
+        }
+        return await response.json();
     } catch (error) {
-
         console.error("Error fetching data:", error);
-        return;
+        return null;
     }
+}
 
-    calculateAverageRatings(databaseData);
+function init() {
+    fetchData(DATA_URL)
+        .then(data => {
+            if (data) {
+                calculateAverageRatings(data);
+            } else {
+                alert("Failed to load data.");
+            }
+        });
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+function backBtn() {
+    window.location.href = "https://robloxhorrorlist.com";
+}
+
+function githubButton() {
+    window.open("https://github.com/NouhiDev/roblox-horrorlist", "_blank");
+}
+
+function youtubeButton() {
+    window.open("https://www.youtube.com/@robloxhorrorlist", "_blank");
+}
+
+function discordButton() {
+    window.open("https://discord.gg/Zbxst3g4ts", "_blank");
+}
+
+function twitterButton() {
+    window.open("https://twitter.com/RBLXHorrorlist", "_blank");
 }
