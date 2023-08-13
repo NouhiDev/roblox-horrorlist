@@ -70,5 +70,5 @@ async function random() {
     }
     }   
     localStorage.setItem("number", foundIndex+1);
-    window.open("pages/game.html", "_blank");
+    window.open("https://robloxhorrorlist.com/pages/game.html", "_blank");
 }
