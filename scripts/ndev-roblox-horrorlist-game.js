@@ -60,6 +60,7 @@ async function init() {
 
     const bar = document.getElementById('bar');
     const thumbsUpPercentage = (thumbsUpCount / totalVotes) * 100;
+    console.log(thumbsUpPercentage);
 
     bar.style.width = thumbsUpPercentage + '%';
 
