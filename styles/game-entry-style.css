@@ -120,3 +120,9 @@ button:hover {
 .playBtn {
     margin: 10px;
 }
+
+#game-context {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}

@@ -108,6 +108,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         let totalRatings = 0;
 
         function sortByGenre(category, databaseData) {
+            localStorage.setItem("genreFilter", category);
             for (let i = databaseData.length - 1; i >= 0; i--) {
                 if (!databaseData[i].genres.includes(category)) {
                     databaseData.splice(i, 1);
@@ -117,6 +118,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
 
         switch (genreKey) {
             case "none":
+                localStorage.setItem("genreFilter", "All Genres");
                 break;
             case "chapters":
                 sortByGenre("Chapters", databaseData);
@@ -180,6 +182,8 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             .map(element => element.uid);
 
         function sortByCategory(categoryKey, category, gameUIDS, databaseData) {
+            localStorage.setItem("categoryFilter", category);
+
             databaseData.sort(function (a, b) {
                 return parseFloat(b.ratings[category]) - parseFloat(a.ratings[category]);
             });
@@ -430,7 +434,7 @@ function twitterButton() {
 function loadGame(number, UID) {
     localStorage.setItem('number', number);
     localStorage.setItem('UID', UID);
-    window.open('game.html', '_blank');
+    window.open('filtered-search-game.html', '_blank');
 }
 
 document.addEventListener("DOMContentLoaded", () => {
