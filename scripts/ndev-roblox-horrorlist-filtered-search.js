@@ -102,14 +102,14 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         db = await openDB();
 
         const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
-        const databaseData = await databaseDataResponse.json();
+        let databaseData = await databaseDataResponse.json();
         databaseData.sort((a, b) => parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating));
 
         let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
 
-            let totalRatings = 0;
+        let totalRatings = 0;
 
         function sortByCategory(categoryKey, category, gameUIDS, databaseData) {
             databaseData.sort(function (a, b) {
@@ -167,6 +167,26 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
+
+        function sortByGenre(category, databaseData) {
+            for (let i = databaseData.length - 1; i >= 0; i--) {
+                if (!databaseData[i].genres.includes(category)) {
+                    databaseData.splice(i, 1);
+                }
+            }
+
+            console.log("Data after sorting by genre:");
+            console.log(databaseData);
+        }
+
+        switch (genreKey) {
+            case "chapters":
+                sortByGenre("Chapters", databaseData);
+                break;
+            case "story":
+                sortByGenre("Story", databaseData);
+                break;
+        }
 
         const chunks = [];
         for (let i = 0; i < gameUIDS.length; i += maxUIDChunkSize) {
