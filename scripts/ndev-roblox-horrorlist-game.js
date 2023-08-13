@@ -17,51 +17,6 @@ async function init() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
 
-    // Voting (Rating)
-    function hasVoted(UID) {
-        const votedCookieName = `_voted_${UID}`;
-        return document.cookie.includes(votedCookieName);
-    }
-
-    const likeBtn = document.getElementById('like-btn');
-    const dislikeBtn = document.getElementById('dislike-btn');
-
-    function displayVoteStatus(gameId, vote) {
-        const hasVotedForGame = hasVoted(gameId);
-        const statusElement = document.getElementById('vote-status');
-        if (hasVotedForGame) {
-            likeBtn.style.display = "none";
-            dislikeBtn.style.display = "none";
-        } else {
-            statusElement.textContent = 'Do you like this game?';
-        }
-    }
-
-    displayVoteStatus(UID, "");
-
-    // Set a cookie when the user votes for a game
-    function setVotedCookie(UID, vote) {
-        const cookieName = `_voted_${UID}`;
-        const cookieValue = JSON.stringify({ voted: true, vote: vote });
-        document.cookie = `${cookieName}=${cookieValue}; path=/`;
-    }
-
-    // Handle like button click
-    likeBtn.addEventListener('click', function () {
-        if (!hasVoted(UID)) {
-            setVotedCookie(UID, 'like');
-            displayVoteStatus(UID, 'like');
-        }
-    });
-
-    // Handle dislike button click
-    dislikeBtn.addEventListener('click', function () {
-        if (!hasVoted(UID)) {
-            setVotedCookie(UID, 'dislike');
-            displayVoteStatus(UID, 'dislike');
-        }
-    });
-
     const bars = [
         { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
         { bar: document.getElementsByClassName("sound-design")[0], tooltip: "soundDesign" },
@@ -92,6 +47,8 @@ async function init() {
     );
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
+
+        console.log(gameDataByUID);
 
     function updateProgressBar(barElement, dataValue, tooltipText) {
         const percentage = dataValue * (100 / MAX_SCORE);
