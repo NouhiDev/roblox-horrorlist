@@ -146,6 +146,36 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             case "port":
                 sortByGenre("Port", databaseData);
                 break;
+            case "mascotHorror":
+                sortByGenre("Mascot Horror", databaseData);
+                break;
+            case "bodyHorror":
+                sortByGenre("Body Horror", databaseData);
+                break;
+            case "exploration":
+                sortByGenre("Exploration", databaseData);
+                break;
+            case "classicHorror":
+                sortByGenre("Classic Horror", databaseData);
+                break;
+            case "pinoy":
+                sortByGenre("Pinoy", databaseData);
+                break;
+            case "remake":
+                sortByGenre("Remake", databaseData);
+                break;
+            case "backrooms":
+                sortByGenre("Backrooms", databaseData);
+                break;
+            case "parody":
+                sortByGenre("Parody", databaseData);
+                break;
+            case "unfinishedAbandoned":
+                sortByGenre("Unfinished/Abandoned", databaseData);
+                break;
+            case "removedPrivated":
+                sortByGenre("Removed/Privated", databaseData);
+                break;
         }
 
         // Get the UIDS with the genre key applied
