@@ -101,7 +101,7 @@ async function fetchAndDisplayGames(sortKey) {
         const databaseDataResponse = await fetch("https://robloxhorrorlist.com/weights-database.json");
         const databaseData = await databaseDataResponse.json();
 
-        const a = await fetch("https://ndevapi.com/main_list_ratings");
+        const a = await fetch("https://ndevapi.com/requests");
         const b = await a.json();
         console.log(b);
 
