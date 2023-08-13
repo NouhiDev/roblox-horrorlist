@@ -83,6 +83,10 @@ window.onload = async function () {
 
 async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
     try {
+        console.log(`Sorting by category: ${categoryKey}!`);
+        console.log(`Sorting by genre: ${genreKey}!`);
+        console.log(`Sorting by player count: ${playerCountKey}!`);
+
         if (dataTable != null) {
             dataTable.destroy();
             $('header').hide();
