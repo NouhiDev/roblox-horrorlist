@@ -53,7 +53,13 @@ async function init() {
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
     
-        
+    let foundIndex = -1;
+    for (let i = 0; i < databaseData.length; i++) {
+        if (databaseData[i].uid === UID) {
+          foundIndex = i;
+          break;
+        }
+      }    
 
     function updateProgressBar(barElement, dataValue, tooltipText) {
         const percentage = dataValue * (100 / MAX_SCORE);
@@ -63,7 +69,7 @@ async function init() {
 
     for (let i = 0; i < bars.length; i++) {
         const dataField = bars[i].tooltip;
-        updateProgressBar(bars[i].bar, databaseData[number - 1].ratings[dataField], dataField);
+        updateProgressBar(bars[i].bar, databaseData[foundIndex].ratings[dataField], dataField);
     }
 
     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
@@ -96,13 +102,13 @@ async function init() {
 
     gameCreator.innerText = "by " + gameDataByUID["creator"].name;
 
-    var genreArray = String(databaseData[number - 1].genres).split(",");
+    var genreArray = String(databaseData[catefoundIndexgoryKey].genres).split(",");
     var genreHTMLText = genreArray.join(", ");
     var genrePrefix = `Genre${genreArray.length > 1 ? "s" : ""}: `;
     gameGenres.innerHTML = `${genrePrefix} ${genreHTMLText}`;
 
-    if (databaseData[number - 1].youtube_url != undefined) {
-        var gameYTURL = databaseData[number - 1].youtube_url.slice(32, databaseData[number - 1].youtube_url.length);
+    if (databaseData[catefoundIndexgoryKey].youtube_url != undefined) {
+        var gameYTURL = databaseData[catefoundIndexgoryKey].youtube_url.slice(32, databaseData[catefoundIndexgoryKey].youtube_url.length);
         gameYT.src = `https://www.youtube.com/embed/${gameYTURL}`;;
     }
     else {
@@ -132,25 +138,25 @@ async function init() {
     cons.innerText += "\n";
     conclusion.innerText += "\n";
 
-    if (databaseData[number - 1].rater_note.pros == undefined || databaseData[number - 1].rater_note.pros == "") pros.innerText = "Will be added soon.";
-    else pros.innerText = databaseData[number - 1].rater_note.pros;
+    if (databaseData[catefoundIndexgoryKey].rater_note.pros == undefined || databaseData[catefoundIndexgoryKey].rater_note.pros == "") pros.innerText = "Will be added soon.";
+    else pros.innerText = databaseData[catefoundIndexgoryKey].rater_note.pros;
 
-    if (databaseData[number - 1].rater_note.cons == undefined || databaseData[number - 1].rater_note.cons == "") cons.innerText = "Will be added soon.";
-    else cons.innerText = databaseData[number - 1].rater_note.cons;
+    if (databaseData[catefoundIndexgoryKey].rater_note.cons == undefined || databaseData[catefoundIndexgoryKey].rater_note.cons == "") cons.innerText = "Will be added soon.";
+    else cons.innerText = databaseData[catefoundIndexgoryKey].rater_note.cons;
 
-    if (databaseData[number - 1].rater_note.conclusion == undefined || databaseData[number - 1].rater_note.conclusion == "") conclusion.innerText = "Will be added soon.";
-    else conclusion.innerText = databaseData[number - 1].rater_note.conclusion;
+    if (databaseData[catefoundIndexgoryKey].rater_note.conclusion == undefined || databaseData[catefoundIndexgoryKey].rater_note.conclusion == "") conclusion.innerText = "Will be added soon.";
+    else conclusion.innerText = databaseData[catefoundIndexgoryKey].rater_note.conclusion;
 
-    if (databaseData[number - 1]["port_url"] !== "") {
+    if (databaseData[catefoundIndexgoryKey]["port_url"] !== "") {
         originalBtn.style.opacity = 1;
         originalBtn.innerText = "Play Original";
         originalBtn.addEventListener("click", function() {
-            window.location.href = databaseData[number - 1].port_url;
+            window.location.href = databaseData[catefoundIndexgoryKey].port_url;
         });
     } else originalBtn.style.opacity = 0;
 
     // Multiple chapters / parts / etc. functionality
-    if (databaseData[number - 1].hasOwnProperty("chapters")) {
+    if (databaseData[catefoundIndexgoryKey].hasOwnProperty("chapters")) {
         const dropdownContainer = document.getElementsByClassName("ratings-container")[0];
         const dropdown = document.createElement("select");
         dropdown.id = "dropdown";
@@ -158,8 +164,8 @@ async function init() {
 
         var optionTexts = ["Overall"];
 
-        for (let i = 0; i < databaseData[number - 1]["chapters"].length; i++) {
-            optionTexts.push(databaseData[number - 1]["chapters"][i].name); 
+        for (let i = 0; i < databaseData[catefoundIndexgoryKey]["chapters"].length; i++) {
+            optionTexts.push(databaseData[catefoundIndexgoryKey]["chapters"][i].name); 
         }
 
         var optionValues = ["option0"];
@@ -180,43 +186,43 @@ async function init() {
             option0: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1].ratings[dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey].ratings[dataField], dataField);
                 }
             },
             option1: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][0]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey]["chapters"][0]["ratings"][dataField], dataField);
                 }
             },
             option2: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][1]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey]["chapters"][1]["ratings"][dataField], dataField);
                 }
             },
             option3: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][2]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey]["chapters"][2]["ratings"][dataField], dataField);
                 }
             },
             option4: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][3]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey]["chapters"][3]["ratings"][dataField], dataField);
                 }
             },
             option5: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][4]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey]["chapters"][4]["ratings"][dataField], dataField);
                 }
             },
             option6: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][5]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[catefoundIndexgoryKey]["chapters"][5]["ratings"][dataField], dataField);
                 }
             },
         };
