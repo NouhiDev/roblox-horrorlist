@@ -57,6 +57,8 @@ async function init() {
     const thumbsUpCount = parseInt(gameVoteDataByUID.upVotes);
     const thumbsDownCount = parseInt(gameVoteDataByUID.downVotes);
     const totalVotes = thumbsUpCount + thumbsDownCount;
+    document.getElementById("likes").innerText += `${thumbsUpCount})`;
+    document.getElementById("dislikes").innerText += `${thumbsDownCount})`;
 
     const bar = document.getElementById('bar');
     const thumbsUpPercentage = (thumbsUpCount / totalVotes) * 100;
