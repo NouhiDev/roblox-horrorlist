@@ -126,3 +126,12 @@ button:hover {
     color: white;
     text-transform: capitalize;
 }
+
+.contact {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact:hover {
+    text-decoration: underline;
+  }
