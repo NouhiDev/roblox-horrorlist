@@ -262,6 +262,23 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             .map(item => item.data)
             .flat();
 
+        
+            function sortByPlayerCount(isSingleplayer) {
+                for (let i = gameDataFromAPI.length - 1; i >= 0; i--) {
+                    console.log(gameDataFromAPI[i]);
+                }
+            }
+
+        switch (playerCountKey) {
+            case "none":
+                break;
+            case "singleplayer":
+                sortByPlayerCount(true);
+                break;
+            case "multiplayer":
+                sortByPlayerCount(false);
+                break;
+        }
 
         const numGames = databaseData.length;
 
