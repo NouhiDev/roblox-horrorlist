@@ -226,6 +226,8 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
 
         const averageRating = totalRatings / numGames;
 
+        console.log(averageRating);
+
         const fragment = document.createDocumentFragment();
 
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
