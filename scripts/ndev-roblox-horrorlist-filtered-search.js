@@ -200,6 +200,8 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         }
 
         switch (categoryKey) {
+            case "overall":
+                break;
             case "scariness":
                 sortByCategory(categoryKey, "scariness", gameUIDS, databaseData);
                 break;
