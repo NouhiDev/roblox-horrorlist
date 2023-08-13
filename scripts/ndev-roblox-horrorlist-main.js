@@ -43,18 +43,16 @@ function donate() {
 async function random() {
     const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
     databaseData = await databaseDataResponse.json();
-    const randomUID = Math.floor(Math.random() * databaseData.length);
-    console.log(randomUID);
-    localStorage.setItem("UID", randomUID);
+    const randomUIDIndex = Math.floor(Math.random() * databaseData.length);
+    localStorage.setItem("UID", databaseData[randomUIDIndex].uid);
     let foundIndex = -1;
     for (let i = 0; i < databaseData.length; i++) {
-        if (databaseData[i].uid === randomUID) {
+        if (databaseData[i].uid === databaseData[randomUIDIndex].uid) {
           foundIndex = i;
           break;
     }
     }   
-    foundIndex = foundIndex + 1;
-    localStorage.setItem("number", foundIndex);
+    localStorage.setItem("number", foundIndex+1);
     window.open("https://robloxhorrorlist.com/pages/game.html", "_blank");
 }
 
