@@ -384,10 +384,10 @@ iframe[src*=youtube] {
 
 .likes-label {
     left: 0;
-    color: #4CAF50;
+    color: #fff;
 }
 
 .dislikes-label {
     right: 0;
-    color: #ff3333;
+    color: #fff;
 }
