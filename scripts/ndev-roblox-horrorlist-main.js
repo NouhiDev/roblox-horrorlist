@@ -45,3 +45,11 @@ function firstEnter() {
     const popupContainer = document.getElementById("popupContainer");
     popupContainer.style.display = "none";
 }
+
+async function init() {
+    const a = await fetch("https://ndevapi.com/requests");
+    const b = await a.json();
+    document.getElementById("visitor-count").innerText = b.requests;
+}
+
+document.addEventListener("DOMContentLoaded", init);        
