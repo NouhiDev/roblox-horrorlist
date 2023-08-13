@@ -61,6 +61,24 @@ async function init() {
         }
       }    
 
+      const gameVoteData = await fetch(
+        "https://ndevapi.com/game-votes/" + UID
+    );
+    gameVoteDataByUID = await gameVoteData.json();
+    gameVoteDataByUID = gameVoteDataByUID["data"][0];
+
+    const thumbsUpCount = parseInt(gameVoteDataByUID.upVotes);
+    const thumbsDownCount = parseInt(gameVoteDataByUID.downVotes);
+    const totalVotes = thumbsUpCount + thumbsDownCount;
+    document.getElementById("likes").innerText += `${thumbsUpCount})`;
+    document.getElementById("dislikes").innerText += `${thumbsDownCount})`;
+
+    const bar = document.getElementById('bar');
+    const thumbsUpPercentage = (thumbsUpCount / totalVotes) * 100;
+    console.log(thumbsUpPercentage);
+
+    bar.style.width = thumbsUpPercentage + '%';
+
     function updateProgressBar(barElement, dataValue, tooltipText) {
         const percentage = dataValue * (100 / MAX_SCORE);
         barElement.style.width = `${percentage}%`;
