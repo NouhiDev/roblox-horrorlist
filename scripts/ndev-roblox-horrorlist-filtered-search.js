@@ -262,31 +262,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             .map(item => item.data)
             .flat();
 
-        
-            function sortByPlayerCount(isSingleplayer) {
-                for (let i = gameDataFromAPI.length - 1; i >= 0; i--) {
-                    if (isSingleplayer) {
-                        if (gameDataFromAPI[i].maxPlayers > 1)
-                            gameDataFromAPI.splice(i, 1);
-                    }
-                    else {
-                        if (gameDataFromAPI[i].maxPlayers < 2)
-                            gameDataFromAPI.splice(i, 1);
-                    }
-                }
-            }
-
-        switch (playerCountKey) {
-            case "none":
-                break;
-            case "singleplayer":
-                sortByPlayerCount(true);
-                break;
-            case "multiplayer":
-                sortByPlayerCount(false);
-                break;
-        }
-
         const numGames = databaseData.length;
 
         const averageRating = totalRatings / numGames;
@@ -461,13 +436,11 @@ function loadGame(number, UID) {
 document.addEventListener("DOMContentLoaded", () => {
     const ratingDropdown = document.getElementById("ratingDropdown");
     const genreDropdown = document.getElementById("genreDropdown");
-    const playerCountDropdown = document.getElementById("playerDropdown");
     const submitButton = document.getElementById("submitButton");
 
     submitButton.addEventListener("click", () => {
         const selectedCategory = ratingDropdown.value;
         const selectedGenre = genreDropdown.value;
-        const selectedPlayerCount = playerCountDropdown.value;
-        fetchAndDisplayGames(selectedCategory, selectedGenre, selectedPlayerCount);
+        fetchAndDisplayGames(selectedCategory, selectedGenre);
     });
 });
