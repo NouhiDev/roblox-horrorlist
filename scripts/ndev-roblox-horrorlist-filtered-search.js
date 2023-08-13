@@ -185,6 +185,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             });
 
             for (const game of databaseData) {
+                console.log(game.ratings[categoryKey]);
                 totalRatings += parseFloat(game.ratings[categoryKey]);
             }
 
