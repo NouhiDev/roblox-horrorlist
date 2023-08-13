@@ -115,6 +115,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             }
                 
         }
+    }
 
         let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
