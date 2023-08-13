@@ -714,13 +714,5 @@ h2 {
 
 .button-container button {
   max-width: fit-content;
-}
-
-.button-container .donate-button span {
-  font-size: 0px;
-  transition: font-size 0.25s ease;
-}
-
-.button-container .donate-button:hover span{
-  font-size: 13px;
+  margin: 5px;
 }
