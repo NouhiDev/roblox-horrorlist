@@ -59,14 +59,14 @@
     <button class="statistics-button" onclick="contributors()">
       <i class="fas fa-users"></i> Contributors
     </button>
-    <!-- <button class="statistics-button" onclick="community()">
-      <i class="fas fa-users"></i> Community Ratings
-    </button> -->
     <button class="statistics-button" onclick="statistics()">
       <i class="fas fa-chart-line"></i> Statistics
     </button>
     <button class="statistics-button" onclick="rating_scale()">
       <i class="fas fa-file-signature"></i> How We Rate
+    </button>
+    <button class="main-list-button" onclick="main_list()">
+      <i class="fas fa-list"></i> Main List
     </button>
     <button class="donate-button" onclick="donate()">
       <i class="fas fa-heart"></i> Donate
@@ -155,6 +155,10 @@
 
     function donate() {
       window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
+    }
+
+    function main_list() {
+      window.location.href = "https://robloxhorrorlist.com";
     }
   </script>
   <footer>
