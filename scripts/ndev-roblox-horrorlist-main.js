@@ -11,7 +11,7 @@
 //   robloxhorrorlist.com
 
 
-if (localStorage.getItem("firstEntry") === "true") {
+if (localStorage.getItem("firstEntryNew") === "true") {
     const popupContainer = document.getElementById("popupContainer");
     popupContainer.style.display = "none";
 }
@@ -41,7 +41,7 @@ function donate() {
 }
 
 function firstEnter() {
-    localStorage.setItem("firstEntry", "true");
+    localStorage.setItem("firstEntryNew", "true");
     const popupContainer = document.getElementById("popupContainer");
     popupContainer.style.display = "none";
 }
