@@ -30,7 +30,8 @@ async function init() {
         const hasVotedForGame = hasVoted(gameId);
         const statusElement = document.getElementById('vote-status');
         if (hasVotedForGame) {
-            statusElement.textContent = `You have already given this game a ${vote}.`;
+            likeBtn.style.display = "none";
+            dislikeBtn.style.display = "none";
         } else {
             statusElement.textContent = 'Do you like this game?';
         }
