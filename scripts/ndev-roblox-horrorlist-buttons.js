@@ -14,6 +14,10 @@ function backBtn() {
     window.location.href = "https://robloxhorrorlist.com";
 }
 
+function backBtnFilter() {
+    window.location.href = "https://robloxhorrorlist.com/pages/filtered-search.html";
+}
+
 function githubButton() {
     window.open("https://github.com/NouhiDev/roblox-horrorlist", "_blank");
 }
