@@ -53,7 +53,15 @@ async function init() {
     );
     gameVoteDataByUID = await gameVoteData.json();
     gameVoteDataByUID = gameVoteDataByUID["data"][0];
-    console.log(gameVoteDataByUID);
+
+    const thumbsUpCount = parseInt(gameVoteDataByUID.upVotes);
+    const thumbsDownCount = parseInt(gameVoteDataByUID.downVotes);
+    const totalVotes = thumbsUpCount + thumbsDownCount;
+
+    const bar = document.getElementById('bar');
+    const thumbsUpPercentage = (thumbsUpCount / totalVotes) * 100;
+
+    bar.style.width = thumbsUpPercentage + '%';
 
     function updateProgressBar(barElement, dataValue, tooltipText) {
         const percentage = dataValue * (100 / MAX_SCORE);
