@@ -101,10 +101,6 @@ async function fetchAndDisplayGames(sortKey) {
         const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
         const databaseData = await databaseDataResponse.json();
 
-        const a = await fetch("https://ndevapi.com/requests");
-        const b = await a.json();
-        console.log(b);
-
         let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
@@ -362,6 +358,7 @@ function loadGame(number, UID) {
     localStorage.setItem('UID', UID);
     window.open('game.html', '_blank');
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     const dropdown = document.getElementById("ratingDropdown");
     const submitButton = document.getElementById("submitButton");

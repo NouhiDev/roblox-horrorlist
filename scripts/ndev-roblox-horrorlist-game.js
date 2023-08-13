@@ -16,24 +16,7 @@
 
 // Created by nouhidev
 
-if (typeof jQuery === "undefined") {
-    var script = document.createElement("script");
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js";
-
-    script.onload = function () {
-        $(document).ready(function () {
-            init()
-        });
-    };
-
-    document.head.appendChild(script);
-} else {
-    $(document).ready(function () {
-        init();
-    });
-}
-
-const DATA_URL = "https://robloxhorrorlist.com/weights-database.json";
+const DATA_URL = "https://ndevapi.com/main_list_ratings";
 const MAX_SCORE = 10;
 
 async function init() {
@@ -78,7 +61,7 @@ async function init() {
 
     for (let i = 0; i < bars.length; i++) {
         const dataField = bars[i].tooltip;
-        updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
+        updateProgressBar(bars[i].bar, databaseData[number - 1].ratings[dataField], dataField);
     }
 
     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
@@ -111,13 +94,13 @@ async function init() {
 
     gameCreator.innerText = "by " + gameDataByUID["creator"].name;
 
-    var genreArray = String(databaseData.games[number - 1].genres).split(",");
+    var genreArray = String(databaseData[number - 1].genres).split(",");
     var genreHTMLText = genreArray.join(", ");
     var genrePrefix = `Genre${genreArray.length > 1 ? "s" : ""}: `;
     gameGenres.innerHTML = `${genrePrefix} ${genreHTMLText}`;
 
-    if (databaseData.games[number - 1].youtube_url != undefined) {
-        var gameYTURL = databaseData.games[number - 1].youtube_url.slice(32, databaseData.games[number - 1].youtube_url.length);
+    if (databaseData[number - 1].youtube_url != undefined) {
+        var gameYTURL = databaseData[number - 1].youtube_url.slice(32, databaseData[number - 1].youtube_url.length);
         gameYT.src = `https://www.youtube.com/embed/${gameYTURL}`;;
     }
     else {
@@ -147,25 +130,25 @@ async function init() {
     cons.innerText += "\n";
     conclusion.innerText += "\n";
 
-    if (databaseData.games[number - 1].rater_note.pros == undefined || databaseData.games[number - 1].rater_note.pros == "") pros.innerText = "Will be added soon.";
-    else pros.innerText = databaseData.games[number - 1].rater_note.pros;
+    if (databaseData[number - 1].rater_note.pros == undefined || databaseData[number - 1].rater_note.pros == "") pros.innerText = "Will be added soon.";
+    else pros.innerText = databaseData[number - 1].rater_note.pros;
 
-    if (databaseData.games[number - 1].rater_note.cons == undefined || databaseData.games[number - 1].rater_note.cons == "") cons.innerText = "Will be added soon.";
-    else cons.innerText = databaseData.games[number - 1].rater_note.cons;
+    if (databaseData[number - 1].rater_note.cons == undefined || databaseData[number - 1].rater_note.cons == "") cons.innerText = "Will be added soon.";
+    else cons.innerText = databaseData[number - 1].rater_note.cons;
 
-    if (databaseData.games[number - 1].rater_note.conclusion == undefined || databaseData.games[number - 1].rater_note.conclusion == "") conclusion.innerText = "Will be added soon.";
-    else conclusion.innerText = databaseData.games[number - 1].rater_note.conclusion;
+    if (databaseData[number - 1].rater_note.conclusion == undefined || databaseData[number - 1].rater_note.conclusion == "") conclusion.innerText = "Will be added soon.";
+    else conclusion.innerText = databaseData[number - 1].rater_note.conclusion;
 
-    if (databaseData.games[number - 1]["port_url"] !== "") {
+    if (databaseData[number - 1]["port_url"] !== "") {
         originalBtn.style.opacity = 1;
         originalBtn.innerText = "Play Original";
         originalBtn.addEventListener("click", function() {
-            window.location.href = databaseData.games[number - 1].port_url;
+            window.location.href = databaseData[number - 1].port_url;
         });
     } else originalBtn.style.opacity = 0;
 
     // Multiple chapters / parts / etc. functionality
-    if (databaseData.games[number - 1].hasOwnProperty("chapters")) {
+    if (databaseData[number - 1].hasOwnProperty("chapters")) {
         const dropdownContainer = document.getElementsByClassName("ratings-container")[0];
         const dropdown = document.createElement("select");
         dropdown.id = "dropdown";
@@ -173,8 +156,8 @@ async function init() {
 
         var optionTexts = ["Overall"];
 
-        for (let i = 0; i < databaseData.games[number - 1]["chapters"].length; i++) {
-            optionTexts.push(databaseData.games[number - 1]["chapters"][i].name); 
+        for (let i = 0; i < databaseData[number - 1]["chapters"].length; i++) {
+            optionTexts.push(databaseData[number - 1]["chapters"][i].name); 
         }
 
         var optionValues = ["option0"];
@@ -195,43 +178,43 @@ async function init() {
             option0: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1].ratings[dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1].ratings[dataField], dataField);
                 }
             },
             option1: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][0]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][0]["ratings"][dataField], dataField);
                 }
             },
             option2: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][1]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][1]["ratings"][dataField], dataField);
                 }
             },
             option3: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][2]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][2]["ratings"][dataField], dataField);
                 }
             },
             option4: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][3]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][3]["ratings"][dataField], dataField);
                 }
             },
             option5: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][4]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][4]["ratings"][dataField], dataField);
                 }
             },
             option6: function() {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
-                    updateProgressBar(bars[i].bar, databaseData.games[number - 1]["chapters"][5]["ratings"][dataField], dataField);
+                    updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][5]["ratings"][dataField], dataField);
                 }
             },
         };
@@ -262,3 +245,7 @@ async function init() {
         });
         }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    init();
+});
