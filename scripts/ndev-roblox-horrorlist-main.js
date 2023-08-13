@@ -52,7 +52,8 @@ async function random() {
           break;
     }
     }   
-    localStorage.setItem("number", foundIndex+1);
+    foundIndex = foundIndex + 1;
+    localStorage.setItem("number", foundIndex);
     window.open("https://robloxhorrorlist.com/pages/game.html", "_blank");
 }
 
