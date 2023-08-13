@@ -57,12 +57,12 @@ async function fetchFromCache(cacheKey) {
 }
 
 // Function to create a cache key with the category information
-function getCategoryCacheKey(sortKey, category) {
-    return `${CACHE_PREFIX}${sortKey}_${category}`;
+function getCategoryCacheKey(categoryKey, category) {
+    return `${CACHE_PREFIX}${categoryKey}_${category}`;
 }
 
-async function fetchDataAndCache(endpoint, sortKey, category) {
-    const cacheKey = getCategoryCacheKey(sortKey, category);
+async function fetchDataAndCache(endpoint, categoryKey, category) {
+    const cacheKey = getCategoryCacheKey(categoryKey, category);
     const cachedData = await fetchFromCache(cacheKey);
     if (cachedData && Date.now() - cachedData.timestamp < CACHE_EXPIRATION) {
         return cachedData.data;
@@ -81,7 +81,7 @@ window.onload = async function () {
     document.getElementsByClassName("loading-bar")[0].style.display = "none";
 };
 
-async function fetchAndDisplayGames(sortKey) {
+async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
     try {
         if (dataTable != null) {
             dataTable.destroy();
@@ -107,52 +107,52 @@ async function fetchAndDisplayGames(sortKey) {
 
             let totalRatings = 0;
 
-        function sortByCategory(sortKey, category, gameUIDS, databaseData) {
+        function sortByCategory(categoryKey, category, gameUIDS, databaseData) {
             databaseData.sort(function (a, b) {
                 return parseFloat(b.ratings[category]) - parseFloat(a.ratings[category]);
             });
 
             for (const game of databaseData) {
-                totalRatings += parseFloat(game.ratings[sortKey]);
+                totalRatings += parseFloat(game.ratings[categoryKey]);
             }
 
             // Overwrite ratings of database
             for (let i = 0; i < gameUIDS.length; i++) {
-                const categoryRating = databaseData[i].ratings[sortKey];
+                const categoryRating = databaseData[i].ratings[categoryKey];
                 databaseData[i].ratings.rating = categoryRating;
             }
         }
 
-        switch (sortKey) {
+        switch (categoryKey) {
             case "scariness":
-                sortByCategory(sortKey, "scariness", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "scariness", gameUIDS, databaseData);
                 break;
             case "soundDesign":
-                sortByCategory(sortKey, "soundDesign", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "soundDesign", gameUIDS, databaseData);
                 break;
             case "story":
-                sortByCategory(sortKey, "story", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "story", gameUIDS, databaseData);
                 break;
             case "visuals":
-                sortByCategory(sortKey, "visuals", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "visuals", gameUIDS, databaseData);
                 break;
             case "ambience":
-                sortByCategory(sortKey, "ambience", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "ambience", gameUIDS, databaseData);
                 break;
             case "gameplay":
-                sortByCategory(sortKey, "gameplay", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "gameplay", gameUIDS, databaseData);
                 break;
             case "creativity":
-                sortByCategory(sortKey, "creativity", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "creativity", gameUIDS, databaseData);
                 break;
             case "enjoyment":
-                sortByCategory(sortKey, "enjoyment", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "enjoyment", gameUIDS, databaseData);
                 break;
             case "productionQuality":
-                sortByCategory(sortKey, "productionQuality", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "productionQuality", gameUIDS, databaseData);
                 break;
             case "technical":
-                sortByCategory(sortKey, "technical", gameUIDS, databaseData);
+                sortByCategory(categoryKey, "technical", gameUIDS, databaseData);
                 break;
         }
 
@@ -167,11 +167,11 @@ async function fetchAndDisplayGames(sortKey) {
         }
 
         const fetchGameDataPromises = chunks.map(chunk =>
-            fetchDataAndCache(`${API_BASE_URL}/game-info/${chunk.join(",")}`, sortKey, `gameData_${chunk.join(",")}`)
+            fetchDataAndCache(`${API_BASE_URL}/game-info/${chunk.join(",")}`, categoryKey, `gameData_${chunk.join(",")}`)
         );
 
         const fetchIconDataPromises = chunks.map(chunk =>
-            fetchDataAndCache(`${API_BASE_URL}/game-icon/${chunk.join(",")}`, sortKey, `gameIconData_${chunk.join(",")}`)
+            fetchDataAndCache(`${API_BASE_URL}/game-icon/${chunk.join(",")}`, categoryKey, `gameIconData_${chunk.join(",")}`)
         );
 
         const [gameDataResponses, iconDataResponses] = await Promise.all([
