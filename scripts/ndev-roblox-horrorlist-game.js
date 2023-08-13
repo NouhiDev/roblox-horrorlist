@@ -36,6 +36,7 @@ async function init() {
     try {
         const databaseDataResponse = await fetch(DATA_URL);
         databaseData = await databaseDataResponse.json();
+        databaseData.sort((a, b) => parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating));
     } catch (error) {
         console.error("Error fetching data:", error);
         return;

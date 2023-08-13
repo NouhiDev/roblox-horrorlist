@@ -98,6 +98,7 @@ async function fetchAndDisplayGames(sortKey) {
 
         const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
         const databaseData = await databaseDataResponse.json();
+        databaseData.sort((a, b) => parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating));
 
         let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
