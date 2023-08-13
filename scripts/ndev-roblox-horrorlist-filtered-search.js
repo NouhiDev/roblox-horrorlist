@@ -86,6 +86,7 @@ async function fetchAndDisplayGames(sortKey) {
         if (dataTable != null) {
             dataTable.destroy();
             $('header').hide();
+            document.getElementsByTagName("footer")[0].style.bottom = 0;
         }
 
         document.getElementsByClassName("loading-bar")[0].style.display = "block";
