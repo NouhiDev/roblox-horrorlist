@@ -52,6 +52,8 @@ async function init() {
     );
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
+    
+        
 
     function updateProgressBar(barElement, dataValue, tooltipText) {
         const percentage = dataValue * (100 / MAX_SCORE);
