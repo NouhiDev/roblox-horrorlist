@@ -185,7 +185,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             });
 
             for (const game of databaseData) {
-                console.log(game.ratings[categoryKey]);
                 totalRatings += parseFloat(game.ratings[categoryKey]);
             }
 
@@ -199,6 +198,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         switch (categoryKey) {
             case "rating":
                 sortByCategory(categoryKey, "rating", gameUIDS, databaseData);
+                break;
             case "scariness":
                 sortByCategory(categoryKey, "scariness", gameUIDS, databaseData);
                 break;
@@ -266,8 +266,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         const numGames = databaseData.length;
 
         const averageRating = totalRatings / numGames;
-
-        console.log(`${totalRatings} / ${numGames}`);
 
         const fragment = document.createDocumentFragment();
 
