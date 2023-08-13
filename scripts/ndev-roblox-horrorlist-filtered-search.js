@@ -98,32 +98,32 @@ async function fetchAndDisplayGames(sortKey) {
 
         db = await openDB();
 
-        const databaseDataResponse = await fetch("https://robloxhorrorlist.com/weights-database.json");
+        const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
         const databaseData = await databaseDataResponse.json();
 
         const a = await fetch("https://ndevapi.com/requests");
         const b = await a.json();
         console.log(b);
 
-        let gameUIDS = databaseData.games
+        let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
 
             let totalRatings = 0;
 
         function sortByCategory(sortKey, category, gameUIDS, databaseData) {
-            databaseData.games.sort(function (a, b) {
+            databaseData.sort(function (a, b) {
                 return parseFloat(b.ratings[category]) - parseFloat(a.ratings[category]);
             });
 
-            for (const game of databaseData.games) {
+            for (const game of databaseData) {
                 totalRatings += parseFloat(game.ratings[sortKey]);
             }
 
             // Overwrite ratings of database
             for (let i = 0; i < gameUIDS.length; i++) {
-                const categoryRating = databaseData.games[i].ratings[sortKey];
-                databaseData.games[i].ratings.rating = categoryRating;
+                const categoryRating = databaseData[i].ratings[sortKey];
+                databaseData[i].ratings.rating = categoryRating;
             }
         }
 
@@ -161,7 +161,7 @@ async function fetchAndDisplayGames(sortKey) {
         }
 
         // Get the UIDS again in correct order
-        gameUIDS = databaseData.games
+        gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
 
@@ -192,7 +192,7 @@ async function fetchAndDisplayGames(sortKey) {
             .flat();
 
 
-        const numGames = databaseData.games.length;
+        const numGames = databaseData.length;
 
         const averageRating = totalRatings / numGames;
 
@@ -205,7 +205,7 @@ async function fetchAndDisplayGames(sortKey) {
             for (let i = 0; i < gameUIDS.length; i++) {
                 mobileTable.innerHTML = "";
                 try {
-                    let differenceToAverageRating = Math.abs((parseFloat(databaseData.games[i].ratings.rating) - averageRating)).toFixed(1);
+                    let differenceToAverageRating = Math.abs((parseFloat(databaseData[i].ratings.rating) - averageRating)).toFixed(1);
                     let spanHTML = "";
                     if (differenceToAverageRating < 0) spanHTML = `<span style="color: red; font-size: 10px;">-${differenceToAverageRating}↓</span> `;
                     else spanHTML = `<span style="color: green; font-size: 10px;">${differenceToAverageRating}↑</span> `;
@@ -217,7 +217,7 @@ async function fetchAndDisplayGames(sortKey) {
                       <td data-th="Title" class="game-title"><a href="#" class="game-href" onclick="loadGame(
                         ${i + 1}, 
                         ${gameUIDS[i]})">${gameDataFromAPI[i].name}</a></td>
-                      <td data-th="Rating" class="align-left">${databaseData.games[i].ratings.rating}/10  ${spanHTML}</td>
+                      <td data-th="Rating" class="align-left">${databaseData[i].ratings.rating}/10  ${spanHTML}</td>
                       </tr>`;
 
                     const rowElement = document.createElement('tr');
@@ -248,7 +248,7 @@ async function fetchAndDisplayGames(sortKey) {
             for (let i = 0; i < gameUIDS.length; i++) {
                 table.innerHTML = "";
                 try {
-                    let differenceToAverageRating = Math.abs((parseFloat(databaseData.games[i].ratings.rating) - averageRating)).toFixed(1);
+                    let differenceToAverageRating = Math.abs((parseFloat(databaseData[i].ratings.rating) - averageRating)).toFixed(1);
                     let spanHTML = "";
                     if (differenceToAverageRating < 0) spanHTML = `<span style="color: red; font-size: 10px;">-${differenceToAverageRating}↓</span> `;
                     else spanHTML = `<span style="color: green; font-size: 10px;">${differenceToAverageRating}↑</span> `;
@@ -263,7 +263,7 @@ async function fetchAndDisplayGames(sortKey) {
                     <td data-th="Creator" class="align-left">${JSON.parse(
                         JSON.stringify(gameDataFromAPI[i].creator)
                     ).name}</td>
-                    <td data-th="Rating" class="align-left">${databaseData.games[i].ratings.rating}/10  ${spanHTML}</td>
+                    <td data-th="Rating" class="align-left">${databaseData[i].ratings.rating}/10  ${spanHTML}</td>
                     </tr>`;
 
                     const rowElement = document.createElement('tr');
