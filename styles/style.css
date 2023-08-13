@@ -717,12 +717,12 @@ h2 {
 .button-container button {
   max-width: fit-content;
 }
-
+/* 
 .button-container span {
   font-size: 0px;
-  transition: font-size 0.3s ease;
+  transition: font-size 0.25s ease;
 }
 
 .button-container button:hover span{
   font-size: 13px;
-}
+} */
