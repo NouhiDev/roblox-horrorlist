@@ -105,20 +105,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         let databaseData = await databaseDataResponse.json();
         databaseData.sort((a, b) => parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating));
 
-        let genresTemp = [];
-        // TEMP GET ALL GENRES
-
-        for (let i = databaseData.length - 1; i >= 0; i--) {
-            for (let j = databaseData[i].genres - 1; j >= 0; j--) {
-                console.log(databaseData[i].genres[j]);
-                if (!genresTemp.includes(databaseData[i].genres[j])) {
-                    genresTemp.push(databaseData[i].genres[j]);
-                }
-            }
-        }
-
-        console.log(genresTemp);
-
         let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
