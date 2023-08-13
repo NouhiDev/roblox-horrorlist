@@ -284,7 +284,7 @@ async function fetchAndDisplayGames(sortKey) {
             });
         }
 
-        // document.getElementsByTagName("footer")[0].style.bottom = "auto";
+        document.getElementsByTagName("footer")[0].style.bottom = "auto";
 
     } catch (error) {
         console.error("An error occurred:", error);
