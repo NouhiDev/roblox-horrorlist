@@ -110,12 +110,14 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
 
         for (let i = databaseData.length - 1; i >= 0; i--) {
             for (let j = databaseData[i].genres - 1; j >= 0; j--) {
-            if (!genresTemp.includes(databaseData[i].genres[j])) {
-                genresTemp.push(databaseData[i].genres[j]);
+                console.log(databaseData[i].genres[j]);
+                if (!genresTemp.includes(databaseData[i].genres[j])) {
+                    genresTemp.push(databaseData[i].genres[j]);
+                }
             }
-                
         }
-    }
+
+        console.log(genresTemp);
 
         let gameUIDS = databaseData
             .filter(element => element.ambience !== "")
