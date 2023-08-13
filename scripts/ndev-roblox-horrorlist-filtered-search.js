@@ -266,7 +266,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
 
         const averageRating = totalRatings / numGames;
 
-        console.log(averageRating);
+        console.log(`${totalRatings} / ${numGames}`);
 
         const fragment = document.createDocumentFragment();
 
