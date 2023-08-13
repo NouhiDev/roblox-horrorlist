@@ -706,8 +706,6 @@ h2 {
 
 .filter-button {
   background-color: #6794a7;
-  margin-bottom: 5px;
-  margin-left: 5px;
 }
 
 .filter-button:hover {
@@ -717,12 +715,12 @@ h2 {
 .button-container button {
   max-width: fit-content;
 }
-/* 
-.button-container span {
+
+.button-container .donate-button span {
   font-size: 0px;
   transition: font-size 0.25s ease;
 }
 
-.button-container button:hover span{
+.button-container .donate-button:hover span{
   font-size: 13px;
-} */
+}
