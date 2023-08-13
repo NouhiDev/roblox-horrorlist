@@ -180,6 +180,8 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         }
 
         switch (genreKey) {
+            case "none":
+                break;
             case "chapters":
                 sortByGenre("Chapters", databaseData);
                 break;
