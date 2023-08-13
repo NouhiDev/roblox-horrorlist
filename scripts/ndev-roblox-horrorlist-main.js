@@ -49,7 +49,7 @@ function firstEnter() {
 async function init() {
     const a = await fetch("https://ndevapi.com/requests");
     const b = await a.json();
-    document.getElementById("visitor-count").innerText = (Math.floor(b.requests) / 1000) * 1000;
+    document.getElementById("visitor-count").innerText = (Math.floor(b.requests / 1000)) * 1000;
 }
 
 document.addEventListener("DOMContentLoaded", init);        
