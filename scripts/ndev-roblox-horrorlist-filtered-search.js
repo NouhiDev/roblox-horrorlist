@@ -360,11 +360,15 @@ function loadGame(number, UID) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const dropdown = document.getElementById("ratingDropdown");
+    const ratingDropdown = document.getElementById("ratingDropdown");
+    const genreDropdown = document.getElementById("genreDropdown");
+    const playerCountDropdown = document.getElementById("playerDropdown");
     const submitButton = document.getElementById("submitButton");
 
     submitButton.addEventListener("click", () => {
-        const selectedCategory = dropdown.value;
-        fetchAndDisplayGames(selectedCategory);
+        const selectedCategory = ratingDropdown.value;
+        const selectedGenre = genreDropdown.value;
+        const selectedPlayerCount = playerCountDropdown.value;
+        fetchAndDisplayGames(selectedCategory, selectedGenre, selectedPlayerCount);
     });
 });
