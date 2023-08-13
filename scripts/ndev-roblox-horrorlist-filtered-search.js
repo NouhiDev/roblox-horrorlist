@@ -121,6 +121,9 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
                 const categoryRating = databaseData[i].ratings[categoryKey];
                 databaseData[i].ratings.rating = categoryRating;
             }
+
+            console.log("Data after sorting by category:");
+            console.log(databaseData);
         }
 
         switch (categoryKey) {
