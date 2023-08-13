@@ -19,7 +19,7 @@ async function init() {
     const categoryFilter = localStorage.getItem("categoryFilter");
     const genreFilter = localStorage.getItem("genreFilter");
 
-    document.getElementById("game-context").innerText += ` ${categoryFilter}, ${genreFilter})`;
+    document.getElementById("game-context").innerText += ` ${categoryFilter}, Genre: ${genreFilter})`;
 
     const bars = [
         { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
