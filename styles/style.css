@@ -713,3 +713,16 @@ h2 {
 .filter-button:hover {
   background-color: #537a8a;
 }
+
+.button-container button {
+  max-width: fit-content;
+}
+
+.button-container span {
+  font-size: 0px;
+  transition: font-size 0.3s ease;
+}
+
+.button-container button:hover span{
+  font-size: 13px;
+}
