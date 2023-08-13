@@ -44,6 +44,7 @@ async function random() {
     const databaseDataResponse = await fetch("https://ndevapi.com/main_list_ratings");
     databaseData = await databaseDataResponse.json();
     const randomUID = Math.floor(Math.random() * databaseData.length);
+    console.log(randomUID);
     localStorage.setItem("UID", randomUID);
     let foundIndex = -1;
     for (let i = 0; i < databaseData.length; i++) {
