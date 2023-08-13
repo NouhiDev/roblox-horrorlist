@@ -254,7 +254,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
             Promise.all(fetchIconDataPromises),
         ]);
 
-        const gameDataFromAPI = gameDataResponses.flat()
+        let gameDataFromAPI = gameDataResponses.flat()
             .map(item => item.data)
             .flat();
 
@@ -265,7 +265,14 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         
             function sortByPlayerCount(isSingleplayer) {
                 for (let i = gameDataFromAPI.length - 1; i >= 0; i--) {
-                    console.log(gameDataFromAPI[i]);
+                    if (isSingleplayer) {
+                        if (gameDataFromAPI[i].maxPlayers > 1)
+                            gameDataFromAPI.splice(i, 1);
+                    }
+                    else {
+                        if (gameDataFromAPI[i].maxPlayers < 2)
+                            gameDataFromAPI.splice(i, 1);
+                    }
                 }
             }
 
