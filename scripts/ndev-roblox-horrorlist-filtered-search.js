@@ -117,9 +117,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
                     databaseData.splice(i, 1);
                 }
             }
-
-            console.log("Data after sorting by genre:");
-            console.log(databaseData);
         }
 
         switch (genreKey) {
@@ -130,6 +127,24 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
                 break;
             case "story":
                 sortByGenre("Story", databaseData);
+                break;
+            case "minigame":
+                sortByGenre("Minigame", databaseData);
+                break;
+            case "survivalHorror":
+                sortByGenre("Survival Horror", databaseData);
+                break;
+            case "misc":
+                sortByGenre("Misc", databaseData);
+                break;
+            case "myth":
+                sortByGenre("Myth", databaseData);
+                break;
+            case "abstract":
+                sortByGenre("Abstract", databaseData);
+                break;
+            case "port":
+                sortByGenre("Port", databaseData);
                 break;
         }
 
@@ -152,9 +167,6 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
                 const categoryRating = databaseData[i].ratings[categoryKey];
                 databaseData[i].ratings.rating = categoryRating;
             }
-
-            console.log("Data after sorting by category:");
-            console.log(databaseData);
         }
 
         switch (categoryKey) {
