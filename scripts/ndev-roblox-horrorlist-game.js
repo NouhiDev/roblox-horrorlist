@@ -48,7 +48,12 @@ async function init() {
     gameDataByUID = await gameData.json();
     gameDataByUID = gameDataByUID["data"][0];
 
-        console.log(gameDataByUID);
+    const gameVoteData = await fetch(
+        "https://ndevapi.com/game-votes/" + UID
+    );
+    gameVoteDataByUID = await gameVoteData.json();
+    gameVoteDataByUID = gameVoteDataByUID["data"][0];
+    console.log(gameVoteDataByUID);
 
     function updateProgressBar(barElement, dataValue, tooltipText) {
         const percentage = dataValue * (100 / MAX_SCORE);
