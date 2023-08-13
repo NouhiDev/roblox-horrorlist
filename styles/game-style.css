@@ -347,3 +347,11 @@ iframe[src*=youtube] {
 .contact:hover {
     text-decoration: underline;
 }
+
+#like-btn {
+    background-color: #59bd3d;
+}
+
+#dislike-btn {
+    background-color: #ff5656;
+}

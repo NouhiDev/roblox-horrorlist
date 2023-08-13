@@ -17,6 +17,50 @@ async function init() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
 
+    // Voting (Rating)
+    function hasVoted(UID) {
+        const votedCookieName = `_voted_${UID}`;
+        return document.cookie.includes(votedCookieName);
+    }
+
+    const likeBtn = document.getElementById('like-btn');
+    const dislikeBtn = document.getElementById('dislike-btn');
+
+    function displayVoteStatus(gameId, vote) {
+        const hasVotedForGame = hasVoted(gameId);
+        const statusElement = document.getElementById('vote-status');
+        if (hasVotedForGame) {
+            statusElement.textContent = `You have already given this game a ${vote}.`;
+        } else {
+            statusElement.textContent = 'Do you like this game?';
+        }
+    }
+
+    displayVoteStatus(UID, "");
+
+    // Set a cookie when the user votes for a game
+    function setVotedCookie(UID, vote) {
+        const cookieName = `_voted_${UID}`;
+        const cookieValue = JSON.stringify({ voted: true, vote: vote });
+        document.cookie = `${cookieName}=${cookieValue}; path=/`;
+    }
+
+    // Handle like button click
+    likeBtn.addEventListener('click', function () {
+        if (!hasVoted(UID)) {
+            setVotedCookie(UID, 'like');
+            displayVoteStatus(UID, 'like');
+        }
+    });
+
+    // Handle dislike button click
+    dislikeBtn.addEventListener('click', function () {
+        if (!hasVoted(UID)) {
+            setVotedCookie(UID, 'dislike');
+            displayVoteStatus(UID, 'dislike');
+        }
+    });
+
     const bars = [
         { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
         { bar: document.getElementsByClassName("sound-design")[0], tooltip: "soundDesign" },
@@ -112,13 +156,13 @@ async function init() {
     visits.innerText += " " + formatter.format(gameDataByUID.visits);
     maxplayers.innerText += " " + gameDataByUID.maxPlayers;
 
-    playBtn.addEventListener("click", function(event) {
+    playBtn.addEventListener("click", function (event) {
         event.preventDefault();
-      
+
         var linkUrl = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
-      
+
         window.open(linkUrl, "_blank");
-      });
+    });
     playBtn.href = `https://www.roblox.com/games/${gameDataByUID.rootPlaceId}`;
 
     pros.innerText += "\n";
@@ -137,7 +181,7 @@ async function init() {
     if (databaseData[number - 1]["port_url"] !== "") {
         originalBtn.style.opacity = 1;
         originalBtn.innerText = "Play Original";
-        originalBtn.addEventListener("click", function() {
+        originalBtn.addEventListener("click", function () {
             window.location.href = databaseData[number - 1].port_url;
         });
     } else originalBtn.style.opacity = 0;
@@ -152,12 +196,12 @@ async function init() {
         var optionTexts = ["Overall"];
 
         for (let i = 0; i < databaseData[number - 1]["chapters"].length; i++) {
-            optionTexts.push(databaseData[number - 1]["chapters"][i].name); 
+            optionTexts.push(databaseData[number - 1]["chapters"][i].name);
         }
 
         var optionValues = ["option0"];
         for (let i = 0; i < optionTexts.length - 1; i++) {
-            optionValues.push(`option${i+1}`); 
+            optionValues.push(`option${i + 1}`);
         }
 
         for (let i = 0; i < optionValues.length; i++) {
@@ -170,43 +214,43 @@ async function init() {
         dropdownContainer.insertBefore(dropdown, dropdownContainer.childNodes[2]);
 
         const optionHandlers = {
-            option0: function() {
+            option0: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1].ratings[dataField], dataField);
                 }
             },
-            option1: function() {
+            option1: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][0]["ratings"][dataField], dataField);
                 }
             },
-            option2: function() {
+            option2: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][1]["ratings"][dataField], dataField);
                 }
             },
-            option3: function() {
+            option3: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][2]["ratings"][dataField], dataField);
                 }
             },
-            option4: function() {
+            option4: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][3]["ratings"][dataField], dataField);
                 }
             },
-            option5: function() {
+            option5: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][4]["ratings"][dataField], dataField);
                 }
             },
-            option6: function() {
+            option6: function () {
                 for (let i = 0; i < bars.length; i++) {
                     const dataField = bars[i].tooltip;
                     updateProgressBar(bars[i].bar, databaseData[number - 1]["chapters"][5]["ratings"][dataField], dataField);
@@ -222,7 +266,7 @@ async function init() {
                     const element = document.getElementsByClassName("rating-per")[i];
                     element.style.animation = "none";
                 }
-        
+
                 setTimeout(() => {
                     for (let i = 0; i < document.getElementsByClassName("rating-per").length; i++) {
                         const element = document.getElementsByClassName("rating-per")[i];
@@ -238,7 +282,7 @@ async function init() {
             const selectedOption = dropdown.value;
             handleOptionSelection(selectedOption);
         });
-        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
