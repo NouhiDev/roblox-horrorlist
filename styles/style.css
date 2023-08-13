@@ -704,6 +704,12 @@ h2 {
   font-size: 16px;
 }
 
+#genreDropdown {
+  background-color: #262d3a;
+  color: white;
+  font-size: 16px;
+}
+
 .filter-button {
   background-color: #6794a7;
 }
