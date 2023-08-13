@@ -29,129 +29,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/rating-overview-style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-
-        body {
-            background: #161920;
-            font-family: "Inter", sans-serif;
-        }
-
-        .main-content {
-            padding: 30px 0;
-        }
-
-        .shadow {
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
-        }
-
-        .profile-card {
-            padding-bottom: 10px !important;
-            background-color: #262d3a;
-        }
-
-        .profile-card .profile-card_image img {
-            width: 100px;
-            height: 100px;
-            border-radius: 100%;
-            object-fit: cover;
-            border: 4px solid #fff;
-        }
-
-        h1 {
-            color: white;
-        }
-
-        .backbtn {
-            background-color: #161920;
-            color: white;
-            padding: 10px 30px 10px 30px;
-            border-color: #fff;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 20px;
-            text-decoration: none;
-        }
-
-        .backbtn:hover {
-            background-color: #fff;
-            color: #161920;
-            padding: 10px 30px 10px 30px;
-            border-color: #fff;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 20px;
-            text-decoration: none;
-        }
-
-
-        .flex-center {
-            width: 100%;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
-
-        .icon-3d {
-            padding: 10px;
-            color: #fff;
-        }
-
-        .icon-3d:hover {
-            -webkit-animation: icon3d 200ms infinite;
-            animation: icon3d 200ms infinite;
-        }
-
-        @keyframes icon3d {
-            0% {
-                text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
-            }
-
-            25% {
-                text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
-            }
-
-            50% {
-                text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
-            }
-
-            75% {
-                text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
-            }
-
-            100% {
-                text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
-            }
-        }
-
-        button {
-            margin-right: 10px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            border: none;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-
-        .smaller {
-            font-size: 20px;
-        }
-    </style>
+        gtag('config', 'G-609YDJ81ER');
+    </script>
 </head>
 
 <body>
@@ -170,12 +57,14 @@
                     color: #20242e;
                     background-color: #20242e;
                 " />
-                <h1 class="text-center smaller" style="width: 100%; font-size: 35px; padding-bottom: 10px;">Categories</h1>
+                <h1 class="text-center smaller" style="width: 100%; font-size: 35px; padding-bottom: 10px;">Categories
+                </h1>
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Scariness</h3>
-                            <p class="text-muted">The game's ability to invoke fear and terror in players through its atmosphere, encounters, and horror elements. (19%)</p>
+                            <p class="text-muted">The game's ability to invoke fear and terror in players through its
+                                atmosphere, encounters, and horror elements. (19%)</p>
                         </div>
                     </div>
                 </div>
@@ -183,7 +72,9 @@
                     <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Sound Design</h3>
-                            <p class="text-muted">The quality and effectiveness of the game's audio elements, including music, sound effects, and voice acting, in creating an immersive and chilling experience. (12%)</p>
+                            <p class="text-muted">The quality and effectiveness of the game's audio elements, including
+                                music, sound effects, and voice acting, in creating an immersive and chilling
+                                experience. (12%)</p>
                         </div>
                     </div>
                 </div>
@@ -191,7 +82,8 @@
                     <div class="profile-card shadow mb-4 text-center rounded-lg p-4 position-relative h-100">
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Story</h3>
-                            <p class="text-muted">The narrative and plot of the game, including its depth, coherence, and ability to immerse. (10%)</p>
+                            <p class="text-muted">The narrative and plot of the game, including its depth, coherence,
+                                and ability to immerse. (10%)</p>
                         </div>
                     </div>
                 </div>
@@ -200,7 +92,8 @@
 
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Visuals</h3>
-                            <p class="text-muted">The graphical presentation and quality of the game, including models, environments, and visual effects. (10%)</p>
+                            <p class="text-muted">The graphical presentation and quality of the game, including models,
+                                environments, and visual effects. (10%)</p>
                         </div>
                     </div>
                 </div>
@@ -209,7 +102,8 @@
 
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Ambience</h3>
-                            <p class="text-muted">The overall mood and environment created by the game, including lighting, level design, and other atmospheric factors. (12%)</p>
+                            <p class="text-muted">The overall mood and environment created by the game, including
+                                lighting, level design, and other atmospheric factors. (12%)</p>
                         </div>
                     </div>
                 </div>
@@ -218,7 +112,8 @@
 
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Gameplay</h3>
-                            <p class="text-muted">The mechanics, controls, and overall gameplay experience offered by the game. (19%)</p>
+                            <p class="text-muted">The mechanics, controls, and overall gameplay experience offered by
+                                the game. (19%)</p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +122,8 @@
 
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Creativity</h3>
-                            <p class="text-muted">The originality and innovation of the game's concepts, mechanics, and design within the horror genre. (7%)</p>
+                            <p class="text-muted">The originality and innovation of the game's concepts, mechanics, and
+                                design within the horror genre. (7%)</p>
                         </div>
                     </div>
                 </div>
@@ -236,7 +132,8 @@
 
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Enjoyment</h3>
-                            <p class="text-muted">The level of entertainment experienced while playing the game. (4%)</p>
+                            <p class="text-muted">The level of entertainment experienced while playing the game. (4%)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -254,7 +151,8 @@
 
                         <div class="profile-card_details">
                             <h3 class="mb-0" style="color: #fff;">Technical</h3>
-                            <p class="text-muted">The technical aspects of the game, such as loading times, stability, and performance. (3%)</p>
+                            <p class="text-muted">The technical aspects of the game, such as loading times, stability,
+                                and performance. (3%)</p>
                         </div>
                     </div>
                 </div>
@@ -272,24 +170,20 @@
             " />
         <br />
         <center>
-          <div class="flex-center">
-            <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-            <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-            <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
-            <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
-          </div>
-    
-          <br />
-          <a class="contact" style="font-size: 12px;" href="contact.html">Contact Us</a>
-          <p style="color: white">Powered by NDev-Group</p>
-        </center>
-      </footer>
+            <div class="flex-center">
+                <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+                <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+                <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+                <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
+            </div>
 
-    <script>
-        function backBtn() {
-            window.location.href = "https://robloxhorrorlist.com";
-        }
-    </script>
+            <br />
+            <a class="contact" style="font-size: 12px;" href="contact.html">Contact Us</a>
+            <p style="color: white">Powered by NDev-Group</p>
+        </center>
+    </footer>
+
+    <script src="../scripts/ndev-roblox-horrorlist-buttons.js"></script>
 </body>
 
 <!--

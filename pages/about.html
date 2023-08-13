@@ -36,10 +36,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
-  <!-- <script src="https://nouhi.dev/assets/global-scripts/ndev-roblox-horrorlist-api.js"></script> -->
-
-  <!-- ONLY UNCOMMENT IN CASE OF API FAILURE -->
-  <!-- <script src="scripts/ndev-roblox-horrorlist-emergency.js"></script> -->
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
     crossorigin="anonymous"></script>
@@ -85,7 +81,8 @@
     <a>We sincerely value any assistance, whether it comes in the form of development insights, game recommendations,
       or donations. Your contributions play a pivotal role in sustaining our efforts.</a>
     <br><br>
-    <a>With your support, we aim to channel our resources towards supporting creators within the Roblox horror game niche.
+    <a>With your support, we aim to channel our resources towards supporting creators within the Roblox horror game
+      niche.
       As funding allows, we want to offer support to talented individuals,
       enabling them to craft even more captivating and innovative horror experiences.</a>
     <br><br>
@@ -99,36 +96,23 @@
           color: #20242e;
           background-color: #20242e;
         " />
+  <br />
+  <center>
+    <div class="flex-center">
+      <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+      <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+      <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+      <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
+    </div>
+
     <br />
-    <center>
-      <div class="flex-center">
-        <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-        <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-        <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
-        <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
-      </div>
-
-      <br />
-      <a class="contact" style="font-size: 12px;" href="contact.html">Contact Us</a>
-      <p style="color: white">Powered by NDev-Group</p>
-    </center>
-  <script>
-    function backBtn() {
-      window.location.href = "https://robloxhorrorlist.com";
-    }
-
-    function contributors() {
-      window.open("contributors.html", "_blank");
-    }
-
-    function donate() {
-      window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
-    }
-  </script>
+    <a class="contact" style="font-size: 12px;" href="contact.html">Contact Us</a>
+    <p style="color: white">Powered by NDev-Group</p>
+  </center>
   <br>
   </header>
   </div>
-
+  <script src="../scripts/ndev-roblox-horrorlist-buttons.js"></script>
 </body>
 
 <!--

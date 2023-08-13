@@ -29,3 +29,27 @@ function discordButton() {
 function twitterButton() {
     window.open("https://twitter.com/RBLXHorrorlist", "_blank");
 }
+
+function main_list() {
+    window.location.href = "https://robloxhorrorlist.com";
+}
+
+function about() {
+    window.open("about.html", "_blank");
+}
+
+function statistics() {
+    window.open("statistics.html", "_blank");
+}
+
+function rating_scale() {
+    window.open("rating-overview.html", "_blank");
+}
+
+function contributors() {
+    window.open("contributors.html", "_blank");
+}
+
+function donate() {
+    window.open("https://www.buymeacoffee.com/robloxhorrorlist", "_blank");
+}
