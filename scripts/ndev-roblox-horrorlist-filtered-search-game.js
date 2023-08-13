@@ -19,7 +19,8 @@ async function init() {
     const categoryFilter = localStorage.getItem("categoryFilter");
     const genreFilter = localStorage.getItem("genreFilter");
 
-    document.getElementById("game-context").innerText += ` ${categoryFilter}, Genre: ${genreFilter})`;
+    document.getElementById("game-context").innerHTML += `
+    <span style="background-color: #111111; border-radius: 20px; font-size: 17px; padding: 5px;">Category: ${categoryFilter}</span> <span style="background-color: #111111; border-radius: 20px; font-size: 17px; padding: 5px;">Genre: ${genreFilter}</span>`;
 
     const bars = [
         { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
