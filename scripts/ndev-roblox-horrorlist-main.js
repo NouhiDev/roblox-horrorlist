@@ -68,4 +68,4 @@ async function init() {
     document.getElementById("visitor-count").innerText = (((Math.floor((b.requests / 100))) * 100)).toLocaleString();
 }
 
-document.addEventListener("DOMContentLoaded", init);        
+document.addEventListener("DOMContentLoaded", init);         
