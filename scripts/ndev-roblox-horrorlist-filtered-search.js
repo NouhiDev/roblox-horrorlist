@@ -101,7 +101,57 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
         let databaseData = await databaseDataResponse.json();
         databaseData.sort((a, b) => parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating));
 
+
+        // Filter player count
         let gameUIDS = databaseData
+        .filter(element => element.ambience !== "")
+        .map(element => element.uid);
+
+        const initialChunks = [];
+        for (let i = 0; i < gameUIDS.length; i += maxUIDChunkSize) {
+            initialChunks.push(gameUIDS.slice(i, i + maxUIDChunkSize));
+        }
+
+        const fetchGameDataPromisesInitial = initialChunks.map(initialChunks =>
+            fetchDataAndCache(`${API_BASE_URL}/game-info/${initialChunks.join(",")}`, categoryKey, `gameData_${initialChunks.join(",")}`)
+        );
+
+        const initialGameData = await Promise.all(fetchGameDataPromisesInitial);
+
+        let gameDataFromAPIInitial = initialGameData.flat()
+            .map(item => item.data)
+            .flat();
+        
+        function sortByPlayerCount(playerCount) {
+            for (let i = gameDataFromAPIInitial.length - 1; i >= 0; i--) {
+                if (gameDataFromAPIInitial[i].maxPlayers > 1) {
+                    if (playerCount == "sp") {
+                        gameDataFromAPIInitial.splice(i, 1);
+                        databaseData.splice(i, 1);
+                    }
+                }
+                else {
+                    if (playerCount == "mp") {
+                        gameDataFromAPIInitial.splice(i, 1);
+                        databaseData.splice(i, 1);
+                    }
+                }
+            }
+        }
+
+        switch(playerCountKey) {
+            case "none":
+                break;
+            case "singleplayer":
+                sortByPlayerCount("sp");    
+                break;
+            case "multiplayer":
+                sortByPlayerCount("mp");    
+                break;
+        }
+
+        // Filter Genre
+        gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
 
@@ -440,11 +490,13 @@ function loadGame(number, UID) {
 document.addEventListener("DOMContentLoaded", () => {
     const ratingDropdown = document.getElementById("ratingDropdown");
     const genreDropdown = document.getElementById("genreDropdown");
+    const playerDropdown = document.getElementById("playerDropdown");
     const submitButton = document.getElementById("submitButton");
 
     submitButton.addEventListener("click", () => {
         const selectedCategory = ratingDropdown.value;
         const selectedGenre = genreDropdown.value;
-        fetchAndDisplayGames(selectedCategory, selectedGenre);
+        const selectedPlayerCount = playerDropdown.value;
+        fetchAndDisplayGames(selectedCategory, selectedGenre, selectedPlayerCount);
     });
 });
