@@ -150,7 +150,7 @@ async function fetchAndDisplayGames(categoryKey, genreKey, playerCountKey) {
                 break;
         }
 
-        // Filter Genre
+        // Filter Player Count
         gameUIDS = databaseData
             .filter(element => element.ambience !== "")
             .map(element => element.uid);
