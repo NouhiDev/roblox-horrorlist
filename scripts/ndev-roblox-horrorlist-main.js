@@ -11,7 +11,7 @@
 //   robloxhorrorlist.com
 
 
-if (localStorage.getItem("firstEntryNew") === "true") {
+if (localStorage.getItem("firstEntryNew2") === "true") {
     const popupContainer = document.getElementById("popupContainer");
     popupContainer.style.display = "none";
 }
@@ -57,7 +57,7 @@ async function random() {
 }
 
 function firstEnter() {
-    localStorage.setItem("firstEntryNew", "true");
+    localStorage.setItem("firstEntryNew2", "true");
     const popupContainer = document.getElementById("popupContainer");
     popupContainer.style.display = "none";
 }
