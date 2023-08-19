@@ -16,6 +16,8 @@ const MAX_SCORE = 10;
 async function init() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
+    console.log(number);
+    console.log(UID);
 
     const bars = [
         { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
