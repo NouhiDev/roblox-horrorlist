@@ -16,8 +16,6 @@ const MAX_SCORE = 10;
 async function init() {
     const number = localStorage.getItem("number");
     const UID = localStorage.getItem("UID");
-    console.log(number);
-    console.log(UID);
 
     const bars = [
         { bar: document.getElementsByClassName("scariness")[0], tooltip: "scariness" },
@@ -39,6 +37,7 @@ async function init() {
         const databaseDataResponse = await fetch(DATA_URL);
         databaseData = await databaseDataResponse.json();
         databaseData.sort((a, b) => parseFloat(b.ratings.rating) - parseFloat(a.ratings.rating));
+        console.log(databaseData);
     } catch (error) {
         console.error("Error fetching data:", error);
         return;
@@ -64,7 +63,6 @@ async function init() {
 
     const bar = document.getElementById('bar');
     const thumbsUpPercentage = (thumbsUpCount / totalVotes) * 100;
-    console.log(thumbsUpPercentage);
 
     bar.style.width = thumbsUpPercentage + '%';
 
