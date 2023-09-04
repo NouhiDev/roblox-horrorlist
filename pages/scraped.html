@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <h1 class="tit">Scraped Roblox Horror Games</h1>
+
+  <h1 class="tit-credits">
+    <span class="tit-tit-sub">Every game having their genre set as 'Horror'</span>
+  </h1>
+
+    <div class="table-container" id="table-container">
+        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="UID" data-order="desc">UID</th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Visits" data-order="desc">Visits</th>
+            </tr>
+          </thead>
+          <tbody id="table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+
+    <script src="../scripts/ndev-roblox-horrorlist-scraped.js"></script>
+</body>
+</html>
