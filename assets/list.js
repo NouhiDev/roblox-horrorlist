@@ -216,22 +216,3 @@ async function fetchDataAndUpdateUI() {
     }
 
 }
-
-
-app.get('/game-icon/:id', [
-    check("id").isInt(),
-    check("id").notEmpty()
-], async (req, res) => {
-    const origin = req.header("Origin");
-    if (allowedOrigins.includes(origin)) { res.setHeader("Access-Control-Allow-Origin", origin); }
-    //else { return res.status(403).send("Access forbidden); }
-
-    const errors = validationResult(req);
-    if (!errors.isEmpty) {
-            return res.status(400).json({errors: errors.array()});
-    }
-
-    await fetch (`https://thumbnails.roblox.com/v1/games/icons?universeIds=${req.params["id"]}&returnPolicy=PlaceHolder&size=50x50&format=Png&isCircular=false`)
-            .then((response) => response.json())
-            .then((json) => { res.json(); });
-});
