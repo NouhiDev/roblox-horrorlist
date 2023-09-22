@@ -57,5 +57,5 @@ function getRecentlyAddedGames() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  //getRecentlyAddedGames();
+  getRecentlyAddedGames();
 });
