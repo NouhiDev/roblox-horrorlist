@@ -72,7 +72,7 @@ async function loadGame() {
             console.error("Fetch error:", error);
     });
 
-    await fetch(`https://ndevapi.com/game-votes/${randomUID}`)
+    await fetch(`https://ndevapi.com/game-votes/${uid}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
