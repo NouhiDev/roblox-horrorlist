@@ -216,3 +216,9 @@ async function fetchDataAndUpdateUI() {
     }
 
 }
+
+function loadGame(number, UID) {
+    localStorage.setItem('number', number);
+    localStorage.setItem('UID', UID);
+    window.open('./game.html', '_blank');
+}
