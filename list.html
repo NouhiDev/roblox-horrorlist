@@ -1,2 +1,112 @@
-Under Construction
-<a href="./index.html">Click me to go back</a>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Roblox Horrolist</title>
+    <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico">
+
+    <meta name="description"
+        content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are.">
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./assets/tables.css" />
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-609YDJ81ER');
+    </script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa fa-bars" id="nav-icon"></i>
+        </label>
+        <label class="logo"><img class="nav-logo" src="https://nouhi.dev/assets/images/rhlogo.png">RHL</label>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./list.html">Main List</a></li>
+            <li><a href="./random-game.html" target="_blank">Random Game</a></li>
+            <li><a href="./contributors.html">Contributors</a></li>
+            <li><a href="https://www.roblox.com/groups/32841383/Roblox-Horrorlist" target="_blank">Roblox Group</a></li>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="intro">
+            <div class="intro-content">
+                <div class="intro-content-text">
+                    <h1 class="intro-title">
+                        <span class="intro-title-sitename">Main List</span>
+                    </h1>
+                    <div class="intro-title-subtitle">
+                        The Main List features all rated Roblox horror games sorted by their respective RHL-Scores.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="seperator">
+
+        <div class="table-container" id="table-container">
+            <table id="game-table" class="display" style="width: 100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th data-column="Placement" data-order="desc">#</th>
+                        <th data-column="Icon" data-order="desc"></th>
+                        <th data-column="Name" data-order="desc">Name</th>
+                        <th data-column="Creator" data-order="desc">Creator</th>
+                        <th data-column="Rating" data-order="desc">Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="table-to-populate"></tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+
+        <div class="mobile-table-container" id="mobile-table-container">
+            <table id="mobile-game-table" class="display" style="width: 100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th data-column="Placement" data-order="desc">#</th>
+                        <th data-column="Icon" data-order="desc"></th>
+                        <th data-column="Name" data-order="desc">Name</th>
+                        <th data-column="Rating" data-order="desc">Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="mobile-table-to-populate"></tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+
+        <p class="bugfix">pad</p>
+        <hr class="seperator">
+
+    </div>
+    </div>
+
+    <script src="./assets/list.js"></script>
+    <script src="./assets/navbar.js"></script>
+</body>
+
+</html>

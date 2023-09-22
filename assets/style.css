@@ -285,7 +285,7 @@ i.fa-discord:hover {
     overflow-wrap: break-word;
     word-wrap: break-word;
     text-align: justify;
-    margin-bottom: 2em;      
+    margin-bottom: 2em;
 }
 
 .card-img-container {
@@ -409,7 +409,7 @@ i.fa-discord:hover {
     top: 0;
     left: 0;
     width: 500px;
-    height:  500px;
+    height: 500px;
     object-fit: cover;
     border: 1px solid white;
 }
@@ -481,6 +481,49 @@ i.fa-discord:hover {
     color: white;
 }
 
+/* List Styling */
+
+.table-container {
+    background-color: #191c28;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+#game-table {
+    border-collapse: collapse;
+    min-width: 100px;
+    color: white;
+    overflow: hidden;
+}
+
+#game-table th {
+    cursor: pointer;
+    margin: auto;
+    color: white;
+    font-weight: 600;
+    overflow: auto;
+    table-layout: fixed;
+    position: sticky;
+    top: 0;
+}
+
+.game-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-table-container {
+    background-color: #191c28;
+    padding: 2em;
+    display: none;
+}
+
 /* Responsive */
 
 @media (max-width: 952px) {
@@ -531,6 +574,7 @@ i.fa-discord:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
     .featured-item,
     .recently-added-item,
     .recently-rated-item,
@@ -553,7 +597,7 @@ i.fa-discord:hover {
 
     .intro-content-text {
         text-align: center;
-        display: block;   
+        display: block;
     }
 
     .intro-title-subtitle {
