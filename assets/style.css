@@ -575,6 +575,10 @@ i.fa-discord:hover {
     #nav-icon {
         transition: all .5s ease;
     }
+
+    .game-intro-logo {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
