@@ -30,7 +30,7 @@ async function selectRandomGame() {
             randomUID = data[randomIndex].uid
 
             document.getElementsByClassName("game-infos")[0].innerHTML = `Tag(s): ${data[randomIndex].genres}<br><br>`;
-            document.getElementsByClassName("rhl-score")[0].innerHTML = `${(parseFloat(data[randomIndex]["ratings"].rating)*10).toFixed(1)}%`;
+            document.getElementsByClassName("rhl-score")[0].innerHTML = `${(parseFloat(data[randomIndex]["ratings"].rating)*10).toFixed(0)}%`;
         })
         .catch(error => {
             console.error("Fetch error:", error);
