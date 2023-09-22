@@ -60,7 +60,7 @@ async function selectRandomGame() {
             console.error("Fetch error:", error);
         });
 
-    await fetch(`https://ndevapi.com/game-icon/${randomUID}`)
+    await fetch(`https://ndevapi.com/game-thumbnail/${randomUID}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

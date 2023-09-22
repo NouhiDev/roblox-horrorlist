@@ -28,7 +28,7 @@ async function getRecentlyAddedGames() {
       console.error("Fetch error:", error);
     });
 
-  const thumbUrl = `https://ndevapi.com/game-icon/${recentlyAddedFour[0].uid},${recentlyAddedFour[1].uid},${recentlyAddedFour[2].uid},${recentlyAddedFour[3].uid}`;
+  const thumbUrl = `https://ndevapi.com/game-thumbnail/${recentlyAddedFour[0].uid},${recentlyAddedFour[1].uid},${recentlyAddedFour[2].uid},${recentlyAddedFour[3].uid}`;
 
   await fetch(thumbUrl)
     .then(response => {
