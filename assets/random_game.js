@@ -30,6 +30,7 @@ async function selectRandomGame() {
             randomUID = data[randomIndex].uid
 
             document.getElementsByClassName("game-infos")[0].innerHTML = `Tag(s): ${data[randomIndex].genres}<br><br>`;
+            document.getElementsByClassName("rhl-score")[0].innerHTML = `${(parseInt(data[randomIndex]["ratings"].rating)*10).toFixed(2)}%`;
         })
         .catch(error => {
             console.error("Fetch error:", error);
@@ -51,7 +52,7 @@ async function selectRandomGame() {
 
             document.getElementsByClassName("game-intro-title")[0].textContent = data["data"][0].name;
             document.getElementsByClassName("game-creator")[0].textContent = "By " + data["data"][0].creator.name;
-            document.getElementsByClassName("game-infos")[0].innerHTML += `Favorites: ${formatLargeNumber(data["data"][0].favoritedCount)}<br>Max Players: ${formatLargeNumber(data["data"][0].maxPlayers)}<br>Active: ${formatLargeNumber(data["data"][0].playing)}<br>Visits: ${formatLargeNumber(data["data"][0].visits)}<br><br>Created: ${data["data"][0].created.substring(0, 10)}<br>Updated: ${data["data"][0].updated.substring(0, 10)} (${daysDifference} days ago)<br>`;
+            document.getElementsByClassName("game-infos")[0].innerHTML += `Favorites: ${formatLargeNumber(data["data"][0].favoritedCount)}<br>Max Players: ${formatLargeNumber(data["data"][0].maxPlayers)}<br>Active: ${formatLargeNumber(data["data"][0].playing)}<br>Visits: ${formatLargeNumber(data["data"][0].visits)}<br>Created: ${data["data"][0].created.substring(0, 10)}<br>Updated: ${data["data"][0].updated.substring(0, 10)} (${daysDifference} days ago)<br>`;
             document.getElementsByClassName("play-btn")[0].href = `https://www.roblox.com/games/${data["data"][0].rootPlaceId}`;
             document.getElementsByClassName("play-btn")[0].target = "_blank";
         })

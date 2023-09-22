@@ -475,6 +475,12 @@ i.fa-discord:hover {
     color: #121520;
 }
 
+.rhl-score {
+    font-weight: bolder;
+    font-size: 1.25em;
+    color: white;
+}
+
 /* Responsive */
 
 @media (max-width: 952px) {
