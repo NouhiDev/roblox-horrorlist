@@ -1,181 +1,290 @@
 <!DOCTYPE html>
-
-<!--
-  _____   ____  ____  _      ______   __  _    _  ____  _____  _____   ____  _____  _      _____  _____ _______ 
- |  __ \ / __ \|  _ \| |    / __ \ \ / / | |  | |/ __ \|  __ \|  __ \ / __ \|  __ \| |    |_   _|/ ____|__   __|
- | |__) | |  | | |_) | |   | |  | \ V /  | |__| | |  | | |__) | |__) | |  | | |__) | |      | | | (___    | |   
- |  _  /| |  | |  _ <| |   | |  | |> <   |  __  | |  | |  _  /|  _  /| |  | |  _  /| |      | |  \___ \   | |   
- | | \ \| |__| | |_) | |___| |__| / . \  | |  | | |__| | | \ \| | \ \| |__| | | \ \| |____ _| |_ ____) |  | |   
- |_|  \_\\____/|____/|______\____/_/ \_\ |_|  |_|\____/|_|  \_\_|  \_\\____/|_|  \_\______|_____|_____/   |_|   
-                                                                                                                
-  Learn more at
-
-  https://nouhi.dev/ndev-assets-docs/.
--->
-
 <html>
 
 <head>
-  <title>Roblox Horrorlist: Best Roblox Horror Games</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Roblox Horrolist</title>
+    <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico">
 
-  <meta name="title" content="Roblox Horrorlist: Best Roblox Horror Games" />
-  <meta name="description"
-    content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are." />
-  <meta name="robots" content="index, follow" />
+    <meta name="description"
+        content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are.">
+    <meta name="robots" content="index, follow" />
 
-  <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
+        crossorigin="anonymous"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
-  <script src="https://nouhi.dev/assets/global-scripts/ndev-roblox-horrorlist-api.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
-    crossorigin="anonymous"></script>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-609YDJ81ER');
-  </script>
+        gtag('config', 'G-609YDJ81ER');
+    </script>
 </head>
 
 <body>
-  <div class="popup-overlay" id="popupContainer">
-    <div class="popup-content">
-      <div class="popup-header">
-        <div class="popup-icon">
-          <img src="img/icon.png" alt="Icon">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa fa-bars" id="nav-icon"></i>
+        </label>
+        <label class="logo"><img class="nav-logo" src="https://nouhi.dev/assets/images/rhlogo.png">RHL</label>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./list.html">Main List</a></li>
+            <li><a href="./random-game.html" target="_blank">Random Game</a></li>
+            <li><a href="./contributors.html">Contributors</a></li>
+            <li><a href="https://www.roblox.com/groups/32841383/Roblox-Horrorlist" target="_blank">Roblox Group</a></li>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="intro">
+            <div class="intro-logo">
+            </div>
+            <div class="intro-content">
+                <div class="intro-content-text">
+                    <h1 class="intro-title">
+                        Welcome to the
+                        <span class="intro-title-sitename">Roblox Horrorlist</span>
+                    </h1>
+                    <div class="intro-title-subtitle">
+                        The Roblox Horrorlist features a database of Roblox horror games online, which you can
+                        use to discover new games to play.<br>
+                    </div>
+                    <a href="./list.html" class="intro-btn">View List <i
+                            class="fa fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="intro-social-media">
+                <a title="Subscribe to our YouTube channel!"
+                    href="https://www.youtube.com/channel/UCtrtS70FPRFRJ_sWuQ3sTag" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a title="Follow us on TikTok!" href="https://www.tiktok.com/@therobloxhorrorlist" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a title="Follow us on X/Twitter!" href="https://twitter.com/RBLXHorrorlist" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a title="Join our Discord Server!" href="https://discord.gg/Qq9aREaR3F" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
         </div>
-        <h2 class="popup-title">Welcome to the Roblox Horrorlist</h2>
-      </div>
-      <p class="popup-text" style="text-align: left" ;>Here, you'll find a bunch of horror games, each rated based on
-        our humble opinion. If you don't agree with or care for the ratings, you can use the site just as a collection
-        of Roblox horror games. Click on a game to view its detailed rating and more information.</p>
-      <br><button class="popup-button" onclick="firstEnter()">Enter</button>
+
+        <hr class="seperator">
+
+        <div class="row home-sections">
+            <div class="home-section home-section-featured-content">
+                <div class="home-section-featured-content-content">
+                    <div class="home-section-header">
+                        <h2>Featured Games</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="featured-items">
+                        <!-- Featured Item #1 -->
+                        <div class="featured-item">
+                            <div class="card">
+                                <div class="card-img-container">
+                                    <img src="https://tr.rbxcdn.com/9794c10279262e5d86ad018f57c20f37/768/432/Image/Png">
+                                </div>
+                                <h1>CONDITION 1 [DEMO]</h1>
+                                <p>
+                                    by
+                                    <span class="card-creator">Thinkbuild</span>
+                                </p>
+                                <p class="card-desc">
+                                    CONDITION 1 is a puzzle horror survival story game. Think efficiently as you solve
+                                    problems along the way while managing resources and coming up with the best plan to
+                                    escape the problematic and seemingly neverending horror.
+                                </p>
+                                <a class="card-btn" href="https://www.roblox.com/games/8454350203/CONDITION-1-DEMO"
+                                    target="_blank">PLAY</a>
+                            </div>
+                        </div>
+                        <!-- Featured Item #2 -->
+                        <div class="featured-item">
+                            <div class="card">
+                                <div class="card-img-container">
+                                    <img src="https://tr.rbxcdn.com/f17e05af983f505ded09b5b8fd385f65/768/432/Image/Png">
+                                </div>
+                                <h1>Mysteries Of The Backrooms</h1>
+                                <p>
+                                    by
+                                    <span class="card-creator">Martintiger4</span>
+                                </p>
+                                <p class="card-desc">
+                                    Explore The Backrooms, and See What Mysteries Lie Inside... Mysteries Of The
+                                    Backrooms Is a Psychological Terror Liminal Exploration Experience with Story
+                                    Elements. (It is Purely a Visual and Auditory Experience)
+                                </p>
+                                <a class="card-btn"
+                                    href="https://www.roblox.com/games/9598343518/Mysteries-Of-The-Backrooms"
+                                    target="_blank">PLAY</a>
+                            </div>
+                        </div>
+                        <!-- Featured Item #3 -->
+                        <div class="featured-item">
+                            <div class="card">
+                                <div class="card-img-container">
+                                    <img src="https://tr.rbxcdn.com/4f1b6b177bf5bbafbcf665ff4b7f1f99/768/432/Image/Png">
+                                </div>
+                                <h1>my eyes deceive</h1>
+                                <p>
+                                    by
+                                    <span class="card-creator">Cheez Plox</span>
+                                </p>
+                                <p class="card-desc">
+                                    The outside world is infected with a deadly disease. Society is in chaos.
+                                    Fortunately, your papa is protecting you by keeping you in his shelter. He's very
+                                    insistent on you taking your disease-preventive antidote every day.
+                                </p>
+                                <a class="card-btn" href="https://www.roblox.com/games/14707486180/my-eyes-deceive"
+                                    target="_blank">PLAY</a>
+                            </div>
+                        </div>
+                        <!-- Featured Item #4 -->
+                        <div class="featured-item">
+                            <div class="card">
+                                <div class="card-img-container">
+                                    <img src="https://tr.rbxcdn.com/18ef172c947dc32a0fd9c9ba2a5c145b/768/432/Image/Png">
+                                </div>
+                                <h1>Naberios Heaven [DEMO]</h1>
+                                <p>
+                                    by
+                                    <span class="card-creator">Cinder Experimental</span>
+                                </p>
+                                <p class="card-desc">
+                                    With no recollection of yourself or the circumstances that led you here. Your sole
+                                    objective is to wander this strange basement and preserve your life. Naberios Heaven
+                                    is a first-person horror game that is inspired by the amazing games of N4ba.
+                                </p>
+                                <a class="card-btn" href="https://www.roblox.com/games/14813925444/Naberios-Heaven-DEMO"
+                                    target="_blank">PLAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="bugfix">pad</p>
+        <hr class="seperator">
+
+        <div class="row home-sections">
+            <div class="home-section home-section-recently-rated-content">
+                <div class="home-section-recently-rated-content-content">
+                    <div class="home-section-header">
+                        <h2>Recently Rated</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="recently-rated-items">
+                        <!-- Recently Rated Item #1 -->
+                        <div class="recently-rated-item">
+                            <div class="card" id="rr-1">
+                                <div class="card-img-container">
+                                    <img src="https://t2.rbxcdn.com/1aeabc4e05c21be9d96b648c7bd05ccf">
+                                </div>
+                                <h1>Game</h1>
+                                <p>
+                                    <span class="card-rating">0</span>
+                                    / 10
+                                </p>
+                                <p class="card-desc">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec qu
+                                </p>
+                                <a class="card-btn rr" href="https://www.roblox.com/games/8454350203/CONDITION-1-DEMO"
+                                    target="_blank">VIEW</a>
+                            </div>
+                        </div>
+                        <!-- Recently Rated Item #2 -->
+                        <div class="recently-rated-item">
+                            <div class="card" id="rr-2">
+                                <div class="card-img-container">
+                                    <img src="https://t2.rbxcdn.com/1aeabc4e05c21be9d96b648c7bd05ccf">
+                                </div>
+                                <h1>Game</h1>
+                                <p>
+                                    <span class="card-rating">0</span>
+                                    / 10
+                                </p>
+                                <p class="card-desc">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec qu
+                                </p>
+                                <a class="card-btn rr"
+                                    href="https://www.roblox.com/games/9598343518/Mysteries-Of-The-Backrooms"
+                                    target="_blank">VIEW</a>
+                            </div>
+                        </div>
+                        <!-- Recently Rated Item #3 -->
+                        <div class="recently-rated-item">
+                            <div class="card" id="rr-3">
+                                <div class="card-img-container">
+                                    <img src="https://t2.rbxcdn.com/1aeabc4e05c21be9d96b648c7bd05ccf">
+                                </div>
+                                <h1>Game</h1>
+                                <p>
+                                    <span class="card-rating">0</span>
+                                    / 10
+                                </p>
+                                <p class="card-desc">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec qu
+                                </p>
+                                <a class="card-btn rr" href="https://www.roblox.com/games/14707486180/my-eyes-deceive"
+                                    target="_blank">VIEW</a>
+                            </div>
+                        </div>
+                        <!-- Recently Rated Item #4 -->
+                        <div class="recently-rated-item">
+                            <div class="card" id="rr-4">
+                                <div class="card-img-container">
+                                    <img src="https://t2.rbxcdn.com/1aeabc4e05c21be9d96b648c7bd05ccf">
+                                </div>
+                                <h1>Game</h1>
+                                <p>
+                                    <span class="card-rating">0</span>
+                                    / 10
+                                </p>
+                                <p class="card-desc">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec qu
+                                </p>
+                                <a class="card-btn rr"
+                                    href="https://www.roblox.com/games/14813925444/Naberios-Heaven-DEMO"
+                                    target="_blank">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="bugfix">pad</p>
+        <hr class="seperator">
+
     </div>
-  </div>
-
-  <div class="loading-bar">
-    <div id="myProgressText">
-      <h1 class="tit-credits">
-        <a>Loading...</a>
-      </h1>
     </div>
-    <div id="myProgress">
-      <div id="myBar"></div>
-    </div>
-  </div>
 
-  <h1 class="tit">Roblox Horrorlist</h1>
-
-  <h1 class="tit-credits">
-    <span class="tit-tit-sub">Helped over</span> <a id="visitor-count">0</a>
-    <span class="tit-tit-sub">visitors</span>
-  </h1>
-
-  <div class="button-container">
-    <button class="statistics-button" onclick="about()">
-      <i class="fas fa-info-circle"></i><span> About Us</span>
-    </button>
-    <button class="statistics-button" onclick="contributors()">
-      <i class="fas fa-users"></i><span> Contributors</span>
-    </button>
-    <button class="statistics-button" onclick="statistics()">
-      <i class="fas fa-chart-line"></i><span> Statistics</span>
-    </button>
-    <button class="statistics-button" onclick="random()">
-      <i class="fas fa-random"></i><span> Random Game</span>
-    </button>
-    <button class="filter-button" onclick="filtered()">
-      <i class="fas fa-filter"></i><span> Filter</span>
-    </button>
-    <button class="donate-button" onclick="donate()">
-      <i class="fas fa-heart"></i><span> Donate</span>
-    </button>
-  </div>
-
-  <br>
-
-  <header>
-    <div class="content" id="content">
-      <div class="table-container" id="table-container">
-        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
-          <thead>
-            <tr>
-              <th data-column="Placement" data-order="desc">#</th>
-              <th data-column="Icon" data-order="desc"></th>
-              <th data-column="Name" data-order="desc">Name</th>
-              <th data-column="Creator" data-order="desc">Creator</th>
-              <th data-column="Rating" data-order="desc">Rating</th>
-            </tr>
-          </thead>
-          <tbody id="table-to-populate"></tbody>
-          <tfoot></tfoot>
-        </table>
-      </div>
-
-      <div class="mobile-table-container" id="mobile-table-container">
-        <table id="mobile-game-table" class="display" style="width: 100%" cellspacing="0">
-          <thead>
-            <tr>
-              <th data-column="Placement" data-order="desc">#</th>
-              <th data-column="Icon" data-order="desc"></th>
-              <th data-column="Name" data-order="desc">Name</th>
-              <th data-column="Rating" data-order="desc">Rating</th>
-            </tr>
-          </thead>
-          <tbody id="mobile-table-to-populate"></tbody>
-          <tfoot></tfoot>
-        </table>
-      </div>
-      <br />
-  </header>
-
-  <footer>
-    <hr style="
-          width: 50%;
-          height: 2px;
-          border-width: 0;
-          color: #20242e;
-          background-color: #20242e;
-        " />
-    <br>
-    
-    <center>
-      <div class="flex-center">
-        <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
-        <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
-        <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
-        <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
-      </div>
-
-      <br>
-      <a class="contact" style="font-size: 12px;" href="pages/contact.html">Contact Us</a>
-      <p style="color: white">Powered by NDev-Group</p>
-    </center>
-  </footer>
-  </div>
-
-  <script src="scripts/ndev-roblox-horrorlist-main.js"></script>
+    <script src="./assets/index.js"></script>
+    <script src="./assets/navbar.js"></script>
 </body>
-
-<!--
-
-Copyright © 2023 NDev-Group
-
--->
 
 </html>

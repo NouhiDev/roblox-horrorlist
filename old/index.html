@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!--
+  _____   ____  ____  _      ______   __  _    _  ____  _____  _____   ____  _____  _      _____  _____ _______ 
+ |  __ \ / __ \|  _ \| |    / __ \ \ / / | |  | |/ __ \|  __ \|  __ \ / __ \|  __ \| |    |_   _|/ ____|__   __|
+ | |__) | |  | | |_) | |   | |  | \ V /  | |__| | |  | | |__) | |__) | |  | | |__) | |      | | | (___    | |   
+ |  _  /| |  | |  _ <| |   | |  | |> <   |  __  | |  | |  _  /|  _  /| |  | |  _  /| |      | |  \___ \   | |   
+ | | \ \| |__| | |_) | |___| |__| / . \  | |  | | |__| | | \ \| | \ \| |__| | | \ \| |____ _| |_ ____) |  | |   
+ |_|  \_\\____/|____/|______\____/_/ \_\ |_|  |_|\____/|_|  \_\_|  \_\\____/|_|  \_\______|_____|_____/   |_|   
+                                                                                                                
+  Learn more at
+
+  https://nouhi.dev/ndev-assets-docs/.
+-->
+
+<html>
+
+<head>
+  <title>Roblox Horrorlist: Best Roblox Horror Games</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="title" content="Roblox Horrorlist: Best Roblox Horror Games" />
+  <meta name="description"
+    content="A ranking of all popular Roblox horror games such as Rainbow Friends, The Mimic, DOORS, Apeirophobia, or Elmira. Also shows how scary, multiplayer, single player, etc. they are." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/x-icon" href="https://nouhi.dev/assets/images/rhl-favicon.ico" />
+
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://nouhi.dev/assets/global-scripts/ndev-roblox-horrorlist-api.js"></script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660529580352623"
+    crossorigin="anonymous"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-609YDJ81ER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-609YDJ81ER');
+  </script>
+</head>
+
+<body>
+  <div class="popup-overlay" id="popupContainer">
+    <div class="popup-content">
+      <div class="popup-header">
+        <div class="popup-icon">
+          <img src="img/icon.png" alt="Icon">
+        </div>
+        <h2 class="popup-title">Welcome to the Roblox Horrorlist</h2>
+      </div>
+      <p class="popup-text" style="text-align: left" ;>Here, you'll find a bunch of horror games, each rated based on
+        our humble opinion. If you don't agree with or care for the ratings, you can use the site just as a collection
+        of Roblox horror games. Click on a game to view its detailed rating and more information.</p>
+      <br><button class="popup-button" onclick="firstEnter()">Enter</button>
+    </div>
+  </div>
+
+  <div class="loading-bar">
+    <div id="myProgressText">
+      <h1 class="tit-credits">
+        <a>Loading...</a>
+      </h1>
+    </div>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+  </div>
+
+  <h1 class="tit">Roblox Horrorlist</h1>
+
+  <h1 class="tit-credits">
+    <span class="tit-tit-sub">Helped over</span> <a id="visitor-count">0</a>
+    <span class="tit-tit-sub">visitors</span>
+  </h1>
+
+  <div class="button-container">
+    <button class="statistics-button" onclick="about()">
+      <i class="fas fa-info-circle"></i><span> About Us</span>
+    </button>
+    <button class="statistics-button" onclick="contributors()">
+      <i class="fas fa-users"></i><span> Contributors</span>
+    </button>
+    <button class="statistics-button" onclick="statistics()">
+      <i class="fas fa-chart-line"></i><span> Statistics</span>
+    </button>
+    <button class="statistics-button" onclick="random()">
+      <i class="fas fa-random"></i><span> Random Game</span>
+    </button>
+    <button class="filter-button" onclick="filtered()">
+      <i class="fas fa-filter"></i><span> Filter</span>
+    </button>
+    <button class="donate-button" onclick="donate()">
+      <i class="fas fa-heart"></i><span> Donate</span>
+    </button>
+  </div>
+
+  <br>
+
+  <header>
+    <div class="content" id="content">
+      <div class="table-container" id="table-container">
+        <table id="game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Creator" data-order="desc">Creator</th>
+              <th data-column="Rating" data-order="desc">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+
+      <div class="mobile-table-container" id="mobile-table-container">
+        <table id="mobile-game-table" class="display" style="width: 100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th data-column="Placement" data-order="desc">#</th>
+              <th data-column="Icon" data-order="desc"></th>
+              <th data-column="Name" data-order="desc">Name</th>
+              <th data-column="Rating" data-order="desc">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="mobile-table-to-populate"></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+      <br />
+  </header>
+
+  <footer>
+    <hr style="
+          width: 50%;
+          height: 2px;
+          border-width: 0;
+          color: #20242e;
+          background-color: #20242e;
+        " />
+    <br>
+    
+    <center>
+      <div class="flex-center">
+        <i class="gh fa-brands fa-github fa-2x icon-3d" onclick="githubButton()"></i>
+        <i id="yt" class="yt fa-brands fa-youtube fa-2x icon-3d" onclick="youtubeButton()"></i>
+        <i id="tt" class="tt fa-brands fa-discord fa-2x icon-3d" onclick="discordButton()"></i>
+        <i id="tt" class="tt fa-brands fa-twitter fa-2x icon-3d" onclick="twitterButton()"></i>
+      </div>
+
+      <br>
+      <a class="contact" style="font-size: 12px;" href="pages/contact.html">Contact Us</a>
+      <p style="color: white">Powered by NDev-Group</p>
+    </center>
+  </footer>
+  </div>
+
+  <script src="scripts/ndev-roblox-horrorlist-main.js"></script>
+</body>
+
+<!--
+
+Copyright © 2023 NDev-Group
+
+-->
+
+</html>
