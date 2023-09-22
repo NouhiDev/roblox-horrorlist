@@ -29,7 +29,7 @@ async function selectRandomGame() {
 
             randomUID = data[randomIndex].uid
 
-            document.getElementsByClassName("game-infos")[0].innerHTML = `Genre(s): ${data[randomIndex].genres}<br><br>`;
+            document.getElementsByClassName("game-infos")[0].innerHTML = `Tag(s): ${data[randomIndex].genres}<br><br>`;
         })
         .catch(error => {
             console.error("Fetch error:", error);
@@ -43,8 +43,6 @@ async function selectRandomGame() {
             return response.json();
         })
         .then(data => {
-            console.log(data);
-
             const updated = data["data"][0].updated.substring(0, 10);
             const updatedDate = new Date(updated)
             const today = new Date()
