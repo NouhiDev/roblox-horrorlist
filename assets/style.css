@@ -524,6 +524,10 @@ i.fa-discord:hover {
     display: none;
 }
 
+.filter-btn {
+    text-align: center;
+}
+
 /* Responsive */
 
 @media (max-width: 952px) {
